@@ -1,112 +1,107 @@
-# Dual-Color Hexagonal Scrabble 3D Printable Tiles
+# 🎲 Hex-Tiles: Dual-Color & 4-Color 3D Printable Gaming System
+### Scrabble • Hive (Base + Expansions) • Hex-Words • Hive-Swarm • Number Hive
 
-Parametric 3D printable 1.5-inch diameter hexagonal tiles with Scrabble-style letters and numbers. Specifically designed and optimized for **two-color 3D printing with toolhead changers** (such as the Prusa XL multi-toolhead, Bambu Lab X1/P1/A1 with AMS, Voron StealthChanger/ERCF, IDEX, and dual-extrusion printers).
-
----
-
-## 📐 Design & Engineering Specifications
-
-- **Diameter**: `1.5 inches` (`38.1 mm`) flat-to-flat incircle diameter. Adjacent tiles snap together in a continuous hexagonal grid with exact 1.5" row spacing. (Point-to-point circumcircle diameter is `44.0 mm`).
-- **Thickness / Height**: `4.8 mm` (~3/16 inch) — provides solid heft and tactile feel.
-- **Perimeter Chamfer**: `0.8 mm` ($45^\circ$) along the top outer rim for smooth ergonomics and easy pickup from flat tabletop surfaces.
-- **Inlay Depth**: `0.8 mm` ($4$ solid layers at $0.20\text{ mm}$ layer height), guaranteeing complete visual color opacity without the base color showing through.
-- **Multi-Part Architecture**:
-  - **`Tile_Base`** (Toolhead 1): Main hexagonal body with a 0.8mm negative cavity.
-  - **`Tile_Text`** (Toolhead 2): Exact positive glyph inlay with matching 0.8mm depth.
+A complete, parametric, multi-material 3D printable gaming ecosystem built around **1.5-inch ($38.1\text{ mm}$) regular hexagonal tiles**, specifically engineered for toolhead changers and multi-material 3D printers (Bambu Lab AMS, Prusa XL, Voron StealthChanger/ERCF, IDEX, and dual-extrusion systems).
 
 ---
 
-## 🖨️ Slicing & Toolhead Changer Instructions
-
-### 1. Loading `.3mf` Files (PrusaSlicer, OrcaSlicer, Bambu Studio)
-1. Drag and drop any `.3mf` file from `output/3mf/` or `output/plates/` into your slicer.
-2. When prompted: **"This file contains multiple objects. Do you want to load them as a single object with multiple parts?"** $\to$ Click **YES**.
-3. In the object list:
-   - Set **`Tile_Base`** to **Extruder / Filament 1** (e.g., Ivory, Cream, White, or Wood PLA/PETG).
-   - Set **`Tile_Text`** to **Extruder / Filament 2** (e.g., Jet Black, Navy, Maroon, or Gold PLA/PETG).
-
-### 2. Loading Dual STL Files (Cura, SuperSlicer, Simplify3D)
-1. Select both `*_base.stl` and `*_text.stl` files simultaneously.
-2. Drag and drop both into the slicer.
-3. Select both parts, right-click, and choose **Merge / Group as Multi-Material Object**.
-4. Assign Extruder 1 to Base and Extruder 2 to Text.
-
-### 💡 Pro Tip: Face-Down Printing on Textured PEI
-For the absolute highest quality finish with **minimal toolhead swaps**:
-1. Rotate the tile assembly **$180^\circ$ upside down** so the top face with the letters rests directly on the build plate.
-2. Print on a **textured PEI sheet** (or satin powder-coated sheet).
-3. **Benefits**:
-   - The top face of the tile will take on the beautiful, uniform, seamless texture of the PEI sheet with zero visible layer lines.
-   - Both colors are printed flat on the first $0.8\text{ mm}$ (layers 1 to 4).
-   - After layer 4, the printer switches to the Base toolhead and finishes the remainder of the tile with **zero additional toolhead changes**!
-
-### Recommended Print Settings
-- **Layer Height**: `0.20 mm` (or `0.16 mm` for ultra-fine lettering)
-- **First Layer Height**: `0.20 mm`
-- **Perimeters / Wall Loops**: `3` or `4`
-- **Top / Bottom Solid Layers**: `4` or `5`
-- **Infill**: `15% - 20%` (Gyroid or Grid)
-- **Ironing** (if printing face-up): Enabled on topmost surface with 15% flow for smooth top faces.
-
----
-
-## 📁 File Structure
+## 🌟 What's Included in This Project
 
 ```
 hex-scrabble-tiles/
-├── generate_tiles.py             # Python CAD & 3MF/STL generation pipeline
-├── hex_scrabble_tiles.scad       # Parametric OpenSCAD Customizer script
-├── requirements.txt              # Python dependencies
-├── README.md                     # Printing & slicing guide
-└── output/
-    ├── 3mf/                      # 44 individual multi-material .3mf tiles
-    │   ├── tile_A_score1.3mf
-    │   ├── tile_B_score3.3mf
-    │   ├── tile_num_7.3mf
-    │   └── ...
-    ├── stl/                      # 88 paired binary STL models
-    │   ├── tile_A_score1_base.stl
-    │   ├── tile_A_score1_text.stl
-    │   └── ...
-    ├── plates/                   # Batch build plates (honeycomb packed)
-    │   ├── plate_letters_A_M.3mf             # 13 tiles (Letters A to M)
-    │   ├── plate_letters_N_Z_Blank.3mf       # 14 tiles (Letters N to Z + Blank)
-    │   └── plate_numbers_and_symbols.3mf     # 17 tiles (0-9, +, -, x, /, =, ?, !)
-    └── previews/                 # Visual 3D Isometric & Top-Down preview renders
+├── 🎲 Scrabble System (output/)
+│   ├── 3mf/                           # 44 individual multi-material Scrabble & Math 3MF models
+│   ├── stl/                           # 88 paired binary STLs (Base & Inlay)
+│   └── plates/                        # Batch print plates (A–M, N–Z+Blank, Numbers & Symbols)
+│
+├── 🐜 Hive Game System (output_hive/)
+│   ├── 3mf/                           # 8 individual insect pieces (Queen, Spider, Beetle, Ant, Hopper, + Expansions)
+│   ├── stl/                           # 16 paired binary STLs
+│   ├── plates/                        # Honeycomb batch plates (1-Player & 2-Player Master Set)
+│   └── plates_4color_limited/         # Batch plates strictly limited to ≤ 4 colors for 4-slot AMS
+│
+├── 🖨️ Printouts & Companion Game Sheets (printouts/)
+│   ├── hex_game_board_1.5in.pdf       # Exact 1.5" calibrated game board with multiplier bonus hexes
+│   ├── hex_games_rulebook.pdf         # Illustrated 2-page pamphlet for 5 original games
+│   ├── score_sheets_and_tracker.pdf   # Multi-round score tally sheets & piece tracker
+│   ├── number_hive_math_puzzles.pdf   # Target-number math challenge rosette worksheets
+│   └── printouts_hub.html             # Browser-viewable print portal with @media print styling
+│
+├── 📜 Documentation & Guides
+│   ├── PRINTING_COLOR_GUIDE.md        # Filament color recommendations & 4-slot AMS mapping
+│   ├── GAMES_AND_RULES.md             # Complete rulebook for all 5 hex games
+│   └── README.md                      # Master project overview & slicing manual
+│
+├── 🛠️ CAD Generators & Scripts
+│   ├── generate_tiles.py              # Scrabble & symbol CAD generator pipeline
+│   ├── generate_hive_tiles.py         # Hive insect vector CAD & plate generator
+│   ├── generate_printouts.py          # Vector PDF board and rulebook generator
+│   ├── hex_scrabble_tiles.scad        # Parametric OpenSCAD Customizer for Scrabble
+│   └── hex_hive_tiles.scad            # Parametric OpenSCAD Customizer for Hive
 ```
 
 ---
 
-## 🛠️ Generating Custom Tiles & Words via CLI
+## 📐 Unified Engineering Specifications
 
-You can generate custom words, custom sizes, or specific single tiles using `generate_tiles.py`:
+* **Flat-to-Flat Diameter**: `1.50 inches` (`38.10 mm`) — Adjacent tiles snap flush in a regular hexagonal lattice.
+* **Point-to-Point Diameter**: `43.99 mm` circumcircle across opposite vertices.
+* **Tile Height / Thickness**: `4.80 mm` (~3/16 inch) — Substantial weight and tactile feel.
+* **Perimeter Chamfer**: `0.80 mm` ($45^\circ$) along top perimeter for smooth ergonomics.
+* **Inlay Depth**: `0.80 mm` ($4$ solid layers @ $0.20\text{ mm}$ layer height) — 100% color opacity.
+* **Multi-Part Architecture**: Single `.3mf` assembly containers with named sub-meshes (`Tile_Base`, `Tile_Text`, `Insects_*`).
+
+---
+
+## 🎨 4-Color Printer Slicing Strategy (AMS / 4-Toolhead Setup)
+
+For printers with **up to 4 filament colors at once** (e.g. Bambu AMS 4-slot or Prusa XL 4-head), load the pre-partitioned plates from `output_hive/plates_4color_limited/`:
+
+1. **Plate A: "Core Swarm"** (`plate_4color_A_core_swarm_7tiles.3mf`):
+   - **Slot 1**: ⚪ Base (White or Black)
+   - **Slot 2**: 🟡 Queen Bee (Yellow / Gold)
+   - **Slot 3**: 🟢 Grasshopper (Green)
+   - **Slot 4**: 🔵 Soldier Ant (Blue)
+2. **Plate B: "Crawlers"** (`plate_4color_B_crawlers_4tiles.3mf`):
+   - **Slot 1**: ⚪ Base (White or Black)
+   - **Slot 2**: 🟤 Spider (Brown / Burnt Orange)
+   - **Slot 3**: 🟣 Beetle (Purple)
+3. **Plate C: "Expansions Pack"** (`plate_4color_C_expansions_3tiles.3mf`):
+   - **Slot 1**: ⚪ Base (White or Black)
+   - **Slot 2**: 🔴 Ladybug (Red)
+   - **Slot 3**: ⚪ Mosquito (Silver / Gray)
+   - **Slot 4**: 🔷 Pillbug (Cyan / Teal)
+
+### 💡 Pro Tip: Face-Down Printing on Textured PEI
+* Rotate the plate **$180^\circ$ face-down** so the top surface with the insect/letter glyphs rests directly on the build plate.
+* All color swaps occur only in the **first $0.80\text{ mm}$ (layers 1 to 4)**. The remaining 20 layers print in the single base color with **zero tool swaps**!
+
+---
+
+## 🎮 5 Games to Play With Your Tiles
+
+1. **Hex-Words**: Free-form tabletop crossword with 3-axis connections and the **+15 pt Honeycomb Ring Bonus**.
+2. **Hive-Swarm**: Real-time speed word race. Shout *"FORAGE!"* to draw tiles from the Meadow, *"EJECT!"* to swap bad letters, and *"QUEEN'S COMB!"* to win.
+3. **Number Hive / Equation Clash**: Math strategy game connecting branching equations across the 3 hex axes.
+4. **Honeycomb Crossword**: Classic board game played on the printable 1.5" calibrated game board with 2L, 3L, 2W, 3W bonus multipliers.
+5. **Target 24 & Rosette Math**: Daily brainteasers and solo math challenges.
+
+See **[`GAMES_AND_RULES.md`](GAMES_AND_RULES.md)** for full rules and scoring details.
+
+---
+
+## 🛠️ CLI Generation Commands
 
 ```bash
-# Generate a specific letter tile with custom score
-python generate_tiles.py --letter K --score 5
+# Activate environment
+.venv\Scripts\activate
 
-# Generate a specific number tile
-python generate_tiles.py --number 8
+# Generate custom Scrabble word or letter
+python generate_tiles.py --word HONEYCOMB
 
-# Generate a complete word set
-python generate_tiles.py --word SCRABBLE
+# Generate custom Hive tile or batch plates
+python generate_hive_tiles.py --all --plates
 
-# Generate a 2.0 inch (50.8 mm) oversized tile
-python generate_tiles.py --letter A --size 50.8
-
-# Generate embossed (raised 0.6mm) text instead of flush inlay
-python generate_tiles.py --letter A --embossed 0.6
-
-# Regenerate the entire set and all batch plates
-python generate_tiles.py --all --plates
+# Regenerate printable game board and rulebook PDFs
+python generate_printouts.py
 ```
-
----
-
-## 🎛️ Parametric Customization in OpenSCAD
-
-If you prefer OpenSCAD:
-1. Open `hex_scrabble_tiles.scad` in **OpenSCAD**.
-2. Open the **Window $\to$ Customizer** panel.
-3. Adjust `tile_flat_to_flat`, `tile_height`, `chamfer`, `inlay_depth`, `char_letter`, `char_score`, or `font_name`.
-4. Render (`F6`) and export as STL or 3MF.
