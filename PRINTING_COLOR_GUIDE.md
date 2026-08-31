@@ -1,104 +1,73 @@
-# 🎨 3D Printing Color & Filament Guide
+# 🎨 3D Printing Color & Filament Guide (4-Color Printer Optimized)
 
-This guide details the recommended filament colors, toolhead assignments, and print counts for both the **Hive Game Set** and the **Scrabble Tile Set**.
-
----
-
-## 🐜 1. "HIVE" Game Set: Printing Color Matrix
-
-Hive is an asymmetric 2-player game where each player controls an opposing insect army (14 tiles per player = 28 tiles total).
-
-### 📋 Full Piece Count & Inventory
-
-| Insect Piece | Count (1 Player) | Total (2 Players) | Base Game / Exp |
-| :--- | :---: | :---: | :--- |
-| **Queen Bee** | 1 | 2 | Base Game |
-| **Spider** | 2 | 4 | Base Game |
-| **Beetle** | 2 | 4 | Base Game |
-| **Grasshopper** | 3 | 6 | Base Game |
-| **Soldier Ant** | 3 | 6 | Base Game |
-| **Mosquito** | 1 | 2 | Expansion |
-| **Ladybug** | 1 | 2 | Expansion |
-| **Pillbug** | 1 | 2 | Expansion |
-| **TOTAL** | **14 Tiles** | **28 Tiles** | **Master Set** |
+This guide details the recommended filament colors, 4-slot AMS/Toolhead assignments, and print counts for both the **Hive Game Set** and the **Scrabble Tile Set**.
 
 ---
 
-### 🎨 Scheme A: Classic High-Contrast 2-Color Setup (Recommended)
-*Requires only 2 spools of filament across your print runs.*
+## 🐜 1. "HIVE" 4-Color-Limited Build Plates
 
-#### ⚪ Player 1: White / Ivory Team
-* **Build Plate**: `output_hive/plates/plate_player_full_set_14tiles.3mf` (Run 1)
-* **Toolhead 1 (Base Body)**: **White / Ivory / Cream PLA**
-* **Toolhead 2 (Insect Inlay)**: **Jet Black / Dark Slate PLA**
+If your 3D printer supports a maximum of **4 colors at once** (e.g. Bambu Lab AMS with 4 spool slots, Prusa XL, Voron StealthChanger, or IDEX), the official 8-color Hive set is pre-partitioned into plates containing **at most 1 Base color + 3 Insect colors (4 colors total)**.
 
-#### ⚫ Player 2: Black / Carbon Team
-* **Build Plate**: `output_hive/plates/plate_player_full_set_14tiles.3mf` (Run 2)
-* **Toolhead 1 (Base Body)**: **Jet Black / Dark Slate PLA**
-* **Toolhead 2 (Insect Inlay)**: **White / Ivory / Cream PLA**
+Each `.3mf` file in [`output_hive/plates_4color_limited/`](file:///C:/Users/david/.gemini/antigravity/scratch/hex-scrabble-tiles/output_hive/plates_4color_limited) has pre-grouped color bodies so your slicer automatically recognizes each extruder slot.
 
 ---
 
-### 🌈 Scheme B: Official Color-Coded Insect Scheme
-*Matches the official Hive tournament colors for instant visual identification.*
+### 📦 Set A: 1-Player Army (14 Tiles Across 3 Print Runs)
 
-| Insect Piece | Player 1 Base | Player 2 Base | Insect Inlay Color (Official) |
-| :--- | :--- | :--- | :--- |
-| **Queen Bee** | White / Ivory | Black / Carbon | 🟡 **Bright Yellow / Gold** |
-| **Spider** | White / Ivory | Black / Carbon | 🟤 **Brown / Burnt Orange** |
-| **Beetle** | White / Ivory | Black / Carbon | 🟣 **Purple / Violet** |
-| **Grasshopper** | White / Ivory | Black / Carbon | 🟢 **Vibrant Green / Lime** |
-| **Soldier Ant** | White / Ivory | Black / Carbon | 🔵 **Royal Blue / Cyan** |
-| **Mosquito** *(Exp)* | White / Ivory | Black / Carbon | ⚪ **Metallic Silver / Light Gray** |
-| **Ladybug** *(Exp)* | White / Ivory | Black / Carbon | 🔴 **Crimson Red** |
-| **Pillbug** *(Exp)* | White / Ivory | Black / Carbon | 🔷 **Sky Blue / Teal** |
+#### 🖨️ Plate A1: "Core Swarm" (7 Tiles)
+* **File**: [`plate_4color_A_core_swarm_7tiles.3mf`](file:///C:/Users/david/.gemini/antigravity/scratch/hex-scrabble-tiles/output_hive/plates_4color_limited/plate_4color_A_core_swarm_7tiles.3mf)
+* **Tiles on Plate**: $1\times$ Queen Bee, $3\times$ Grasshopper, $3\times$ Soldier Ant
+* **4-Slot Extruder Assignment**:
+  * **Slot 1 (Plate_Base)**: ⚪ **White / Ivory** (or ⚫ **Black**)
+  * **Slot 2 (Insects_Queen_Bee)**: 🟡 **Bright Yellow / Gold**
+  * **Slot 3 (Insects_Grasshopper)**: 🟢 **Vibrant Green**
+  * **Slot 4 (Insects_Soldier_Ant)**: 🔵 **Royal Blue / Cyan**
 
----
+#### 🖨️ Plate A2: "Crawlers" (4 Tiles)
+* **File**: [`plate_4color_B_crawlers_4tiles.3mf`](file:///C:/Users/david/.gemini/antigravity/scratch/hex-scrabble-tiles/output_hive/plates_4color_limited/plate_4color_B_crawlers_4tiles.3mf)
+* **Tiles on Plate**: $2\times$ Spider, $2\times$ Beetle
+* **4-Slot Extruder Assignment**:
+  * **Slot 1 (Plate_Base)**: ⚪ **White / Ivory** (or ⚫ **Black**)
+  * **Slot 2 (Insects_Spider)**: 🟤 **Brown / Burnt Orange**
+  * **Slot 3 (Insects_Beetle)**: 🟣 **Purple / Violet**
+  * **Slot 4**: *(Unused / Empty)*
 
-## 🎲 2. "SCRABBLE" Tile Set: Printing Color Matrix
-
-### 📋 Full Scrabble Inventory & Points
-
-| Letter | Points | Base Game Qty | Letter | Points | Base Game Qty |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| **A** | 1 | 9 | **N** | 1 | 6 |
-| **B** | 3 | 2 | **O** | 1 | 8 |
-| **C** | 3 | 2 | **P** | 3 | 2 |
-| **D** | 2 | 4 | **Q** | 10 | 1 |
-| **E** | 1 | 12 | **R** | 1 | 6 |
-| **F** | 4 | 2 | **S** | 1 | 4 |
-| **G** | 2 | 3 | **T** | 1 | 6 |
-| **H** | 4 | 2 | **U** | 1 | 4 |
-| **I** | 1 | 9 | **V** | 4 | 2 |
-| **J** | 8 | 1 | **W** | 4 | 2 |
-| **K** | 5 | 1 | **X** | 8 | 1 |
-| **L** | 1 | 4 | **Y** | 4 | 2 |
-| **M** | 3 | 2 | **Z** | 10 | 1 |
-| **BLANK** | 0 | 2 | **TOTAL** | — | **100 Tiles** |
+#### 🖨️ Plate A3: "Expansions Pack" (3 Tiles)
+* **File**: [`plate_4color_C_expansions_3tiles.3mf`](file:///C:/Users/david/.gemini/antigravity/scratch/hex-scrabble-tiles/output_hive/plates_4color_limited/plate_4color_C_expansions_3tiles.3mf)
+* **Tiles on Plate**: $1\times$ Ladybug, $1\times$ Mosquito, $1\times$ Pillbug
+* **4-Slot Extruder Assignment**:
+  * **Slot 1 (Plate_Base)**: ⚪ **White / Ivory** (or ⚫ **Black**)
+  * **Slot 2 (Insects_Ladybug)**: 🔴 **Crimson Red**
+  * **Slot 3 (Insects_Mosquito)**: ⚪ **Metallic Silver / Light Gray**
+  * **Slot 4 (Insects_Pillbug)**: 🔷 **Sky Blue / Teal**
 
 ---
 
-### 🎨 Scrabble Filament Recommendations
+### 🏆 Set B: Complete 2-Player Master Batches (28 Tiles Total)
+*Print each plate once for White Team, then repeat with Black Base for Black Team, or print both teams simultaneously!*
 
-#### Classic Wooden Look:
-* **Toolhead 1 (Tile Base)**: **Wood-fill PLA** or **Warm Ivory / Birch Cream PLA**
-* **Toolhead 2 (Letters & Score)**: **Dark Walnut Brown / Matte Black PLA**
-
-#### Modern Luxury Look:
-* **Toolhead 1 (Tile Base)**: **Marble White / Matte Off-White PLA**
-* **Toolhead 2 (Letters & Score)**: **Silk Metallic Gold / Copper PLA**
-
-#### High-Contrast Game Night:
-* **Toolhead 1 (Tile Base)**: **Signal White PLA**
-* **Toolhead 2 (Letters & Score)**: **Deep Navy / Jet Black PLA**
+| Plate File | Total Tiles | Content | 4-Slot Filament Mapping |
+| :--- | :---: | :--- | :--- |
+| [`plate_4color_2player_core_swarm_14tiles.3mf`](file:///C:/Users/david/.gemini/antigravity/scratch/hex-scrabble-tiles/output_hive/plates_4color_limited/plate_4color_2player_core_swarm_14tiles.3mf) | **14** | $2\times$ Queen, $6\times$ Hopper, $6\times$ Ant | **1**: Base, **2**: 🟡 Yellow, **3**: 🟢 Green, **4**: 🔵 Blue |
+| [`plate_4color_2player_crawlers_8tiles.3mf`](file:///C:/Users/david/.gemini/antigravity/scratch/hex-scrabble-tiles/output_hive/plates_4color_limited/plate_4color_2player_crawlers_8tiles.3mf) | **8** | $4\times$ Spider, $4\times$ Beetle | **1**: Base, **2**: 🟤 Brown, **3**: 🟣 Purple |
+| [`plate_4color_2player_expansions_6tiles.3mf`](file:///C:/Users/david/.gemini/antigravity/scratch/hex-scrabble-tiles/output_hive/plates_4color_limited/plate_4color_2player_expansions_6tiles.3mf) | **6** | $2\times$ Ladybug, $2\times$ Mosquito, $2\times$ Pillbug | **1**: Base, **2**: 🔴 Red, **3**: ⚪ Silver/Gray, **4**: 🔷 Cyan/Teal |
 
 ---
 
-## 💡 Quick Slicer Setup Checklist
+## 🎲 2. "SCRABBLE" 4-Color & 2-Color Printing
 
-1. **Orientation**: Flip the tile **$180^\circ$ face-down** on a **textured PEI plate** for a glass-smooth or textured face finish with zero visible top lines.
-2. **Layer Height**: `0.20 mm` (First layer `0.20 mm`).
-3. **Multi-Material Swaps**: Because the inlay depth is $0.80\text{ mm}$, all color tool changes will occur in the first 4 layers only; the remaining 20 layers print seamlessly in a single toolhead with **zero tool swaps**!
-4. **Tool Assignment in Slicer**:
-   - `Tile_Base` $\to$ Extruder 1
-   - `Tile_Insect` / `Tile_Text` $\to$ Extruder 2
+For Scrabble, only **2 colors** are required per plate:
+* **Extruder 1 (Base)**: Warm Ivory, Cream, or Wood PLA
+* **Extruder 2 (Glyphs)**: Dark Walnut Brown or Jet Black PLA
+
+#### Scrabble Batch Plates:
+* [`plate_letters_A_M.3mf`](file:///C:/Users/david/.gemini/antigravity/scratch/hex-scrabble-tiles/output/plates/plate_letters_A_M.3mf) (13 tiles)
+* [`plate_letters_N_Z_Blank.3mf`](file:///C:/Users/david/.gemini/antigravity/scratch/hex-scrabble-tiles/output/plates/plate_letters_N_Z_Blank.3mf) (14 tiles)
+* [`plate_numbers_and_symbols.3mf`](file:///C:/Users/david/.gemini/antigravity/scratch/hex-scrabble-tiles/output/plates/plate_numbers_and_symbols.3mf) (17 tiles)
+
+---
+
+## 💡 Pro Slicing Tip: Face-Down Printing
+1. Rotate the plate assembly **$180^\circ$ upside-down** so the top face rests directly on the build plate.
+2. Print on a **textured PEI sheet**.
+3. **Huge Efficiency Benefit**: All multi-color toolhead changes happen in the **first $0.80\text{ mm}$ (layers 1 to 4 only)**. After layer 4, the entire remainder of the tile prints in the base color with **zero additional filament purges or tool swaps**!

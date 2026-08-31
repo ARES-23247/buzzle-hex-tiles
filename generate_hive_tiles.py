@@ -1,6 +1,6 @@
 """
-Dual-Color Hexagonal "Hive" 3D Printable Tile Generator
-======================================================
+Dual-Color & 4-Color Hexagonal "Hive" 3D Printable Tile Generator
+=================================================================
 Generates 1.5 inch (38.1 mm) diameter hexagonal game tiles for the board game "Hive".
 Includes complete base game and official expansions:
   - Queen Bee
@@ -12,8 +12,8 @@ Includes complete base game and official expansions:
   - Ladybug (Expansion)
   - Pillbug (Expansion)
 
-Optimized for multi-material 3D printing with toolhead changers (Prusa XL, Bambu AMS,
-Voron StealthChanger, IDEX, OrcaSlicer, PrusaSlicer, Cura).
+Specifically includes 4-color multi-material plates (max 1 base color + 3 insect colors per plate)
+for 4-color 3D printers and toolhead changers (Bambu AMS, Prusa XL, Voron, IDEX).
 """
 
 import os
@@ -59,6 +59,17 @@ INSECT_DISPLAY_NAMES = {
     'pillbug': 'Pillbug'
 }
 
+OFFICIAL_INSECT_HEX_COLORS = {
+    'queen_bee': '#FFD600',    # Vibrant Yellow / Gold
+    'spider': '#E65100',       # Brown / Burnt Orange
+    'beetle': '#8E24AA',       # Purple / Violet
+    'grasshopper': '#43A047',  # Green
+    'ant': '#1E88E5',          # Blue
+    'mosquito': '#9E9E9E',     # Silver / Gray
+    'ladybug': '#E53935',      # Crimson Red
+    'pillbug': '#00ACC1'       # Cyan / Teal
+}
+
 
 # ========================================================================
 # 2D Geometry Primitives & Helpers
@@ -82,10 +93,6 @@ def make_poly_line(pts, width):
 
 
 def make_hex_points_2d(flat_to_flat):
-    """
-    Generate 6 vertices of a flat-topped regular hexagon in CCW order.
-    Distance between top flat (y=+r) and bottom flat (y=-r) is exactly flat_to_flat.
-    """
     r = flat_to_flat / 2.0
     R = r / np.cos(np.deg2rad(30))
     s_half = r * np.tan(np.deg2rad(30))
@@ -100,10 +107,6 @@ def make_hex_points_2d(flat_to_flat):
 
 
 def triangulate_shapely_poly(poly):
-    """
-    Triangulate a 2D Shapely polygon (with holes) using mapbox_earcut.
-    Returns (vertices, faces) where vertices is (N, 2) and faces is (M, 3).
-    """
     if poly is None or poly.is_empty:
         return np.zeros((0, 2), dtype=np.float64), np.zeros((0, 3), dtype=np.int64)
         
@@ -307,11 +310,6 @@ INSECT_BUILDERS = {
 
 def build_tile_pair(insect_poly, flat_to_flat=38.1, height=4.8,
                      chamfer=0.8, inlay_depth=0.8, emboss_height=0.0):
-    """
-    Builds the complete watertight 3D meshes for:
-      - Base Mesh (Hexagon with chamfer and negative cavity for the insect)
-      - Insect Inlay Mesh (Positive insect solid)
-    """
     if insect_poly is not None and not insect_poly.is_empty:
         glyph_polys = [insect_poly] if isinstance(insect_poly, Polygon) else list(insect_poly.geoms)
         glyph_polys = [orient(gp, sign=1.0) for gp in glyph_polys]
@@ -324,7 +322,6 @@ def build_tile_pair(insect_poly, flat_to_flat=38.1, height=4.8,
     z_bottom = 0.0
     text_total_height = inlay_depth + emboss_height
     
-    # 1. Build Insect Inlay Solid
     if glyph_polys:
         t_meshes = []
         for gp in glyph_polys:
@@ -337,7 +334,6 @@ def build_tile_pair(insect_poly, flat_to_flat=38.1, height=4.8,
     else:
         mesh_text = None
         
-    # 2. Build Base Hexagon with Chamfer and Cavity
     hex_base_2d = make_hex_points_2d(flat_to_flat)
     hex_top_2d = make_hex_points_2d(flat_to_flat - 2 * chamfer)
     poly_base = orient(Polygon(hex_base_2d), sign=1.0)
@@ -351,28 +347,20 @@ def build_tile_pair(insect_poly, flat_to_flat=38.1, height=4.8,
         verts_list.append(v)
         faces_list.append(f + offset)
         
-    # A. Bottom cap at z=0 (normal -Z)
     vb, fb = triangulate_shapely_poly(poly_base)
     vb3 = np.hstack([vb, np.zeros((len(vb), 1))])
     fb_flip = np.column_stack([fb[:, 0], fb[:, 2], fb[:, 1]])
     add_mesh_data(vb3, fb_flip)
     
-    # B. Lower side walls (z=0 to z=z_chamfer)
     vw, fw = [], []
     for i in range(6):
         p1 = hex_base_2d[i]
         p2 = hex_base_2d[(i + 1) % 6]
         idx = len(vw)
-        vw.extend([
-            [p1[0], p1[1], 0.0],
-            [p2[0], p2[1], 0.0],
-            [p2[0], p2[1], z_chamfer],
-            [p1[0], p1[1], z_chamfer]
-        ])
+        vw.extend([[p1[0], p1[1], 0.0], [p2[0], p2[1], 0.0], [p2[0], p2[1], z_chamfer], [p1[0], p1[1], z_chamfer]])
         fw.extend([[idx, idx + 1, idx + 2], [idx, idx + 2, idx + 3]])
     add_mesh_data(np.array(vw), np.array(fw))
     
-    # C. Chamfer side walls (z=z_chamfer to z=z_top)
     vc, fc = [], []
     for i in range(6):
         p1b = hex_base_2d[i]
@@ -380,16 +368,10 @@ def build_tile_pair(insect_poly, flat_to_flat=38.1, height=4.8,
         p1t = hex_top_2d[i]
         p2t = hex_top_2d[(i + 1) % 6]
         idx = len(vc)
-        vc.extend([
-            [p1b[0], p1b[1], z_chamfer],
-            [p2b[0], p2b[1], z_chamfer],
-            [p2t[0], p2t[1], z_top],
-            [p1t[0], p1t[1], z_top]
-        ])
+        vc.extend([[p1b[0], p1b[1], z_chamfer], [p2b[0], p2b[1], z_chamfer], [p2t[0], p2t[1], z_top], [p1t[0], p1t[1], z_top]])
         fc.extend([[idx, idx + 1, idx + 2], [idx, idx + 2, idx + 3]])
     add_mesh_data(np.array(vc), np.array(fc))
     
-    # D. Top face at z=z_top (poly_top difference insect)
     if glyph_polys:
         poly_top_diff = poly_top.difference(unary_union(glyph_polys))
     else:
@@ -400,13 +382,10 @@ def build_tile_pair(insect_poly, flat_to_flat=38.1, height=4.8,
         vt, ft = triangulate_shapely_poly(dp)
         add_mesh_data(np.hstack([vt, np.full((len(vt), 1), z_top)]), ft)
         
-    # E. Cavity floor & walls
     for gp in glyph_polys:
-        # Cavity floor (z_cavity, normal +Z)
         vcav, fcav = triangulate_shapely_poly(gp)
         add_mesh_data(np.hstack([vcav, np.full((len(vcav), 1), z_cavity)]), fcav)
         
-        # Cavity exterior ring wall
         ext_c = np.array(gp.exterior.coords)[:-1]
         n_e = len(ext_c)
         v_cw, f_cw = [], []
@@ -414,16 +393,10 @@ def build_tile_pair(insect_poly, flat_to_flat=38.1, height=4.8,
             pc = ext_c[i]
             pn = ext_c[(i + 1) % n_e]
             idx = len(v_cw)
-            v_cw.extend([
-                [pc[0], pc[1], z_cavity],
-                [pn[0], pn[1], z_cavity],
-                [pn[0], pn[1], z_top],
-                [pc[0], pc[1], z_top]
-            ])
+            v_cw.extend([[pc[0], pc[1], z_cavity], [pn[0], pn[1], z_cavity], [pn[0], pn[1], z_top], [pc[0], pc[1], z_top]])
             f_cw.extend([[idx, idx + 1, idx + 2], [idx, idx + 2, idx + 3]])
         add_mesh_data(np.array(v_cw), np.array(f_cw))
         
-        # Cavity interior hole walls
         for interior in gp.interiors:
             hole_c = np.array(interior.coords)[:-1]
             n_h = len(hole_c)
@@ -511,7 +484,6 @@ def export_multimaterial_3mf(filepath, parts_dict):
 
 
 def export_stl_pair(base_path, text_path, mesh_base, mesh_text):
-    """Export co-located STL files sharing the exact same coordinate origin."""
     if mesh_base is not None:
         os.makedirs(os.path.dirname(os.path.abspath(base_path)), exist_ok=True)
         mesh_base.export(base_path)
@@ -520,10 +492,9 @@ def export_stl_pair(base_path, text_path, mesh_base, mesh_text):
         mesh_text.export(text_path)
 
 
-def generate_preview_image(mesh_base, mesh_text, output_path, label="Hive Tile",
-                           color_base='#F6F1E6', color_insect='#151515'):
+def generate_multi_color_preview(mesh_base, insect_meshes_dict, output_path, label="Hive 4-Color Plate", color_base='#F6F1E6'):
     """
-    Generate an attractive 2-view preview render (Top View and Angled 3D Isometric View).
+    Generate an attractive preview render showing multi-color inlays (up to 4 colors total).
     """
     fig = plt.figure(figsize=(11, 5.5), dpi=150, facecolor='#181818')
     
@@ -544,11 +515,13 @@ def generate_preview_image(mesh_base, mesh_text, output_path, label="Hive Tile",
     col_base = Poly3DCollection(base_polys, facecolors=color_base, edgecolors='#C8BFAD', linewidths=0.15, alpha=0.98)
     ax1.add_collection3d(col_base)
     
-    if mesh_text is not None:
-        text_polys = mesh_text.vertices[mesh_text.faces]
-        col_text = Poly3DCollection(text_polys, facecolors=color_insect, edgecolors='#000000', linewidths=0.08, alpha=1.0)
-        ax1.add_collection3d(col_text)
-        
+    for key, mesh in insect_meshes_dict.items():
+        if mesh is not None and len(mesh.vertices) > 0:
+            c = OFFICIAL_INSECT_HEX_COLORS.get(key, '#151515')
+            text_polys = mesh.vertices[mesh.faces]
+            col_text = Poly3DCollection(text_polys, facecolors=c, edgecolors='#000000', linewidths=0.08, alpha=1.0)
+            ax1.add_collection3d(col_text)
+            
     ax1.set_xlim(center_x - half_span, center_x + half_span)
     ax1.set_ylim(center_y - half_span, center_y + half_span)
     ax1.set_zlim(0, 10)
@@ -563,15 +536,18 @@ def generate_preview_image(mesh_base, mesh_text, output_path, label="Hive Tile",
     col_base_top = Poly3DCollection(base_polys, facecolors=color_base, edgecolors='#CEC4B2', linewidths=0.15, alpha=1.0)
     ax2.add_collection3d(col_base_top)
     
-    if mesh_text is not None:
-        col_text_top = Poly3DCollection(text_polys, facecolors=color_insect, edgecolors='#000000', linewidths=0.08, alpha=1.0)
-        ax2.add_collection3d(col_text_top)
-        
+    for key, mesh in insect_meshes_dict.items():
+        if mesh is not None and len(mesh.vertices) > 0:
+            c = OFFICIAL_INSECT_HEX_COLORS.get(key, '#111111')
+            text_polys = mesh.vertices[mesh.faces]
+            col_text_top = Poly3DCollection(text_polys, facecolors=c, edgecolors='#000000', linewidths=0.08, alpha=1.0)
+            ax2.add_collection3d(col_text_top)
+            
     ax2.set_xlim(center_x - half_span, center_x + half_span)
     ax2.set_ylim(center_y - half_span, center_y + half_span)
     ax2.set_zlim(0, 10)
     ax2.axis('off')
-    ax2.set_title(f"{label} - Top View (1.5\" / 38.1 mm)", color='#E8E8E8', fontsize=12, pad=12, weight='bold')
+    ax2.set_title(f"{label} - Top View (Max 4 Colors)", color='#E8E8E8', fontsize=12, pad=12, weight='bold')
     
     plt.tight_layout()
     os.makedirs(os.path.dirname(os.path.abspath(output_path)), exist_ok=True)
@@ -579,14 +555,16 @@ def generate_preview_image(mesh_base, mesh_text, output_path, label="Hive Tile",
     plt.close(fig)
 
 
-def build_batch_plate(insect_keys_list, flat_to_flat=38.1, height=4.8,
-                      chamfer=0.8, inlay_depth=0.8, cols=4, spacing=4.0):
+def build_grouped_4color_plate(insect_keys_list, flat_to_flat=38.1, height=4.8,
+                               chamfer=0.8, inlay_depth=0.8, cols=4, spacing=4.0):
     """
-    Arranges a list of insects into an interlocking honeycomb grid on a print bed plate.
-    Returns composite Base mesh and composite Insect Inlay mesh.
+    Arranges a list of insects into an interlocking honeycomb grid.
+    Separates the insect meshes into distinct groups by insect type / color
+    so slicers can assign separate toolheads / filaments (max 1 base + 3 colors = 4 total).
+    Returns (plate_base, dict_of_insects_by_color).
     """
     all_base_meshes = []
-    all_text_meshes = []
+    insects_by_type = {}
     
     r = flat_to_flat / 2.0
     R = r / np.cos(np.deg2rad(30))
@@ -613,26 +591,31 @@ def build_batch_plate(insect_keys_list, flat_to_flat=38.1, height=4.8,
         
         if mt is not None:
             mt.apply_translation([offset_x, offset_y, 0])
-            all_text_meshes.append(mt)
+            if key not in insects_by_type:
+                insects_by_type[key] = []
+            insects_by_type[key].append(mt)
             
     plate_base = trimesh.util.concatenate(all_base_meshes)
-    plate_text = trimesh.util.concatenate(all_text_meshes) if all_text_meshes else None
     
-    # Center the entire plate around origin (0, 0)
+    # Center everything around origin
     center = (plate_base.bounds[0] + plate_base.bounds[1]) / 2.0
     center[2] = 0.0
     plate_base.apply_translation(-center)
-    if plate_text is not None:
-        plate_text.apply_translation(-center)
+    
+    merged_insects = {}
+    for key, mesh_list in insects_by_type.items():
+        m_comb = trimesh.util.concatenate(mesh_list)
+        m_comb.apply_translation(-center)
+        merged_insects[key] = m_comb
         
-    return plate_base, plate_text
+    return plate_base, merged_insects
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Dual-Color Hexagonal 'Hive' 3D Tile Generator")
+    parser = argparse.ArgumentParser(description="Dual-Color & 4-Color Hexagonal 'Hive' 3D Tile Generator")
     parser.add_argument("--insect", type=str, choices=list(INSECT_BUILDERS.keys()), help="Generate a single insect tile")
     parser.add_argument("--all", action="store_true", help="Generate all individual insect tiles (Base + Expansions)")
-    parser.add_argument("--plates", action="store_true", help="Generate ready-to-slice batch build plates")
+    parser.add_argument("--plates", action="store_true", help="Generate ready-to-slice batch build plates (including 4-color limited plates)")
     parser.add_argument("--size", type=float, default=38.1, help="Tile flat-to-flat diameter in mm (default: 38.1 = 1.5 in)")
     parser.add_argument("--height", type=float, default=4.8, help="Tile height in mm (default: 4.8)")
     parser.add_argument("--chamfer", type=float, default=0.8, help="Top perimeter chamfer in mm (default: 0.8)")
@@ -646,11 +629,13 @@ def main():
     dir_3mf = os.path.join(outdir, "3mf")
     dir_stl = os.path.join(outdir, "stl")
     dir_plates = os.path.join(outdir, "plates")
+    dir_4color = os.path.join(outdir, "plates_4color_limited")
     dir_previews = os.path.join(outdir, "previews")
     
     os.makedirs(dir_3mf, exist_ok=True)
     os.makedirs(dir_stl, exist_ok=True)
     os.makedirs(dir_plates, exist_ok=True)
+    os.makedirs(dir_4color, exist_ok=True)
     os.makedirs(dir_previews, exist_ok=True)
     
     print(f"[HIVE CAD] Tile dimensions: Diameter={args.size:.1f}mm (1.5in), Height={args.height:.1f}mm, Chamfer={args.chamfer:.1f}mm, Inlay={args.inlay_depth:.1f}mm")
@@ -672,9 +657,9 @@ def main():
         stl_t = os.path.join(dir_stl, f"tile_{key}_insect.stl")
         img_path = os.path.join(dir_previews, f"tile_{key}.png")
         
-        export_multimaterial_3mf(mf_path, {"Tile_Base": mb, "Tile_Insect": mt})
+        export_multimaterial_3mf(mf_path, {"Tile_Base": mb, f"Insect_{name.replace(' ', '_')}": mt})
         export_stl_pair(stl_b, stl_t, mb, mt)
-        generate_preview_image(mb, mt, img_path, label=f"Hive - {name}")
+        generate_multi_color_preview(mb, {key: mt}, img_path, label=f"Hive - {name}")
         print(f" -> Saved 3MF: {mf_path}")
         print(f" -> Saved Preview: {img_path}")
         return
@@ -693,49 +678,93 @@ def main():
         stl_t = os.path.join(dir_stl, f"tile_{key}_insect.stl")
         img_path = os.path.join(dir_previews, f"tile_{key}.png")
         
-        export_multimaterial_3mf(mf_path, {"Tile_Base": mb, "Tile_Insect": mt})
+        export_multimaterial_3mf(mf_path, {"Tile_Base": mb, f"Insect_{name.replace(' ', '_')}": mt})
         export_stl_pair(stl_b, stl_t, mb, mt)
-        generate_preview_image(mb, mt, img_path, label=f"Hive - {name}")
+        generate_multi_color_preview(mb, {key: mt}, img_path, label=f"Hive - {name}")
         print(f" -> Saved {name:15s} to {mf_path}")
         
-    # 3. Generate Ready-to-Slice Batch Build Plates
-    print("\n--- Generating Honeycomb Batch Print Plates ---")
+    # 3. Generate 4-Color-Limited Build Plates (Max 1 Base + 3 Insect Colors = 4 Colors Total)
+    print("\n--- Generating 4-Color-Limited Build Plates (Strictly <= 4 Colors per Plate) ---")
     
-    # 1-Player Full Army Set (14 tiles)
-    player_full_tiles = []
-    for insect_k, count in HIVE_FULL_COUNTS.items():
-        player_full_tiles.extend([insect_k] * count)
-        
-    p1_b, p1_t = build_batch_plate(player_full_tiles, flat_to_flat=args.size, height=args.height, cols=4)
-    export_multimaterial_3mf(os.path.join(dir_plates, "plate_player_full_set_14tiles.3mf"), {"Plate_Base": p1_b, "Plate_Insects": p1_t})
-    generate_preview_image(p1_b, p1_t, os.path.join(dir_previews, "plate_player_full_set.png"), label="1-Player Full Army Set (14 Tiles: Base + Expansions)")
-    print(" -> Saved Batch Plate: plate_player_full_set_14tiles.3mf (14 tiles)")
+    # -------------------------------------------------------------
+    # 4-COLOR SET 1: 1-PLAYER ARMY (3 Plates: Core Swarm, Crawlers, Expansions)
+    # -------------------------------------------------------------
+    # Plate A: Core Swarm (1x Queen Bee, 3x Grasshopper, 3x Soldier Ant = 7 tiles, 4 colors: Base + Yellow + Green + Blue)
+    plate_a_keys = ['queen_bee'] + ['grasshopper']*3 + ['ant']*3
+    pa_b, pa_insects = build_grouped_4color_plate(plate_a_keys, flat_to_flat=args.size, height=args.height, cols=3)
+    parts_a = {"Plate_Base": pa_b}
+    for k, m in pa_insects.items():
+        parts_a[f"Insects_{INSECT_DISPLAY_NAMES[k].replace(' ', '_')}"] = m
+    mf_pa = os.path.join(dir_4color, "plate_4color_A_core_swarm_7tiles.3mf")
+    img_pa = os.path.join(dir_previews, "plate_4color_A_core_swarm.png")
+    export_multimaterial_3mf(mf_pa, parts_a)
+    generate_multi_color_preview(pa_b, pa_insects, img_pa, label="4-Color Plate A: Core Swarm (Queen, Ants, Grasshoppers)")
+    print(f" -> Saved: {mf_pa} (4 colors: Base + Yellow + Green + Blue)")
 
-    # 1-Player Base Game Only (11 tiles)
-    player_base_tiles = []
-    for insect_k, count in HIVE_BASE_COUNTS.items():
-        player_base_tiles.extend([insect_k] * count)
-        
-    p_base_b, p_base_t = build_batch_plate(player_base_tiles, flat_to_flat=args.size, height=args.height, cols=4)
-    export_multimaterial_3mf(os.path.join(dir_plates, "plate_player_base_game_11tiles.3mf"), {"Plate_Base": p_base_b, "Plate_Insects": p_base_t})
-    generate_preview_image(p_base_b, p_base_t, os.path.join(dir_previews, "plate_player_base_game.png"), label="1-Player Classic Base Game (11 Tiles)")
-    print(" -> Saved Batch Plate: plate_player_base_game_11tiles.3mf (11 tiles)")
+    # Plate B: Crawlers (2x Spider, 2x Beetle = 4 tiles, 3 colors: Base + Brown/Orange + Purple)
+    plate_b_keys = ['spider']*2 + ['beetle']*2
+    pb_b, pb_insects = build_grouped_4color_plate(plate_b_keys, flat_to_flat=args.size, height=args.height, cols=2)
+    parts_b = {"Plate_Base": pb_b}
+    for k, m in pb_insects.items():
+        parts_b[f"Insects_{INSECT_DISPLAY_NAMES[k].replace(' ', '_')}"] = m
+    mf_pb = os.path.join(dir_4color, "plate_4color_B_crawlers_4tiles.3mf")
+    img_pb = os.path.join(dir_previews, "plate_4color_B_crawlers.png")
+    export_multimaterial_3mf(mf_pb, parts_b)
+    generate_multi_color_preview(pb_b, pb_insects, img_pb, label="4-Color Plate B: Crawlers (Spiders & Beetles)")
+    print(f" -> Saved: {mf_pb} (3 colors: Base + Brown + Purple)")
 
-    # Expansions Pack for Both Players (6 tiles: 2x Mosquito, 2x Ladybug, 2x Pillbug)
-    expansions_both = ['mosquito', 'ladybug', 'pillbug', 'mosquito', 'ladybug', 'pillbug']
-    p_exp_b, p_exp_t = build_batch_plate(expansions_both, flat_to_flat=args.size, height=args.height, cols=3)
-    export_multimaterial_3mf(os.path.join(dir_plates, "plate_expansions_pack_6tiles.3mf"), {"Plate_Base": p_exp_b, "Plate_Insects": p_exp_t})
-    generate_preview_image(p_exp_b, p_exp_t, os.path.join(dir_previews, "plate_expansions_pack.png"), label="Expansions Pack for Both Players (6 Tiles)")
-    print(" -> Saved Batch Plate: plate_expansions_pack_6tiles.3mf (6 tiles)")
+    # Plate C: Expansions Pack (1x Ladybug, 1x Mosquito, 1x Pillbug = 3 tiles, 4 colors: Base + Red + Silver/Gray + Cyan)
+    plate_c_keys = ['ladybug', 'mosquito', 'pillbug']
+    pc_b, pc_insects = build_grouped_4color_plate(plate_c_keys, flat_to_flat=args.size, height=args.height, cols=3)
+    parts_c = {"Plate_Base": pc_b}
+    for k, m in pc_insects.items():
+        parts_c[f"Insects_{INSECT_DISPLAY_NAMES[k].replace(' ', '_')}"] = m
+    mf_pc = os.path.join(dir_4color, "plate_4color_C_expansions_3tiles.3mf")
+    img_pc = os.path.join(dir_previews, "plate_4color_C_expansions.png")
+    export_multimaterial_3mf(mf_pc, parts_c)
+    generate_multi_color_preview(pc_b, pc_insects, img_pc, label="4-Color Plate C: Expansions (Ladybug, Mosquito, Pillbug)")
+    print(f" -> Saved: {mf_pc} (4 colors: Base + Red + Gray + Cyan)")
 
-    # 2-Player Master Set (28 tiles)
-    master_2player_tiles = player_full_tiles + player_full_tiles
-    p_master_b, p_master_t = build_batch_plate(master_2player_tiles, flat_to_flat=args.size, height=args.height, cols=6)
-    export_multimaterial_3mf(os.path.join(dir_plates, "plate_complete_2player_master_set_28tiles.3mf"), {"Plate_Base": p_master_b, "Plate_Insects": p_master_t})
-    generate_preview_image(p_master_b, p_master_t, os.path.join(dir_previews, "plate_complete_2player_master_set.png"), label="2-Player Master Set (28 Tiles: Both Armies)")
-    print(" -> Saved Batch Plate: plate_complete_2player_master_set_28tiles.3mf (28 tiles)")
+    # -------------------------------------------------------------
+    # 4-COLOR SET 2: BOTH PLAYERS MASTER BATCHES (Print once for 2 complete armies!)
+    # -------------------------------------------------------------
+    # Both Players Plate 1: 2x Queen Bee, 6x Grasshopper, 6x Soldier Ant = 14 tiles (4 colors: Base + Yellow + Green + Blue)
+    both_a_keys = ['queen_bee']*2 + ['grasshopper']*6 + ['ant']*6
+    pba_b, pba_insects = build_grouped_4color_plate(both_a_keys, flat_to_flat=args.size, height=args.height, cols=4)
+    parts_both_a = {"Plate_Base": pba_b}
+    for k, m in pba_insects.items():
+        parts_both_a[f"Insects_{INSECT_DISPLAY_NAMES[k].replace(' ', '_')}"] = m
+    mf_pba = os.path.join(dir_4color, "plate_4color_2player_core_swarm_14tiles.3mf")
+    img_pba = os.path.join(dir_previews, "plate_4color_2player_core_swarm.png")
+    export_multimaterial_3mf(mf_pba, parts_both_a)
+    generate_multi_color_preview(pba_b, pba_insects, img_pba, label="4-Color 2-Player Core Swarm (14 Tiles: 2 Queens, 6 Ants, 6 Hoppers)")
+    print(f" -> Saved: {mf_pba} (14 tiles, 4 colors: Base + Yellow + Green + Blue)")
 
-    print("\n[SUCCESS] All Hive 3MF, STL, batch plates, and preview renders generated successfully!")
+    # Both Players Plate 2: 4x Spider, 4x Beetle = 8 tiles (3 colors: Base + Brown + Purple)
+    both_b_keys = ['spider']*4 + ['beetle']*4
+    pbb_b, pbb_insects = build_grouped_4color_plate(both_b_keys, flat_to_flat=args.size, height=args.height, cols=4)
+    parts_both_b = {"Plate_Base": pbb_b}
+    for k, m in pbb_insects.items():
+        parts_both_b[f"Insects_{INSECT_DISPLAY_NAMES[k].replace(' ', '_')}"] = m
+    mf_pbb = os.path.join(dir_4color, "plate_4color_2player_crawlers_8tiles.3mf")
+    img_pbb = os.path.join(dir_previews, "plate_4color_2player_crawlers.png")
+    export_multimaterial_3mf(mf_pbb, parts_both_b)
+    generate_multi_color_preview(pbb_b, pbb_insects, img_pbb, label="4-Color 2-Player Crawlers (8 Tiles: 4 Spiders, 4 Beetles)")
+    print(f" -> Saved: {mf_pbb} (8 tiles, 3 colors: Base + Brown + Purple)")
+
+    # Both Players Plate 3: 2x Ladybug, 2x Mosquito, 2x Pillbug = 6 tiles (4 colors: Base + Red + Gray + Cyan)
+    both_c_keys = ['ladybug']*2 + ['mosquito']*2 + ['pillbug']*2
+    pbc_b, pbc_insects = build_grouped_4color_plate(both_c_keys, flat_to_flat=args.size, height=args.height, cols=3)
+    parts_both_c = {"Plate_Base": pbc_b}
+    for k, m in pbc_insects.items():
+        parts_both_c[f"Insects_{INSECT_DISPLAY_NAMES[k].replace(' ', '_')}"] = m
+    mf_pbc = os.path.join(dir_4color, "plate_4color_2player_expansions_6tiles.3mf")
+    img_pbc = os.path.join(dir_previews, "plate_4color_2player_expansions.png")
+    export_multimaterial_3mf(mf_pbc, parts_both_c)
+    generate_multi_color_preview(pbc_b, pbc_insects, img_pbc, label="4-Color 2-Player Expansions (6 Tiles: 2 Ladybugs, 2 Mosquitos, 2 Pillbugs)")
+    print(f" -> Saved: {mf_pbc} (6 tiles, 4 colors: Base + Red + Gray + Cyan)")
+
+    print("\n[SUCCESS] All 4-Color-limited 3MF plates and preview renders generated successfully!")
 
 
 if __name__ == "__main__":
