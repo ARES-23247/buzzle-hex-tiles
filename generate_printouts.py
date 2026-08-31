@@ -239,15 +239,15 @@ def generate_rulebook_pdf(output_path):
     story.append(Spacer(1, 6))
     
     # GAME 2
-    story.append(Paragraph("GAME 2: HEXAGRAMS (Real-Time Speed Word Race)", h1_style))
+    story.append(Paragraph("GAME 2: HIVE-SWARM (Real-Time Speed Word Race)", h1_style))
     story.append(Paragraph("<b>Players:</b> 2–6 • <b>Time:</b> 10–15 min • <b>Components:</b> Complete Letter Pool", body_style))
-    story.append(Paragraph("A high-octane, simultaneous speed race where players compete to build their own independent connected hex grids with no turn waiting.", body_style))
-    story.append(Paragraph("<b>Gameplay & Rules:</b>", h2_style))
-    story.append(Paragraph("• <b>Setup:</b> Place all letter tiles face-down in the central 'Bunch'. Each player draws 12 tiles.", bullet_style))
-    story.append(Paragraph("• <b>The Race:</b> Someone shouts <i>'SWARM!'</i>. All players simultaneously flip their tiles and race to connect all of them into a continuous personal hexagonal word web.", bullet_style))
-    story.append(Paragraph("• <b>Peeling:</b> As soon as any player uses all their tiles in valid words, they shout <i>'PEEL!'</i>. Every player must instantly take 1 additional tile from the Bunch.", bullet_style))
-    story.append(Paragraph("• <b>Dumping:</b> At any time, a player may shout <i>'DUMP!'</i>, discard 1 troublesome tile back into the Bunch, and draw 2 new random tiles.", bullet_style))
-    story.append(Paragraph("• <b>Winning:</b> When fewer tiles remain in the Bunch than players, the first person to arrange all their tiles into valid connected words shouts <i>'HIVE-LOCK!'</i> and wins the game!", bullet_style))
+    story.append(Paragraph("A high-octane, simultaneous speed race where players compete to build their own independent hexagonal honeycombs with zero turn waiting.", body_style))
+    story.append(Paragraph("<b>Bee-Themed Rules & Terminology:</b>", h2_style))
+    story.append(Paragraph("• <b>The Meadow:</b> Place all letter tiles face-down in the center of the table (the 'Meadow'). Each player draws 12 tiles.", bullet_style))
+    story.append(Paragraph("• <b>The Launch:</b> Any player shouts <i>'SWARM!'</i>. All worker bees simultaneously flip their tiles and race to connect all letters into a continuous personal honeycomb.", bullet_style))
+    story.append(Paragraph("• <b>Gathering Pollen (Foraging):</b> When a player successfully connects all their current tiles into valid words, they shout <i>'FORAGE!'</i> (or <i>'POLLEN!'</i>). Every player must immediately draw 1 additional tile from the Meadow.", bullet_style))
+    story.append(Paragraph("• <b>Ejecting Bad Letters:</b> If a player gets stuck with difficult letters, they may shout <i>'EJECT!'</i>, discard 1 troublesome tile back into the Meadow, and draw 2 new random tiles.", bullet_style))
+    story.append(Paragraph("• <b>Winning the Crown:</b> When fewer tiles remain in the Meadow than players, the first worker to lock all their tiles into valid connected words shouts <i>'QUEEN'S COMB!'</i> to freeze the round and win!", callout_style))
     
     story.append(Spacer(1, 6))
     
@@ -551,9 +551,9 @@ def generate_html_print_hub(output_path):
   </div>
 
   <div class="game-card">
-    <div class="game-title">2. HEXAGRAMS (High-Speed Simultaneous Word Race)</div>
-    <div style="margin: 6px 0;"><span class="tag">2–6 Players / Solo</span><span class="tag">10–15 Min</span><span class="tag">Fast Paced</span></div>
-    <p>A frantic, no-turns speed race! Everyone starts with 12 tiles and races to connect them all into a valid hexagonal word cluster. Call <i>'PEEL!'</i> when your tiles are used to force everyone to draw more, or <i>'DUMP!'</i> to trade in bad letters.</p>
+    <div class="game-title">2. HIVE-SWARM (High-Speed Simultaneous Word Race)</div>
+    <div style="margin: 6px 0;"><span class="tag">2–6 Players / Solo</span><span class="tag">10–15 Min</span><span class="tag">Bee-Themed Speed Race</span></div>
+    <p>A frantic, no-turns speed race! Everyone starts with 12 tiles from <b>The Meadow</b>, shouts <i>'SWARM!'</i>, and races to connect them into a hexagonal honeycomb. Call <i>'FORAGE!'</i> (or <i>'POLLEN!'</i>) when your tiles are used to send all worker bees back to the Meadow for another tile, or shout <i>'EJECT!'</i> to trade out unwanted letters. First to finish all tiles calls <i>'QUEEN'S COMB!'</i> to win!</p>
   </div>
 
   <div class="game-card">

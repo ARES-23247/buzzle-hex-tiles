@@ -36,18 +36,18 @@ All printable PDFs are calibrated for direct printing on standard US Letter / A4
 
 ---
 
-## ⚡ Game 2: "HEXAGRAMS" (High-Speed Word Race)
+## 🐝 Game 2: "HIVE-SWARM" (High-Speed Word Race)
 
 * **Players**: 2–6 players (or Solo Time Attack)
 * **Time**: 10–15 minutes
 * **Components**: Complete Letter Pool
 
-### 📖 How to Play
-1. **Setup**: Place all letter tiles face-down in the center "Bunch". Each player draws **12 tiles**.
-2. **The Race**: Any player shouts **"SWARM!"**. All players simultaneously flip their tiles face-up and race to arrange all their letters into their own connected hexagonal word web.
-3. **The "PEEL!" Call**: When a player has successfully incorporated all of their tiles into valid connected words, they shout **"PEEL!"**. Every player (including the caller) must immediately take **1 new tile** from the Bunch and incorporate it into their grid.
-4. **The "DUMP!" Rule**: If a player is stuck with unwanted letters (e.g. Q, Z, X), they may shout **"DUMP!"**, return 1 tile to the Bunch, and draw **2 new random tiles**.
-5. **Winning**: When there are fewer tiles remaining in the Bunch than players, the first player to assemble all their tiles into valid words shouts **"HIVE-LOCK!"** and wins the round!
+### 📖 Bee-Themed Terminology & Rules
+1. **The Meadow**: Place all letter tiles face-down in the center of the table (the **"Meadow"**). Each player draws **12 tiles** to start their colony.
+2. **The Launch**: Any player shouts **"SWARM!"**. All worker bees simultaneously flip their tiles face-up and race to arrange all their letters into a continuous hexagonal honeycomb of valid words.
+3. **The "FORAGE!" (or "POLLEN!") Call**: When a player has successfully incorporated all of their current tiles into valid connected words in their honeycomb, they shout **"FORAGE!"** (or **"POLLEN!"**). Every player at the table must immediately fly to the Meadow and take **1 new tile** to add to their grid.
+4. **The "EJECT!" Rule**: If a player is stuck with troublesome letters (e.g. Q, Z, X), they may shout **"EJECT!"**, discard 1 unwanted tile back into the Meadow, and draw **2 new random tiles**.
+5. **Winning the Crown**: When there are fewer tiles remaining in the Meadow than players, the first worker bee to assemble all of their tiles into valid connected words shouts **"QUEEN'S COMB!"** to freeze the game and win the round!
 
 ---
 
