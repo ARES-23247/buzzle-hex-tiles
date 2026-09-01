@@ -30,7 +30,7 @@ DEFAULT_LOGO_PATH = os.path.join(
 )
 
 
-def extract_interlocking_logo(img_path, target_w=31.0):
+def extract_interlocking_logo(img_path, target_w=27.0):
     if not os.path.exists(img_path):
         raise FileNotFoundError(f"Logo image not found at {img_path}")
         
@@ -75,13 +75,13 @@ def extract_interlocking_logo(img_path, target_w=31.0):
 
 
 def build_doublesided_interlocking_tile(letter="A", score=None, logo_polys=None,
-                                        flat_to_flat=38.1, height=4.8, chamfer=0.8,
+                                        flat_to_flat=33.02, height=4.8, chamfer=0.7,
                                         inlay_depth=0.8, emboss_height=0.0,
-                                        font_path=None, letter_size=21.5, score_size=8.2):
+                                        font_path=None, letter_size=18.5, score_size=7.0):
     if font_path is None:
         font_path = find_default_font()
     if logo_polys is None:
-        logo_polys = extract_interlocking_logo(DEFAULT_LOGO_PATH, target_w=31.0)
+        logo_polys = extract_interlocking_logo(DEFAULT_LOGO_PATH, target_w=27.0)
         
     z_bot = 0.0
     z_bot_cavity = inlay_depth
@@ -99,8 +99,8 @@ def build_doublesided_interlocking_tile(letter="A", score=None, logo_polys=None,
             l_u = l_raw[0] if len(l_raw) == 1 else unary_union(l_raw)
             minx, miny, maxx, maxy = l_u.bounds
             cx, cy = (minx + maxx) / 2.0, (miny + maxy) / 2.0
-            shift_x = -2.2 if has_score else 0.0
-            shift_y = 1.0 if has_score else 0.0
+            shift_x = -1.9 if has_score else 0.0
+            shift_y = 0.8 if has_score else 0.0
             l_polys = [translate(p, xoff=-cx + shift_x, yoff=-cy + shift_y) for p in l_raw]
             
     s_polys = []
@@ -111,8 +111,8 @@ def build_doublesided_interlocking_tile(letter="A", score=None, logo_polys=None,
         if s_raw:
             s_u = s_raw[0] if len(s_raw) == 1 else unary_union(s_raw)
             minx, miny, maxx, maxy = s_u.bounds
-            target_x = 9.4
-            target_y = -8.8
+            target_x = 8.1
+            target_y = -7.5
             s_polys = [translate(p, xoff=target_x - (minx + maxx) / 2.0, yoff=target_y - (miny + maxy) / 2.0) for p in s_raw]
             
     top_glyphs = l_polys + s_polys
@@ -297,11 +297,11 @@ def build_doublesided_interlocking_tile(letter="A", score=None, logo_polys=None,
     return mesh_base, mesh_graphics
 
 
-def build_doublesided_interlocking_256mm_plate(tile_specs, logo_polys=None, flat_to_flat=38.1,
-                                               height=4.8, chamfer=0.8, inlay_depth=0.8,
+def build_doublesided_interlocking_256mm_plate(tile_specs, logo_polys=None, flat_to_flat=33.02,
+                                               height=4.8, chamfer=0.7, inlay_depth=0.8,
                                                emboss_height=0.0, spacing=3.5, font_path=None):
     if logo_polys is None:
-        logo_polys = extract_interlocking_logo(DEFAULT_LOGO_PATH, target_w=31.0)
+        logo_polys = extract_interlocking_logo(DEFAULT_LOGO_PATH, target_w=27.0)
         
     positions = generate_honeycomb_positions(len(tile_specs), flat_to_flat=flat_to_flat, spacing=spacing)
     
@@ -309,12 +309,12 @@ def build_doublesided_interlocking_256mm_plate(tile_specs, logo_polys=None, flat
     all_graphics_meshes = []
     
     for (letter, score), (px, py) in zip(tile_specs, positions):
-        letter_sz = 22.0 if score == "" and len(letter) > 0 and (letter.isdigit() or letter in '+-x/=?!') else 21.5
+        letter_sz = 19.5 if score == "" and len(letter) > 0 and (letter.isdigit() or letter in '+-x/=?!') else 21.5
         mb, mg = build_doublesided_interlocking_tile(
             letter=letter, score=score, logo_polys=logo_polys,
             flat_to_flat=flat_to_flat, height=height, chamfer=chamfer,
             inlay_depth=inlay_depth, emboss_height=emboss_height,
-            font_path=font_path, letter_size=letter_sz, score_size=8.2
+            font_path=font_path, letter_size=letter_sz, score_size=7.0
         )
         mb.apply_translation([px, py, 0])
         all_base_meshes.append(mb)
@@ -418,14 +418,14 @@ def main():
     os.makedirs(dir_previews, exist_ok=True)
     
     print(f"[LOGO] Extracting interlocking geometric emblem from: {args.logo}")
-    logo_polys = extract_interlocking_logo(args.logo, target_w=31.0)
+    logo_polys = extract_interlocking_logo(args.logo, target_w=27.0)
     print(f" -> Extracted {len(logo_polys)} vector components")
     
     # 1. Standalone Interlocking Medallion / Coaster Token
     print("\n--- Generating Interlocking Emblem Medallion Tile ---")
     mb_med, mg_med = build_doublesided_interlocking_tile(
         letter="", score="", logo_polys=logo_polys,
-        flat_to_flat=38.1, height=4.8
+        flat_to_flat=33.02, height=4.8
     )
     mf_med = os.path.join(dir_3mf, "tile_interlocking_token.3mf")
     export_multimaterial_3mf(mf_med, {"Tile_Base": mb_med, "Tile_Graphics": mg_med})

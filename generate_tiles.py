@@ -148,9 +148,9 @@ def char_to_polygons(text, font_path, size=20):
     return solids
 
 
-def build_tile_pair(letter="A", score=None, flat_to_flat=38.1, height=4.8,
-                     chamfer=0.8, inlay_depth=0.8, emboss_height=0.0,
-                     font_path=None, letter_size=21.5, score_size=8.2):
+def build_tile_pair(letter="A", score=None, flat_to_flat=33.02, height=4.8,
+                     chamfer=0.7, inlay_depth=0.8, emboss_height=0.0,
+                     font_path=None, letter_size=18.5, score_size=7.0):
     """
     Builds the complete watertight 3D meshes for:
       - Base Mesh (Hexagon with chamfer and negative cavity for glyphs)
@@ -170,8 +170,8 @@ def build_tile_pair(letter="A", score=None, flat_to_flat=38.1, height=4.8,
             cx, cy = (minx + maxx) / 2.0, (miny + maxy) / 2.0
             
             # If score is present, shift letter slightly left/up for classic Scrabble balance
-            shift_x = -2.2 if has_score else 0.0
-            shift_y = 1.0 if has_score else 0.0
+            shift_x = -1.9 if has_score else 0.0
+            shift_y = 0.8 if has_score else 0.0
             l_polys = [translate(p, xoff=-cx + shift_x, yoff=-cy + shift_y) for p in l_raw]
             
     # 2. Process Score Subscript
@@ -182,8 +182,8 @@ def build_tile_pair(letter="A", score=None, flat_to_flat=38.1, height=4.8,
             s_union = s_raw[0] if len(s_raw) == 1 else MultiPolygon(s_raw)
             minx, miny, maxx, maxy = s_union.bounds
             # Target position at bottom-right corner inside hex boundary
-            target_x = 9.4
-            target_y = -8.8
+            target_x = 8.1
+            target_y = -7.5
             s_polys = [translate(p, xoff=target_x - (minx + maxx) / 2.0, yoff=target_y - (miny + maxy) / 2.0) for p in s_raw]
             
     all_glyphs = l_polys + s_polys
@@ -464,7 +464,7 @@ def generate_preview_image(mesh_base, mesh_text, output_path, label="Tile"):
     plt.close(fig)
 
 
-def build_batch_plate(tile_specs, flat_to_flat=38.1, height=4.8, chamfer=0.8,
+def build_batch_plate(tile_specs, flat_to_flat=33.02, height=4.8, chamfer=0.7,
                       inlay_depth=0.8, emboss_height=0.0, spacing=4.0, cols=4, font_path=None):
     """
     Arranges multiple tiles into an interlocking hexagonal grid for batch printing.
@@ -511,7 +511,7 @@ def build_batch_plate(tile_specs, flat_to_flat=38.1, height=4.8, chamfer=0.8,
     return plate_base, plate_text
 
 
-def generate_honeycomb_positions(n_tiles, flat_to_flat=38.1, spacing=3.5):
+def generate_honeycomb_positions(n_tiles, flat_to_flat=33.02, spacing=3.5):
     """
     Generate mathematically verified collision-free hexagonal coordinates
     for a 256mm x 256mm build plate with guaranteed top/rear clearance for wipe towers.
@@ -572,7 +572,7 @@ def generate_honeycomb_positions(n_tiles, flat_to_flat=38.1, spacing=3.5):
     return sorted(final_pos, key=sort_key)
 
 
-def build_256mm_plate(tile_specs, flat_to_flat=38.1, height=4.8, chamfer=0.8,
+def build_256mm_plate(tile_specs, flat_to_flat=33.02, height=4.8, chamfer=0.7,
                       inlay_depth=0.8, emboss_height=0.0, spacing=3.5, font_path=None):
     """
     Arranges tiles onto a 256mm x 256mm build plate with guaranteed >= 3.5mm spacing
@@ -584,12 +584,12 @@ def build_256mm_plate(tile_specs, flat_to_flat=38.1, height=4.8, chamfer=0.8,
     all_text_meshes = []
     
     for (letter, score), (px, py) in zip(tile_specs, positions):
-        letter_sz = 22.0 if score == "" and len(letter) > 0 and (letter.isdigit() or letter in '+-x/=?!') else 18.5
+        letter_sz = 19.5 if score == "" and len(letter) > 0 and (letter.isdigit() or letter in '+-x/=?!') else 18.5
         mb, mt = build_tile_pair(
             letter=letter, score=score, flat_to_flat=flat_to_flat,
             height=height, chamfer=chamfer, inlay_depth=inlay_depth,
             emboss_height=emboss_height,
-            font_path=font_path, letter_size=letter_sz, score_size=8.2
+            font_path=font_path, letter_size=letter_sz, score_size=7.0
         )
         mb.apply_translation([px, py, 0])
         all_base_meshes.append(mb)
