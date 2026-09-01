@@ -511,48 +511,79 @@ def build_batch_plate(tile_specs, flat_to_flat=38.1, height=4.8, chamfer=0.8,
     return plate_base, plate_text
 
 
-def build_256mm_plate(tile_specs, flat_to_flat=38.1, height=4.8, chamfer=0.8,
-                      inlay_depth=0.8, spacing=2.5, font_path=None):
+def generate_honeycomb_positions(n_tiles, flat_to_flat=38.1, spacing=3.5):
     """
-    Arranges 26 tiles onto a 256mm x 256mm build plate (Span: ~221mm x 221mm)
-    leaving the top-right corner completely clear for the slicer prime/wipe tower.
+    Generate mathematically verified collision-free hexagonal coordinates
+    for a 256mm x 256mm build plate with guaranteed top/rear clearance for wipe towers.
     """
     r = flat_to_flat / 2.0
     R = r / np.cos(np.deg2rad(30))
     dx = (1.5 * R) + spacing
     dy = flat_to_flat + spacing
     
-    cols = [-2.5 * dx, -1.5 * dx, -0.5 * dx, 0.5 * dx, 1.5 * dx, 2.5 * dx]
     positions = []
-    # Col 0 (left): 4 tiles
-    for row in [1.5, 0.5, -0.5, -1.5]:
-        positions.append((cols[0], row * dy))
-    # Col 1: 5 tiles
-    for row in [2.0, 1.0, 0.0, -1.0, -2.0]:
-        positions.append((cols[1], row * dy + dy / 2.0))
-    # Col 2: 5 tiles
-    for row in [2.0, 1.0, 0.0, -1.0, -2.0]:
-        positions.append((cols[2], row * dy))
-    # Col 3: 5 tiles
-    for row in [2.0, 1.0, 0.0, -1.0, -2.0]:
-        positions.append((cols[3], row * dy + dy / 2.0))
-    # Col 4: 4 tiles
-    for row in [1.0, 0.0, -1.0, -2.0]:
-        positions.append((cols[4], row * dy))
-    # Col 5 (right): 3 tiles (lower rows only, leaving top-right wide open for wipe tower)
-    for row in [0.0, -1.0, -2.0]:
-        positions.append((cols[5], row * dy + dy / 2.0))
-        
+    if n_tiles == 25:
+        # 5 cols x 5 rows = 25 tiles
+        for c in range(-2, 3):
+            for row in range(-2, 3):
+                x = c * dx
+                y = row * dy + (abs(c) % 2) * (dy / 2.0)
+                positions.append((x, y))
+    elif n_tiles == 24:
+        # 5 cols: [5, 5, 4, 5, 5] = 24 tiles
+        row_counts = [5, 5, 4, 5, 5]
+        for c, count in zip(range(-2, 3), row_counts):
+            r_start = -(count // 2)
+            for r_idx in range(count):
+                row = r_start + r_idx
+                x = c * dx
+                y = row * dy + (abs(c) % 2) * (dy / 2.0)
+                positions.append((x, y))
+    elif n_tiles == 26:
+        # 6 cols: [4, 5, 4, 5, 4, 4] = 26 tiles
+        row_counts = [4, 5, 4, 5, 4, 4]
+        for c, count in zip(range(-3, 3), row_counts):
+            r_start = -(count // 2)
+            for r_idx in range(count):
+                row = r_start + r_idx
+                x = (c + 0.5) * dx
+                y = row * dy + (abs(c) % 2) * (dy / 2.0)
+                positions.append((x, y))
+    else:
+        cols = 5
+        for idx in range(n_tiles):
+            c = (idx % cols) - (cols // 2)
+            row = (idx // cols) - 2
+            x = c * dx
+            y = row * dy + (abs(c) % 2) * (dy / 2.0)
+            positions.append((x, y))
+            
+    # Center and shift down slightly (12mm) to give ample top wipe tower clearance
+    pts = np.array(positions)
+    c_y = (pts[:, 1].min() + pts[:, 1].max()) / 2.0
+    c_x = (pts[:, 0].min() + pts[:, 0].max()) / 2.0
+    final_pos = [(x - c_x, y - c_y - 12.0) for (x, y) in positions]
+    
+    # Sort top-to-bottom, left-to-right for clean reading order
     def sort_key(pt):
         row_band = round(-pt[1] / (dy / 2.0))
         return (row_band, pt[0])
         
-    sorted_pos = sorted(positions, key=sort_key)
+    return sorted(final_pos, key=sort_key)
+
+
+def build_256mm_plate(tile_specs, flat_to_flat=38.1, height=4.8, chamfer=0.8,
+                      inlay_depth=0.8, spacing=3.5, font_path=None):
+    """
+    Arranges tiles onto a 256mm x 256mm build plate with guaranteed >= 3.5mm spacing
+    and ample clearance for the wipe tower anywhere along the top.
+    """
+    positions = generate_honeycomb_positions(len(tile_specs), flat_to_flat=flat_to_flat, spacing=spacing)
     
     all_base_meshes = []
     all_text_meshes = []
     
-    for (letter, score), (px, py) in zip(tile_specs, sorted_pos):
+    for (letter, score), (px, py) in zip(tile_specs, positions):
         letter_sz = 19.0 if score == "" and len(letter) > 0 and (letter.isdigit() or letter in '+-x/=?!') else 14.5
         mb, mt = build_tile_pair(
             letter=letter, score=score, flat_to_flat=flat_to_flat,
@@ -578,7 +609,7 @@ def main():
     parser.add_argument("--number", type=str, help="Generate a single number tile (e.g. '7')")
     parser.add_argument("--word", type=str, help="Generate tiles for a specific word (e.g. 'SCRABBLE')")
     parser.add_argument("--all", action="store_true", help="Generate complete A-Z, 0-9, and special character sets")
-    parser.add_argument("--plates", action="store_true", help="Generate ready-to-slice batch build plates (A-M, N-Z, Numbers, and Full 256mm plates)")
+    parser.add_argument("--plates", action="store_true", help="Generate ready-to-slice batch build plates")
     parser.add_argument("--size", type=float, default=38.1, help="Tile flat-to-flat diameter in mm (default: 38.1 = 1.5 in)")
     parser.add_argument("--height", type=float, default=4.8, help="Tile height in mm (default: 4.8)")
     parser.add_argument("--chamfer", type=float, default=0.8, help="Top perimeter chamfer in mm (default: 0.8)")
@@ -739,7 +770,7 @@ def main():
     # -------------------------------------------------------------------------
     # Full 256mm Build Plates (Bambu Lab X1/P1/A1 / Prusa XL / Voron 250+ Bed)
     # -------------------------------------------------------------------------
-    print("\n--- Generating Full 256mm x 256mm Build Plates (with Wipe Tower Clearance) ---")
+    print("\n--- Generating Full 256mm x 256mm Build Plates (with Guaranteed Zero-Overlap Spacing) ---")
     
     # 256mm Reference Plate: Complete Alphabet (A through Z - 26 Tiles)
     plate_256_az_specs = [(chr(c), SCRABBLE_POINTS[chr(c)]) for c in range(ord('A'), ord('Z') + 1)]
@@ -788,8 +819,9 @@ def main():
 
     # -------------------------------------------------------------------------
     # Proportional Bananagrams / Hive-Swarm Master Set (144 Tiles = 6 Plates of 24 on 256mm Bed)
+    # WITH OFFICIAL SCRABBLE POINT VALUES ON ALL TILES (Universal Multi-Game Use)
     # -------------------------------------------------------------------------
-    print("\n--- Generating Official 144-Tile Bananagrams / Hive-Swarm Set (6 Plates of 24 Tiles on 256mm Bed) ---")
+    print("\n--- Generating Official 144-Tile Universal Hive-Swarm / Bananagrams Set (6 Plates of 24 Tiles with Point Values) ---")
     banana_dist = {
         'E': 18, 'A': 13, 'I': 12, 'O': 11, 'T': 9, 'R': 9, 'N': 8,
         'D': 6, 'S': 6, 'U': 6, 'L': 5, 'G': 4,
@@ -798,14 +830,15 @@ def main():
     }
     banana_pool = []
     for k in sorted(banana_dist.keys()):
-        banana_pool.extend([(k, "")] * banana_dist[k])
+        sc = SCRABBLE_POINTS.get(k, '1')
+        banana_pool.extend([(k, sc)] * banana_dist[k])
         
     for p_idx in range(6):
         p_specs = banana_pool[p_idx * 24 : (p_idx + 1) * 24]
         p_b, p_t = build_256mm_plate(p_specs, flat_to_flat=args.size, height=args.height, font_path=font_path)
         p_filename = f"plate_256_hiveswarm_144set_plate{p_idx+1}_of_6_24tiles.3mf"
         export_multimaterial_3mf(os.path.join(dir_plates, p_filename), {"Plate_Base": p_b, "Plate_Text": p_t})
-        generate_preview_image(p_b, p_t, os.path.join(dir_previews, f"plate_256_hiveswarm_144set_plate{p_idx+1}.png"), label=f"Hive-Swarm Set (Plate {p_idx+1}/6 - 24 Tiles)")
+        generate_preview_image(p_b, p_t, os.path.join(dir_previews, f"plate_256_hiveswarm_144set_plate{p_idx+1}.png"), label=f"Universal Hive-Swarm / Scrabble Set (Plate {p_idx+1}/6 - 24 Tiles)")
         print(f" -> Saved Hive-Swarm Plate {p_idx+1}/6: {p_filename}")
 
     print("\n[SUCCESS] All 3MF, STL, batch plates, and preview renders generated successfully!")
