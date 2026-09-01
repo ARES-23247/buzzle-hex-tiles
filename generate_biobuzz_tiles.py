@@ -32,11 +32,7 @@ def make_flat_hex(cx, cy, radius):
     return Polygon(pts)
 
 
-def create_biobuzz_logo_vector(target_size=25.0, wall_width=1.35):
-    """
-    Constructs a CAD-precision geometric vector model of the 7-hex BioBuzz rosette
-    with thick honeycomb grid walls and corner reflection notches.
-    """
+def create_biobuzz_logo_vector(target_size=28.5, wall_width=1.65, bracket_size=3.4, bracket_thick=1.30):
     r_outer = 5.2
     r_inner = r_outer - wall_width / 2.0
     pitch_y = r_outer * math.sqrt(3)
@@ -58,19 +54,18 @@ def create_biobuzz_logo_vector(target_size=25.0, wall_width=1.35):
     inner_union = unary_union(inner_hexes)
     lattice_grid = rosette_outer.difference(inner_union)
 
-    # Stylized reflection arc ticks (L-bracket curves)
-    def make_bracket(cx, cy, angle_deg, size=2.3, thickness=0.85):
+    # Stylized reflection chevrons (Bold L-brackets)
+    def make_bracket(cx, cy, angle_deg, size=bracket_size, thickness=bracket_thick):
         p1 = Polygon([(-size/2, -thickness/2), (size/2, -thickness/2), (size/2, thickness/2), (-size/2, thickness/2)])
         p2 = Polygon([(size/2 - thickness, -thickness/2), (size/2, -thickness/2), (size/2, size*0.8), (size/2 - thickness, size*0.8)])
         bracket = unary_union([p1, p2])
         bracket_rot = rotate(bracket, angle_deg, origin=(0, 0))
         return translate(bracket_rot, xoff=cx, yoff=cy)
 
-    # 4 distinct reflection marks matching the BioBuzz logo:
-    t_topleft = make_bracket(-pitch_x + 0.6, pitch_y / 2.0 + 1.8, 140, size=2.3)
-    t_topright = make_bracket(pitch_x - 0.6, pitch_y / 2.0 + 1.8, -40, size=2.3)
-    t_center = make_bracket(-0.6, -1.8, 50, size=2.3)
-    t_botright = make_bracket(pitch_x - 0.6, -pitch_y / 2.0 - 1.8, 50, size=2.3)
+    t_topleft = make_bracket(-pitch_x + 0.4, pitch_y / 2.0 + 1.4, 140)
+    t_topright = make_bracket(pitch_x - 0.4, pitch_y / 2.0 + 1.4, -40)
+    t_center = make_bracket(-0.4, -1.4, 50)
+    t_botright = make_bracket(pitch_x - 0.4, -pitch_y / 2.0 - 1.4, 50)
 
     combined = unary_union([lattice_grid, t_topleft, t_topright, t_center, t_botright])
     
@@ -81,7 +76,6 @@ def create_biobuzz_logo_vector(target_size=25.0, wall_width=1.35):
     
     polys = [scaled] if isinstance(scaled, Polygon) else list(scaled.geoms)
     return [orient(p, sign=1.0) for p in polys]
-
 
 def build_doublesided_biobuzz_tile(letter="A", score=None, logo_polys=None,
                                    flat_to_flat=33.02, height=4.8, chamfer=0.7,
