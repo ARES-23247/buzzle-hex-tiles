@@ -741,14 +741,14 @@ def main():
     # -------------------------------------------------------------------------
     print("\n--- Generating Full 256mm x 256mm Build Plates (with Wipe Tower Clearance) ---")
     
-    # 256mm Plate 1: Complete Alphabet (A through Z - 26 Tiles)
+    # 256mm Reference Plate: Complete Alphabet (A through Z - 26 Tiles)
     plate_256_az_specs = [(chr(c), SCRABBLE_POINTS[chr(c)]) for c in range(ord('A'), ord('Z') + 1)]
     p256_az_b, p256_az_t = build_256mm_plate(plate_256_az_specs, flat_to_flat=args.size, height=args.height, font_path=font_path)
     export_multimaterial_3mf(os.path.join(dir_plates, "plate_full_256_alphabet_A_Z_26tiles.3mf"), {"Plate_Base": p256_az_b, "Plate_Text": p256_az_t})
     generate_preview_image(p256_az_b, p256_az_t, os.path.join(dir_previews, "plate_full_256_alphabet_A_Z.png"), label="Full 256mm Bed: Alphabet A to Z (26 Tiles + Wipe Tower Zone)")
     print(" -> Saved 256mm Plate: plate_full_256_alphabet_A_Z_26tiles.3mf (26 tiles)")
 
-    # 256mm Plate 2: Numbers 0-9, Math Symbols, Extra Vowels, & 2 Blanks (26 Tiles)
+    # 256mm Reference Plate: Numbers 0-9, Math Symbols, Extra Vowels, & 2 Blanks (26 Tiles)
     plate_256_extra_specs = [
         ('0', ''), ('1', ''), ('2', ''), ('3', ''), ('4', ''),
         ('5', ''), ('6', ''), ('7', ''), ('8', ''), ('9', ''),
@@ -761,6 +761,52 @@ def main():
     export_multimaterial_3mf(os.path.join(dir_plates, "plate_full_256_numbers_and_extras_26tiles.3mf"), {"Plate_Base": p256_extra_b, "Plate_Text": p256_extra_t})
     generate_preview_image(p256_extra_b, p256_extra_t, os.path.join(dir_previews, "plate_full_256_numbers_and_extras.png"), label="Full 256mm Bed: Numbers, Symbols, Extras (26 Tiles)")
     print(" -> Saved 256mm Plate: plate_full_256_numbers_and_extras_26tiles.3mf (26 tiles)")
+
+    # -------------------------------------------------------------------------
+    # Proportional Scrabble Master Set (100 Tiles = 4 Plates of 25 on 256mm Bed)
+    # -------------------------------------------------------------------------
+    print("\n--- Generating Official 100-Tile Scrabble Set (4 Plates of 25 Tiles on 256mm Bed) ---")
+    scrabble_dist = {
+        'E': 12, 'A': 9, 'I': 9, 'O': 8, 'N': 6, 'R': 6, 'T': 6,
+        'D': 4, 'L': 4, 'S': 4, 'U': 4, 'G': 3,
+        'B': 2, 'C': 2, 'F': 2, 'H': 2, 'M': 2, 'P': 2, 'V': 2, 'W': 2, 'Y': 2, 'BLANK': 2,
+        'J': 1, 'K': 1, 'Q': 1, 'X': 1, 'Z': 1
+    }
+    scrabble_pool = []
+    for k in sorted(scrabble_dist.keys()):
+        disp_k = "" if k == 'BLANK' else k
+        sc = SCRABBLE_POINTS.get(k, '0')
+        scrabble_pool.extend([(disp_k, sc)] * scrabble_dist[k])
+        
+    for p_idx in range(4):
+        p_specs = scrabble_pool[p_idx * 25 : (p_idx + 1) * 25]
+        p_b, p_t = build_256mm_plate(p_specs, flat_to_flat=args.size, height=args.height, font_path=font_path)
+        p_filename = f"plate_256_scrabble_100set_plate{p_idx+1}_of_4_25tiles.3mf"
+        export_multimaterial_3mf(os.path.join(dir_plates, p_filename), {"Plate_Base": p_b, "Plate_Text": p_t})
+        generate_preview_image(p_b, p_t, os.path.join(dir_previews, f"plate_256_scrabble_100set_plate{p_idx+1}.png"), label=f"Scrabble Set (Plate {p_idx+1}/4 - 25 Tiles)")
+        print(f" -> Saved Scrabble Plate {p_idx+1}/4: {p_filename}")
+
+    # -------------------------------------------------------------------------
+    # Proportional Bananagrams / Hive-Swarm Master Set (144 Tiles = 6 Plates of 24 on 256mm Bed)
+    # -------------------------------------------------------------------------
+    print("\n--- Generating Official 144-Tile Bananagrams / Hive-Swarm Set (6 Plates of 24 Tiles on 256mm Bed) ---")
+    banana_dist = {
+        'E': 18, 'A': 13, 'I': 12, 'O': 11, 'T': 9, 'R': 9, 'N': 8,
+        'D': 6, 'S': 6, 'U': 6, 'L': 5, 'G': 4,
+        'B': 3, 'C': 3, 'F': 3, 'H': 3, 'M': 3, 'P': 3, 'V': 3, 'W': 3, 'Y': 3,
+        'J': 2, 'K': 2, 'Q': 2, 'X': 2, 'Z': 2
+    }
+    banana_pool = []
+    for k in sorted(banana_dist.keys()):
+        banana_pool.extend([(k, "")] * banana_dist[k])
+        
+    for p_idx in range(6):
+        p_specs = banana_pool[p_idx * 24 : (p_idx + 1) * 24]
+        p_b, p_t = build_256mm_plate(p_specs, flat_to_flat=args.size, height=args.height, font_path=font_path)
+        p_filename = f"plate_256_hiveswarm_144set_plate{p_idx+1}_of_6_24tiles.3mf"
+        export_multimaterial_3mf(os.path.join(dir_plates, p_filename), {"Plate_Base": p_b, "Plate_Text": p_t})
+        generate_preview_image(p_b, p_t, os.path.join(dir_previews, f"plate_256_hiveswarm_144set_plate{p_idx+1}.png"), label=f"Hive-Swarm Set (Plate {p_idx+1}/6 - 24 Tiles)")
+        print(f" -> Saved Hive-Swarm Plate {p_idx+1}/6: {p_filename}")
 
     print("\n[SUCCESS] All 3MF, STL, batch plates, and preview renders generated successfully!")
 

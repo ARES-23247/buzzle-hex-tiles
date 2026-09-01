@@ -65,7 +65,7 @@ This comprehensive guide details the **exact print quantities**, **filament colo
 
 ---
 
-## 🎲 2. "SCRABBLE" & "HONEYCOMB CROSSWORD" (100 Tiles)
+## 🎲 2. "SCRABBLE" & "HONEYCOMB CROSSWORD" (100 Tiles Total)
 
 *Official English Scrabble point values and tile quantities:*
 
@@ -81,14 +81,18 @@ This comprehensive guide details the **exact print quantities**, **filament colo
 | **H** | 4 | **2** | **Q** | 10 | **1** | **Z** | 10 | **1** |
 | **I** | 1 | **9** | **R** | 1 | **6** | **BLANK** | 0 | **2** |
 
-* **Total Count**: **100 Tiles**
-* **Recommended Filament**: Warm Birch / Wood PLA (Base) + Dark Walnut / Jet Black PLA (Letters & Scores).
+### 🖨️ 256mm Proportional Slicing Plates for Scrabble (4 Print Runs = Exactly 100 Tiles)
+*Located in `output/plates/` with top-right wipe tower clearance:*
+1. **[`plate_256_scrabble_100set_plate1_of_4_25tiles.3mf`](file:///C:/Users/david/.gemini/antigravity/scratch/hex-scrabble-tiles/output/plates/plate_256_scrabble_100set_plate1_of_4_25tiles.3mf)**: 25 tiles ($9\times A_1, 2\times B_3, 2\times C_3, 4\times D_2, 6\times E_1, 2\times \text{Blank}$)
+2. **[`plate_256_scrabble_100set_plate2_of_4_25tiles.3mf`](file:///C:/Users/david/.gemini/antigravity/scratch/hex-scrabble-tiles/output/plates/plate_256_scrabble_100set_plate2_of_4_25tiles.3mf)**: 25 tiles ($6\times E_1, 2\times F_4, 3\times G_2, 2\times H_4, 9\times I_1, 1\times J_8, 1\times K_5, 1\times L_1$)
+3. **[`plate_256_scrabble_100set_plate3_of_4_25tiles.3mf`](file:///C:/Users/david/.gemini/antigravity/scratch/hex-scrabble-tiles/output/plates/plate_256_scrabble_100set_plate3_of_4_25tiles.3mf)**: 25 tiles ($3\times L_1, 2\times M_3, 6\times N_1, 8\times O_1, 2\times P_3, 1\times Q_{10}, 3\times R_1$)
+4. **[`plate_256_scrabble_100set_plate4_of_4_25tiles.3mf`](file:///C:/Users/david/.gemini/antigravity/scratch/hex-scrabble-tiles/output/plates/plate_256_scrabble_100set_plate4_of_4_25tiles.3mf)**: 25 tiles ($3\times R_1, 4\times S_1, 6\times T_1, 4\times U_1, 2\times V_4, 2\times W_4, 1\times X_8, 2\times Y_4, 1\times Z_{10}$)
 
 ---
 
-## 🐝 3. "HIVE-SWARM" (Speed Word Race Pool - 144 Tiles)
+## 🐝 3. "HIVE-SWARM" / "BANANAGRAMS" (144 Tiles Total)
 
-*Optimized for 2 to 4 simultaneous players (high-vowel frequency distribution):*
+*Official Bananagrams speed letter distribution:*
 
 | Letter | Qty | Letter | Qty | Letter | Qty | Letter | Qty |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -97,8 +101,17 @@ This comprehensive guide details the **exact print quantities**, **filament colo
 | **C** | **3** | **J** | **2** | **Q** | **2** | **X** | **2** |
 | **D** | **6** | **K** | **2** | **R** | **9** | **Y** | **3** |
 | **E** | **18** | **L** | **5** | **S** | **6** | **Z** | **2** |
-| **F** | **3** | **M** | **3** | **T** | **9** | **BLANK** | **4** |
+| **F** | **3** | **M** | **3** | **T** | **9** | — | — |
 | **G** | **4** | **N** | **8** | **U** | **6** | **TOTAL** | **144** |
+
+### 🖨️ 256mm Proportional Slicing Plates for Hive-Swarm (6 Print Runs = Exactly 144 Tiles)
+*Located in `output/plates/` with top-right wipe tower clearance:*
+1. **[`plate_256_hiveswarm_144set_plate1_of_6_24tiles.3mf`](file:///C:/Users/david/.gemini/antigravity/scratch/hex-scrabble-tiles/output/plates/plate_256_hiveswarm_144set_plate1_of_6_24tiles.3mf)**: 24 tiles ($13\times A, 3\times B, 3\times C, 5\times D$)
+2. **[`plate_256_hiveswarm_144set_plate2_of_6_24tiles.3mf`](file:///C:/Users/david/.gemini/antigravity/scratch/hex-scrabble-tiles/output/plates/plate_256_hiveswarm_144set_plate2_of_6_24tiles.3mf)**: 24 tiles ($1\times D, 18\times E, 3\times F, 2\times G$)
+3. **[`plate_256_hiveswarm_144set_plate3_of_6_24tiles.3mf`](file:///C:/Users/david/.gemini/antigravity/scratch/hex-scrabble-tiles/output/plates/plate_256_hiveswarm_144set_plate3_of_6_24tiles.3mf)**: 24 tiles ($2\times G, 3\times H, 12\times I, 2\times J, 2\times K, 3\times L$)
+4. **[`plate_256_hiveswarm_144set_plate4_of_6_24tiles.3mf`](file:///C:/Users/david/.gemini/antigravity/scratch/hex-scrabble-tiles/output/plates/plate_256_hiveswarm_144set_plate4_of_6_24tiles.3mf)**: 24 tiles ($2\times L, 3\times M, 8\times N, 11\times O$)
+5. **[`plate_256_hiveswarm_144set_plate5_of_6_24tiles.3mf`](file:///C:/Users/david/.gemini/antigravity/scratch/hex-scrabble-tiles/output/plates/plate_256_hiveswarm_144set_plate5_of_6_24tiles.3mf)**: 24 tiles ($3\times P, 2\times Q, 9\times R, 6\times S, 4\times T$)
+6. **[`plate_256_hiveswarm_144set_plate6_of_6_24tiles.3mf`](file:///C:/Users/david/.gemini/antigravity/scratch/hex-scrabble-tiles/output/plates/plate_256_hiveswarm_144set_plate6_of_6_24tiles.3mf)**: 24 tiles ($5\times T, 6\times U, 3\times V, 3\times W, 2\times X, 3\times Y, 2\times Z$)
 
 ---
 
