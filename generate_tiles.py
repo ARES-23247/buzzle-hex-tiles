@@ -511,6 +511,66 @@ def build_batch_plate(tile_specs, flat_to_flat=38.1, height=4.8, chamfer=0.8,
     return plate_base, plate_text
 
 
+def build_256mm_plate(tile_specs, flat_to_flat=38.1, height=4.8, chamfer=0.8,
+                      inlay_depth=0.8, spacing=2.5, font_path=None):
+    """
+    Arranges 26 tiles onto a 256mm x 256mm build plate (Span: ~221mm x 221mm)
+    leaving the top-right corner completely clear for the slicer prime/wipe tower.
+    """
+    r = flat_to_flat / 2.0
+    R = r / np.cos(np.deg2rad(30))
+    dx = (1.5 * R) + spacing
+    dy = flat_to_flat + spacing
+    
+    cols = [-2.5 * dx, -1.5 * dx, -0.5 * dx, 0.5 * dx, 1.5 * dx, 2.5 * dx]
+    positions = []
+    # Col 0 (left): 4 tiles
+    for row in [1.5, 0.5, -0.5, -1.5]:
+        positions.append((cols[0], row * dy))
+    # Col 1: 5 tiles
+    for row in [2.0, 1.0, 0.0, -1.0, -2.0]:
+        positions.append((cols[1], row * dy + dy / 2.0))
+    # Col 2: 5 tiles
+    for row in [2.0, 1.0, 0.0, -1.0, -2.0]:
+        positions.append((cols[2], row * dy))
+    # Col 3: 5 tiles
+    for row in [2.0, 1.0, 0.0, -1.0, -2.0]:
+        positions.append((cols[3], row * dy + dy / 2.0))
+    # Col 4: 4 tiles
+    for row in [1.0, 0.0, -1.0, -2.0]:
+        positions.append((cols[4], row * dy))
+    # Col 5 (right): 3 tiles (lower rows only, leaving top-right wide open for wipe tower)
+    for row in [0.0, -1.0, -2.0]:
+        positions.append((cols[5], row * dy + dy / 2.0))
+        
+    def sort_key(pt):
+        row_band = round(-pt[1] / (dy / 2.0))
+        return (row_band, pt[0])
+        
+    sorted_pos = sorted(positions, key=sort_key)
+    
+    all_base_meshes = []
+    all_text_meshes = []
+    
+    for (letter, score), (px, py) in zip(tile_specs, sorted_pos):
+        letter_sz = 19.0 if score == "" and len(letter) > 0 and (letter.isdigit() or letter in '+-x/=?!') else 14.5
+        mb, mt = build_tile_pair(
+            letter=letter, score=score, flat_to_flat=flat_to_flat,
+            height=height, chamfer=chamfer, inlay_depth=inlay_depth,
+            font_path=font_path, letter_size=letter_sz
+        )
+        mb.apply_translation([px, py, 0])
+        all_base_meshes.append(mb)
+        if mt is not None:
+            mt.apply_translation([px, py, 0])
+            all_text_meshes.append(mt)
+            
+    plate_base = trimesh.util.concatenate(all_base_meshes)
+    plate_text = trimesh.util.concatenate(all_text_meshes) if all_text_meshes else None
+    
+    return plate_base, plate_text
+
+
 def main():
     parser = argparse.ArgumentParser(description="Dual-Color Hexagonal Scrabble 3D Tile Generator")
     parser.add_argument("--letter", type=str, help="Generate a single letter tile (e.g. 'A')")
@@ -518,7 +578,7 @@ def main():
     parser.add_argument("--number", type=str, help="Generate a single number tile (e.g. '7')")
     parser.add_argument("--word", type=str, help="Generate tiles for a specific word (e.g. 'SCRABBLE')")
     parser.add_argument("--all", action="store_true", help="Generate complete A-Z, 0-9, and special character sets")
-    parser.add_argument("--plates", action="store_true", help="Generate ready-to-slice batch build plates (A-M, N-Z, Numbers)")
+    parser.add_argument("--plates", action="store_true", help="Generate ready-to-slice batch build plates (A-M, N-Z, Numbers, and Full 256mm plates)")
     parser.add_argument("--size", type=float, default=38.1, help="Tile flat-to-flat diameter in mm (default: 38.1 = 1.5 in)")
     parser.add_argument("--height", type=float, default=4.8, help="Tile height in mm (default: 4.8)")
     parser.add_argument("--chamfer", type=float, default=0.8, help="Top perimeter chamfer in mm (default: 0.8)")
@@ -628,7 +688,6 @@ def main():
         export_multimaterial_3mf(mf_path, {"Tile_Base": mb, "Tile_Text": mt})
         export_stl_pair(stl_b, stl_t, mb, mt)
         
-        # Render highlight previews
         if let in ['A', 'B', 'H', 'Q', 'Z', 'BLANK']:
             generate_preview_image(mb, mt, os.path.join(dir_previews, f"{name}.png"), label=f"Tile '{let}' ({sc} pts)")
             
@@ -677,8 +736,35 @@ def main():
     generate_preview_image(p3_b, p3_t, os.path.join(dir_previews, "plate_numbers_and_symbols.png"), label="Batch Plate: Numbers 0-9 & Math Symbols")
     print(" -> Saved Batch Plate: plate_numbers_and_symbols.3mf (17 tiles)")
 
+    # -------------------------------------------------------------------------
+    # Full 256mm Build Plates (Bambu Lab X1/P1/A1 / Prusa XL / Voron 250+ Bed)
+    # -------------------------------------------------------------------------
+    print("\n--- Generating Full 256mm x 256mm Build Plates (with Wipe Tower Clearance) ---")
+    
+    # 256mm Plate 1: Complete Alphabet (A through Z - 26 Tiles)
+    plate_256_az_specs = [(chr(c), SCRABBLE_POINTS[chr(c)]) for c in range(ord('A'), ord('Z') + 1)]
+    p256_az_b, p256_az_t = build_256mm_plate(plate_256_az_specs, flat_to_flat=args.size, height=args.height, font_path=font_path)
+    export_multimaterial_3mf(os.path.join(dir_plates, "plate_full_256_alphabet_A_Z_26tiles.3mf"), {"Plate_Base": p256_az_b, "Plate_Text": p256_az_t})
+    generate_preview_image(p256_az_b, p256_az_t, os.path.join(dir_previews, "plate_full_256_alphabet_A_Z.png"), label="Full 256mm Bed: Alphabet A to Z (26 Tiles + Wipe Tower Zone)")
+    print(" -> Saved 256mm Plate: plate_full_256_alphabet_A_Z_26tiles.3mf (26 tiles)")
+
+    # 256mm Plate 2: Numbers 0-9, Math Symbols, Extra Vowels, & 2 Blanks (26 Tiles)
+    plate_256_extra_specs = [
+        ('0', ''), ('1', ''), ('2', ''), ('3', ''), ('4', ''),
+        ('5', ''), ('6', ''), ('7', ''), ('8', ''), ('9', ''),
+        ('+', ''), ('-', ''), ('x', ''), ('/', ''), ('=', ''),
+        ('?', ''), ('!', ''),
+        ('A', '1'), ('E', '1'), ('I', '1'), ('O', '1'), ('U', '1'), ('Y', '4'),
+        ('', '0'), ('', '0'), ('E', '1')
+    ]
+    p256_extra_b, p256_extra_t = build_256mm_plate(plate_256_extra_specs, flat_to_flat=args.size, height=args.height, font_path=font_path)
+    export_multimaterial_3mf(os.path.join(dir_plates, "plate_full_256_numbers_and_extras_26tiles.3mf"), {"Plate_Base": p256_extra_b, "Plate_Text": p256_extra_t})
+    generate_preview_image(p256_extra_b, p256_extra_t, os.path.join(dir_previews, "plate_full_256_numbers_and_extras.png"), label="Full 256mm Bed: Numbers, Symbols, Extras (26 Tiles)")
+    print(" -> Saved 256mm Plate: plate_full_256_numbers_and_extras_26tiles.3mf (26 tiles)")
+
     print("\n[SUCCESS] All 3MF, STL, batch plates, and preview renders generated successfully!")
 
 
 if __name__ == "__main__":
     main()
+
