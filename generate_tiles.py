@@ -465,10 +465,9 @@ def generate_preview_image(mesh_base, mesh_text, output_path, label="Tile"):
 
 
 def build_batch_plate(tile_specs, flat_to_flat=38.1, height=4.8, chamfer=0.8,
-                      inlay_depth=0.8, cols=4, spacing=4.0):
+                      inlay_depth=0.8, emboss_height=0.6, spacing=4.0, cols=4, font_path=None):
     """
-    Arranges multiple tiles into an interlocking honeycomb grid on a print bed plate.
-    Returns composite Base mesh and composite Text mesh.
+    Arranges multiple tiles into an interlocking hexagonal grid for batch printing.
     """
     all_base_meshes = []
     all_text_meshes = []
@@ -488,7 +487,8 @@ def build_batch_plate(tile_specs, flat_to_flat=38.1, height=4.8, chamfer=0.8,
         
         mb, mt = build_tile_pair(
             letter=letter, score=score, flat_to_flat=flat_to_flat,
-            height=height, chamfer=chamfer, inlay_depth=inlay_depth
+            height=height, chamfer=chamfer, inlay_depth=inlay_depth,
+            emboss_height=emboss_height, font_path=font_path
         )
         
         mb.apply_translation([offset_x, offset_y, 0])
@@ -573,7 +573,7 @@ def generate_honeycomb_positions(n_tiles, flat_to_flat=38.1, spacing=3.5):
 
 
 def build_256mm_plate(tile_specs, flat_to_flat=38.1, height=4.8, chamfer=0.8,
-                      inlay_depth=0.8, spacing=3.5, font_path=None):
+                      inlay_depth=0.8, emboss_height=0.6, spacing=3.5, font_path=None):
     """
     Arranges tiles onto a 256mm x 256mm build plate with guaranteed >= 3.5mm spacing
     and ample clearance for the wipe tower anywhere along the top.
@@ -588,6 +588,7 @@ def build_256mm_plate(tile_specs, flat_to_flat=38.1, height=4.8, chamfer=0.8,
         mb, mt = build_tile_pair(
             letter=letter, score=score, flat_to_flat=flat_to_flat,
             height=height, chamfer=chamfer, inlay_depth=inlay_depth,
+            emboss_height=emboss_height,
             font_path=font_path, letter_size=letter_sz, score_size=7.0
         )
         mb.apply_translation([px, py, 0])
@@ -614,7 +615,7 @@ def main():
     parser.add_argument("--height", type=float, default=4.8, help="Tile height in mm (default: 4.8)")
     parser.add_argument("--chamfer", type=float, default=0.8, help="Top perimeter chamfer in mm (default: 0.8)")
     parser.add_argument("--inlay-depth", type=float, default=0.8, help="Inlay depth in mm (default: 0.8)")
-    parser.add_argument("--embossed", type=float, default=0.0, help="Raised text height above tile in mm (default: 0.0 = flush)")
+    parser.add_argument("--embossed", type=float, default=0.6, help="Raised text height above tile in mm (default: 0.6 = tactile embossed)")
     parser.add_argument("--font", type=str, default=None, help="Path to custom TTF font")
     parser.add_argument("--outdir", type=str, default="output", help="Output directory path")
     
@@ -748,21 +749,21 @@ def main():
     print("\n--- Generating Honeycomb Batch Print Plates ---")
     # Plate 1: Letters A to M (13 tiles)
     plate_am_specs = [(chr(c), SCRABBLE_POINTS[chr(c)]) for c in range(ord('A'), ord('N'))]
-    p1_b, p1_t = build_batch_plate(plate_am_specs, flat_to_flat=args.size, height=args.height, cols=4)
+    p1_b, p1_t = build_batch_plate(plate_am_specs, flat_to_flat=args.size, height=args.height, emboss_height=args.embossed, cols=4, font_path=font_path)
     export_multimaterial_3mf(os.path.join(dir_plates, "plate_letters_A_M.3mf"), {"Plate_Base": p1_b, "Plate_Text": p1_t})
     generate_preview_image(p1_b, p1_t, os.path.join(dir_previews, "plate_letters_A_M.png"), label="Batch Plate: Letters A to M")
     print(" -> Saved Batch Plate: plate_letters_A_M.3mf (13 tiles)")
 
     # Plate 2: Letters N to Z + Blank (14 tiles)
     plate_nz_specs = [(chr(c), SCRABBLE_POINTS[chr(c)]) for c in range(ord('N'), ord('Z') + 1)] + [("", "0")]
-    p2_b, p2_t = build_batch_plate(plate_nz_specs, flat_to_flat=args.size, height=args.height, cols=4)
+    p2_b, p2_t = build_batch_plate(plate_nz_specs, flat_to_flat=args.size, height=args.height, emboss_height=args.embossed, cols=4, font_path=font_path)
     export_multimaterial_3mf(os.path.join(dir_plates, "plate_letters_N_Z_Blank.3mf"), {"Plate_Base": p2_b, "Plate_Text": p2_t})
     generate_preview_image(p2_b, p2_t, os.path.join(dir_previews, "plate_letters_N_Z_Blank.png"), label="Batch Plate: Letters N to Z + Blank")
     print(" -> Saved Batch Plate: plate_letters_N_Z_Blank.3mf (14 tiles)")
 
     # Plate 3: Numbers 0 to 9 + Symbols (17 tiles)
     plate_num_specs = [(sym, "") for sym in numbers_and_syms]
-    p3_b, p3_t = build_batch_plate(plate_num_specs, flat_to_flat=args.size, height=args.height, cols=4)
+    p3_b, p3_t = build_batch_plate(plate_num_specs, flat_to_flat=args.size, height=args.height, emboss_height=args.embossed, cols=4, font_path=font_path)
     export_multimaterial_3mf(os.path.join(dir_plates, "plate_numbers_and_symbols.3mf"), {"Plate_Base": p3_b, "Plate_Text": p3_t})
     generate_preview_image(p3_b, p3_t, os.path.join(dir_previews, "plate_numbers_and_symbols.png"), label="Batch Plate: Numbers 0-9 & Math Symbols")
     print(" -> Saved Batch Plate: plate_numbers_and_symbols.3mf (17 tiles)")
@@ -774,7 +775,7 @@ def main():
     
     # 256mm Reference Plate: Complete Alphabet (A through Z - 26 Tiles)
     plate_256_az_specs = [(chr(c), SCRABBLE_POINTS[chr(c)]) for c in range(ord('A'), ord('Z') + 1)]
-    p256_az_b, p256_az_t = build_256mm_plate(plate_256_az_specs, flat_to_flat=args.size, height=args.height, font_path=font_path)
+    p256_az_b, p256_az_t = build_256mm_plate(plate_256_az_specs, flat_to_flat=args.size, height=args.height, emboss_height=args.embossed, font_path=font_path)
     export_multimaterial_3mf(os.path.join(dir_plates, "plate_full_256_alphabet_A_Z_26tiles.3mf"), {"Plate_Base": p256_az_b, "Plate_Text": p256_az_t})
     generate_preview_image(p256_az_b, p256_az_t, os.path.join(dir_previews, "plate_full_256_alphabet_A_Z.png"), label="Full 256mm Bed: Alphabet A to Z (26 Tiles + Wipe Tower Zone)")
     print(" -> Saved 256mm Plate: plate_full_256_alphabet_A_Z_26tiles.3mf (26 tiles)")
@@ -788,7 +789,7 @@ def main():
         ('A', '1'), ('E', '1'), ('I', '1'), ('O', '1'), ('U', '1'), ('Y', '4'),
         ('', '0'), ('', '0'), ('E', '1')
     ]
-    p256_extra_b, p256_extra_t = build_256mm_plate(plate_256_extra_specs, flat_to_flat=args.size, height=args.height, font_path=font_path)
+    p256_extra_b, p256_extra_t = build_256mm_plate(plate_256_extra_specs, flat_to_flat=args.size, height=args.height, emboss_height=args.embossed, font_path=font_path)
     export_multimaterial_3mf(os.path.join(dir_plates, "plate_full_256_numbers_and_extras_26tiles.3mf"), {"Plate_Base": p256_extra_b, "Plate_Text": p256_extra_t})
     generate_preview_image(p256_extra_b, p256_extra_t, os.path.join(dir_previews, "plate_full_256_numbers_and_extras.png"), label="Full 256mm Bed: Numbers, Symbols, Extras (26 Tiles)")
     print(" -> Saved 256mm Plate: plate_full_256_numbers_and_extras_26tiles.3mf (26 tiles)")
@@ -811,7 +812,7 @@ def main():
         
     for p_idx in range(4):
         p_specs = scrabble_pool[p_idx * 25 : (p_idx + 1) * 25]
-        p_b, p_t = build_256mm_plate(p_specs, flat_to_flat=args.size, height=args.height, font_path=font_path)
+        p_b, p_t = build_256mm_plate(p_specs, flat_to_flat=args.size, height=args.height, emboss_height=args.embossed, font_path=font_path)
         p_filename = f"plate_256_scrabble_100set_plate{p_idx+1}_of_4_25tiles.3mf"
         export_multimaterial_3mf(os.path.join(dir_plates, p_filename), {"Plate_Base": p_b, "Plate_Text": p_t})
         generate_preview_image(p_b, p_t, os.path.join(dir_previews, f"plate_256_scrabble_100set_plate{p_idx+1}.png"), label=f"Scrabble Set (Plate {p_idx+1}/4 - 25 Tiles)")
@@ -835,7 +836,7 @@ def main():
         
     for p_idx in range(6):
         p_specs = banana_pool[p_idx * 24 : (p_idx + 1) * 24]
-        p_b, p_t = build_256mm_plate(p_specs, flat_to_flat=args.size, height=args.height, font_path=font_path)
+        p_b, p_t = build_256mm_plate(p_specs, flat_to_flat=args.size, height=args.height, emboss_height=args.embossed, font_path=font_path)
         p_filename = f"plate_256_hiveswarm_144set_plate{p_idx+1}_of_6_24tiles.3mf"
         export_multimaterial_3mf(os.path.join(dir_plates, p_filename), {"Plate_Base": p_b, "Plate_Text": p_t})
         generate_preview_image(p_b, p_t, os.path.join(dir_previews, f"plate_256_hiveswarm_144set_plate{p_idx+1}.png"), label=f"Universal Hive-Swarm / Scrabble Set (Plate {p_idx+1}/6 - 24 Tiles)")
