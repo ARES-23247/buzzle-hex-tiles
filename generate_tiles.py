@@ -150,7 +150,7 @@ def char_to_polygons(text, font_path, size=20):
 
 def build_tile_pair(letter="A", score=None, flat_to_flat=38.1, height=4.8,
                      chamfer=0.8, inlay_depth=0.8, emboss_height=0.0,
-                     font_path=None, letter_size=18.5, score_size=7.0):
+                     font_path=None, letter_size=21.5, score_size=8.2):
     """
     Builds the complete watertight 3D meshes for:
       - Base Mesh (Hexagon with chamfer and negative cavity for glyphs)
@@ -170,8 +170,8 @@ def build_tile_pair(letter="A", score=None, flat_to_flat=38.1, height=4.8,
             cx, cy = (minx + maxx) / 2.0, (miny + maxy) / 2.0
             
             # If score is present, shift letter slightly left/up for classic Scrabble balance
-            shift_x = -2.0 if has_score else 0.0
-            shift_y = 1.2 if has_score else 0.0
+            shift_x = -2.2 if has_score else 0.0
+            shift_y = 1.0 if has_score else 0.0
             l_polys = [translate(p, xoff=-cx + shift_x, yoff=-cy + shift_y) for p in l_raw]
             
     # 2. Process Score Subscript
@@ -182,8 +182,8 @@ def build_tile_pair(letter="A", score=None, flat_to_flat=38.1, height=4.8,
             s_union = s_raw[0] if len(s_raw) == 1 else MultiPolygon(s_raw)
             minx, miny, maxx, maxy = s_union.bounds
             # Target position at bottom-right corner inside hex boundary
-            target_x = 8.6
-            target_y = -8.2
+            target_x = 9.4
+            target_y = -8.8
             s_polys = [translate(p, xoff=target_x - (minx + maxx) / 2.0, yoff=target_y - (miny + maxy) / 2.0) for p in s_raw]
             
     all_glyphs = l_polys + s_polys
@@ -589,7 +589,7 @@ def build_256mm_plate(tile_specs, flat_to_flat=38.1, height=4.8, chamfer=0.8,
             letter=letter, score=score, flat_to_flat=flat_to_flat,
             height=height, chamfer=chamfer, inlay_depth=inlay_depth,
             emboss_height=emboss_height,
-            font_path=font_path, letter_size=letter_sz, score_size=7.0
+            font_path=font_path, letter_size=letter_sz, score_size=8.2
         )
         mb.apply_translation([px, py, 0])
         all_base_meshes.append(mb)

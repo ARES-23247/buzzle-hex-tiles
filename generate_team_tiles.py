@@ -73,7 +73,7 @@ def extract_team_logo(img_path, target_h=28.5):
 def build_doublesided_tile(letter="A", score=None, logo_polys=None,
                            flat_to_flat=38.1, height=4.8, chamfer=0.8,
                            inlay_depth=0.8, emboss_height=0.6,
-                           font_path=None, letter_size=18.5, score_size=7.0):
+                           font_path=None, letter_size=21.5, score_size=8.2):
     """
     Builds a complete double-sided hexagonal tile with:
       - Bottom: Logo inlay cavity + logo mesh
@@ -98,8 +98,8 @@ def build_doublesided_tile(letter="A", score=None, logo_polys=None,
             l_u = l_raw[0] if len(l_raw) == 1 else unary_union(l_raw)
             minx, miny, maxx, maxy = l_u.bounds
             cx, cy = (minx + maxx) / 2.0, (miny + maxy) / 2.0
-            shift_x = -2.0 if has_score else 0.0
-            shift_y = 1.2 if has_score else 0.0
+            shift_x = -2.2 if has_score else 0.0
+            shift_y = 1.0 if has_score else 0.0
             l_polys = [translate(p, xoff=-cx + shift_x, yoff=-cy + shift_y) for p in l_raw]
             
     s_polys = []
@@ -108,8 +108,8 @@ def build_doublesided_tile(letter="A", score=None, logo_polys=None,
         if s_raw:
             s_u = s_raw[0] if len(s_raw) == 1 else unary_union(s_raw)
             minx, miny, maxx, maxy = s_u.bounds
-            target_x = 8.6
-            target_y = -8.2
+            target_x = 9.4
+            target_y = -8.8
             s_polys = [translate(p, xoff=target_x - (minx + maxx) / 2.0, yoff=target_y - (miny + maxy) / 2.0) for p in s_raw]
             
     top_glyphs = l_polys + s_polys
@@ -314,7 +314,7 @@ def build_doublesided_256mm_plate(tile_specs, logo_polys, flat_to_flat=38.1,
             letter=letter, score=score, logo_polys=logo_polys,
             flat_to_flat=flat_to_flat, height=height, chamfer=chamfer,
             inlay_depth=inlay_depth, emboss_height=emboss_height,
-            font_path=font_path, letter_size=letter_sz, score_size=7.0
+            font_path=font_path, letter_size=letter_sz, score_size=8.2
         )
         mb.apply_translation([px, py, 0])
         all_base_meshes.append(mb)
