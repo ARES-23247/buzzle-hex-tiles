@@ -76,7 +76,7 @@ def extract_interlocking_logo(img_path, target_w=31.0):
 
 def build_doublesided_interlocking_tile(letter="A", score=None, logo_polys=None,
                                         flat_to_flat=38.1, height=4.8, chamfer=0.8,
-                                        inlay_depth=0.8, emboss_height=0.6,
+                                        inlay_depth=0.8, emboss_height=0.0,
                                         font_path=None, letter_size=21.5, score_size=8.2):
     if font_path is None:
         font_path = find_default_font()
@@ -299,7 +299,7 @@ def build_doublesided_interlocking_tile(letter="A", score=None, logo_polys=None,
 
 def build_doublesided_interlocking_256mm_plate(tile_specs, logo_polys=None, flat_to_flat=38.1,
                                                height=4.8, chamfer=0.8, inlay_depth=0.8,
-                                               emboss_height=0.6, spacing=3.5, font_path=None):
+                                               emboss_height=0.0, spacing=3.5, font_path=None):
     if logo_polys is None:
         logo_polys = extract_interlocking_logo(DEFAULT_LOGO_PATH, target_w=31.0)
         

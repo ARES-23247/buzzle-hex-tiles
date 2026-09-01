@@ -72,7 +72,7 @@ def extract_team_logo(img_path, target_h=28.5):
 
 def build_doublesided_tile(letter="A", score=None, logo_polys=None,
                            flat_to_flat=38.1, height=4.8, chamfer=0.8,
-                           inlay_depth=0.8, emboss_height=0.6,
+                           inlay_depth=0.8, emboss_height=0.0,
                            font_path=None, letter_size=21.5, score_size=8.2):
     """
     Builds a complete double-sided hexagonal tile with:
@@ -299,7 +299,7 @@ def build_doublesided_tile(letter="A", score=None, logo_polys=None,
 
 def build_doublesided_256mm_plate(tile_specs, logo_polys, flat_to_flat=38.1,
                                   height=4.8, chamfer=0.8, inlay_depth=0.8,
-                                  emboss_height=0.6, spacing=3.5, font_path=None):
+                                  emboss_height=0.0, spacing=3.5, font_path=None):
     """
     Builds a 256mm build plate of double-sided team branded tiles.
     """

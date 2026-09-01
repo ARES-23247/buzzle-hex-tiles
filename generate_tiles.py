@@ -465,7 +465,7 @@ def generate_preview_image(mesh_base, mesh_text, output_path, label="Tile"):
 
 
 def build_batch_plate(tile_specs, flat_to_flat=38.1, height=4.8, chamfer=0.8,
-                      inlay_depth=0.8, emboss_height=0.6, spacing=4.0, cols=4, font_path=None):
+                      inlay_depth=0.8, emboss_height=0.0, spacing=4.0, cols=4, font_path=None):
     """
     Arranges multiple tiles into an interlocking hexagonal grid for batch printing.
     """
@@ -573,7 +573,7 @@ def generate_honeycomb_positions(n_tiles, flat_to_flat=38.1, spacing=3.5):
 
 
 def build_256mm_plate(tile_specs, flat_to_flat=38.1, height=4.8, chamfer=0.8,
-                      inlay_depth=0.8, emboss_height=0.6, spacing=3.5, font_path=None):
+                      inlay_depth=0.8, emboss_height=0.0, spacing=3.5, font_path=None):
     """
     Arranges tiles onto a 256mm x 256mm build plate with guaranteed >= 3.5mm spacing
     and ample clearance for the wipe tower anywhere along the top.
