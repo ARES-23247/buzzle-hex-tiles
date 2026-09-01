@@ -30,48 +30,68 @@ DEFAULT_LOGO_PATH = os.path.join(
 )
 
 
-def extract_interlocking_logo(img_path, target_w=27.0):
-    if not os.path.exists(img_path):
-        raise FileNotFoundError(f"Logo image not found at {img_path}")
-        
-    img = Image.open(img_path).convert('RGBA')
-    arr = np.array(img)
-    r, g, b, a = arr[:, :, 0], arr[:, :, 1], arr[:, :, 2], arr[:, :, 3]
-    gray = 0.299 * r + 0.587 * g + 0.114 * b
-    black_mask = (gray < 80)
-    black_mask_flipped = np.flipud(black_mask)
 
-    fig, ax = plt.subplots()
-    cs = ax.contour(black_mask_flipped.astype(float), levels=[0.5])
-    paths = cs.get_paths()
-    plt.close(fig)
+def create_bold_interlocking_logo(target_w=27.0, wall_width=1.40, gap=0.70):
+    from shapely.geometry import Polygon, Point, box
+    from shapely.ops import unary_union, orient
+    from shapely.affinity import scale, translate
 
-    polys = []
-    for p in paths:
-        for poly_verts in p.to_polygons():
-            if len(poly_verts) >= 3:
-                poly = Polygon(poly_verts)
-                if poly.is_valid and poly.area > 10:
-                    polys.append(poly.simplify(0.4))
-
-    polys = sorted(polys, key=lambda p: p.area, reverse=True)
-    outer_boundary = polys[0]
-    inner_holes = polys[1:]
-
-    logo_solid = outer_boundary.difference(unary_union(inner_holes))
+    half_w = wall_width / 2.0
     
-    bounds = logo_solid.bounds
+    # 1. Center Circle
+    r = 6.0
+    c_out = Point(0, 0).buffer(r + half_w, resolution=64)
+    c_in = Point(0, 0).buffer(r - half_w, resolution=64)
+    ring = c_out.difference(c_in)
+    
+    # 2. Triangle on Left
+    t_poly = Polygon([
+        (-7.0, 7.5),
+        (0.8, -1.0),
+        (-12.0, -5.5)
+    ])
+    t_out = t_poly.buffer(half_w, join_style='mitre')
+    t_in = t_poly.buffer(-half_w, join_style='mitre')
+    tri = t_out.difference(t_in)
+    
+    # 3. Square/Diamond on Right
+    sq_poly = Polygon([
+        (6.5, 7.5),
+        (12.5, 0.5),
+        (6.5, -6.5),
+        (-0.8, 1.0)
+    ])
+    sq_out = sq_poly.buffer(half_w, join_style='mitre')
+    sq_in = sq_poly.buffer(-half_w, join_style='mitre')
+    diamond = sq_out.difference(sq_in)
+    
+    # Over / Under cuts
+    cut1 = box(-15, 0, 3, 10).intersection(tri).buffer(gap)
+    cut2 = box(1, 0, 12, 10).intersection(ring).buffer(gap)
+    cut3 = box(-3, -10, 15, 2).intersection(diamond).buffer(gap)
+    cut4 = box(-15, -10, 0, 0).intersection(ring).buffer(gap)
+    
+    ring_w = ring.difference(cut1).difference(cut3)
+    diamond_w = diamond.difference(cut2)
+    tri_w = tri.difference(cut4)
+    
+    woven = unary_union([ring_w, diamond_w, tri_w])
+    
+    bounds = woven.bounds
     raw_w = bounds[2] - bounds[0]
     raw_h = bounds[3] - bounds[1]
     raw_cx = (bounds[0] + bounds[2]) / 2.0
     raw_cy = (bounds[1] + bounds[3]) / 2.0
-
     scale_f = target_w / raw_w
-    logo_scaled = scale(logo_solid, xfact=scale_f, yfact=scale_f, origin=(raw_cx, raw_cy))
-    logo_centered = translate(logo_scaled, xoff=-raw_cx, yoff=-raw_cy)
+    
+    scaled = scale(woven, xfact=scale_f, yfact=scale_f, origin=(raw_cx, raw_cy))
+    centered = translate(scaled, xoff=-raw_cx, yoff=-raw_cy)
+    
+    polys = [centered] if isinstance(centered, Polygon) else list(centered.geoms)
+    return [orient(p, sign=1.0) for p in polys]
 
-    logo_polys = [logo_centered] if isinstance(logo_centered, Polygon) else list(logo_centered.geoms)
-    return [orient(p, sign=1.0) for p in logo_polys]
+def extract_interlocking_logo(img_path=None, target_w=27.0):
+    return create_bold_interlocking_logo(target_w=target_w)
 
 
 def build_doublesided_interlocking_tile(letter="A", score=None, logo_polys=None,
