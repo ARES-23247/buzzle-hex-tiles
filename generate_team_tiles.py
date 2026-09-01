@@ -31,9 +31,6 @@ DEFAULT_LOGO_PATH = os.path.join(
 
 
 def extract_team_logo(img_path, target_h=25.0):
-    """
-    Extracts vector contours from the team logo image and scales/centers it.
-    """
     if not os.path.exists(img_path):
         raise FileNotFoundError(f"Logo image not found at {img_path}")
         
@@ -54,21 +51,23 @@ def extract_team_logo(img_path, target_h=25.0):
             if len(poly_verts) >= 3:
                 poly = Polygon(poly_verts)
                 if poly.is_valid and poly.area > 50:
-                    polys.append(poly.simplify(0.8))
+                    polys.append(poly)
 
     logo_union = unary_union(polys)
     bounds = logo_union.bounds
     raw_h = bounds[3] - bounds[1]
     raw_cx = (bounds[0] + bounds[2]) / 2.0
     raw_cy = (bounds[1] + bounds[3]) / 2.0
-
     scale_f = target_h / raw_h
-    logo_scaled = scale(logo_union, xfact=scale_f, yfact=scale_f, origin=(raw_cx, raw_cy))
-    logo_centered = translate(logo_scaled, xoff=-raw_cx, yoff=-raw_cy)
 
-    logo_polys = [logo_centered] if isinstance(logo_centered, Polygon) else list(logo_centered.geoms)
+    s = scale(logo_union, xfact=scale_f, yfact=scale_f, origin=(raw_cx, raw_cy))
+    c = translate(s, xoff=-raw_cx, yoff=-raw_cy)
+
+    # 3D-print geometry filter: smooth needle pinch points and ensure clean toolpaths
+    c_clean = c.buffer(0.12, join_style='round').buffer(-0.12).simplify(0.12)
+
+    logo_polys = [c_clean] if isinstance(c_clean, Polygon) else list(c_clean.geoms)
     return [orient(p, sign=1.0) for p in logo_polys]
-
 
 def build_doublesided_tile(letter="A", score=None, logo_polys=None,
                            flat_to_flat=33.02, height=4.8, chamfer=0.7,
