@@ -1,0 +1,3774 @@
+{
+  "name": "BUZZLE_217_CELL_OFFICIAL_SPEC",
+  "radius": 8,
+  "cell_count": 217,
+  "inventory": {
+    "TW": 6,
+    "TL": 6,
+    "DW": 12,
+    "KEY_WILD": 6,
+    "DL": 24,
+    "STAR": 1,
+    "PLAIN": 162
+  },
+  "axial_keys": {
+    "TRIPLE_WORD": [
+      "-8,0",
+      "0,-8",
+      "-8,8",
+      "8,-8",
+      "0,8",
+      "8,0"
+    ],
+    "TRIPLE_LETTER": [
+      "-4,-4",
+      "-8,4",
+      "4,-8",
+      "-4,8",
+      "8,-4",
+      "4,4"
+    ],
+    "DOUBLE_WORD": [
+      "-6,-1",
+      "-1,-6",
+      "-7,1",
+      "1,-7",
+      "-7,6",
+      "6,-7",
+      "-6,7",
+      "7,-6",
+      "-1,7",
+      "7,-1",
+      "1,6",
+      "6,1"
+    ],
+    "KEY_WILD": [
+      "-2,-2",
+      "-4,2",
+      "2,-4",
+      "-2,4",
+      "4,-2",
+      "2,2"
+    ],
+    "DOUBLE_LETTER": [
+      "-4,-2",
+      "-2,-4",
+      "-6,2",
+      "-4,0",
+      "0,-4",
+      "2,-6",
+      "-6,4",
+      "-1,-1",
+      "4,-6",
+      "-2,1",
+      "1,-2",
+      "-4,4",
+      "4,-4",
+      "-1,2",
+      "2,-1",
+      "-4,6",
+      "1,1",
+      "6,-4",
+      "-2,6",
+      "0,4",
+      "4,0",
+      "6,-2",
+      "2,4",
+      "4,2"
+    ],
+    "STAR": [
+      "0,0"
+    ]
+  },
+  "cells": [
+    {
+      "index": 0,
+      "axial": {
+        "q": -8,
+        "r": 0,
+        "key": "-8,0"
+      },
+      "cubic": {
+        "x": -8,
+        "y": 0,
+        "z": 8
+      },
+      "ring": 8,
+      "type": "TRIPLE WORD",
+      "multiplier": "TW",
+      "color": "#AEEA00"
+    },
+    {
+      "index": 1,
+      "axial": {
+        "q": -7,
+        "r": -1,
+        "key": "-7,-1"
+      },
+      "cubic": {
+        "x": -8,
+        "y": 1,
+        "z": 7
+      },
+      "ring": 8,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 2,
+      "axial": {
+        "q": -6,
+        "r": -2,
+        "key": "-6,-2"
+      },
+      "cubic": {
+        "x": -8,
+        "y": 2,
+        "z": 6
+      },
+      "ring": 8,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 3,
+      "axial": {
+        "q": -5,
+        "r": -3,
+        "key": "-5,-3"
+      },
+      "cubic": {
+        "x": -8,
+        "y": 3,
+        "z": 5
+      },
+      "ring": 8,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 4,
+      "axial": {
+        "q": -4,
+        "r": -4,
+        "key": "-4,-4"
+      },
+      "cubic": {
+        "x": -8,
+        "y": 4,
+        "z": 4
+      },
+      "ring": 8,
+      "type": "TRIPLE LETTER",
+      "multiplier": "TL",
+      "color": "#00E5FF"
+    },
+    {
+      "index": 5,
+      "axial": {
+        "q": -3,
+        "r": -5,
+        "key": "-3,-5"
+      },
+      "cubic": {
+        "x": -8,
+        "y": 5,
+        "z": 3
+      },
+      "ring": 8,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 6,
+      "axial": {
+        "q": -2,
+        "r": -6,
+        "key": "-2,-6"
+      },
+      "cubic": {
+        "x": -8,
+        "y": 6,
+        "z": 2
+      },
+      "ring": 8,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 7,
+      "axial": {
+        "q": -1,
+        "r": -7,
+        "key": "-1,-7"
+      },
+      "cubic": {
+        "x": -8,
+        "y": 7,
+        "z": 1
+      },
+      "ring": 8,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 8,
+      "axial": {
+        "q": 0,
+        "r": -8,
+        "key": "0,-8"
+      },
+      "cubic": {
+        "x": -8,
+        "y": 8,
+        "z": 0
+      },
+      "ring": 8,
+      "type": "TRIPLE WORD",
+      "multiplier": "TW",
+      "color": "#AEEA00"
+    },
+    {
+      "index": 9,
+      "axial": {
+        "q": -8,
+        "r": 1,
+        "key": "-8,1"
+      },
+      "cubic": {
+        "x": -7,
+        "y": -1,
+        "z": 8
+      },
+      "ring": 8,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 10,
+      "axial": {
+        "q": -7,
+        "r": 0,
+        "key": "-7,0"
+      },
+      "cubic": {
+        "x": -7,
+        "y": 0,
+        "z": 7
+      },
+      "ring": 7,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 11,
+      "axial": {
+        "q": -6,
+        "r": -1,
+        "key": "-6,-1"
+      },
+      "cubic": {
+        "x": -7,
+        "y": 1,
+        "z": 6
+      },
+      "ring": 7,
+      "type": "DOUBLE WORD",
+      "multiplier": "DW",
+      "color": "#E91E63"
+    },
+    {
+      "index": 12,
+      "axial": {
+        "q": -5,
+        "r": -2,
+        "key": "-5,-2"
+      },
+      "cubic": {
+        "x": -7,
+        "y": 2,
+        "z": 5
+      },
+      "ring": 7,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 13,
+      "axial": {
+        "q": -4,
+        "r": -3,
+        "key": "-4,-3"
+      },
+      "cubic": {
+        "x": -7,
+        "y": 3,
+        "z": 4
+      },
+      "ring": 7,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 14,
+      "axial": {
+        "q": -3,
+        "r": -4,
+        "key": "-3,-4"
+      },
+      "cubic": {
+        "x": -7,
+        "y": 4,
+        "z": 3
+      },
+      "ring": 7,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 15,
+      "axial": {
+        "q": -2,
+        "r": -5,
+        "key": "-2,-5"
+      },
+      "cubic": {
+        "x": -7,
+        "y": 5,
+        "z": 2
+      },
+      "ring": 7,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 16,
+      "axial": {
+        "q": -1,
+        "r": -6,
+        "key": "-1,-6"
+      },
+      "cubic": {
+        "x": -7,
+        "y": 6,
+        "z": 1
+      },
+      "ring": 7,
+      "type": "DOUBLE WORD",
+      "multiplier": "DW",
+      "color": "#E91E63"
+    },
+    {
+      "index": 17,
+      "axial": {
+        "q": 0,
+        "r": -7,
+        "key": "0,-7"
+      },
+      "cubic": {
+        "x": -7,
+        "y": 7,
+        "z": 0
+      },
+      "ring": 7,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 18,
+      "axial": {
+        "q": 1,
+        "r": -8,
+        "key": "1,-8"
+      },
+      "cubic": {
+        "x": -7,
+        "y": 8,
+        "z": -1
+      },
+      "ring": 8,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 19,
+      "axial": {
+        "q": -8,
+        "r": 2,
+        "key": "-8,2"
+      },
+      "cubic": {
+        "x": -6,
+        "y": -2,
+        "z": 8
+      },
+      "ring": 8,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 20,
+      "axial": {
+        "q": -7,
+        "r": 1,
+        "key": "-7,1"
+      },
+      "cubic": {
+        "x": -6,
+        "y": -1,
+        "z": 7
+      },
+      "ring": 7,
+      "type": "DOUBLE WORD",
+      "multiplier": "DW",
+      "color": "#E91E63"
+    },
+    {
+      "index": 21,
+      "axial": {
+        "q": -6,
+        "r": 0,
+        "key": "-6,0"
+      },
+      "cubic": {
+        "x": -6,
+        "y": 0,
+        "z": 6
+      },
+      "ring": 6,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 22,
+      "axial": {
+        "q": -5,
+        "r": -1,
+        "key": "-5,-1"
+      },
+      "cubic": {
+        "x": -6,
+        "y": 1,
+        "z": 5
+      },
+      "ring": 6,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 23,
+      "axial": {
+        "q": -4,
+        "r": -2,
+        "key": "-4,-2"
+      },
+      "cubic": {
+        "x": -6,
+        "y": 2,
+        "z": 4
+      },
+      "ring": 6,
+      "type": "DOUBLE LETTER",
+      "multiplier": "DL",
+      "color": "#00E5FF"
+    },
+    {
+      "index": 24,
+      "axial": {
+        "q": -3,
+        "r": -3,
+        "key": "-3,-3"
+      },
+      "cubic": {
+        "x": -6,
+        "y": 3,
+        "z": 3
+      },
+      "ring": 6,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 25,
+      "axial": {
+        "q": -2,
+        "r": -4,
+        "key": "-2,-4"
+      },
+      "cubic": {
+        "x": -6,
+        "y": 4,
+        "z": 2
+      },
+      "ring": 6,
+      "type": "DOUBLE LETTER",
+      "multiplier": "DL",
+      "color": "#00E5FF"
+    },
+    {
+      "index": 26,
+      "axial": {
+        "q": -1,
+        "r": -5,
+        "key": "-1,-5"
+      },
+      "cubic": {
+        "x": -6,
+        "y": 5,
+        "z": 1
+      },
+      "ring": 6,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 27,
+      "axial": {
+        "q": 0,
+        "r": -6,
+        "key": "0,-6"
+      },
+      "cubic": {
+        "x": -6,
+        "y": 6,
+        "z": 0
+      },
+      "ring": 6,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 28,
+      "axial": {
+        "q": 1,
+        "r": -7,
+        "key": "1,-7"
+      },
+      "cubic": {
+        "x": -6,
+        "y": 7,
+        "z": -1
+      },
+      "ring": 7,
+      "type": "DOUBLE WORD",
+      "multiplier": "DW",
+      "color": "#E91E63"
+    },
+    {
+      "index": 29,
+      "axial": {
+        "q": 2,
+        "r": -8,
+        "key": "2,-8"
+      },
+      "cubic": {
+        "x": -6,
+        "y": 8,
+        "z": -2
+      },
+      "ring": 8,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 30,
+      "axial": {
+        "q": -8,
+        "r": 3,
+        "key": "-8,3"
+      },
+      "cubic": {
+        "x": -5,
+        "y": -3,
+        "z": 8
+      },
+      "ring": 8,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 31,
+      "axial": {
+        "q": -7,
+        "r": 2,
+        "key": "-7,2"
+      },
+      "cubic": {
+        "x": -5,
+        "y": -2,
+        "z": 7
+      },
+      "ring": 7,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 32,
+      "axial": {
+        "q": -6,
+        "r": 1,
+        "key": "-6,1"
+      },
+      "cubic": {
+        "x": -5,
+        "y": -1,
+        "z": 6
+      },
+      "ring": 6,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 33,
+      "axial": {
+        "q": -5,
+        "r": 0,
+        "key": "-5,0"
+      },
+      "cubic": {
+        "x": -5,
+        "y": 0,
+        "z": 5
+      },
+      "ring": 5,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 34,
+      "axial": {
+        "q": -4,
+        "r": -1,
+        "key": "-4,-1"
+      },
+      "cubic": {
+        "x": -5,
+        "y": 1,
+        "z": 4
+      },
+      "ring": 5,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 35,
+      "axial": {
+        "q": -3,
+        "r": -2,
+        "key": "-3,-2"
+      },
+      "cubic": {
+        "x": -5,
+        "y": 2,
+        "z": 3
+      },
+      "ring": 5,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 36,
+      "axial": {
+        "q": -2,
+        "r": -3,
+        "key": "-2,-3"
+      },
+      "cubic": {
+        "x": -5,
+        "y": 3,
+        "z": 2
+      },
+      "ring": 5,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 37,
+      "axial": {
+        "q": -1,
+        "r": -4,
+        "key": "-1,-4"
+      },
+      "cubic": {
+        "x": -5,
+        "y": 4,
+        "z": 1
+      },
+      "ring": 5,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 38,
+      "axial": {
+        "q": 0,
+        "r": -5,
+        "key": "0,-5"
+      },
+      "cubic": {
+        "x": -5,
+        "y": 5,
+        "z": 0
+      },
+      "ring": 5,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 39,
+      "axial": {
+        "q": 1,
+        "r": -6,
+        "key": "1,-6"
+      },
+      "cubic": {
+        "x": -5,
+        "y": 6,
+        "z": -1
+      },
+      "ring": 6,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 40,
+      "axial": {
+        "q": 2,
+        "r": -7,
+        "key": "2,-7"
+      },
+      "cubic": {
+        "x": -5,
+        "y": 7,
+        "z": -2
+      },
+      "ring": 7,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 41,
+      "axial": {
+        "q": 3,
+        "r": -8,
+        "key": "3,-8"
+      },
+      "cubic": {
+        "x": -5,
+        "y": 8,
+        "z": -3
+      },
+      "ring": 8,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 42,
+      "axial": {
+        "q": -8,
+        "r": 4,
+        "key": "-8,4"
+      },
+      "cubic": {
+        "x": -4,
+        "y": -4,
+        "z": 8
+      },
+      "ring": 8,
+      "type": "TRIPLE LETTER",
+      "multiplier": "TL",
+      "color": "#00E5FF"
+    },
+    {
+      "index": 43,
+      "axial": {
+        "q": -7,
+        "r": 3,
+        "key": "-7,3"
+      },
+      "cubic": {
+        "x": -4,
+        "y": -3,
+        "z": 7
+      },
+      "ring": 7,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 44,
+      "axial": {
+        "q": -6,
+        "r": 2,
+        "key": "-6,2"
+      },
+      "cubic": {
+        "x": -4,
+        "y": -2,
+        "z": 6
+      },
+      "ring": 6,
+      "type": "DOUBLE LETTER",
+      "multiplier": "DL",
+      "color": "#00E5FF"
+    },
+    {
+      "index": 45,
+      "axial": {
+        "q": -5,
+        "r": 1,
+        "key": "-5,1"
+      },
+      "cubic": {
+        "x": -4,
+        "y": -1,
+        "z": 5
+      },
+      "ring": 5,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 46,
+      "axial": {
+        "q": -4,
+        "r": 0,
+        "key": "-4,0"
+      },
+      "cubic": {
+        "x": -4,
+        "y": 0,
+        "z": 4
+      },
+      "ring": 4,
+      "type": "DOUBLE LETTER",
+      "multiplier": "DL",
+      "color": "#00E5FF"
+    },
+    {
+      "index": 47,
+      "axial": {
+        "q": -3,
+        "r": -1,
+        "key": "-3,-1"
+      },
+      "cubic": {
+        "x": -4,
+        "y": 1,
+        "z": 3
+      },
+      "ring": 4,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 48,
+      "axial": {
+        "q": -2,
+        "r": -2,
+        "key": "-2,-2"
+      },
+      "cubic": {
+        "x": -4,
+        "y": 2,
+        "z": 2
+      },
+      "ring": 4,
+      "type": "KEY WILD (DW)",
+      "multiplier": "DW \ud83d\udd11",
+      "color": "#E91E63"
+    },
+    {
+      "index": 49,
+      "axial": {
+        "q": -1,
+        "r": -3,
+        "key": "-1,-3"
+      },
+      "cubic": {
+        "x": -4,
+        "y": 3,
+        "z": 1
+      },
+      "ring": 4,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 50,
+      "axial": {
+        "q": 0,
+        "r": -4,
+        "key": "0,-4"
+      },
+      "cubic": {
+        "x": -4,
+        "y": 4,
+        "z": 0
+      },
+      "ring": 4,
+      "type": "DOUBLE LETTER",
+      "multiplier": "DL",
+      "color": "#00E5FF"
+    },
+    {
+      "index": 51,
+      "axial": {
+        "q": 1,
+        "r": -5,
+        "key": "1,-5"
+      },
+      "cubic": {
+        "x": -4,
+        "y": 5,
+        "z": -1
+      },
+      "ring": 5,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 52,
+      "axial": {
+        "q": 2,
+        "r": -6,
+        "key": "2,-6"
+      },
+      "cubic": {
+        "x": -4,
+        "y": 6,
+        "z": -2
+      },
+      "ring": 6,
+      "type": "DOUBLE LETTER",
+      "multiplier": "DL",
+      "color": "#00E5FF"
+    },
+    {
+      "index": 53,
+      "axial": {
+        "q": 3,
+        "r": -7,
+        "key": "3,-7"
+      },
+      "cubic": {
+        "x": -4,
+        "y": 7,
+        "z": -3
+      },
+      "ring": 7,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 54,
+      "axial": {
+        "q": 4,
+        "r": -8,
+        "key": "4,-8"
+      },
+      "cubic": {
+        "x": -4,
+        "y": 8,
+        "z": -4
+      },
+      "ring": 8,
+      "type": "TRIPLE LETTER",
+      "multiplier": "TL",
+      "color": "#00E5FF"
+    },
+    {
+      "index": 55,
+      "axial": {
+        "q": -8,
+        "r": 5,
+        "key": "-8,5"
+      },
+      "cubic": {
+        "x": -3,
+        "y": -5,
+        "z": 8
+      },
+      "ring": 8,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 56,
+      "axial": {
+        "q": -7,
+        "r": 4,
+        "key": "-7,4"
+      },
+      "cubic": {
+        "x": -3,
+        "y": -4,
+        "z": 7
+      },
+      "ring": 7,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 57,
+      "axial": {
+        "q": -6,
+        "r": 3,
+        "key": "-6,3"
+      },
+      "cubic": {
+        "x": -3,
+        "y": -3,
+        "z": 6
+      },
+      "ring": 6,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 58,
+      "axial": {
+        "q": -5,
+        "r": 2,
+        "key": "-5,2"
+      },
+      "cubic": {
+        "x": -3,
+        "y": -2,
+        "z": 5
+      },
+      "ring": 5,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 59,
+      "axial": {
+        "q": -4,
+        "r": 1,
+        "key": "-4,1"
+      },
+      "cubic": {
+        "x": -3,
+        "y": -1,
+        "z": 4
+      },
+      "ring": 4,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 60,
+      "axial": {
+        "q": -3,
+        "r": 0,
+        "key": "-3,0"
+      },
+      "cubic": {
+        "x": -3,
+        "y": 0,
+        "z": 3
+      },
+      "ring": 3,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 61,
+      "axial": {
+        "q": -2,
+        "r": -1,
+        "key": "-2,-1"
+      },
+      "cubic": {
+        "x": -3,
+        "y": 1,
+        "z": 2
+      },
+      "ring": 3,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 62,
+      "axial": {
+        "q": -1,
+        "r": -2,
+        "key": "-1,-2"
+      },
+      "cubic": {
+        "x": -3,
+        "y": 2,
+        "z": 1
+      },
+      "ring": 3,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 63,
+      "axial": {
+        "q": 0,
+        "r": -3,
+        "key": "0,-3"
+      },
+      "cubic": {
+        "x": -3,
+        "y": 3,
+        "z": 0
+      },
+      "ring": 3,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 64,
+      "axial": {
+        "q": 1,
+        "r": -4,
+        "key": "1,-4"
+      },
+      "cubic": {
+        "x": -3,
+        "y": 4,
+        "z": -1
+      },
+      "ring": 4,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 65,
+      "axial": {
+        "q": 2,
+        "r": -5,
+        "key": "2,-5"
+      },
+      "cubic": {
+        "x": -3,
+        "y": 5,
+        "z": -2
+      },
+      "ring": 5,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 66,
+      "axial": {
+        "q": 3,
+        "r": -6,
+        "key": "3,-6"
+      },
+      "cubic": {
+        "x": -3,
+        "y": 6,
+        "z": -3
+      },
+      "ring": 6,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 67,
+      "axial": {
+        "q": 4,
+        "r": -7,
+        "key": "4,-7"
+      },
+      "cubic": {
+        "x": -3,
+        "y": 7,
+        "z": -4
+      },
+      "ring": 7,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 68,
+      "axial": {
+        "q": 5,
+        "r": -8,
+        "key": "5,-8"
+      },
+      "cubic": {
+        "x": -3,
+        "y": 8,
+        "z": -5
+      },
+      "ring": 8,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 69,
+      "axial": {
+        "q": -8,
+        "r": 6,
+        "key": "-8,6"
+      },
+      "cubic": {
+        "x": -2,
+        "y": -6,
+        "z": 8
+      },
+      "ring": 8,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 70,
+      "axial": {
+        "q": -7,
+        "r": 5,
+        "key": "-7,5"
+      },
+      "cubic": {
+        "x": -2,
+        "y": -5,
+        "z": 7
+      },
+      "ring": 7,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 71,
+      "axial": {
+        "q": -6,
+        "r": 4,
+        "key": "-6,4"
+      },
+      "cubic": {
+        "x": -2,
+        "y": -4,
+        "z": 6
+      },
+      "ring": 6,
+      "type": "DOUBLE LETTER",
+      "multiplier": "DL",
+      "color": "#00E5FF"
+    },
+    {
+      "index": 72,
+      "axial": {
+        "q": -5,
+        "r": 3,
+        "key": "-5,3"
+      },
+      "cubic": {
+        "x": -2,
+        "y": -3,
+        "z": 5
+      },
+      "ring": 5,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 73,
+      "axial": {
+        "q": -4,
+        "r": 2,
+        "key": "-4,2"
+      },
+      "cubic": {
+        "x": -2,
+        "y": -2,
+        "z": 4
+      },
+      "ring": 4,
+      "type": "KEY WILD (DW)",
+      "multiplier": "DW \ud83d\udd11",
+      "color": "#E91E63"
+    },
+    {
+      "index": 74,
+      "axial": {
+        "q": -3,
+        "r": 1,
+        "key": "-3,1"
+      },
+      "cubic": {
+        "x": -2,
+        "y": -1,
+        "z": 3
+      },
+      "ring": 3,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 75,
+      "axial": {
+        "q": -2,
+        "r": 0,
+        "key": "-2,0"
+      },
+      "cubic": {
+        "x": -2,
+        "y": 0,
+        "z": 2
+      },
+      "ring": 2,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 76,
+      "axial": {
+        "q": -1,
+        "r": -1,
+        "key": "-1,-1"
+      },
+      "cubic": {
+        "x": -2,
+        "y": 1,
+        "z": 1
+      },
+      "ring": 2,
+      "type": "DOUBLE LETTER",
+      "multiplier": "DL",
+      "color": "#00E5FF"
+    },
+    {
+      "index": 77,
+      "axial": {
+        "q": 0,
+        "r": -2,
+        "key": "0,-2"
+      },
+      "cubic": {
+        "x": -2,
+        "y": 2,
+        "z": 0
+      },
+      "ring": 2,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 78,
+      "axial": {
+        "q": 1,
+        "r": -3,
+        "key": "1,-3"
+      },
+      "cubic": {
+        "x": -2,
+        "y": 3,
+        "z": -1
+      },
+      "ring": 3,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 79,
+      "axial": {
+        "q": 2,
+        "r": -4,
+        "key": "2,-4"
+      },
+      "cubic": {
+        "x": -2,
+        "y": 4,
+        "z": -2
+      },
+      "ring": 4,
+      "type": "KEY WILD (DW)",
+      "multiplier": "DW \ud83d\udd11",
+      "color": "#E91E63"
+    },
+    {
+      "index": 80,
+      "axial": {
+        "q": 3,
+        "r": -5,
+        "key": "3,-5"
+      },
+      "cubic": {
+        "x": -2,
+        "y": 5,
+        "z": -3
+      },
+      "ring": 5,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 81,
+      "axial": {
+        "q": 4,
+        "r": -6,
+        "key": "4,-6"
+      },
+      "cubic": {
+        "x": -2,
+        "y": 6,
+        "z": -4
+      },
+      "ring": 6,
+      "type": "DOUBLE LETTER",
+      "multiplier": "DL",
+      "color": "#00E5FF"
+    },
+    {
+      "index": 82,
+      "axial": {
+        "q": 5,
+        "r": -7,
+        "key": "5,-7"
+      },
+      "cubic": {
+        "x": -2,
+        "y": 7,
+        "z": -5
+      },
+      "ring": 7,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 83,
+      "axial": {
+        "q": 6,
+        "r": -8,
+        "key": "6,-8"
+      },
+      "cubic": {
+        "x": -2,
+        "y": 8,
+        "z": -6
+      },
+      "ring": 8,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 84,
+      "axial": {
+        "q": -8,
+        "r": 7,
+        "key": "-8,7"
+      },
+      "cubic": {
+        "x": -1,
+        "y": -7,
+        "z": 8
+      },
+      "ring": 8,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 85,
+      "axial": {
+        "q": -7,
+        "r": 6,
+        "key": "-7,6"
+      },
+      "cubic": {
+        "x": -1,
+        "y": -6,
+        "z": 7
+      },
+      "ring": 7,
+      "type": "DOUBLE WORD",
+      "multiplier": "DW",
+      "color": "#E91E63"
+    },
+    {
+      "index": 86,
+      "axial": {
+        "q": -6,
+        "r": 5,
+        "key": "-6,5"
+      },
+      "cubic": {
+        "x": -1,
+        "y": -5,
+        "z": 6
+      },
+      "ring": 6,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 87,
+      "axial": {
+        "q": -5,
+        "r": 4,
+        "key": "-5,4"
+      },
+      "cubic": {
+        "x": -1,
+        "y": -4,
+        "z": 5
+      },
+      "ring": 5,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 88,
+      "axial": {
+        "q": -4,
+        "r": 3,
+        "key": "-4,3"
+      },
+      "cubic": {
+        "x": -1,
+        "y": -3,
+        "z": 4
+      },
+      "ring": 4,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 89,
+      "axial": {
+        "q": -3,
+        "r": 2,
+        "key": "-3,2"
+      },
+      "cubic": {
+        "x": -1,
+        "y": -2,
+        "z": 3
+      },
+      "ring": 3,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 90,
+      "axial": {
+        "q": -2,
+        "r": 1,
+        "key": "-2,1"
+      },
+      "cubic": {
+        "x": -1,
+        "y": -1,
+        "z": 2
+      },
+      "ring": 2,
+      "type": "DOUBLE LETTER",
+      "multiplier": "DL",
+      "color": "#00E5FF"
+    },
+    {
+      "index": 91,
+      "axial": {
+        "q": -1,
+        "r": 0,
+        "key": "-1,0"
+      },
+      "cubic": {
+        "x": -1,
+        "y": 0,
+        "z": 1
+      },
+      "ring": 1,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 92,
+      "axial": {
+        "q": 0,
+        "r": -1,
+        "key": "0,-1"
+      },
+      "cubic": {
+        "x": -1,
+        "y": 1,
+        "z": 0
+      },
+      "ring": 1,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 93,
+      "axial": {
+        "q": 1,
+        "r": -2,
+        "key": "1,-2"
+      },
+      "cubic": {
+        "x": -1,
+        "y": 2,
+        "z": -1
+      },
+      "ring": 2,
+      "type": "DOUBLE LETTER",
+      "multiplier": "DL",
+      "color": "#00E5FF"
+    },
+    {
+      "index": 94,
+      "axial": {
+        "q": 2,
+        "r": -3,
+        "key": "2,-3"
+      },
+      "cubic": {
+        "x": -1,
+        "y": 3,
+        "z": -2
+      },
+      "ring": 3,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 95,
+      "axial": {
+        "q": 3,
+        "r": -4,
+        "key": "3,-4"
+      },
+      "cubic": {
+        "x": -1,
+        "y": 4,
+        "z": -3
+      },
+      "ring": 4,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 96,
+      "axial": {
+        "q": 4,
+        "r": -5,
+        "key": "4,-5"
+      },
+      "cubic": {
+        "x": -1,
+        "y": 5,
+        "z": -4
+      },
+      "ring": 5,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 97,
+      "axial": {
+        "q": 5,
+        "r": -6,
+        "key": "5,-6"
+      },
+      "cubic": {
+        "x": -1,
+        "y": 6,
+        "z": -5
+      },
+      "ring": 6,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 98,
+      "axial": {
+        "q": 6,
+        "r": -7,
+        "key": "6,-7"
+      },
+      "cubic": {
+        "x": -1,
+        "y": 7,
+        "z": -6
+      },
+      "ring": 7,
+      "type": "DOUBLE WORD",
+      "multiplier": "DW",
+      "color": "#E91E63"
+    },
+    {
+      "index": 99,
+      "axial": {
+        "q": 7,
+        "r": -8,
+        "key": "7,-8"
+      },
+      "cubic": {
+        "x": -1,
+        "y": 8,
+        "z": -7
+      },
+      "ring": 8,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 100,
+      "axial": {
+        "q": -8,
+        "r": 8,
+        "key": "-8,8"
+      },
+      "cubic": {
+        "x": 0,
+        "y": -8,
+        "z": 8
+      },
+      "ring": 8,
+      "type": "TRIPLE WORD",
+      "multiplier": "TW",
+      "color": "#AEEA00"
+    },
+    {
+      "index": 101,
+      "axial": {
+        "q": -7,
+        "r": 7,
+        "key": "-7,7"
+      },
+      "cubic": {
+        "x": 0,
+        "y": -7,
+        "z": 7
+      },
+      "ring": 7,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 102,
+      "axial": {
+        "q": -6,
+        "r": 6,
+        "key": "-6,6"
+      },
+      "cubic": {
+        "x": 0,
+        "y": -6,
+        "z": 6
+      },
+      "ring": 6,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 103,
+      "axial": {
+        "q": -5,
+        "r": 5,
+        "key": "-5,5"
+      },
+      "cubic": {
+        "x": 0,
+        "y": -5,
+        "z": 5
+      },
+      "ring": 5,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 104,
+      "axial": {
+        "q": -4,
+        "r": 4,
+        "key": "-4,4"
+      },
+      "cubic": {
+        "x": 0,
+        "y": -4,
+        "z": 4
+      },
+      "ring": 4,
+      "type": "DOUBLE LETTER",
+      "multiplier": "DL",
+      "color": "#00E5FF"
+    },
+    {
+      "index": 105,
+      "axial": {
+        "q": -3,
+        "r": 3,
+        "key": "-3,3"
+      },
+      "cubic": {
+        "x": 0,
+        "y": -3,
+        "z": 3
+      },
+      "ring": 3,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 106,
+      "axial": {
+        "q": -2,
+        "r": 2,
+        "key": "-2,2"
+      },
+      "cubic": {
+        "x": 0,
+        "y": -2,
+        "z": 2
+      },
+      "ring": 2,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 107,
+      "axial": {
+        "q": -1,
+        "r": 1,
+        "key": "-1,1"
+      },
+      "cubic": {
+        "x": 0,
+        "y": -1,
+        "z": 1
+      },
+      "ring": 1,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 108,
+      "axial": {
+        "q": 0,
+        "r": 0,
+        "key": "0,0"
+      },
+      "cubic": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ring": 0,
+      "type": "START",
+      "multiplier": "\u2605",
+      "color": "#E91E63"
+    },
+    {
+      "index": 109,
+      "axial": {
+        "q": 1,
+        "r": -1,
+        "key": "1,-1"
+      },
+      "cubic": {
+        "x": 0,
+        "y": 1,
+        "z": -1
+      },
+      "ring": 1,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 110,
+      "axial": {
+        "q": 2,
+        "r": -2,
+        "key": "2,-2"
+      },
+      "cubic": {
+        "x": 0,
+        "y": 2,
+        "z": -2
+      },
+      "ring": 2,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 111,
+      "axial": {
+        "q": 3,
+        "r": -3,
+        "key": "3,-3"
+      },
+      "cubic": {
+        "x": 0,
+        "y": 3,
+        "z": -3
+      },
+      "ring": 3,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 112,
+      "axial": {
+        "q": 4,
+        "r": -4,
+        "key": "4,-4"
+      },
+      "cubic": {
+        "x": 0,
+        "y": 4,
+        "z": -4
+      },
+      "ring": 4,
+      "type": "DOUBLE LETTER",
+      "multiplier": "DL",
+      "color": "#00E5FF"
+    },
+    {
+      "index": 113,
+      "axial": {
+        "q": 5,
+        "r": -5,
+        "key": "5,-5"
+      },
+      "cubic": {
+        "x": 0,
+        "y": 5,
+        "z": -5
+      },
+      "ring": 5,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 114,
+      "axial": {
+        "q": 6,
+        "r": -6,
+        "key": "6,-6"
+      },
+      "cubic": {
+        "x": 0,
+        "y": 6,
+        "z": -6
+      },
+      "ring": 6,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 115,
+      "axial": {
+        "q": 7,
+        "r": -7,
+        "key": "7,-7"
+      },
+      "cubic": {
+        "x": 0,
+        "y": 7,
+        "z": -7
+      },
+      "ring": 7,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 116,
+      "axial": {
+        "q": 8,
+        "r": -8,
+        "key": "8,-8"
+      },
+      "cubic": {
+        "x": 0,
+        "y": 8,
+        "z": -8
+      },
+      "ring": 8,
+      "type": "TRIPLE WORD",
+      "multiplier": "TW",
+      "color": "#AEEA00"
+    },
+    {
+      "index": 117,
+      "axial": {
+        "q": -7,
+        "r": 8,
+        "key": "-7,8"
+      },
+      "cubic": {
+        "x": 1,
+        "y": -8,
+        "z": 7
+      },
+      "ring": 8,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 118,
+      "axial": {
+        "q": -6,
+        "r": 7,
+        "key": "-6,7"
+      },
+      "cubic": {
+        "x": 1,
+        "y": -7,
+        "z": 6
+      },
+      "ring": 7,
+      "type": "DOUBLE WORD",
+      "multiplier": "DW",
+      "color": "#E91E63"
+    },
+    {
+      "index": 119,
+      "axial": {
+        "q": -5,
+        "r": 6,
+        "key": "-5,6"
+      },
+      "cubic": {
+        "x": 1,
+        "y": -6,
+        "z": 5
+      },
+      "ring": 6,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 120,
+      "axial": {
+        "q": -4,
+        "r": 5,
+        "key": "-4,5"
+      },
+      "cubic": {
+        "x": 1,
+        "y": -5,
+        "z": 4
+      },
+      "ring": 5,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 121,
+      "axial": {
+        "q": -3,
+        "r": 4,
+        "key": "-3,4"
+      },
+      "cubic": {
+        "x": 1,
+        "y": -4,
+        "z": 3
+      },
+      "ring": 4,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 122,
+      "axial": {
+        "q": -2,
+        "r": 3,
+        "key": "-2,3"
+      },
+      "cubic": {
+        "x": 1,
+        "y": -3,
+        "z": 2
+      },
+      "ring": 3,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 123,
+      "axial": {
+        "q": -1,
+        "r": 2,
+        "key": "-1,2"
+      },
+      "cubic": {
+        "x": 1,
+        "y": -2,
+        "z": 1
+      },
+      "ring": 2,
+      "type": "DOUBLE LETTER",
+      "multiplier": "DL",
+      "color": "#00E5FF"
+    },
+    {
+      "index": 124,
+      "axial": {
+        "q": 0,
+        "r": 1,
+        "key": "0,1"
+      },
+      "cubic": {
+        "x": 1,
+        "y": -1,
+        "z": 0
+      },
+      "ring": 1,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 125,
+      "axial": {
+        "q": 1,
+        "r": 0,
+        "key": "1,0"
+      },
+      "cubic": {
+        "x": 1,
+        "y": 0,
+        "z": -1
+      },
+      "ring": 1,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 126,
+      "axial": {
+        "q": 2,
+        "r": -1,
+        "key": "2,-1"
+      },
+      "cubic": {
+        "x": 1,
+        "y": 1,
+        "z": -2
+      },
+      "ring": 2,
+      "type": "DOUBLE LETTER",
+      "multiplier": "DL",
+      "color": "#00E5FF"
+    },
+    {
+      "index": 127,
+      "axial": {
+        "q": 3,
+        "r": -2,
+        "key": "3,-2"
+      },
+      "cubic": {
+        "x": 1,
+        "y": 2,
+        "z": -3
+      },
+      "ring": 3,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 128,
+      "axial": {
+        "q": 4,
+        "r": -3,
+        "key": "4,-3"
+      },
+      "cubic": {
+        "x": 1,
+        "y": 3,
+        "z": -4
+      },
+      "ring": 4,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 129,
+      "axial": {
+        "q": 5,
+        "r": -4,
+        "key": "5,-4"
+      },
+      "cubic": {
+        "x": 1,
+        "y": 4,
+        "z": -5
+      },
+      "ring": 5,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 130,
+      "axial": {
+        "q": 6,
+        "r": -5,
+        "key": "6,-5"
+      },
+      "cubic": {
+        "x": 1,
+        "y": 5,
+        "z": -6
+      },
+      "ring": 6,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 131,
+      "axial": {
+        "q": 7,
+        "r": -6,
+        "key": "7,-6"
+      },
+      "cubic": {
+        "x": 1,
+        "y": 6,
+        "z": -7
+      },
+      "ring": 7,
+      "type": "DOUBLE WORD",
+      "multiplier": "DW",
+      "color": "#E91E63"
+    },
+    {
+      "index": 132,
+      "axial": {
+        "q": 8,
+        "r": -7,
+        "key": "8,-7"
+      },
+      "cubic": {
+        "x": 1,
+        "y": 7,
+        "z": -8
+      },
+      "ring": 8,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 133,
+      "axial": {
+        "q": -6,
+        "r": 8,
+        "key": "-6,8"
+      },
+      "cubic": {
+        "x": 2,
+        "y": -8,
+        "z": 6
+      },
+      "ring": 8,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 134,
+      "axial": {
+        "q": -5,
+        "r": 7,
+        "key": "-5,7"
+      },
+      "cubic": {
+        "x": 2,
+        "y": -7,
+        "z": 5
+      },
+      "ring": 7,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 135,
+      "axial": {
+        "q": -4,
+        "r": 6,
+        "key": "-4,6"
+      },
+      "cubic": {
+        "x": 2,
+        "y": -6,
+        "z": 4
+      },
+      "ring": 6,
+      "type": "DOUBLE LETTER",
+      "multiplier": "DL",
+      "color": "#00E5FF"
+    },
+    {
+      "index": 136,
+      "axial": {
+        "q": -3,
+        "r": 5,
+        "key": "-3,5"
+      },
+      "cubic": {
+        "x": 2,
+        "y": -5,
+        "z": 3
+      },
+      "ring": 5,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 137,
+      "axial": {
+        "q": -2,
+        "r": 4,
+        "key": "-2,4"
+      },
+      "cubic": {
+        "x": 2,
+        "y": -4,
+        "z": 2
+      },
+      "ring": 4,
+      "type": "KEY WILD (DW)",
+      "multiplier": "DW \ud83d\udd11",
+      "color": "#E91E63"
+    },
+    {
+      "index": 138,
+      "axial": {
+        "q": -1,
+        "r": 3,
+        "key": "-1,3"
+      },
+      "cubic": {
+        "x": 2,
+        "y": -3,
+        "z": 1
+      },
+      "ring": 3,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 139,
+      "axial": {
+        "q": 0,
+        "r": 2,
+        "key": "0,2"
+      },
+      "cubic": {
+        "x": 2,
+        "y": -2,
+        "z": 0
+      },
+      "ring": 2,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 140,
+      "axial": {
+        "q": 1,
+        "r": 1,
+        "key": "1,1"
+      },
+      "cubic": {
+        "x": 2,
+        "y": -1,
+        "z": -1
+      },
+      "ring": 2,
+      "type": "DOUBLE LETTER",
+      "multiplier": "DL",
+      "color": "#00E5FF"
+    },
+    {
+      "index": 141,
+      "axial": {
+        "q": 2,
+        "r": 0,
+        "key": "2,0"
+      },
+      "cubic": {
+        "x": 2,
+        "y": 0,
+        "z": -2
+      },
+      "ring": 2,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 142,
+      "axial": {
+        "q": 3,
+        "r": -1,
+        "key": "3,-1"
+      },
+      "cubic": {
+        "x": 2,
+        "y": 1,
+        "z": -3
+      },
+      "ring": 3,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 143,
+      "axial": {
+        "q": 4,
+        "r": -2,
+        "key": "4,-2"
+      },
+      "cubic": {
+        "x": 2,
+        "y": 2,
+        "z": -4
+      },
+      "ring": 4,
+      "type": "KEY WILD (DW)",
+      "multiplier": "DW \ud83d\udd11",
+      "color": "#E91E63"
+    },
+    {
+      "index": 144,
+      "axial": {
+        "q": 5,
+        "r": -3,
+        "key": "5,-3"
+      },
+      "cubic": {
+        "x": 2,
+        "y": 3,
+        "z": -5
+      },
+      "ring": 5,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 145,
+      "axial": {
+        "q": 6,
+        "r": -4,
+        "key": "6,-4"
+      },
+      "cubic": {
+        "x": 2,
+        "y": 4,
+        "z": -6
+      },
+      "ring": 6,
+      "type": "DOUBLE LETTER",
+      "multiplier": "DL",
+      "color": "#00E5FF"
+    },
+    {
+      "index": 146,
+      "axial": {
+        "q": 7,
+        "r": -5,
+        "key": "7,-5"
+      },
+      "cubic": {
+        "x": 2,
+        "y": 5,
+        "z": -7
+      },
+      "ring": 7,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 147,
+      "axial": {
+        "q": 8,
+        "r": -6,
+        "key": "8,-6"
+      },
+      "cubic": {
+        "x": 2,
+        "y": 6,
+        "z": -8
+      },
+      "ring": 8,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 148,
+      "axial": {
+        "q": -5,
+        "r": 8,
+        "key": "-5,8"
+      },
+      "cubic": {
+        "x": 3,
+        "y": -8,
+        "z": 5
+      },
+      "ring": 8,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 149,
+      "axial": {
+        "q": -4,
+        "r": 7,
+        "key": "-4,7"
+      },
+      "cubic": {
+        "x": 3,
+        "y": -7,
+        "z": 4
+      },
+      "ring": 7,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 150,
+      "axial": {
+        "q": -3,
+        "r": 6,
+        "key": "-3,6"
+      },
+      "cubic": {
+        "x": 3,
+        "y": -6,
+        "z": 3
+      },
+      "ring": 6,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 151,
+      "axial": {
+        "q": -2,
+        "r": 5,
+        "key": "-2,5"
+      },
+      "cubic": {
+        "x": 3,
+        "y": -5,
+        "z": 2
+      },
+      "ring": 5,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 152,
+      "axial": {
+        "q": -1,
+        "r": 4,
+        "key": "-1,4"
+      },
+      "cubic": {
+        "x": 3,
+        "y": -4,
+        "z": 1
+      },
+      "ring": 4,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 153,
+      "axial": {
+        "q": 0,
+        "r": 3,
+        "key": "0,3"
+      },
+      "cubic": {
+        "x": 3,
+        "y": -3,
+        "z": 0
+      },
+      "ring": 3,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 154,
+      "axial": {
+        "q": 1,
+        "r": 2,
+        "key": "1,2"
+      },
+      "cubic": {
+        "x": 3,
+        "y": -2,
+        "z": -1
+      },
+      "ring": 3,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 155,
+      "axial": {
+        "q": 2,
+        "r": 1,
+        "key": "2,1"
+      },
+      "cubic": {
+        "x": 3,
+        "y": -1,
+        "z": -2
+      },
+      "ring": 3,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 156,
+      "axial": {
+        "q": 3,
+        "r": 0,
+        "key": "3,0"
+      },
+      "cubic": {
+        "x": 3,
+        "y": 0,
+        "z": -3
+      },
+      "ring": 3,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 157,
+      "axial": {
+        "q": 4,
+        "r": -1,
+        "key": "4,-1"
+      },
+      "cubic": {
+        "x": 3,
+        "y": 1,
+        "z": -4
+      },
+      "ring": 4,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 158,
+      "axial": {
+        "q": 5,
+        "r": -2,
+        "key": "5,-2"
+      },
+      "cubic": {
+        "x": 3,
+        "y": 2,
+        "z": -5
+      },
+      "ring": 5,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 159,
+      "axial": {
+        "q": 6,
+        "r": -3,
+        "key": "6,-3"
+      },
+      "cubic": {
+        "x": 3,
+        "y": 3,
+        "z": -6
+      },
+      "ring": 6,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 160,
+      "axial": {
+        "q": 7,
+        "r": -4,
+        "key": "7,-4"
+      },
+      "cubic": {
+        "x": 3,
+        "y": 4,
+        "z": -7
+      },
+      "ring": 7,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 161,
+      "axial": {
+        "q": 8,
+        "r": -5,
+        "key": "8,-5"
+      },
+      "cubic": {
+        "x": 3,
+        "y": 5,
+        "z": -8
+      },
+      "ring": 8,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 162,
+      "axial": {
+        "q": -4,
+        "r": 8,
+        "key": "-4,8"
+      },
+      "cubic": {
+        "x": 4,
+        "y": -8,
+        "z": 4
+      },
+      "ring": 8,
+      "type": "TRIPLE LETTER",
+      "multiplier": "TL",
+      "color": "#00E5FF"
+    },
+    {
+      "index": 163,
+      "axial": {
+        "q": -3,
+        "r": 7,
+        "key": "-3,7"
+      },
+      "cubic": {
+        "x": 4,
+        "y": -7,
+        "z": 3
+      },
+      "ring": 7,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 164,
+      "axial": {
+        "q": -2,
+        "r": 6,
+        "key": "-2,6"
+      },
+      "cubic": {
+        "x": 4,
+        "y": -6,
+        "z": 2
+      },
+      "ring": 6,
+      "type": "DOUBLE LETTER",
+      "multiplier": "DL",
+      "color": "#00E5FF"
+    },
+    {
+      "index": 165,
+      "axial": {
+        "q": -1,
+        "r": 5,
+        "key": "-1,5"
+      },
+      "cubic": {
+        "x": 4,
+        "y": -5,
+        "z": 1
+      },
+      "ring": 5,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 166,
+      "axial": {
+        "q": 0,
+        "r": 4,
+        "key": "0,4"
+      },
+      "cubic": {
+        "x": 4,
+        "y": -4,
+        "z": 0
+      },
+      "ring": 4,
+      "type": "DOUBLE LETTER",
+      "multiplier": "DL",
+      "color": "#00E5FF"
+    },
+    {
+      "index": 167,
+      "axial": {
+        "q": 1,
+        "r": 3,
+        "key": "1,3"
+      },
+      "cubic": {
+        "x": 4,
+        "y": -3,
+        "z": -1
+      },
+      "ring": 4,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 168,
+      "axial": {
+        "q": 2,
+        "r": 2,
+        "key": "2,2"
+      },
+      "cubic": {
+        "x": 4,
+        "y": -2,
+        "z": -2
+      },
+      "ring": 4,
+      "type": "KEY WILD (DW)",
+      "multiplier": "DW \ud83d\udd11",
+      "color": "#E91E63"
+    },
+    {
+      "index": 169,
+      "axial": {
+        "q": 3,
+        "r": 1,
+        "key": "3,1"
+      },
+      "cubic": {
+        "x": 4,
+        "y": -1,
+        "z": -3
+      },
+      "ring": 4,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 170,
+      "axial": {
+        "q": 4,
+        "r": 0,
+        "key": "4,0"
+      },
+      "cubic": {
+        "x": 4,
+        "y": 0,
+        "z": -4
+      },
+      "ring": 4,
+      "type": "DOUBLE LETTER",
+      "multiplier": "DL",
+      "color": "#00E5FF"
+    },
+    {
+      "index": 171,
+      "axial": {
+        "q": 5,
+        "r": -1,
+        "key": "5,-1"
+      },
+      "cubic": {
+        "x": 4,
+        "y": 1,
+        "z": -5
+      },
+      "ring": 5,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 172,
+      "axial": {
+        "q": 6,
+        "r": -2,
+        "key": "6,-2"
+      },
+      "cubic": {
+        "x": 4,
+        "y": 2,
+        "z": -6
+      },
+      "ring": 6,
+      "type": "DOUBLE LETTER",
+      "multiplier": "DL",
+      "color": "#00E5FF"
+    },
+    {
+      "index": 173,
+      "axial": {
+        "q": 7,
+        "r": -3,
+        "key": "7,-3"
+      },
+      "cubic": {
+        "x": 4,
+        "y": 3,
+        "z": -7
+      },
+      "ring": 7,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 174,
+      "axial": {
+        "q": 8,
+        "r": -4,
+        "key": "8,-4"
+      },
+      "cubic": {
+        "x": 4,
+        "y": 4,
+        "z": -8
+      },
+      "ring": 8,
+      "type": "TRIPLE LETTER",
+      "multiplier": "TL",
+      "color": "#00E5FF"
+    },
+    {
+      "index": 175,
+      "axial": {
+        "q": -3,
+        "r": 8,
+        "key": "-3,8"
+      },
+      "cubic": {
+        "x": 5,
+        "y": -8,
+        "z": 3
+      },
+      "ring": 8,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 176,
+      "axial": {
+        "q": -2,
+        "r": 7,
+        "key": "-2,7"
+      },
+      "cubic": {
+        "x": 5,
+        "y": -7,
+        "z": 2
+      },
+      "ring": 7,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 177,
+      "axial": {
+        "q": -1,
+        "r": 6,
+        "key": "-1,6"
+      },
+      "cubic": {
+        "x": 5,
+        "y": -6,
+        "z": 1
+      },
+      "ring": 6,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 178,
+      "axial": {
+        "q": 0,
+        "r": 5,
+        "key": "0,5"
+      },
+      "cubic": {
+        "x": 5,
+        "y": -5,
+        "z": 0
+      },
+      "ring": 5,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 179,
+      "axial": {
+        "q": 1,
+        "r": 4,
+        "key": "1,4"
+      },
+      "cubic": {
+        "x": 5,
+        "y": -4,
+        "z": -1
+      },
+      "ring": 5,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 180,
+      "axial": {
+        "q": 2,
+        "r": 3,
+        "key": "2,3"
+      },
+      "cubic": {
+        "x": 5,
+        "y": -3,
+        "z": -2
+      },
+      "ring": 5,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 181,
+      "axial": {
+        "q": 3,
+        "r": 2,
+        "key": "3,2"
+      },
+      "cubic": {
+        "x": 5,
+        "y": -2,
+        "z": -3
+      },
+      "ring": 5,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 182,
+      "axial": {
+        "q": 4,
+        "r": 1,
+        "key": "4,1"
+      },
+      "cubic": {
+        "x": 5,
+        "y": -1,
+        "z": -4
+      },
+      "ring": 5,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 183,
+      "axial": {
+        "q": 5,
+        "r": 0,
+        "key": "5,0"
+      },
+      "cubic": {
+        "x": 5,
+        "y": 0,
+        "z": -5
+      },
+      "ring": 5,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 184,
+      "axial": {
+        "q": 6,
+        "r": -1,
+        "key": "6,-1"
+      },
+      "cubic": {
+        "x": 5,
+        "y": 1,
+        "z": -6
+      },
+      "ring": 6,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 185,
+      "axial": {
+        "q": 7,
+        "r": -2,
+        "key": "7,-2"
+      },
+      "cubic": {
+        "x": 5,
+        "y": 2,
+        "z": -7
+      },
+      "ring": 7,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 186,
+      "axial": {
+        "q": 8,
+        "r": -3,
+        "key": "8,-3"
+      },
+      "cubic": {
+        "x": 5,
+        "y": 3,
+        "z": -8
+      },
+      "ring": 8,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 187,
+      "axial": {
+        "q": -2,
+        "r": 8,
+        "key": "-2,8"
+      },
+      "cubic": {
+        "x": 6,
+        "y": -8,
+        "z": 2
+      },
+      "ring": 8,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 188,
+      "axial": {
+        "q": -1,
+        "r": 7,
+        "key": "-1,7"
+      },
+      "cubic": {
+        "x": 6,
+        "y": -7,
+        "z": 1
+      },
+      "ring": 7,
+      "type": "DOUBLE WORD",
+      "multiplier": "DW",
+      "color": "#E91E63"
+    },
+    {
+      "index": 189,
+      "axial": {
+        "q": 0,
+        "r": 6,
+        "key": "0,6"
+      },
+      "cubic": {
+        "x": 6,
+        "y": -6,
+        "z": 0
+      },
+      "ring": 6,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 190,
+      "axial": {
+        "q": 1,
+        "r": 5,
+        "key": "1,5"
+      },
+      "cubic": {
+        "x": 6,
+        "y": -5,
+        "z": -1
+      },
+      "ring": 6,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 191,
+      "axial": {
+        "q": 2,
+        "r": 4,
+        "key": "2,4"
+      },
+      "cubic": {
+        "x": 6,
+        "y": -4,
+        "z": -2
+      },
+      "ring": 6,
+      "type": "DOUBLE LETTER",
+      "multiplier": "DL",
+      "color": "#00E5FF"
+    },
+    {
+      "index": 192,
+      "axial": {
+        "q": 3,
+        "r": 3,
+        "key": "3,3"
+      },
+      "cubic": {
+        "x": 6,
+        "y": -3,
+        "z": -3
+      },
+      "ring": 6,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 193,
+      "axial": {
+        "q": 4,
+        "r": 2,
+        "key": "4,2"
+      },
+      "cubic": {
+        "x": 6,
+        "y": -2,
+        "z": -4
+      },
+      "ring": 6,
+      "type": "DOUBLE LETTER",
+      "multiplier": "DL",
+      "color": "#00E5FF"
+    },
+    {
+      "index": 194,
+      "axial": {
+        "q": 5,
+        "r": 1,
+        "key": "5,1"
+      },
+      "cubic": {
+        "x": 6,
+        "y": -1,
+        "z": -5
+      },
+      "ring": 6,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 195,
+      "axial": {
+        "q": 6,
+        "r": 0,
+        "key": "6,0"
+      },
+      "cubic": {
+        "x": 6,
+        "y": 0,
+        "z": -6
+      },
+      "ring": 6,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 196,
+      "axial": {
+        "q": 7,
+        "r": -1,
+        "key": "7,-1"
+      },
+      "cubic": {
+        "x": 6,
+        "y": 1,
+        "z": -7
+      },
+      "ring": 7,
+      "type": "DOUBLE WORD",
+      "multiplier": "DW",
+      "color": "#E91E63"
+    },
+    {
+      "index": 197,
+      "axial": {
+        "q": 8,
+        "r": -2,
+        "key": "8,-2"
+      },
+      "cubic": {
+        "x": 6,
+        "y": 2,
+        "z": -8
+      },
+      "ring": 8,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 198,
+      "axial": {
+        "q": -1,
+        "r": 8,
+        "key": "-1,8"
+      },
+      "cubic": {
+        "x": 7,
+        "y": -8,
+        "z": 1
+      },
+      "ring": 8,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 199,
+      "axial": {
+        "q": 0,
+        "r": 7,
+        "key": "0,7"
+      },
+      "cubic": {
+        "x": 7,
+        "y": -7,
+        "z": 0
+      },
+      "ring": 7,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 200,
+      "axial": {
+        "q": 1,
+        "r": 6,
+        "key": "1,6"
+      },
+      "cubic": {
+        "x": 7,
+        "y": -6,
+        "z": -1
+      },
+      "ring": 7,
+      "type": "DOUBLE WORD",
+      "multiplier": "DW",
+      "color": "#E91E63"
+    },
+    {
+      "index": 201,
+      "axial": {
+        "q": 2,
+        "r": 5,
+        "key": "2,5"
+      },
+      "cubic": {
+        "x": 7,
+        "y": -5,
+        "z": -2
+      },
+      "ring": 7,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 202,
+      "axial": {
+        "q": 3,
+        "r": 4,
+        "key": "3,4"
+      },
+      "cubic": {
+        "x": 7,
+        "y": -4,
+        "z": -3
+      },
+      "ring": 7,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 203,
+      "axial": {
+        "q": 4,
+        "r": 3,
+        "key": "4,3"
+      },
+      "cubic": {
+        "x": 7,
+        "y": -3,
+        "z": -4
+      },
+      "ring": 7,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 204,
+      "axial": {
+        "q": 5,
+        "r": 2,
+        "key": "5,2"
+      },
+      "cubic": {
+        "x": 7,
+        "y": -2,
+        "z": -5
+      },
+      "ring": 7,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 205,
+      "axial": {
+        "q": 6,
+        "r": 1,
+        "key": "6,1"
+      },
+      "cubic": {
+        "x": 7,
+        "y": -1,
+        "z": -6
+      },
+      "ring": 7,
+      "type": "DOUBLE WORD",
+      "multiplier": "DW",
+      "color": "#E91E63"
+    },
+    {
+      "index": 206,
+      "axial": {
+        "q": 7,
+        "r": 0,
+        "key": "7,0"
+      },
+      "cubic": {
+        "x": 7,
+        "y": 0,
+        "z": -7
+      },
+      "ring": 7,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 207,
+      "axial": {
+        "q": 8,
+        "r": -1,
+        "key": "8,-1"
+      },
+      "cubic": {
+        "x": 7,
+        "y": 1,
+        "z": -8
+      },
+      "ring": 8,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 208,
+      "axial": {
+        "q": 0,
+        "r": 8,
+        "key": "0,8"
+      },
+      "cubic": {
+        "x": 8,
+        "y": -8,
+        "z": 0
+      },
+      "ring": 8,
+      "type": "TRIPLE WORD",
+      "multiplier": "TW",
+      "color": "#AEEA00"
+    },
+    {
+      "index": 209,
+      "axial": {
+        "q": 1,
+        "r": 7,
+        "key": "1,7"
+      },
+      "cubic": {
+        "x": 8,
+        "y": -7,
+        "z": -1
+      },
+      "ring": 8,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 210,
+      "axial": {
+        "q": 2,
+        "r": 6,
+        "key": "2,6"
+      },
+      "cubic": {
+        "x": 8,
+        "y": -6,
+        "z": -2
+      },
+      "ring": 8,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 211,
+      "axial": {
+        "q": 3,
+        "r": 5,
+        "key": "3,5"
+      },
+      "cubic": {
+        "x": 8,
+        "y": -5,
+        "z": -3
+      },
+      "ring": 8,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 212,
+      "axial": {
+        "q": 4,
+        "r": 4,
+        "key": "4,4"
+      },
+      "cubic": {
+        "x": 8,
+        "y": -4,
+        "z": -4
+      },
+      "ring": 8,
+      "type": "TRIPLE LETTER",
+      "multiplier": "TL",
+      "color": "#00E5FF"
+    },
+    {
+      "index": 213,
+      "axial": {
+        "q": 5,
+        "r": 3,
+        "key": "5,3"
+      },
+      "cubic": {
+        "x": 8,
+        "y": -3,
+        "z": -5
+      },
+      "ring": 8,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 214,
+      "axial": {
+        "q": 6,
+        "r": 2,
+        "key": "6,2"
+      },
+      "cubic": {
+        "x": 8,
+        "y": -2,
+        "z": -6
+      },
+      "ring": 8,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 215,
+      "axial": {
+        "q": 7,
+        "r": 1,
+        "key": "7,1"
+      },
+      "cubic": {
+        "x": 8,
+        "y": -1,
+        "z": -7
+      },
+      "ring": 8,
+      "type": "BLANK",
+      "multiplier": "",
+      "color": "#1F212B"
+    },
+    {
+      "index": 216,
+      "axial": {
+        "q": 8,
+        "r": 0,
+        "key": "8,0"
+      },
+      "cubic": {
+        "x": 8,
+        "y": 0,
+        "z": -8
+      },
+      "ring": 8,
+      "type": "TRIPLE WORD",
+      "multiplier": "TW",
+      "color": "#AEEA00"
+    }
+  ]
+}
