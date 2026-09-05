@@ -79,6 +79,8 @@ def get_buzzle_multiplier(x, y, z):
     return mult_map.get((x, y, z), ("", COLOR_BASE, "#FFFFFF", "BLANK"))
 
 def render_board_and_assembly():
+    from pathlib import Path
+    Path("archive/legacy-outputs/output/board").mkdir(parents=True, exist_ok=True)
     cells = []
     for x in range(-8, 9):
         for y in range(max(-8, -x-8), min(8, -x+8) + 1):
@@ -141,7 +143,7 @@ def render_board_and_assembly():
     ax.text(0, -16 * r * 1.08, "Plate 1: 7-Tile Rosette Hub (37 Cells)  |  Plates 2–7: 6 Outer Wedges (30 Cells each)", color=COLOR_LIME, fontsize=11, ha="center", va="top", fontweight="bold")
 
     plt.tight_layout()
-    plt.savefig("output/board/buzzle_master_4color_board.png", dpi=300, facecolor=fig.get_facecolor(), bbox_inches="tight")
+    plt.savefig("archive/legacy-outputs/output/board/buzzle_master_4color_board.png", dpi=300, facecolor=fig.get_facecolor(), bbox_inches="tight")
     plt.close()
     print("Saved 4-color master board render.")
 
@@ -208,7 +210,7 @@ def render_board_and_assembly():
     ax2.text(0, -16 * r * 1.20, "Every plate fits standard 256x256mm build volume  |  Rigid Interlocking Dovetails", color="#90A4AE", fontsize=10.5, ha="center", va="top")
 
     plt.tight_layout()
-    plt.savefig("output/board/buzzle_exploded_7tile_hub.png", dpi=300, facecolor=fig2.get_facecolor(), bbox_inches="tight")
+    plt.savefig("archive/legacy-outputs/output/board/buzzle_exploded_7tile_hub.png", dpi=300, facecolor=fig2.get_facecolor(), bbox_inches="tight")
     plt.close()
     print("Saved exploded 7-tile hub assembly render.")
 
@@ -259,7 +261,7 @@ def render_board_and_assembly():
     ax_b2.axis("off")
 
     plt.tight_layout()
-    plt.savefig("output/board/buzzle_bed_fit_256mm.png", dpi=250, facecolor=fig3.get_facecolor(), bbox_inches="tight")
+    plt.savefig("archive/legacy-outputs/output/board/buzzle_bed_fit_256mm.png", dpi=250, facecolor=fig3.get_facecolor(), bbox_inches="tight")
     plt.close()
     print("Saved 256mm bed fit visualization.")
 

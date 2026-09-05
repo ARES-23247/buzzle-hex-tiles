@@ -1,0 +1,167 @@
+# 🎨 3D Printing Color, Filament & Quantity Guide
+
+> **Current tile size: 1.3 inches / 33.02 mm across flats.** Conflicting
+> 1.5-inch tile 3MF/STL exports, including their paired inlays and batch plates,
+> have been removed. The historical file lists below may refer to removed
+> exports; regenerate them with the current 33.02 mm generator defaults.
+> For the revised boards, use the [BUZZLE guide](output/board/270mm_1p3in_4color/PRINT_GUIDE.md)
+> and [Othello guide](output/othello/270mm_1p3in_4color/PRINT_GUIDE.md).
+> Both boards share the same four slots: charcoal, ivory, teal, and gold.
+
+This comprehensive guide details the **exact print quantities**, **filament colors**, and **4-slot AMS/Toolhead assignments** for every game you can play with your 1.5" hexagonal tiles.
+
+---
+
+## 📋 Master Game Printing Quantity Summary
+
+| Game Title | Category | Recommended Print Quantity | Components Used |
+| :--- | :--- | :---: | :--- |
+| **"Hive" (Base Game)** | Abstract Strategy | **22 Tiles** (11 White, 11 Black) | 5 Base Insect Types |
+| **"Hive" (Master Set + Expansions)** | Abstract Strategy | **28 Tiles** (14 White, 14 Black) | 8 Insect Types (Base + 3 Expansions) |
+| **"Scrabble" / Honeycomb Crossword** | Word Strategy | **100 Tiles** | Full English Letter Distribution (A–Z + Blanks) |
+| **"Hive-Swarm" (Speed Word Race)** | Real-Time Word Race | **144 Tiles** (or 100 for 2P) | Expanded Letter Distribution |
+| **"Number Hive" / Equation Clash** | Math Strategy | **60 Tiles** | 45 Number Tiles (0–9) + 15 Operator Tiles |
+| **"Target 24" Math Challenge** | Solo / Co-op Puzzle | **25 Tiles** | Numbers (1–9) + Operators (+, -, x, /, =) |
+
+---
+
+## 🐜 1. "HIVE" Game Sets: Exact Piece Quantities
+
+### A. Base Game (22 Tiles Total for 2 Players)
+*Print each set once in **White/Ivory Base**, and once in **Black/Carbon Base**.*
+
+| Insect Piece | 1 Player Count | 2 Players Total | Official Inlay Color |
+| :--- | :---: | :---: | :--- |
+| 👑 **Queen Bee** | 1 | **2** | 🟡 Bright Yellow / Gold |
+| 🕷️ **Spider** | 2 | **4** | 🟤 Brown / Burnt Orange |
+| 🪲 **Beetle** | 2 | **4** | 🟣 Purple / Violet |
+| 🦗 **Grasshopper** | 3 | **6** | 🟢 Vibrant Green |
+| 🐜 **Soldier Ant** | 3 | **6** | 🔵 Royal Blue / Cyan |
+| **BASE GAME TOTAL** | **11 Tiles** | **22 Tiles** | — |
+
+---
+
+### B. Official Expansions Pack (6 Tiles Total for 2 Players)
+*Add these 6 pieces to expand to the full tournament game.*
+
+| Expansion Piece | 1 Player Count | 2 Players Total | Official Inlay Color |
+| :--- | :---: | :---: | :--- |
+| 🦟 **Mosquito** | 1 | **2** | ⚪ Metallic Silver / Gray |
+| 🐞 **Ladybug** | 1 | **2** | 🔴 Crimson Red |
+| 🪳 **Pillbug** | 1 | **2** | 🔷 Sky Blue / Teal |
+| **EXPANSIONS TOTAL** | **3 Tiles** | **6 Tiles** | — |
+
+---
+
+### 🖨️ 4-Color Plate Slicing Setup for Hive
+*Pre-partitioned so each plate uses at most 1 Base + 3 Insect Colors (≤ 4 colors total).*
+
+* **Plate 1: "Core Swarm"** (`plate_4color_2player_core_swarm_14tiles.3mf` — 14 tiles):
+  * **Slot 1**: ⚪ Base (White or Black)
+  * **Slot 2**: 🟡 Queen Bee (2 tiles)
+  * **Slot 3**: 🟢 Grasshopper (6 tiles)
+  * **Slot 4**: 🔵 Soldier Ant (6 tiles)
+* **Plate 2: "Crawlers"** (`plate_4color_2player_crawlers_8tiles.3mf` — 8 tiles):
+  * **Slot 1**: ⚪ Base (White or Black)
+  * **Slot 2**: 🟤 Spider (4 tiles)
+  * **Slot 3**: 🟣 Beetle (4 tiles)
+* **Plate 3: "Expansions Pack"** (`plate_4color_2player_expansions_6tiles.3mf` — 6 tiles):
+  * **Slot 1**: ⚪ Base (White or Black)
+  * **Slot 2**: 🔴 Ladybug (2 tiles)
+  * **Slot 3**: ⚪ Mosquito (2 tiles)
+  * **Slot 4**: 🔷 Pillbug (2 tiles)
+
+---
+
+## 🎲 2. "SCRABBLE" & "HONEYCOMB CROSSWORD" (100 Tiles Total)
+
+*Official English Scrabble point values and tile quantities:*
+
+| Tile | Score | Qty | Tile | Score | Qty | Tile | Score | Qty |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **A** | 1 | **9** | **J** | 8 | **1** | **S** | 1 | **4** |
+| **B** | 3 | **2** | **K** | 5 | **1** | **T** | 1 | **6** |
+| **C** | 3 | **2** | **L** | 1 | **4** | **U** | 1 | **4** |
+| **D** | 2 | **4** | **M** | 3 | **2** | **V** | 4 | **2** |
+| **E** | 1 | **12** | **N** | 1 | **6** | **W** | 4 | **2** |
+| **F** | 4 | **2** | **O** | 1 | **8** | **X** | 8 | **1** |
+| **G** | 2 | **3** | **P** | 3 | **2** | **Y** | 4 | **2** |
+| **H** | 4 | **2** | **Q** | 10 | **1** | **Z** | 10 | **1** |
+| **I** | 1 | **9** | **R** | 1 | **6** | **BLANK** | 0 | **2** |
+
+### 🖨️ 256mm Proportional Slicing Plates for Scrabble (4 Print Runs = Exactly 100 Tiles)
+*Located in `output/plates/` with top-right wipe tower clearance:*
+1. **[`plate_256_scrabble_100set_plate1_of_4_25tiles.3mf`](file:///C:/Users/david/.gemini/antigravity/scratch/hex-scrabble-tiles/output/plates/plate_256_scrabble_100set_plate1_of_4_25tiles.3mf)**: 25 tiles ($9\times A_1, 2\times B_3, 2\times C_3, 4\times D_2, 6\times E_1, 2\times \text{Blank}$)
+2. **[`plate_256_scrabble_100set_plate2_of_4_25tiles.3mf`](file:///C:/Users/david/.gemini/antigravity/scratch/hex-scrabble-tiles/output/plates/plate_256_scrabble_100set_plate2_of_4_25tiles.3mf)**: 25 tiles ($6\times E_1, 2\times F_4, 3\times G_2, 2\times H_4, 9\times I_1, 1\times J_8, 1\times K_5, 1\times L_1$)
+3. **[`plate_256_scrabble_100set_plate3_of_4_25tiles.3mf`](file:///C:/Users/david/.gemini/antigravity/scratch/hex-scrabble-tiles/output/plates/plate_256_scrabble_100set_plate3_of_4_25tiles.3mf)**: 25 tiles ($3\times L_1, 2\times M_3, 6\times N_1, 8\times O_1, 2\times P_3, 1\times Q_{10}, 3\times R_1$)
+4. **[`plate_256_scrabble_100set_plate4_of_4_25tiles.3mf`](file:///C:/Users/david/.gemini/antigravity/scratch/hex-scrabble-tiles/output/plates/plate_256_scrabble_100set_plate4_of_4_25tiles.3mf)**: 25 tiles ($3\times R_1, 4\times S_1, 6\times T_1, 4\times U_1, 2\times V_4, 2\times W_4, 1\times X_8, 2\times Y_4, 1\times Z_{10}$)
+
+---
+
+## 🐝 3. "HIVE-SWARM" / "BANANAGRAMS" (144 Tiles Total)
+
+*Official Bananagrams speed letter distribution:*
+
+| Letter | Qty | Letter | Qty | Letter | Qty | Letter | Qty |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **A** | **13** | **H** | **3** | **O** | **11** | **V** | **3** |
+| **B** | **3** | **I** | **12** | **P** | **3** | **W** | **3** |
+| **C** | **3** | **J** | **2** | **Q** | **2** | **X** | **2** |
+| **D** | **6** | **K** | **2** | **R** | **9** | **Y** | **3** |
+| **E** | **18** | **L** | **5** | **S** | **6** | **Z** | **2** |
+| **F** | **3** | **M** | **3** | **T** | **9** | — | — |
+| **G** | **4** | **N** | **8** | **U** | **6** | **TOTAL** | **144** |
+
+### 🖨️ 256mm Proportional Slicing Plates for Hive-Swarm (6 Print Runs = Exactly 144 Tiles)
+*Located in `output/plates/` with top-right wipe tower clearance:*
+1. **[`plate_256_hiveswarm_144set_plate1_of_6_24tiles.3mf`](file:///C:/Users/david/.gemini/antigravity/scratch/hex-scrabble-tiles/output/plates/plate_256_hiveswarm_144set_plate1_of_6_24tiles.3mf)**: 24 tiles ($13\times A, 3\times B, 3\times C, 5\times D$)
+2. **[`plate_256_hiveswarm_144set_plate2_of_6_24tiles.3mf`](file:///C:/Users/david/.gemini/antigravity/scratch/hex-scrabble-tiles/output/plates/plate_256_hiveswarm_144set_plate2_of_6_24tiles.3mf)**: 24 tiles ($1\times D, 18\times E, 3\times F, 2\times G$)
+3. **[`plate_256_hiveswarm_144set_plate3_of_6_24tiles.3mf`](file:///C:/Users/david/.gemini/antigravity/scratch/hex-scrabble-tiles/output/plates/plate_256_hiveswarm_144set_plate3_of_6_24tiles.3mf)**: 24 tiles ($2\times G, 3\times H, 12\times I, 2\times J, 2\times K, 3\times L$)
+4. **[`plate_256_hiveswarm_144set_plate4_of_6_24tiles.3mf`](file:///C:/Users/david/.gemini/antigravity/scratch/hex-scrabble-tiles/output/plates/plate_256_hiveswarm_144set_plate4_of_6_24tiles.3mf)**: 24 tiles ($2\times L, 3\times M, 8\times N, 11\times O$)
+5. **[`plate_256_hiveswarm_144set_plate5_of_6_24tiles.3mf`](file:///C:/Users/david/.gemini/antigravity/scratch/hex-scrabble-tiles/output/plates/plate_256_hiveswarm_144set_plate5_of_6_24tiles.3mf)**: 24 tiles ($3\times P, 2\times Q, 9\times R, 6\times S, 4\times T$)
+6. **[`plate_256_hiveswarm_144set_plate6_of_6_24tiles.3mf`](file:///C:/Users/david/.gemini/antigravity/scratch/hex-scrabble-tiles/output/plates/plate_256_hiveswarm_144set_plate6_of_6_24tiles.3mf)**: 24 tiles ($5\times T, 6\times U, 3\times V, 3\times W, 2\times X, 3\times Y, 2\times Z$)
+
+---
+
+## 🔢 4. "NUMBER HIVE" / "EQUATION CLASH" (60 Tiles)
+
+*Math strategy game set featuring balanced numerical values and operational symbols:*
+
+### Number Tiles (45 Tiles Total)
+| Number Tile | Quantity to Print | Usage & Purpose |
+| :---: | :---: | :--- |
+| **0** | **4** | Multiples of 10, subtraction products |
+| **1** | **5** | High-frequency building block, single-digit ops |
+| **2** | **5** | Multiplication & division base |
+| **3** | **5** | Core odd factor |
+| **4** | **5** | Even products, squares |
+| **5** | **5** | Halves, tens, mid-range products |
+| **6** | **4** | Composite multiplier |
+| **7** | **4** | Prime value scoring |
+| **8** | **4** | High-value composite |
+| **9** | **4** | Maximum single-digit scoring |
+
+### Math Operator Tiles (15 Tiles Total)
+| Operator Tile | Quantity to Print | Purpose |
+| :---: | :---: | :--- |
+| **+** (Plus) | **4** | Addition equations |
+| **-** (Minus) | **3** | Subtraction equations |
+| **x** (Multiply) | **3** | High-score multiplication ($+5\text{ pt}$ bonus) |
+| **/** (Divide) | **2** | Division equations ($+5\text{ pt}$ bonus) |
+| **=** (Equals) | **6** | Equation resolution across intersecting axes |
+
+* **Total Math Set**: **60 Tiles** (45 Numbers + 15 Operators).
+
+---
+
+## 💡 Quick Print Batch Plan
+
+If you want to print complete game sets step-by-step:
+
+1. **Weekend 1: Complete Hive Game (28 Tiles)**
+   * Run 1 (White Team): `plate_4color_2player_core_swarm_14tiles.3mf` (White base) + `crawlers` + `expansions`.
+   * Run 2 (Black Team): Repeat plates with Black base filament.
+2. **Weekend 2: Standard 100-Piece Scrabble Set (100 Tiles)**
+   * Print `plate_letters_A_M.3mf`, `plate_letters_N_Z_Blank.3mf`, and duplicate sheets to reach 100 pieces.
+3. **Weekend 3: Number Hive Math Set (60 Tiles)**
+   * Print `plate_numbers_and_symbols.3mf` $\times 3$ to cover all numbers, operators, and math challenge puzzles!

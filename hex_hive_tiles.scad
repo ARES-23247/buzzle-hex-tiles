@@ -4,8 +4,8 @@
 // ========================================================================
 
 /* [Tile Dimensions] */
-// Flat-to-flat diameter in mm (38.1 mm = 1.5 inches)
-tile_flat_to_flat = 38.1; // [20.0:0.1:100.0]
+// Flat-to-flat diameter in mm (33.02 mm = 1.3 inches)
+tile_flat_to_flat = 33.02; // [20.0:0.1:100.0]
 
 // Total tile height/thickness in mm
 tile_height = 4.8; // [2.0:0.1:15.0]

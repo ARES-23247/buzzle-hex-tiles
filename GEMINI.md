@@ -1,19 +1,16 @@
-# Hex-Tiles & BUZZLE 3D Project Context
+# Project context
 
-## Overview
-This repository contains the multi-material 3D printable parametric CAD generators, 3MF plate configurations, vector rulebooks, and developer specifications for:
-- **BUZZLE™ 217-Cell 4-Color Board Suite** (Snapmaker Orca / Bambu AMS, 7 plates: 1 Central Rosette Hub + 6 Wedges)
-- **Hex Scrabble Tiles & Math System** (1.5" / 38.1mm tiles with embossed letters and point values)
-- **Hive Insect Tile Sets** (Dual-color & 4-color limited)
-
-## Key Files & Structure
-- `generate_buzzle_rosette_board.py`: Parametric OpenSCAD / 3MF generator for the official 217-cell board with embedded `<m:colorgroup>` 4-color AMS profiles.
-- `output/board/3mf/`: Slicer-ready plates labeled with explicit Snapmaker Orca slot IDs (`[Slot 1 - Charcoal]`, `[Slot 2 - Lime]`, `[Slot 3 - Pink]`, `[Slot 4 - Cyan]`).
-- `BUZZLE_217_BOARD_SPECIFICATION.md`: Master mathematical and coordinate specification for developers and game engine implementations.
-- `output/board/buzzle_217_spec.json`: Machine-readable JSON definition of all 217 cells.
-
-## Slicer Standards
-- Slicer: Snapmaker Orca / OrcaSlicer / Bambu Studio
-- Bed Volume: 256 x 256 mm
-- Layer Height: 0.20mm standard, first layer 0.20mm
-- Multi-material inlays: 0.80mm inlay thickness flush with top floor
+- All current game tiles, including Scrabble, are **1.3 inches / 33.02 mm across flats**.
+- Current board print bed: **270 × 270 mm**. At most four filaments.
+- Shared board palette: charcoal, ivory, teal, gold.
+- Entry point: `output/README.md`; current files live under `output/boards/`,
+  `output/tiles/`, and `output/accessories/`.
+- BUZZLE generator: `generate_board_270.py` → `output/boards/buzzle/` (217 cells, seven sections).
+- Othello generator: `generate_othello_board_270.py` → `output/boards/othello/` (61 cells, four sections).
+- Each board folder has `plates/`, `images/`, `PRINT_GUIDE.md`, and `print_manifest.json`.
+- `build_output_catalog.py` refreshes the visual index, tile images/guides, and plate checklists.
+- Validate with `python -m unittest test_board_270 test_othello_board_270 -v`
+  and `python verify_output_library.py`.
+- Keep portable source assets in `assets/artwork/`; historical files belong in `archive/`.
+- Legacy 1.5-inch tile exports were deleted. Do not recreate them by default.
+- See `docs/DEVELOPMENT.md` for commands and `docs/maintenance/` for cleanup records.

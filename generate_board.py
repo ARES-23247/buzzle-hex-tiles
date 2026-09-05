@@ -12,7 +12,7 @@ from generate_tiles import (
     triangulate_shapely_poly, export_multimaterial_3mf
 )
 
-OUTPUT_DIR = "output/board"
+OUTPUT_DIR = "archive/legacy-outputs/output/board"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 os.makedirs(os.path.join(OUTPUT_DIR, "3mf"), exist_ok=True)
 os.makedirs(os.path.join(OUTPUT_DIR, "previews"), exist_ok=True)

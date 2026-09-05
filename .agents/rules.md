@@ -1,19 +1,18 @@
-# Hex-Tiles & BUZZLE 3D Project Context
+# BUZZLE project rules and output layout
 
-## Overview
-This repository contains the multi-material 3D printable parametric CAD generators, 3MF plate configurations, vector rulebooks, and developer specifications for:
-- **BUZZLE™ 217-Cell 4-Color Board Suite** (Snapmaker Orca / Bambu AMS, 7 plates: 1 Central Rosette Hub + 6 Wedges)
-- **Hex Scrabble Tiles & Math System** (1.5" / 38.1mm tiles with embossed letters and point values)
-- **Hive Insect Tile Sets** (Dual-color & 4-color limited)
-
-## Key Files & Structure
-- `generate_buzzle_rosette_board.py`: Parametric OpenSCAD / 3MF generator for the official 217-cell board with embedded `<m:colorgroup>` 4-color AMS profiles.
-- `output/board/3mf/`: Slicer-ready plates labeled with explicit Snapmaker Orca slot IDs (`[Slot 1 - Charcoal]`, `[Slot 2 - Lime]`, `[Slot 3 - Pink]`, `[Slot 4 - Cyan]`).
-- `BUZZLE_217_BOARD_SPECIFICATION.md`: Master mathematical and coordinate specification for developers and game engine implementations.
-- `output/board/buzzle_217_spec.json`: Machine-readable JSON definition of all 217 cells.
-
-## Slicer Standards
-- Slicer: Snapmaker Orca / OrcaSlicer / Bambu Studio
-- Bed Volume: 256 x 256 mm
-- Layer Height: 0.20mm standard, first layer 0.20mm
-- Multi-material inlays: 0.80mm inlay thickness flush with top floor
+- All current tiles, including Scrabble, are 1.3 inches / 33.02 mm across flats.
+- Board printer: 270 x 270 mm bed, at most four filaments.
+- Shared board slots: charcoal, ivory, teal, gold.
+- Current print-library entry point: output/README.md.
+- BUZZLE: generate_board_270.py -> output/boards/buzzle/ (217 cells, seven sections).
+- Othello: generate_othello_board_270.py -> output/boards/othello/ (61 cells, four sections).
+- Board folders contain plates/, images/, PRINT_GUIDE.md, and print_manifest.json.
+- Tile families live in output/tiles/; holders live in output/accessories/tile-holders/.
+- Portable logos and vector artwork live in assets/artwork/.
+- Historical models, earlier images, and old paper printouts belong in archive/.
+- Do not recreate the deleted 1.5-inch tile exports or the former output_* folders by default.
+- Refresh images/guides with python build_output_catalog.py.
+- Validate with python -m unittest test_board_270 test_othello_board_270 -v
+  and python verify_output_library.py.
+- Read docs/DEVELOPMENT.md for regeneration commands and dependency setup.
+- The approved BUZZLE scoring coordinates remain in BUZZLE_217_BOARD_SPECIFICATION.md.

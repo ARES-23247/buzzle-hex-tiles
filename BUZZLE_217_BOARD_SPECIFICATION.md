@@ -4,11 +4,18 @@
 > **Status**: Approved & Locked (2026-09-03)  
 > **ARESWEB Integration**: Implemented & Verified (100% Tests Passing)
 
+> **Sturdier physical print variant (2026-09-05):** For existing 33.02 mm (1.3-inch) across-flats
+> tiles and a 270 mm bed, use [the seven-section print set](output/boards/buzzle/PRINT_GUIDE.md).
+> Its pockets are 33.80 mm, pitch is 36.00 mm, and assembled bounds are
+> 541.8 × 613.4 mm including the strengthened outer rim. Dividers are 2.2 mm wide;
+> a 2.8 mm floor and 3 mm recess give a 5.8 mm total height. The coordinate/scoring layout below remains unchanged.
+> Historical 563.2 mm measurements refer to a ring-8 center span, not the complete outer footprint.
+
 ---
 
 ## 1. Visual Architecture
 
-![Official 217-Cell Clean Board](file:///C:/Users/david/.gemini/antigravity/brain/2297f84f-f061-496a-befc-cc4ec57124a9/buzzle_master_clean_board.png)
+![Current 217-cell board](output/boards/buzzle/images/board_and_bed_preview.png)
 
 ---
 
@@ -18,8 +25,8 @@
 | :--- | :--- | :--- |
 | **Board Radius** | **8** | From center $(0, 0)$ to any of the 6 extreme apex points |
 | **Total Cells** | **217** | Formula: $N = 1 + 3 \times R \times (R + 1) = 1 + 3(8)(9) = 217$ |
-| **Flat-to-Flat Pitch** | **$35.20\text{ mm}$** | $33.80\text{ mm}$ pocket flat $+ 1.40\text{ mm}$ rib dividing wall |
-| **Overall Diameter** | **$563.2\text{ mm}$** | 17 cells point-to-point flat orientation |
+| **Flat-to-Flat Pitch** | **$36.00\text{ mm}$** | $33.80\text{ mm}$ pocket flat $+ 2.20\text{ mm}$ rib dividing wall |
+| **Assembled bounds** | **541.8 × 613.4 mm** | Includes the strengthened outer rim; measured from current geometry |
 | **3D Print Structure** | **7 Plates** | 1 Central Rosette Hub (37 cells) + 6 Outer Wedges (30 cells each) |
 
 ---

@@ -1,7 +1,7 @@
 """
 Dual-Color Hexagonal Scrabble 3D Printable Tile Generator
 =========================================================
-Generates 1.5 inch (38.1 mm) diameter hexagonal game tiles with letters and numbers.
+Generates 1.3 inch (33.02 mm) diameter hexagonal game tiles with letters and numbers.
 Optimized for multi-material 3D printing with toolhead changers (Prusa XL, Bambu AMS,
 Voron StealthChanger, IDEX, OrcaSlicer, PrusaSlicer, Cura).
 """
@@ -456,7 +456,7 @@ def generate_preview_image(mesh_base, mesh_text, output_path, label="Tile"):
     ax2.set_ylim(center_y - half_span, center_y + half_span)
     ax2.set_zlim(0, 10)
     ax2.axis('off')
-    ax2.set_title(f"{label} - Top View (1.5\" / 38.1 mm)", color='#E8E8E8', fontsize=12, pad=12, weight='bold')
+    ax2.set_title(f"{label} - Top View (1.3\" / 33.02 mm)", color='#E8E8E8', fontsize=12, pad=12, weight='bold')
     
     plt.tight_layout()
     os.makedirs(os.path.dirname(os.path.abspath(output_path)), exist_ok=True)
@@ -611,13 +611,13 @@ def main():
     parser.add_argument("--word", type=str, help="Generate tiles for a specific word (e.g. 'SCRABBLE')")
     parser.add_argument("--all", action="store_true", help="Generate complete A-Z, 0-9, and special character sets")
     parser.add_argument("--plates", action="store_true", help="Generate ready-to-slice batch build plates")
-    parser.add_argument("--size", type=float, default=38.1, help="Tile flat-to-flat diameter in mm (default: 38.1 = 1.5 in)")
+    parser.add_argument("--size", type=float, default=33.02, help="Tile flat-to-flat diameter in mm (default: 33.02 = 1.3 in)")
     parser.add_argument("--height", type=float, default=4.8, help="Tile height in mm (default: 4.8)")
     parser.add_argument("--chamfer", type=float, default=0.8, help="Top perimeter chamfer in mm (default: 0.8)")
     parser.add_argument("--inlay-depth", type=float, default=0.8, help="Inlay depth in mm (default: 0.8)")
     parser.add_argument("--embossed", type=float, default=0.6, help="Raised text height above tile in mm (default: 0.6 = tactile embossed)")
     parser.add_argument("--font", type=str, default=None, help="Path to custom TTF font")
-    parser.add_argument("--outdir", type=str, default="output", help="Output directory path")
+    parser.add_argument("--outdir", type=str, default="output/tiles/plain", help="Output directory path")
     
     args = parser.parse_args()
     
@@ -625,7 +625,7 @@ def main():
     dir_3mf = os.path.join(outdir, "3mf")
     dir_stl = os.path.join(outdir, "stl")
     dir_plates = os.path.join(outdir, "plates")
-    dir_previews = os.path.join(outdir, "previews")
+    dir_previews = os.path.join(outdir, "images")
     
     os.makedirs(dir_3mf, exist_ok=True)
     os.makedirs(dir_stl, exist_ok=True)
@@ -634,7 +634,7 @@ def main():
     
     font_path = args.font or find_default_font()
     print(f"[CAD] Using font: {font_path}")
-    print(f"[CAD] Tile dimensions: Diameter={args.size:.1f}mm (1.5in), Height={args.height:.1f}mm, Chamfer={args.chamfer:.1f}mm, Inlay={args.inlay_depth:.1f}mm")
+    print(f"[CAD] Tile dimensions: Diameter={args.size:.1f}mm ({args.size / 25.4:.2f}in), Height={args.height:.1f}mm, Chamfer={args.chamfer:.1f}mm, Inlay={args.inlay_depth:.1f}mm")
     
     # 1. Single Letter Tile
     if args.letter:

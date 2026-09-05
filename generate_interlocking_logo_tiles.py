@@ -25,9 +25,7 @@ from generate_tiles import (
     generate_honeycomb_positions
 )
 
-DEFAULT_LOGO_PATH = os.path.join(
-    r"C:\Users\david\.gemini\antigravity\brain\2297f84f-f061-496a-befc-cc4ec57124a9\.user_uploaded\media_1788231605575.png"
-)
+DEFAULT_LOGO_PATH = os.path.join(os.path.dirname(__file__), "assets", "artwork", "interlocking_logo.png")
 
 
 
@@ -348,16 +346,16 @@ def build_doublesided_interlocking_256mm_plate(tile_specs, logo_polys=None, flat
     return plate_base, plate_graphics
 
 
-def render_interlocking_preview(mesh_base, mesh_graphics, logo_polys, letter='A', score='1', img_path='output_interlocking/previews/tile_doublesided_interlocking_A.png'):
+def render_interlocking_preview(mesh_base, mesh_graphics, logo_polys, letter='A', score='1', img_path='output/tiles/interlocking/images/tile_doublesided_interlocking_A.png'):
     fig = plt.figure(figsize=(15, 5), facecolor='#121212')
     
     # 1. Front View (Top)
     ax1 = fig.add_subplot(1, 3, 1, facecolor='#121212')
     ax1.set_title(f'FRONT FACE\n(Embossed Letter {letter}_{score})', color='white', fontsize=13, fontweight='bold', pad=12)
     
-    h_pts = make_hex_points_2d(38.1)
+    h_pts = make_hex_points_2d(33.02)
     ax1.add_patch(plt.Polygon(h_pts, closed=True, facecolor='#e8e0d5', edgecolor='#998d7d', lw=1.5))
-    h_top = make_hex_points_2d(38.1 - 1.6)
+    h_top = make_hex_points_2d(33.02 - 1.6)
     ax1.add_patch(plt.Polygon(h_top, closed=True, facecolor='#fbf8f3', edgecolor='#c5b8a8', lw=1.0))
     
     font_path = find_default_font()
@@ -424,14 +422,14 @@ def main():
     parser.add_argument("--letter", type=str, help="Generate single letter tile")
     parser.add_argument("--score", type=str, default=None, help="Custom score")
     parser.add_argument("--plates", action="store_true", help="Generate complete 256mm double-sided build plates")
-    parser.add_argument("--outdir", type=str, default="output_interlocking", help="Output directory")
+    parser.add_argument("--outdir", type=str, default="output/tiles/interlocking", help="Output directory")
     
     args = parser.parse_args()
     
     outdir = os.path.abspath(args.outdir)
     dir_3mf = os.path.join(outdir, "3mf")
     dir_plates = os.path.join(outdir, "plates")
-    dir_previews = os.path.join(outdir, "previews")
+    dir_previews = os.path.join(outdir, "images")
     
     os.makedirs(dir_3mf, exist_ok=True)
     os.makedirs(dir_plates, exist_ok=True)

@@ -1,0 +1,2150 @@
+[
+  {
+    "source": "output/board/270mm_1p3in_4color/PRINT_FIRST_Pocket_and_Joint_Test.3mf",
+    "destination": "output/boards/buzzle/plates/PRINT_FIRST_Pocket_and_Joint_Test.3mf",
+    "sha256": "d059b3e64515ecbb35e7cfbc6fde9b205bcf050281292a9956d01b5aaca279dc",
+    "action": "move"
+  },
+  {
+    "source": "output/board/270mm_1p3in_4color/PRINT_GUIDE.md",
+    "destination": "output/boards/buzzle/PRINT_GUIDE.md",
+    "sha256": "4ec99cd6e959aedac9858c5f22f9b20f0c8afab90e5614f7a4b440901ed832a6",
+    "action": "move"
+  },
+  {
+    "source": "output/board/270mm_1p3in_4color/Plate_01_Center_Hub.3mf",
+    "destination": "output/boards/buzzle/plates/Plate_01_Center_Hub.3mf",
+    "sha256": "8f231dfe95e247e5b40dbc1577e3ad367ad441c68b680c82a94c7aa04f141c83",
+    "action": "move"
+  },
+  {
+    "source": "output/board/270mm_1p3in_4color/Plate_02_Sector_000_060.3mf",
+    "destination": "output/boards/buzzle/plates/Plate_02_Sector_000_060.3mf",
+    "sha256": "70d00662215856b99cc1f4bc08dffdb304577650ac1fd548c98428bf3774fd9f",
+    "action": "move"
+  },
+  {
+    "source": "output/board/270mm_1p3in_4color/Plate_03_Sector_060_120.3mf",
+    "destination": "output/boards/buzzle/plates/Plate_03_Sector_060_120.3mf",
+    "sha256": "0413d0dc644700bdedb9070066cb55623a6d15aca5fd02f3edca116b4e48af2e",
+    "action": "move"
+  },
+  {
+    "source": "output/board/270mm_1p3in_4color/Plate_04_Sector_120_180.3mf",
+    "destination": "output/boards/buzzle/plates/Plate_04_Sector_120_180.3mf",
+    "sha256": "d119135c59327b27bd8d215c936b84b897e23afb52ea8bb4fb528eb9c0be29c1",
+    "action": "move"
+  },
+  {
+    "source": "output/board/270mm_1p3in_4color/Plate_05_Sector_180_240.3mf",
+    "destination": "output/boards/buzzle/plates/Plate_05_Sector_180_240.3mf",
+    "sha256": "c6d6133c89d72bf74bcfbee97b3e5f127739dc2cc54eca6c1cd9186f05d9cd2b",
+    "action": "move"
+  },
+  {
+    "source": "output/board/270mm_1p3in_4color/Plate_06_Sector_240_300.3mf",
+    "destination": "output/boards/buzzle/plates/Plate_06_Sector_240_300.3mf",
+    "sha256": "ebd3b1da7424e0e005f665bd34246c94f8e6658ad1fdc4036fd721182ed4df7f",
+    "action": "move"
+  },
+  {
+    "source": "output/board/270mm_1p3in_4color/Plate_07_Sector_300_360.3mf",
+    "destination": "output/boards/buzzle/plates/Plate_07_Sector_300_360.3mf",
+    "sha256": "490419e9236173fc3e746b38ddf99e341bf0d930704b753857a53bdf34ff894f",
+    "action": "move"
+  },
+  {
+    "source": "output/board/270mm_1p3in_4color/board_and_bed_preview.png",
+    "destination": "output/boards/buzzle/images/board_and_bed_preview.png",
+    "sha256": "adce236f9cf3d3c3ab13737a8ccc95ce474b53b7a782462bb87d0cd4d8d6b92c",
+    "action": "move"
+  },
+  {
+    "source": "output/board/270mm_1p3in_4color/print_manifest.json",
+    "destination": "output/boards/buzzle/print_manifest.json",
+    "sha256": "2ee0a9807cd7c83630f96a163947d3ae7f6807cc506c60f85c6309d4d2ec0de0",
+    "action": "move"
+  },
+  {
+    "source": "output/board/3mf/Plate_1_Center_Rosette_Hub_7_Tile.3mf",
+    "destination": "archive/legacy-outputs/output/board/3mf/Plate_1_Center_Rosette_Hub_7_Tile.3mf",
+    "sha256": "7e39a72785373b2d2b8eee6e3dab6c08676b681ff9155a1df5d598de047a8e7c",
+    "action": "move"
+  },
+  {
+    "source": "output/board/3mf/Plate_2_Outer_Wedge_30_Cells.3mf",
+    "destination": "archive/legacy-outputs/output/board/3mf/Plate_2_Outer_Wedge_30_Cells.3mf",
+    "sha256": "ffe07b33e198bb1ffb476f29539d4a0715e9ebddd7bccc7f617f8b859d29787e",
+    "action": "move"
+  },
+  {
+    "source": "output/board/3mf/Plate_2_Wedge_North.3mf",
+    "destination": "archive/legacy-outputs/output/board/3mf/Plate_2_Wedge_North.3mf",
+    "sha256": "e9802b519cceeb3f07dae8685accfa983f578de301225f9f026e10724a2df7a2",
+    "action": "move"
+  },
+  {
+    "source": "output/board/3mf/Plate_3_Wedge_NorthEast.3mf",
+    "destination": "archive/legacy-outputs/output/board/3mf/Plate_3_Wedge_NorthEast.3mf",
+    "sha256": "4d36dc8d08dfa5fc1485eb229b3607894616ca9c19209177deb1ed0b5e483c04",
+    "action": "move"
+  },
+  {
+    "source": "output/board/3mf/Plate_4_Wedge_SouthEast.3mf",
+    "destination": "archive/legacy-outputs/output/board/3mf/Plate_4_Wedge_SouthEast.3mf",
+    "sha256": "0109184636853a409180473335eb33853a585b37dcb9c323b1e38ac77d279d85",
+    "action": "move"
+  },
+  {
+    "source": "output/board/3mf/Plate_5_Wedge_South.3mf",
+    "destination": "archive/legacy-outputs/output/board/3mf/Plate_5_Wedge_South.3mf",
+    "sha256": "39239107e160058fbc6d883b8fb47bfa190ecb33f90dd6b4a6019da5346f7bda",
+    "action": "move"
+  },
+  {
+    "source": "output/board/3mf/Plate_6_Wedge_SouthWest.3mf",
+    "destination": "archive/legacy-outputs/output/board/3mf/Plate_6_Wedge_SouthWest.3mf",
+    "sha256": "9db220b6fad225b4161b605b286bc5012d03ed4c6367a19b5aef484b9ed54dce",
+    "action": "move"
+  },
+  {
+    "source": "output/board/3mf/Plate_7_Wedge_NorthWest.3mf",
+    "destination": "archive/legacy-outputs/output/board/3mf/Plate_7_Wedge_NorthWest.3mf",
+    "sha256": "18da5a0ce31021f542ad87320d966c44d386eba49bfa28123a490a04ca8cdfc0",
+    "action": "move"
+  },
+  {
+    "source": "output/board/3mf/board_full_127cells_master.3mf",
+    "destination": "archive/legacy-outputs/output/board/3mf/board_full_127cells_master.3mf",
+    "sha256": "ac287829b90a8da8dd5611e7e1408b34b625785046c270a35565c9d436b54d56",
+    "action": "move"
+  },
+  {
+    "source": "output/board/3mf/plate_256_board_interlocking_quadrant_q1_top_left.3mf",
+    "destination": "archive/legacy-outputs/output/board/3mf/plate_256_board_interlocking_quadrant_q1_top_left.3mf",
+    "sha256": "686e29264647b74d5938891d62b96b1eb9161ff8bea8d6393ce8a44acacafdde",
+    "action": "move"
+  },
+  {
+    "source": "output/board/3mf/plate_256_board_interlocking_quadrant_q2_top_right.3mf",
+    "destination": "archive/legacy-outputs/output/board/3mf/plate_256_board_interlocking_quadrant_q2_top_right.3mf",
+    "sha256": "10ee650d64384cef66da28a4462479d23aaab535a45c6297ecfcd537b7781e79",
+    "action": "move"
+  },
+  {
+    "source": "output/board/3mf/plate_256_board_interlocking_quadrant_q3_bottom_left.3mf",
+    "destination": "archive/legacy-outputs/output/board/3mf/plate_256_board_interlocking_quadrant_q3_bottom_left.3mf",
+    "sha256": "d95f8088aa35f02dd58be4d006307e2fa9cac5c1599aae2732d5c00a836d0db9",
+    "action": "move"
+  },
+  {
+    "source": "output/board/3mf/plate_256_board_interlocking_quadrant_q4_bottom_right.3mf",
+    "destination": "archive/legacy-outputs/output/board/3mf/plate_256_board_interlocking_quadrant_q4_bottom_right.3mf",
+    "sha256": "b7f0ba21127aee6fccf8c2a3e25a59eba4f7c80f519f4ae8fd0f5c403e4b5400",
+    "action": "move"
+  },
+  {
+    "source": "output/board/3mf/plate_256_board_quadrant_q1_top_left.3mf",
+    "destination": "archive/legacy-outputs/output/board/3mf/plate_256_board_quadrant_q1_top_left.3mf",
+    "sha256": "866925b399522637cf6a31ca59747be733cbcb7326d71509432e012c604a90c3",
+    "action": "move"
+  },
+  {
+    "source": "output/board/3mf/plate_256_board_quadrant_q2_top_right.3mf",
+    "destination": "archive/legacy-outputs/output/board/3mf/plate_256_board_quadrant_q2_top_right.3mf",
+    "sha256": "9e65b27ca969f7a424ca1238939af3739a47a604bfc80cd345f475ef106b093a",
+    "action": "move"
+  },
+  {
+    "source": "output/board/3mf/plate_256_board_quadrant_q3_bottom_left.3mf",
+    "destination": "archive/legacy-outputs/output/board/3mf/plate_256_board_quadrant_q3_bottom_left.3mf",
+    "sha256": "01b7ad9a4d92935949b878518a78f9b303ca6d7efdecc870b85d7463bfa09943",
+    "action": "move"
+  },
+  {
+    "source": "output/board/3mf/plate_256_board_quadrant_q4_bottom_right.3mf",
+    "destination": "archive/legacy-outputs/output/board/3mf/plate_256_board_quadrant_q4_bottom_right.3mf",
+    "sha256": "f8014417e2b21553c7a1cc71c083d73af71de9f292767506984df6ec3bb9b2f9",
+    "action": "move"
+  },
+  {
+    "source": "output/board/all_6_corners_rendered.png",
+    "destination": "archive/legacy-outputs/output/board/all_6_corners_rendered.png",
+    "sha256": "4c33b55ed77853de5719286871d29e6d60e0b47a7a513844dc05cffc991b97a2",
+    "action": "move"
+  },
+  {
+    "source": "output/board/big_image_top_crop.png",
+    "destination": "archive/legacy-outputs/output/board/big_image_top_crop.png",
+    "sha256": "3c039c9865cc851ecfa6677f6bf9f34724779b29fa04c5536be91e9788871014",
+    "action": "move"
+  },
+  {
+    "source": "output/board/buzzle_17_tile_plate_solution.png",
+    "destination": "archive/legacy-outputs/output/board/buzzle_17_tile_plate_solution.png",
+    "sha256": "b297ed23de12b500606d23cd47b73029b5fdcaae5ea352cbcd77a7643f6956f4",
+    "action": "move"
+  },
+  {
+    "source": "output/board/buzzle_217_spec.json",
+    "destination": "docs/reference/buzzle/buzzle_217_spec.json",
+    "sha256": "e5d7580266f49241f27e8a4c2589c4d1b161802df91cee691d50f74192080e32",
+    "action": "move"
+  },
+  {
+    "source": "output/board/buzzle_bed_fit_256mm.png",
+    "destination": "archive/legacy-outputs/output/board/buzzle_bed_fit_256mm.png",
+    "sha256": "422ec0b44a0068a9fc8bcbf76cdcd64e454ab379ef6cf3620dcbe6aab48e4784",
+    "action": "move"
+  },
+  {
+    "source": "output/board/buzzle_bed_fit_comparison.png",
+    "destination": "archive/legacy-outputs/output/board/buzzle_bed_fit_comparison.png",
+    "sha256": "99bdb3630805cde42eca0ef3df3b24ede24e81f927b06f4a7bb3a58723b38f36",
+    "action": "move"
+  },
+  {
+    "source": "output/board/buzzle_board_exploded_assembly.png",
+    "destination": "archive/legacy-outputs/output/board/buzzle_board_exploded_assembly.png",
+    "sha256": "2c0146b1dd6bd675a95a99e2b430f298d85c9e327cc4bb52adff2024c6491063",
+    "action": "move"
+  },
+  {
+    "source": "output/board/buzzle_board_layout_locked.json",
+    "destination": "docs/reference/buzzle/buzzle_board_layout_locked.json",
+    "sha256": "c205816768edb4057865e4584d227ac8113babc5d4a516a36b1538d4e8b83139",
+    "action": "move"
+  },
+  {
+    "source": "output/board/buzzle_board_size_comparison.png",
+    "destination": "archive/legacy-outputs/output/board/buzzle_board_size_comparison.png",
+    "sha256": "3daa60c9bd25baad4f7dd9e2dda07e1f9d6450e029c475d89fe03d7fe9795bce",
+    "action": "move"
+  },
+  {
+    "source": "output/board/buzzle_board_v3_dw_spaced.png",
+    "destination": "archive/legacy-outputs/output/board/buzzle_board_v3_dw_spaced.png",
+    "sha256": "48b9b4878afbd0c0abf3fc063a0a31ff0db443ce348af25b76b4e50c5d99c8c9",
+    "action": "move"
+  },
+  {
+    "source": "output/board/buzzle_constants.ts",
+    "destination": "docs/reference/buzzle/buzzle_constants.ts",
+    "sha256": "b31866e1382a66de86bf3bd537a3182e28835148506ae83075dd25146e524252",
+    "action": "move"
+  },
+  {
+    "source": "output/board/buzzle_corner_dw_before_after.png",
+    "destination": "archive/legacy-outputs/output/board/buzzle_corner_dw_before_after.png",
+    "sha256": "982f4a3e3c4a49123807b09629b4081e3a1c1151525182f8fd43720776bb21f2",
+    "action": "move"
+  },
+  {
+    "source": "output/board/buzzle_exploded_7tile_hub.png",
+    "destination": "archive/legacy-outputs/output/board/buzzle_exploded_7tile_hub.png",
+    "sha256": "af98ae0cdcbb7ef3eed109e6a69b16efe843254fd468ea9332e648f02079a957",
+    "action": "move"
+  },
+  {
+    "source": "output/board/buzzle_master_4color_board.png",
+    "destination": "archive/legacy-outputs/output/board/buzzle_master_4color_board.png",
+    "sha256": "d6cd6215729f265790ba6dbd7ad55756a607033112a17d4e84f6db1332fc7df3",
+    "action": "move"
+  },
+  {
+    "source": "output/board/buzzle_master_clean_board.png",
+    "destination": "archive/legacy-outputs/output/board/buzzle_master_clean_board.png",
+    "sha256": "75cbb23031cf1887cb5c783fb4d1a8a51158450885d5799e8eb14036896352de",
+    "action": "move"
+  },
+  {
+    "source": "output/board/buzzle_new_board_master.png",
+    "destination": "archive/legacy-outputs/output/board/buzzle_new_board_master.png",
+    "sha256": "b6c807a5e25fd38f59cdbf2e0a252d9abd6de70f2c0b4061b3d80d45520a5def",
+    "action": "move"
+  },
+  {
+    "source": "output/board/buzzle_perfect_photo_clone.png",
+    "destination": "archive/legacy-outputs/output/board/buzzle_perfect_photo_clone.png",
+    "sha256": "100bc8f590afdac21ef50fed107659aadb6a3640f0e1b0b8df8784f133274a6e",
+    "action": "move"
+  },
+  {
+    "source": "output/board/buzzle_seamless_true_honeycomb.png",
+    "destination": "archive/legacy-outputs/output/board/buzzle_seamless_true_honeycomb.png",
+    "sha256": "1f24edcca0c44dcd1241fff4101ea59ce3452dd98316120e3c17b8cb8386a8f0",
+    "action": "move"
+  },
+  {
+    "source": "output/board/center_x_pocket.png",
+    "destination": "archive/legacy-outputs/output/board/center_x_pocket.png",
+    "sha256": "bf0a43b8f3549da49ed7695a9c065c9eb2fe2b5fb481634bbc9f7dfab94f2f06",
+    "action": "move"
+  },
+  {
+    "source": "output/board/centroids_bot_half.png",
+    "destination": "archive/legacy-outputs/output/board/centroids_bot_half.png",
+    "sha256": "4963e4ef810f58aefaadf9f17bf6c981c610047e3a44449dcc02389754c1dcb2",
+    "action": "move"
+  },
+  {
+    "source": "output/board/centroids_top_half.png",
+    "destination": "archive/legacy-outputs/output/board/centroids_top_half.png",
+    "sha256": "be24f729b870664cc3f4fd672ce5ad024c7d5dad581a7ed4a198993c2373ecd7",
+    "action": "move"
+  },
+  {
+    "source": "output/board/corner_check.png",
+    "destination": "archive/legacy-outputs/output/board/corner_check.png",
+    "sha256": "f9e46098938b3d4bcc87674522220c0068b7d4582017328aaccab43951466c29",
+    "action": "move"
+  },
+  {
+    "source": "output/board/detected_photo_centroids.png",
+    "destination": "archive/legacy-outputs/output/board/detected_photo_centroids.png",
+    "sha256": "265445ad1260de0459037b92c18fab3e02bf53cd9cedacefe5b33b2b3b2e5cb3",
+    "action": "move"
+  },
+  {
+    "source": "output/board/dw_spacing_options.png",
+    "destination": "archive/legacy-outputs/output/board/dw_spacing_options.png",
+    "sha256": "d22ebadf0d3006903c0ecabf9c199aeb66a8a5ec987a861409cd8a374a527118",
+    "action": "move"
+  },
+  {
+    "source": "output/board/hexabble_exact_photo_match.png",
+    "destination": "archive/legacy-outputs/output/board/hexabble_exact_photo_match.png",
+    "sha256": "60ce8d36b3099030076649ca6cf7d855fee94178abb5f56f2b9e206f59e192ab",
+    "action": "move"
+  },
+  {
+    "source": "output/board/hexabble_real_board_reference.jpg",
+    "destination": "archive/legacy-outputs/output/board/hexabble_real_board_reference.jpg",
+    "sha256": "5553da952f718460d363a080e37968d34b4844fcff804f4d1366e146f992eb26",
+    "action": "move"
+  },
+  {
+    "source": "output/board/inspect_master_800.png",
+    "destination": "archive/legacy-outputs/output/board/inspect_master_800.png",
+    "sha256": "ccb429f1668958b9e4cf3813ca9cbac19f259c2ad72bbc71fdec5b9afd7582e9",
+    "action": "move"
+  },
+  {
+    "source": "output/board/pdf_center.png",
+    "destination": "archive/legacy-outputs/output/board/pdf_center.png",
+    "sha256": "dfcc7703e31bb43a3abcaf0185b24ebdc069c0e7ba94df8f5d74438e8526cc01",
+    "action": "move"
+  },
+  {
+    "source": "output/board/pdf_left.png",
+    "destination": "archive/legacy-outputs/output/board/pdf_left.png",
+    "sha256": "853932975aa31a3e566c1c0ed3b31f882214a47bf334aac7235a8120cc828153",
+    "action": "move"
+  },
+  {
+    "source": "output/board/pdf_top.png",
+    "destination": "archive/legacy-outputs/output/board/pdf_top.png",
+    "sha256": "e0d8b87718b39cc864f9c460862c5c211674c3cdcc0f88fc203702a5f42fa5fa",
+    "action": "move"
+  },
+  {
+    "source": "output/board/pdf_top_right.png",
+    "destination": "archive/legacy-outputs/output/board/pdf_top_right.png",
+    "sha256": "9a327aed393bf4562553df3e7d4fb1b2f03641f7b6f0ac4f325f1f2d8d2bbb05",
+    "action": "move"
+  },
+  {
+    "source": "output/board/photo_text_bot.png",
+    "destination": "archive/legacy-outputs/output/board/photo_text_bot.png",
+    "sha256": "d1fa21a502550670904d65a7cf04f84b0a8995adba42aa96e92cfdef6421426c",
+    "action": "move"
+  },
+  {
+    "source": "output/board/photo_text_left.png",
+    "destination": "archive/legacy-outputs/output/board/photo_text_left.png",
+    "sha256": "caf77aa1ffa15795272127d6e54cf7b09dcedf7cd8373c13fb2d28d9df8cc126",
+    "action": "move"
+  },
+  {
+    "source": "output/board/photo_text_orientations.png",
+    "destination": "archive/legacy-outputs/output/board/photo_text_orientations.png",
+    "sha256": "e0ddf468ed0578f6095f5c774ba13b7f338cabf2626bee0f15710bb6c5b46261",
+    "action": "move"
+  },
+  {
+    "source": "output/board/photo_text_right.png",
+    "destination": "archive/legacy-outputs/output/board/photo_text_right.png",
+    "sha256": "3a335b6ade2784a1a0d434213bebfd68596d2db284e9fd852053802360f8e583",
+    "action": "move"
+  },
+  {
+    "source": "output/board/photo_text_top.png",
+    "destination": "archive/legacy-outputs/output/board/photo_text_top.png",
+    "sha256": "5529a2fd350a14ff34f1bd9c344cd6256f700aabf8c43bcb61b4b610fa34c036",
+    "action": "move"
+  },
+  {
+    "source": "output/board/photo_tl_annotated.png",
+    "destination": "archive/legacy-outputs/output/board/photo_tl_annotated.png",
+    "sha256": "3460031efaf61612dbf74e57827347a914729387d05b17ee8be2ce613d64f368",
+    "action": "move"
+  },
+  {
+    "source": "output/board/photo_tl_crop.png",
+    "destination": "archive/legacy-outputs/output/board/photo_tl_crop.png",
+    "sha256": "2e08a82e858ab47667ded14ee12f9ae453286b7cbc012cbc838d1a3662758e76",
+    "action": "move"
+  },
+  {
+    "source": "output/board/photo_tl_zoom.png",
+    "destination": "archive/legacy-outputs/output/board/photo_tl_zoom.png",
+    "sha256": "580aec475766922ff3a97b116221045735e8a39556ee00c4344ee4da94fcd233",
+    "action": "move"
+  },
+  {
+    "source": "output/board/photo_top_crop.png",
+    "destination": "archive/legacy-outputs/output/board/photo_top_crop.png",
+    "sha256": "949d0a7f0045d86a00e13495be861c88ba9a96a13cd66c12ef4ee5723134257d",
+    "action": "move"
+  },
+  {
+    "source": "output/board/photo_top_zoom.png",
+    "destination": "archive/legacy-outputs/output/board/photo_top_zoom.png",
+    "sha256": "11b8046879765c79c93194420913453b378220aceb55bb139838379a8801d26a",
+    "action": "move"
+  },
+  {
+    "source": "output/board/real_photo_top_crop.png",
+    "destination": "archive/legacy-outputs/output/board/real_photo_top_crop.png",
+    "sha256": "8fe194235e75e293c89a5b9d90360997a17c246b440c9d8f0e71554be3cf2d97",
+    "action": "move"
+  },
+  {
+    "source": "output/board/render_tl_corner.png",
+    "destination": "archive/legacy-outputs/output/board/render_tl_corner.png",
+    "sha256": "071d15fdf1aaacf3cbf2f32af5c73af5ce34d505217410be637d1e8b6009a29e",
+    "action": "move"
+  },
+  {
+    "source": "output/board/render_top_apex.png",
+    "destination": "archive/legacy-outputs/output/board/render_top_apex.png",
+    "sha256": "8ec51db8e7ce5d5d3f236542162b469579d68c51e13f975453caac3ff135335c",
+    "action": "move"
+  },
+  {
+    "source": "output/board/render_top_crop.png",
+    "destination": "archive/legacy-outputs/output/board/render_top_crop.png",
+    "sha256": "d3c966467deb684cce06b90c3b1dc7e255d521f57b652beaf05f0e5db9bd3514",
+    "action": "move"
+  },
+  {
+    "source": "output/board/ring_detail_top.png",
+    "destination": "archive/legacy-outputs/output/board/ring_detail_top.png",
+    "sha256": "d0b78a4a5c639eb60e1eebbc3e94f5bf3cba94b6ca3fa4218c4b19bfde086d57",
+    "action": "move"
+  },
+  {
+    "source": "output/board/side_by_side_verified.png",
+    "destination": "archive/legacy-outputs/output/board/side_by_side_verified.png",
+    "sha256": "8c5517ee5aa2923f3a9a6577aa46d51906beac74196a401b1a00e38fcb732136",
+    "action": "move"
+  },
+  {
+    "source": "output/board/wedge_2nd_row_dw.png",
+    "destination": "archive/legacy-outputs/output/board/wedge_2nd_row_dw.png",
+    "sha256": "13bf25b91aa19bddfc7e2900fb4ac2bdd497ba9cd6004e8eefb8a2cba6cadd4a",
+    "action": "move"
+  },
+  {
+    "source": "output/board/wedge_corner_closeup.png",
+    "destination": "archive/legacy-outputs/output/board/wedge_corner_closeup.png",
+    "sha256": "4f06610e2ce4baafb24c5fd1c778950bbe72859c766dae43beeb4ba6b21bd01e",
+    "action": "move"
+  },
+  {
+    "source": "output/board/wedge_top_verified.png",
+    "destination": "archive/legacy-outputs/output/board/wedge_top_verified.png",
+    "sha256": "63139882e9717593984e433865218cb3596f96bc916f0c5f1d751fa3c877c7e5",
+    "action": "move"
+  },
+  {
+    "source": "output/board/zoom_center.png",
+    "destination": "archive/legacy-outputs/output/board/zoom_center.png",
+    "sha256": "6a08e36db22ddd71fc044f0b6f6adac77defe8a5213983f95d61b54f164f1db9",
+    "action": "move"
+  },
+  {
+    "source": "output/board/zoom_right.png",
+    "destination": "archive/legacy-outputs/output/board/zoom_right.png",
+    "sha256": "33c5be7b9bb7e5e30720857dc6fa208a619db2d2e89968ddbc3278321b11ad20",
+    "action": "move"
+  },
+  {
+    "source": "output/board/zoom_top_annotated.png",
+    "destination": "archive/legacy-outputs/output/board/zoom_top_annotated.png",
+    "sha256": "fb5411f4202d16f0e5721301926bb8cee74834a03cc57827878d6805570c4ea2",
+    "action": "move"
+  },
+  {
+    "source": "output/board/zoom_top_apex.png",
+    "destination": "archive/legacy-outputs/output/board/zoom_top_apex.png",
+    "sha256": "5bbbb6a00a792c2815d6877229b43bf8495319aceb38693e8a29998bdbff80a4",
+    "action": "move"
+  },
+  {
+    "source": "output/graphics/all_user_uploads_overview.png",
+    "destination": "assets/branding/all_user_uploads_overview.png",
+    "sha256": "6c759a2d8f87014d9c7a9eac9afd376a173bb048df6d7b168f19496a592606aa",
+    "action": "move"
+  },
+  {
+    "source": "output/graphics/annotated_user_image.png",
+    "destination": "assets/branding/annotated_user_image.png",
+    "sha256": "9df3279edfd53b473ad4f94dd539280d759ff7173eab531809dbc6a52ca7518f",
+    "action": "move"
+  },
+  {
+    "source": "output/graphics/biobuzz_cad_actual_render.png",
+    "destination": "assets/branding/biobuzz_cad_actual_render.png",
+    "sha256": "1aab48b890d2e3bbfefc15624ef85afb4fb740b41892a94ce8799a382b6217b4",
+    "action": "move"
+  },
+  {
+    "source": "output/graphics/biobuzz_direct_ref.png",
+    "destination": "assets/branding/biobuzz_direct_ref.png",
+    "sha256": "492c4158dcd2c9d5625bc2573f0eee3f6f3bbf65984d29d96f57fe713ca08109",
+    "action": "move"
+  },
+  {
+    "source": "output/graphics/biobuzz_logo_authentic.png",
+    "destination": "assets/branding/biobuzz_logo_authentic.png",
+    "sha256": "b215d8c6c5377c68437bf6959dde21aefcfa7ca96b698021fb8461c403fa90b7",
+    "action": "move"
+  },
+  {
+    "source": "output/graphics/biobuzz_logo_authentic.svg",
+    "destination": "assets/branding/biobuzz_logo_authentic.svg",
+    "sha256": "0087acd5269af00c71eac3df804a20258926dddfc6aa7cc44bca52c006caf586",
+    "action": "move"
+  },
+  {
+    "source": "output/graphics/biobuzz_model_comparison.png",
+    "destination": "assets/branding/biobuzz_model_comparison.png",
+    "sha256": "6c1d1af39c2817544239b32f7dec94853c62dc5c8137bddb8723b4d7d08d8772",
+    "action": "move"
+  },
+  {
+    "source": "output/graphics/biobuzz_original_raw_view.png",
+    "destination": "assets/branding/biobuzz_original_raw_view.png",
+    "sha256": "d42c16847011608ac036c355d86da1d3e149ca6543698e230a825a6344d5c689",
+    "action": "move"
+  },
+  {
+    "source": "output/graphics/biobuzz_pixel_perfect_overlay.png",
+    "destination": "assets/branding/biobuzz_pixel_perfect_overlay.png",
+    "sha256": "dd16ac6d4b908273a1258ed2577914b217ddf6328bc8a63052bc6948c5909860",
+    "action": "move"
+  },
+  {
+    "source": "output/graphics/biobuzz_pixel_perfect_ref.png",
+    "destination": "assets/branding/biobuzz_pixel_perfect_ref.png",
+    "sha256": "5654fb823da404eebe008d37e8eb2d96b46089600b73ce50dc25222c0490202d",
+    "action": "move"
+  },
+  {
+    "source": "output/graphics/biobuzz_rosette_logo.png",
+    "destination": "assets/branding/biobuzz_rosette_logo.png",
+    "sha256": "3b6b0cd181d12b611b3772dcc2563a5c2ae09040bc42c669edd44fa0b564f242",
+    "action": "move"
+  },
+  {
+    "source": "output/graphics/biobuzz_rosette_logo.svg",
+    "destination": "assets/branding/biobuzz_rosette_logo.svg",
+    "sha256": "0087acd5269af00c71eac3df804a20258926dddfc6aa7cc44bca52c006caf586",
+    "action": "move"
+  },
+  {
+    "source": "output/graphics/biobuzz_rosette_single_color.svg",
+    "destination": "assets/branding/biobuzz_rosette_single_color.svg",
+    "sha256": "60318277979eb54a4928d37d52e87bf8a47dea2c77231ab14a71fcf4f349a02a",
+    "action": "move"
+  },
+  {
+    "source": "output/graphics/biobuzz_tile_back_black.png",
+    "destination": "assets/branding/biobuzz_tile_back_black.png",
+    "sha256": "6d729be8d1826fe8ed9169692ef954df2b1189697fd2f5a510c87453edf1f96e",
+    "action": "move"
+  },
+  {
+    "source": "output/graphics/biobuzz_tile_back_black.svg",
+    "destination": "assets/branding/biobuzz_tile_back_black.svg",
+    "sha256": "1244f0f3f105c5ea63f22d9e3479b97e59a01cb7209909d3adf0e248d3f13f02",
+    "action": "move"
+  },
+  {
+    "source": "output/graphics/biobuzz_tile_back_yellow_gold.png",
+    "destination": "assets/branding/biobuzz_tile_back_yellow_gold.png",
+    "sha256": "19a11fe1e8018114e2ca3ff39e08f45ed695949c549991aa02afcf29ef95d919",
+    "action": "move"
+  },
+  {
+    "source": "output/graphics/biobuzz_tile_back_yellow_gold.svg",
+    "destination": "assets/branding/biobuzz_tile_back_yellow_gold.svg",
+    "sha256": "c12eab5a6ba4e8191b1934cb00d753bf07c2c27c7cbf271138b2a4fb67ac7742",
+    "action": "move"
+  },
+  {
+    "source": "output/graphics/img1_vs_img2.png",
+    "destination": "assets/branding/img1_vs_img2.png",
+    "sha256": "f785692d81b6555824382aeebb8781b85c0f8015b4307375e4c6558cad242914",
+    "action": "move"
+  },
+  {
+    "source": "output/graphics/segmentation_test.png",
+    "destination": "assets/branding/segmentation_test.png",
+    "sha256": "5214eb201ac683d78dd48d3f8a25fb7c3a3a9c9c6b705d99165fb2eda1ea4853",
+    "action": "move"
+  },
+  {
+    "source": "output/graphics/user_biobuzz_clean_ref.png",
+    "destination": "assets/branding/user_biobuzz_clean_ref.png",
+    "sha256": "e2fb507fd37d501403ca18c00aa8a92409c31490d358e352a9ca1511af3a9869",
+    "action": "move"
+  },
+  {
+    "source": "output/graphics/user_uploaded_biobuzz_ref.png",
+    "destination": "assets/branding/user_uploaded_biobuzz_ref.png",
+    "sha256": "3efb20746a810e5152280a804f204c85a5cc5448b85ef7019078426768d3fbd0",
+    "action": "move"
+  },
+  {
+    "source": "output/holders/3mf/plate_256_tile_holders_4pack.3mf",
+    "destination": "output/accessories/tile-holders/3mf/plate_256_tile_holders_4pack.3mf",
+    "sha256": "a15ae990cef6b6b9bdcb43e2716286de9e67a41ed9ddb797bcf7599f248c7be3",
+    "action": "move"
+  },
+  {
+    "source": "output/holders/3mf/tile_holder_single_7tiles.3mf",
+    "destination": "output/accessories/tile-holders/3mf/tile_holder_single_7tiles.3mf",
+    "sha256": "974644137e1fc19e5de3fab1741e68a12ff605406e8bc6a80f127de09784024b",
+    "action": "move"
+  },
+  {
+    "source": "output/holders/previews/tile_holder_3d_preview.png",
+    "destination": "output/accessories/tile-holders/images/tile_holder_3d_preview.png",
+    "sha256": "3fb42de1e687cdd4e5c5b2c22406b09af4f50550c1c8ba53421ceb0580852994",
+    "action": "move"
+  },
+  {
+    "source": "output/holders/stl/tile_holder_single_7tiles.stl",
+    "destination": "output/accessories/tile-holders/stl/tile_holder_single_7tiles.stl",
+    "sha256": "216c164c1cf53dab8200f907efba9e888f14a3b20caad8ae4abb054306ec28d9",
+    "action": "move"
+  },
+  {
+    "source": "output/makerworld_hexabble.html",
+    "destination": "archive/legacy-outputs/output/makerworld_hexabble.html",
+    "sha256": "29fb24683d82435c5c152c80abc4468f03e656818234519f1b9623401aff83ab",
+    "action": "move"
+  },
+  {
+    "source": "output/makerworld_images/center_window.png",
+    "destination": "archive/legacy-outputs/output/makerworld_images/center_window.png",
+    "sha256": "2c9a96b8b5fb9642c639fd5ee6796b79e2a7e41fabfddd60c4d979ce94d327fb",
+    "action": "move"
+  },
+  {
+    "source": "output/makerworld_images/center_window_annotated.png",
+    "destination": "archive/legacy-outputs/output/makerworld_images/center_window_annotated.png",
+    "sha256": "044abe000697f9fafd581dec42fd93970238a79803fc0b35cd585554b967eb8f",
+    "action": "move"
+  },
+  {
+    "source": "output/makerworld_images/hexabble_2_0_manual.pdf",
+    "destination": "archive/legacy-outputs/output/makerworld_images/hexabble_2_0_manual.pdf",
+    "sha256": "01030d7d4f2dc09a06b3aac9e7bb5b681d46b9b4274d8fbf003575a2c472a13f",
+    "action": "move"
+  },
+  {
+    "source": "output/makerworld_images/hexabble_board_clean.png",
+    "destination": "archive/legacy-outputs/output/makerworld_images/hexabble_board_clean.png",
+    "sha256": "1982f62ca6ecd2a32b3792cd084586b92e2f607ef57c3cbe118333da750cdb54",
+    "action": "move"
+  },
+  {
+    "source": "output/makerworld_images/img_0_2025-07-18_ac69ece6bc2b68.jpg",
+    "destination": "archive/legacy-outputs/output/makerworld_images/img_0_2025-07-18_ac69ece6bc2b68.jpg",
+    "sha256": "03293fae4dd0204c00245f9f984442513a8dc89b0b6e690fdc47de62cab773f6",
+    "action": "move"
+  },
+  {
+    "source": "output/makerworld_images/img_0_board_seams.jpg",
+    "destination": "archive/legacy-outputs/output/makerworld_images/img_0_board_seams.jpg",
+    "sha256": "ffbfd450164d2971ddb43251b3a514a1354c4c0d78745e310dbaf978aed5fda5",
+    "action": "move"
+  },
+  {
+    "source": "output/makerworld_images/img_0_inspected.png",
+    "destination": "archive/legacy-outputs/output/makerworld_images/img_0_inspected.png",
+    "sha256": "7ad60d2c410b02e8b1a372f424074b33a8c9f8f97e498226db98bb7ea4f29104",
+    "action": "move"
+  },
+  {
+    "source": "output/makerworld_images/img_1_2025-07-18_e1a34d62f4f4c.jpg",
+    "destination": "archive/legacy-outputs/output/makerworld_images/img_1_2025-07-18_e1a34d62f4f4c.jpg",
+    "sha256": "7e21be467bfe9b629c2b07a87e41414ad8e3d6a42a454f247e1e4c43d66ee6aa",
+    "action": "move"
+  },
+  {
+    "source": "output/makerworld_images/img_1_board_seams.jpg",
+    "destination": "archive/legacy-outputs/output/makerworld_images/img_1_board_seams.jpg",
+    "sha256": "5d8cff13e1e12483819c8f48d95415feefc7483510f833bfac7b7b28a4cb046a",
+    "action": "move"
+  },
+  {
+    "source": "output/makerworld_images/img_2_2025-06-18_ce98791e74036.png",
+    "destination": "archive/legacy-outputs/output/makerworld_images/img_2_2025-06-18_ce98791e74036.png",
+    "sha256": "8df725573f452e8e7ebbc9e40448cd0e7da32a0c2351a8df04e7d4369c63c1d4",
+    "action": "move"
+  },
+  {
+    "source": "output/makerworld_images/img_2_center.png",
+    "destination": "archive/legacy-outputs/output/makerworld_images/img_2_center.png",
+    "sha256": "81c2e098af2c823edde44108d37ff3972a3fee12b52bfbb469739332bf60a32c",
+    "action": "move"
+  },
+  {
+    "source": "output/makerworld_images/img_2_inspected.png",
+    "destination": "archive/legacy-outputs/output/makerworld_images/img_2_inspected.png",
+    "sha256": "cec90fb1fab002de2d068e09404c41bd70fac89ed90f51076d23001ce011fa1a",
+    "action": "move"
+  },
+  {
+    "source": "output/makerworld_images/img_3_2024-04-04_405ae0c34d171.jpeg",
+    "destination": "archive/legacy-outputs/output/makerworld_images/img_3_2024-04-04_405ae0c34d171.jpeg",
+    "sha256": "19e67f624211785281191671030bc1fcf2f475916319f6525b137b6f5a778e77",
+    "action": "move"
+  },
+  {
+    "source": "output/makerworld_images/img_4_2024-12-20_6e9eecdf91f94.jpg",
+    "destination": "archive/legacy-outputs/output/makerworld_images/img_4_2024-12-20_6e9eecdf91f94.jpg",
+    "sha256": "b3b54a38e0a78559392e8b503d4daed994c9052e4b4790e176810add5cb3ed01",
+    "action": "move"
+  },
+  {
+    "source": "output/makerworld_images/legend_2x.png",
+    "destination": "archive/legacy-outputs/output/makerworld_images/legend_2x.png",
+    "sha256": "fd59326eb4cf97fb990ea18a4412e03bdff763a436fc7865f90babd43f44097a",
+    "action": "move"
+  },
+  {
+    "source": "output/makerworld_images/legend_area.png",
+    "destination": "archive/legacy-outputs/output/makerworld_images/legend_area.png",
+    "sha256": "7d89cfb507773f1162fea849a72bec5029e722304677fca3c26dfaca3d34dfea",
+    "action": "move"
+  },
+  {
+    "source": "output/makerworld_images/manual_pages/page_1.png",
+    "destination": "archive/legacy-outputs/output/makerworld_images/manual_pages/page_1.png",
+    "sha256": "587fbf51a2924c040c76bd2ff264574ad175ccecc12df6241fb0e02010e06ca1",
+    "action": "move"
+  },
+  {
+    "source": "output/makerworld_images/manual_pages/page_2.png",
+    "destination": "archive/legacy-outputs/output/makerworld_images/manual_pages/page_2.png",
+    "sha256": "dab373e835f9376dcfbfff4323cb140f79a185b93d7939292063c2795667ecf2",
+    "action": "move"
+  },
+  {
+    "source": "output/makerworld_images/manual_pages/page_3.png",
+    "destination": "archive/legacy-outputs/output/makerworld_images/manual_pages/page_3.png",
+    "sha256": "7ee9e41ed6e9b5ebba3eee7866bba8553c5086985416b9bbde4adc4bc1d04242",
+    "action": "move"
+  },
+  {
+    "source": "output/makerworld_images/manual_pages/page_4.png",
+    "destination": "archive/legacy-outputs/output/makerworld_images/manual_pages/page_4.png",
+    "sha256": "33a018e11adb3e3798c6c0ff0b166cf6d11b26a3fcb504e068993136b049fb05",
+    "action": "move"
+  },
+  {
+    "source": "output/makerworld_images/manual_pages/page_5.png",
+    "destination": "archive/legacy-outputs/output/makerworld_images/manual_pages/page_5.png",
+    "sha256": "3fee8fff9e224f0810edf1420c0378a9cc3a3447748c4e1f7b7eb72be1de3e18",
+    "action": "move"
+  },
+  {
+    "source": "output/makerworld_images/page_5_board_layout.png",
+    "destination": "archive/legacy-outputs/output/makerworld_images/page_5_board_layout.png",
+    "sha256": "970b2192a659235a0a972ce97435768908f97b83059d20d89c05968c486bd1b4",
+    "action": "move"
+  },
+  {
+    "source": "output/makerworld_images/page_5_legend.png",
+    "destination": "archive/legacy-outputs/output/makerworld_images/page_5_legend.png",
+    "sha256": "493fb8fd53a2768e9d56c1cf4d5725892cd9648b44414265d46b34dc3eaf772c",
+    "action": "move"
+  },
+  {
+    "source": "output/makerworld_images/preview_img_0_2025-07-18_ac69ece6bc2b68.jpg",
+    "destination": "archive/legacy-outputs/output/makerworld_images/preview_img_0_2025-07-18_ac69ece6bc2b68.jpg",
+    "sha256": "4e7bf55d412ca31f3267da674d36464295188c595100a66746be4874239fbf5e",
+    "action": "move"
+  },
+  {
+    "source": "output/makerworld_images/preview_img_1_2025-07-18_e1a34d62f4f4c.jpg",
+    "destination": "archive/legacy-outputs/output/makerworld_images/preview_img_1_2025-07-18_e1a34d62f4f4c.jpg",
+    "sha256": "41805b6c0bf9bbf22e4591e3010329a19b0f74b289daaa56acc46494787bb3a8",
+    "action": "move"
+  },
+  {
+    "source": "output/makerworld_images/preview_img_2_2025-06-18_ce98791e74036.jpg",
+    "destination": "archive/legacy-outputs/output/makerworld_images/preview_img_2_2025-06-18_ce98791e74036.jpg",
+    "sha256": "baaa87af148ffb97c9b34829055a421e7fd1645bfadca3b38f1bb4f5a6e127cc",
+    "action": "move"
+  },
+  {
+    "source": "output/othello/270mm_1p3in_4color/PRINT_FIRST_Pocket_and_Joint_Test.3mf",
+    "destination": "output/boards/othello/plates/PRINT_FIRST_Pocket_and_Joint_Test.3mf",
+    "sha256": "75b929490235134e76513cfe619263229c3b5c9fc7b49fca299a25d3d95a5ba1",
+    "action": "move"
+  },
+  {
+    "source": "output/othello/270mm_1p3in_4color/PRINT_GUIDE.md",
+    "destination": "output/boards/othello/PRINT_GUIDE.md",
+    "sha256": "778e0d72d16f76c58826022d3a20495b236f363a34188ab7a56f89b0c9c159cd",
+    "action": "move"
+  },
+  {
+    "source": "output/othello/270mm_1p3in_4color/Plate_01_Top_Left.3mf",
+    "destination": "output/boards/othello/plates/Plate_01_Top_Left.3mf",
+    "sha256": "cfb38ff9345ce28fb9fa487388e78a0a8766fe0c5c49dfe377fbdcbc18b107be",
+    "action": "move"
+  },
+  {
+    "source": "output/othello/270mm_1p3in_4color/Plate_02_Top_Right.3mf",
+    "destination": "output/boards/othello/plates/Plate_02_Top_Right.3mf",
+    "sha256": "f518b26f294a3d3c3bb54cb4ea29ca65acbd637ea2fab666b699b32f4bb43660",
+    "action": "move"
+  },
+  {
+    "source": "output/othello/270mm_1p3in_4color/Plate_03_Bottom_Left.3mf",
+    "destination": "output/boards/othello/plates/Plate_03_Bottom_Left.3mf",
+    "sha256": "c2f88a4976ec0bc6277a17e615b1a885ef6015d0f948a69eaa91dc3546a367ba",
+    "action": "move"
+  },
+  {
+    "source": "output/othello/270mm_1p3in_4color/Plate_04_Bottom_Right.3mf",
+    "destination": "output/boards/othello/plates/Plate_04_Bottom_Right.3mf",
+    "sha256": "bb588c6a271280b3919ee02b031b56bb70b6f506b58cb35d97535737217eeda1",
+    "action": "move"
+  },
+  {
+    "source": "output/othello/270mm_1p3in_4color/board_and_bed_preview.png",
+    "destination": "output/boards/othello/images/board_and_bed_preview.png",
+    "sha256": "9555d72209e7f9fbf7d79cd0326d9d80b88068555cff05da060fd2d358dbe34c",
+    "action": "move"
+  },
+  {
+    "source": "output/othello/270mm_1p3in_4color/print_manifest.json",
+    "destination": "output/boards/othello/print_manifest.json",
+    "sha256": "2b7a1af2dd27bee84c12d421e1eebe4f7dd6e93a6812538ad5abbf8c7fe6a831",
+    "action": "move"
+  },
+  {
+    "source": "output/othello/3mf/board_hex_othello_61cells_master.3mf",
+    "destination": "archive/legacy-outputs/output/othello/3mf/board_hex_othello_61cells_master.3mf",
+    "sha256": "a1805b226222d8e5a9ec677ccbc0ba8926d859939a751b8c24503d12b065da11",
+    "action": "move"
+  },
+  {
+    "source": "output/othello/3mf/hex_othello_piece_single.3mf",
+    "destination": "output/tiles/othello/3mf/hex_othello_piece_single.3mf",
+    "sha256": "78523a0da0fbcfcc2ebe7c09e292d7beaa315ec61c4e66ddf3b58dc1419645ba",
+    "action": "move"
+  },
+  {
+    "source": "output/othello/3mf/plate_256_hex_othello_60set_plate1_of_2_30pieces.3mf",
+    "destination": "output/tiles/othello/plates/plate_30_pieces_print_twice.3mf",
+    "sha256": "d37ea44ef130220224b70f3b413b57b80a6444f9eaabdb73e414cc18bc9f9c5c",
+    "action": "move"
+  },
+  {
+    "source": "output/othello/3mf/plate_256_hex_othello_60set_plate2_of_2_30pieces.3mf",
+    "destination": "output/tiles/othello/plates/plate_30_pieces_print_twice.3mf",
+    "sha256": "d37ea44ef130220224b70f3b413b57b80a6444f9eaabdb73e414cc18bc9f9c5c",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/othello/3mf/plate_256_hex_othello_61cells_q1_top_left.3mf",
+    "destination": "archive/legacy-outputs/output/othello/3mf/plate_256_hex_othello_61cells_q1_top_left.3mf",
+    "sha256": "55919ba652df81e5e1ae1e368a0aac86d8fe5626c739f893ae6c81510b13da9b",
+    "action": "move"
+  },
+  {
+    "source": "output/othello/3mf/plate_256_hex_othello_61cells_q2_top_right.3mf",
+    "destination": "archive/legacy-outputs/output/othello/3mf/plate_256_hex_othello_61cells_q2_top_right.3mf",
+    "sha256": "e414816059d0300117575e3a32b2fa6aaa2e224cd6d08bce76a72c7ac998dd54",
+    "action": "move"
+  },
+  {
+    "source": "output/othello/3mf/plate_256_hex_othello_61cells_q3_bottom_left.3mf",
+    "destination": "archive/legacy-outputs/output/othello/3mf/plate_256_hex_othello_61cells_q3_bottom_left.3mf",
+    "sha256": "95d0f90dd48394800d22790f0ca9bd6ce76835f5c5107c59d5c9320dfe0b27c3",
+    "action": "move"
+  },
+  {
+    "source": "output/othello/3mf/plate_256_hex_othello_61cells_q4_bottom_right.3mf",
+    "destination": "archive/legacy-outputs/output/othello/3mf/plate_256_hex_othello_61cells_q4_bottom_right.3mf",
+    "sha256": "87ee8bbdff22786a2b2099a4a5c203ec057d542e0440f8d919b2be26b7fe3529",
+    "action": "move"
+  },
+  {
+    "source": "output/othello/previews/board_underside_ares23247_preview.png",
+    "destination": "archive/legacy-outputs/output/othello/previews/board_underside_ares23247_preview.png",
+    "sha256": "6f2af695da069b5dc667816444709f6821918f902199b5e46f079291a70d788c",
+    "action": "move"
+  },
+  {
+    "source": "output/othello/previews/hex_othello_game_setup_preview.png",
+    "destination": "archive/legacy-outputs/output/othello/previews/hex_othello_game_setup_preview.png",
+    "sha256": "150b39f803dd8d12d74d83b0dcc7d593d280814623b1672ce5ca95b92db650dc",
+    "action": "move"
+  },
+  {
+    "source": "output/othello/previews/hex_othello_reversible_preview.png",
+    "destination": "archive/legacy-outputs/output/othello/previews/hex_othello_reversible_preview.png",
+    "sha256": "684def95085e6ce2bd312f34e9ea5e864fb78b3963c03a2ca55613e997ca59a2",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/biobuzz_bold_comparison.png",
+    "destination": "archive/legacy-outputs/output/previews/biobuzz_bold_comparison.png",
+    "sha256": "0364dfaedce037ed03c89e2e523f4d1afb7d532126e01cc87527a6888e08cdef",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/biobuzz_cad_precision.png",
+    "destination": "archive/legacy-outputs/output/previews/biobuzz_cad_precision.png",
+    "sha256": "69e494d7139d356f078ee0c498be7da0e28adf95b6342d508b92b21be87ad78b",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/biobuzz_color_analysis.png",
+    "destination": "archive/legacy-outputs/output/previews/biobuzz_color_analysis.png",
+    "sha256": "7103194fcf90067e4f496d22a3ecac60585649f391f0e9069e1fdd4544646fce",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/biobuzz_final_vector.png",
+    "destination": "archive/legacy-outputs/output/previews/biobuzz_final_vector.png",
+    "sha256": "cdee2eea29c5a723cfdd5ac9cfb267f1ad6d1647f75c6b31b11a65e49d274dd8",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/biobuzz_hole_test.png",
+    "destination": "archive/legacy-outputs/output/previews/biobuzz_hole_test.png",
+    "sha256": "1fa0d7231b30dee390c13cdc7a4e8220c0d48557afe2186978addbbcbdf0bcaf",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/biobuzz_mask_debug.png",
+    "destination": "archive/legacy-outputs/output/previews/biobuzz_mask_debug.png",
+    "sha256": "938dd2744fca6202b3ad4c7cc9165e247bf7589ca203e157e4b7fd9aae5f85e8",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/biobuzz_options_preview.png",
+    "destination": "archive/legacy-outputs/output/previews/biobuzz_options_preview.png",
+    "sha256": "e79096364883cc14e55e3d730715aa17af0b013b86d7445dbf96059f5b1664a0",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/biobuzz_vector_test.png",
+    "destination": "archive/legacy-outputs/output/previews/biobuzz_vector_test.png",
+    "sha256": "b31b86cb5b695b08505c23e57a629c12e230186c7550205f3ef61a0e5b159835",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/board_underside_ares23247_preview.png",
+    "destination": "archive/legacy-outputs/output/othello/previews/board_underside_ares23247_preview.png",
+    "sha256": "6f2af695da069b5dc667816444709f6821918f902199b5e46f079291a70d788c",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/previews/exact_photo_replica_board.png",
+    "destination": "archive/legacy-outputs/output/previews/exact_photo_replica_board.png",
+    "sha256": "77c20e9d18a52c5858539cc0df0e9d0222b911fc69d5c8cb1392e71329d35a90",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/hex_othello_game_setup_preview.png",
+    "destination": "archive/legacy-outputs/output/othello/previews/hex_othello_game_setup_preview.png",
+    "sha256": "150b39f803dd8d12d74d83b0dcc7d593d280814623b1672ce5ca95b92db650dc",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/previews/hex_othello_reversible_preview.png",
+    "destination": "archive/legacy-outputs/output/othello/previews/hex_othello_reversible_preview.png",
+    "sha256": "684def95085e6ce2bd312f34e9ea5e864fb78b3963c03a2ca55613e997ca59a2",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/previews/interlocking_board_diagram.png",
+    "destination": "archive/legacy-outputs/output/previews/interlocking_board_diagram.png",
+    "sha256": "04379205233545a9565faf405b562413a358b088b986170a86a0a04bb9cdcffe",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/interlocking_bold_cad.png",
+    "destination": "archive/legacy-outputs/output/previews/interlocking_bold_cad.png",
+    "sha256": "8b4b80a5b87862609d03791aedf7ebe0c2f8b0a362f229e5e4ba9eac3d210d28",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/interlocking_bold_cad_v2.png",
+    "destination": "archive/legacy-outputs/output/previews/interlocking_bold_cad_v2.png",
+    "sha256": "9bb4ec7e9f117b22b0f58853ab505281df75cc0984b526002bc1f6a5a64aaf6f",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/interlocking_logo_mask.png",
+    "destination": "archive/legacy-outputs/output/previews/interlocking_logo_mask.png",
+    "sha256": "f0a1ea2c9e694db928fe01128348c9dc6289a34a1c4ce133d5a45262b95cb364",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/interlocking_logo_test.png",
+    "destination": "archive/legacy-outputs/output/previews/interlocking_logo_test.png",
+    "sha256": "cb6b86d946d5b59f6a2c40a67e8020e6c003a66ea80493cf9c753188026e588a",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/interlocking_thickening_comparison.png",
+    "destination": "archive/legacy-outputs/output/previews/interlocking_thickening_comparison.png",
+    "sha256": "f333aff88de0ef4b5119cdea40d8f3295c6ead1003350b164f44698189395312",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/modular_hex_scrabble_board_concept.png",
+    "destination": "archive/legacy-outputs/output/previews/modular_hex_scrabble_board_concept.png",
+    "sha256": "658b219f84645d32566644172410dbb7b0ebd19bc5d8862334f0f384a4ffa8e3",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/natural_zigzag_assembly_preview.png",
+    "destination": "archive/legacy-outputs/output/previews/natural_zigzag_assembly_preview.png",
+    "sha256": "34f6eba375df0c65ef689434ce2ecc934fa7d773610c041a0691fceb00918424",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/official_hexabble_balanced_layout.png",
+    "destination": "archive/legacy-outputs/output/previews/official_hexabble_balanced_layout.png",
+    "sha256": "01c7151eb9c4c325596effa4836a8d2c47c800f54ef5340ebb48f4c655af09de",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/plate_256_hiveswarm_144set_plate1.png",
+    "destination": "archive/legacy-outputs/output/previews/plate_256_hiveswarm_144set_plate1.png",
+    "sha256": "45499f53987482904a5b2e6cc5b7b57e548ce4052ca7379777b2196871f8545f",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/plate_256_hiveswarm_144set_plate2.png",
+    "destination": "archive/legacy-outputs/output/previews/plate_256_hiveswarm_144set_plate2.png",
+    "sha256": "b9168190432d3d2579a4fc0e1ac602d298ba678e3cc8e5aadabf2e50cedd83bf",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/plate_256_hiveswarm_144set_plate3.png",
+    "destination": "archive/legacy-outputs/output/previews/plate_256_hiveswarm_144set_plate3.png",
+    "sha256": "ab3d68f6712ced1b08ebf33b135fce54a9f48260d9399b49b1923bf3a589d852",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/plate_256_hiveswarm_144set_plate4.png",
+    "destination": "archive/legacy-outputs/output/previews/plate_256_hiveswarm_144set_plate4.png",
+    "sha256": "c3bb97fe9c7abd829e0a3528e6b099a21a4d2aa5d08414f4683e42821fb9fad3",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/plate_256_hiveswarm_144set_plate5.png",
+    "destination": "archive/legacy-outputs/output/previews/plate_256_hiveswarm_144set_plate5.png",
+    "sha256": "92a198730c0f820077e15615276a14e29ae96bbb70f482168dedc4a1dc7be9fc",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/plate_256_hiveswarm_144set_plate6.png",
+    "destination": "archive/legacy-outputs/output/previews/plate_256_hiveswarm_144set_plate6.png",
+    "sha256": "f3263a73098b1a6fd6fe2feddd6afbbf5bb436e2afa266357fe4db7b7ec2c035",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/plate_256_math_interlocking_preview.png",
+    "destination": "archive/legacy-outputs/output/previews/plate_256_math_interlocking_preview.png",
+    "sha256": "e254d5774271a866f50444a20e713639845ca205d40b2f2862dd5160371eb63d",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/plate_256_scrabble_100set_plate1.png",
+    "destination": "archive/legacy-outputs/output/previews/plate_256_scrabble_100set_plate1.png",
+    "sha256": "e20339bed240f8079ff2d2b2184dc47ca39484b25bfa13372478652c71bec836",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/plate_256_scrabble_100set_plate2.png",
+    "destination": "archive/legacy-outputs/output/previews/plate_256_scrabble_100set_plate2.png",
+    "sha256": "8f3cec965715a10fef20450973771488d6a5560e77cc76e8b870686e28345d62",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/plate_256_scrabble_100set_plate3.png",
+    "destination": "archive/legacy-outputs/output/previews/plate_256_scrabble_100set_plate3.png",
+    "sha256": "5b6c03a9ee3b8b0980b6a769d2d9337514164c1ed2a5d6e4e19da28e0b24dc3d",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/plate_256_scrabble_100set_plate4.png",
+    "destination": "archive/legacy-outputs/output/previews/plate_256_scrabble_100set_plate4.png",
+    "sha256": "94dc57cb9485a657d96f6c9ad2e689a53675d66e3d0bdbf850d45dea6f039c00",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/plate_256_team_scrabble_plate1_bottom_view.png",
+    "destination": "archive/legacy-outputs/output/previews/plate_256_team_scrabble_plate1_bottom_view.png",
+    "sha256": "3ad4b3244753510930536812d3b88c6bcb4619a5c824ce3fd7ad3337082b0752",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/plate_full_256_alphabet_A_Z.png",
+    "destination": "archive/legacy-outputs/output/previews/plate_full_256_alphabet_A_Z.png",
+    "sha256": "6467ec592db244bf0a98004072130f778cbae9c27568ec3716af7f324b73a150",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/plate_full_256_numbers_and_extras.png",
+    "destination": "archive/legacy-outputs/output/previews/plate_full_256_numbers_and_extras.png",
+    "sha256": "3c0c10d94f206935a09e827e03e8ed7d609503e83442ba3a868c26e0fe46d1e3",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/plate_letters_A_M.png",
+    "destination": "archive/legacy-outputs/output/previews/plate_letters_A_M.png",
+    "sha256": "b046da62becbf5d462afb7f9dd496f4a4514d5eb66fd4c27407bea7527440009",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/plate_letters_N_Z_Blank.png",
+    "destination": "archive/legacy-outputs/output/previews/plate_letters_N_Z_Blank.png",
+    "sha256": "7d3fb02485eb99adc1e2c90833b818c950f15b300986c8dc6fb3d7324b4d6126",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/plate_numbers_and_symbols.png",
+    "destination": "archive/legacy-outputs/output/previews/plate_numbers_and_symbols.png",
+    "sha256": "9fd6c01a2d0a4b53bacabae27b18fe0a8dff8d6b2572674753bde78f0a51a0fd",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/seamless_honeycomb_board_preview.png",
+    "destination": "archive/legacy-outputs/output/previews/seamless_honeycomb_board_preview.png",
+    "sha256": "4024bc4b6e51ff10a33ed5893df2dab4910614b2030da2a986adf6d11464ecf1",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/team_logo_optimization_comparison.png",
+    "destination": "archive/legacy-outputs/output/previews/team_logo_optimization_comparison.png",
+    "sha256": "419697886b8ee308a7c6dae5a99891b137853b245f412cc20552e62540287a82",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/team_logo_optimized_clean.png",
+    "destination": "archive/legacy-outputs/output/previews/team_logo_optimized_clean.png",
+    "sha256": "6480f7e20eede9fe1759d1a7ca7b9cf325b39f865e08616830faf540690f29e5",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/tile_A_score1.png",
+    "destination": "archive/legacy-outputs/output/previews/tile_A_score1.png",
+    "sha256": "59637524d2ad208c286274e5bbd40578f1b0fbb2e1f35454190db36f378fe3f8",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/tile_BLANK_score0.png",
+    "destination": "archive/legacy-outputs/output/previews/tile_BLANK_score0.png",
+    "sha256": "61370d68ad08a7c66fe8d197ec0c717774224d218ef6cfee33c05ddb0fe922ad",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/tile_B_score3.png",
+    "destination": "archive/legacy-outputs/output/previews/tile_B_score3.png",
+    "sha256": "3b0201e71362c7e3e18b4d06090270ddabc000f0ec336ed8966e78768622e7c7",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/tile_H_score4.png",
+    "destination": "archive/legacy-outputs/output/previews/tile_H_score4.png",
+    "sha256": "554f7cf908c8b684fca591a26d7365b8bf0fb921740512f177e0b6bbc49dd43f",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/tile_Q_score10.png",
+    "destination": "archive/legacy-outputs/output/previews/tile_Q_score10.png",
+    "sha256": "d224f305d118047db32fdb7646a675152e572e0fd2439f3e3ca1c7b7723c5176",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/tile_Z_score10.png",
+    "destination": "archive/legacy-outputs/output/previews/tile_Z_score10.png",
+    "sha256": "9b6256254efd56bd690276474d440aaeb01d2fc00beab29425efca64da198aae",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/tile_doublesided_team_logo_A.png",
+    "destination": "archive/legacy-outputs/output/previews/tile_doublesided_team_logo_A.png",
+    "sha256": "14314477d5382764b4d67ee979a2f2b0023e6efc694c4c36d2f7574de1b9c662",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/tile_holder_3d_preview.png",
+    "destination": "archive/legacy-outputs/output/previews/tile_holder_3d_preview.png",
+    "sha256": "3fb42de1e687cdd4e5c5b2c22406b09af4f50550c1c8ba53421ceb0580852994",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/tile_num_7.png",
+    "destination": "archive/legacy-outputs/output/previews/tile_num_7.png",
+    "sha256": "9eb51aacaa4452823301b9e0a6f93ad62dd8e3eea4255d37e0054a4cd1e4f096",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/tile_num_8.png",
+    "destination": "archive/legacy-outputs/output/previews/tile_num_8.png",
+    "sha256": "488c5a51994568a8e984c0ece1b3112bcec21cd19614bdccfe2ee9dd9f99d930",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/tile_plus.png",
+    "destination": "archive/legacy-outputs/output/previews/tile_plus.png",
+    "sha256": "d7b4edf17cba5594b9c1324f097a1f2b0c2312f0bf2af9c60de57bf168bf0daa",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/tile_question.png",
+    "destination": "archive/legacy-outputs/output/previews/tile_question.png",
+    "sha256": "5eff08f7c86b48472b9b924d05c904cb48a0f1b7cb7707423b8d7c7e65d798d2",
+    "action": "move"
+  },
+  {
+    "source": "output/previews/underside_team_inlay_preview.png",
+    "destination": "archive/legacy-outputs/output/previews/underside_team_inlay_preview.png",
+    "sha256": "33ffbba75191a26a42ea3cc7eac4ca92d85e5059d9b89b42f5d495680237f43a",
+    "action": "move"
+  },
+  {
+    "source": "output/rules/BioBuzz_Hexabble_Official_Rules.pdf",
+    "destination": "archive/legacy-documents/rules/BioBuzz_Hexabble_Official_Rules.pdf",
+    "sha256": "de8e75992a2013b498480aabcc825a3bd71ba1909c754ac8e54d5d6b48e0f7e8",
+    "action": "move"
+  },
+  {
+    "source": "output/rules/BioBuzz_Hexabble_Official_Rules_preview.png",
+    "destination": "archive/legacy-documents/rules/BioBuzz_Hexabble_Official_Rules_preview.png",
+    "sha256": "ae74bd6310775c707dad0efbad4e17d9aba21111346f0f37d19f93fb549270e4",
+    "action": "move"
+  },
+  {
+    "source": "output/rules/BioBuzz_Hexabble_Rules.pdf",
+    "destination": "archive/legacy-documents/rules/BioBuzz_Hexabble_Rules.pdf",
+    "sha256": "84a8df448ebdeacc2676e30f07908ff9eb8195e7c3eae27d96c7cda04dc4ce49",
+    "action": "move"
+  },
+  {
+    "source": "output/rules/BioBuzz_Hexabble_Rules_preview.png",
+    "destination": "archive/legacy-documents/rules/BioBuzz_Hexabble_Rules_preview.png",
+    "sha256": "8aa555278ef9efd2e3745b60098943c667e55f0a27df69968268c892ecdf8475",
+    "action": "move"
+  },
+  {
+    "source": "output/rules/BioBuzz_Hexello_Official_Rules.pdf",
+    "destination": "archive/legacy-documents/rules/BioBuzz_Hexello_Official_Rules.pdf",
+    "sha256": "56ba9131412b0fcf058bbc02e0a7d2151005c9ea9ddf121aaa735c5e3b5dbc65",
+    "action": "move"
+  },
+  {
+    "source": "output/rules/BioBuzz_Hexello_Official_Rules_preview.png",
+    "destination": "archive/legacy-documents/rules/BioBuzz_Hexello_Official_Rules_preview.png",
+    "sha256": "55da31f5500e05efaf6f55c48925a759a6c7b4590a6ace0ae532cc180bf1be33",
+    "action": "move"
+  },
+  {
+    "source": "output/rules/BioBuzz_Hexello_Rules.pdf",
+    "destination": "archive/legacy-documents/rules/BioBuzz_Hexello_Rules.pdf",
+    "sha256": "488f76c0c66fdba4c668d7f8d0b20d4c6bd560d2ad928731434e31c06880d0eb",
+    "action": "move"
+  },
+  {
+    "source": "output/rules/BioBuzz_Hexello_Rules_preview.png",
+    "destination": "archive/legacy-documents/rules/BioBuzz_Hexello_Rules_preview.png",
+    "sha256": "dde0c73351cafa23d426ca033d5fd9a080f0742a402f1ca13cb61d4f79f539be",
+    "action": "move"
+  },
+  {
+    "source": "output/rules/BioBuzz_Hivegrams_Official_Rules.pdf",
+    "destination": "archive/legacy-documents/rules/BioBuzz_Hivegrams_Official_Rules.pdf",
+    "sha256": "7596929c4b44bfba02b58666a654550ca183fbad3dbc946dfb6230287978ff32",
+    "action": "move"
+  },
+  {
+    "source": "output/rules/BioBuzz_Hivegrams_Official_Rules_preview.png",
+    "destination": "archive/legacy-documents/rules/BioBuzz_Hivegrams_Official_Rules_preview.png",
+    "sha256": "6e1d0a69a6c273272fc1b32ebfa6b607d92f8c1869ca3c77700414941522ab61",
+    "action": "move"
+  },
+  {
+    "source": "output/rules/BioBuzz_Hivegrams_Rules.pdf",
+    "destination": "archive/legacy-documents/rules/BioBuzz_Hivegrams_Rules.pdf",
+    "sha256": "9f739b33332eceb99ebfa7ce009df85d0ff0a775eaf892c342eb57de17c5181a",
+    "action": "move"
+  },
+  {
+    "source": "output/rules/BioBuzz_Hivegrams_Rules_preview.png",
+    "destination": "archive/legacy-documents/rules/BioBuzz_Hivegrams_Rules_preview.png",
+    "sha256": "10fa0cd03b9d8e8db3dcde7dad8928ec259853f3b8e303623ee08ddacc660e78",
+    "action": "move"
+  },
+  {
+    "source": "output/rules/Buzzagrams_Rules.pdf",
+    "destination": "archive/legacy-documents/rules/Buzzagrams_Rules.pdf",
+    "sha256": "144a15dcc3f974d40291f10dbbb09a077c2761c6df224e5a7d6ed856433c1bf5",
+    "action": "move"
+  },
+  {
+    "source": "output/rules/Buzzagrams_Rules_preview.png",
+    "destination": "archive/legacy-documents/rules/Buzzagrams_Rules_preview.png",
+    "sha256": "0dc5362b732e9a12f13751fd809af399bc2be3f10b7fe7eb90eeedc5477358f3",
+    "action": "move"
+  },
+  {
+    "source": "output/rules/Buzzello_Rules.pdf",
+    "destination": "archive/legacy-documents/rules/Buzzello_Rules.pdf",
+    "sha256": "755d6a36f0b68edc35983a4acf6e21593c4dea509f4e6fa5a4831ea572b2c628",
+    "action": "move"
+  },
+  {
+    "source": "output/rules/Buzzello_Rules_Clean.pdf",
+    "destination": "archive/legacy-documents/rules/Buzzello_Rules_Clean.pdf",
+    "sha256": "eba76f105b18f2e35384f1ec0fde148bf00776103ae9d7b47dd1184a141d1a05",
+    "action": "move"
+  },
+  {
+    "source": "output/rules/Buzzello_Rules_preview.png",
+    "destination": "archive/legacy-documents/rules/Buzzello_Rules_preview.png",
+    "sha256": "b5ec1da5c239f58ea7b0a8ffc4dfc6bb5dd8916e7c43dc5b78df5f4e115aa19e",
+    "action": "move"
+  },
+  {
+    "source": "output/rules/Buzzle_Rules.pdf",
+    "destination": "archive/legacy-documents/rules/Buzzle_Rules.pdf",
+    "sha256": "7a8cdc1fe7081d2173e05495a6cd35b2caddfba052c5fef31ba3ccc5191d1a42",
+    "action": "move"
+  },
+  {
+    "source": "output/rules/Buzzle_Rules_preview.png",
+    "destination": "archive/legacy-documents/rules/Buzzle_Rules_preview.png",
+    "sha256": "877264a76619ecb465376522e8875ce0779add363721e2fb13557bae00bf0501",
+    "action": "move"
+  },
+  {
+    "source": "output/rules/diagrams/diagram_buzzagrams_grid.png",
+    "destination": "archive/legacy-documents/rules/diagrams/diagram_buzzagrams_grid.png",
+    "sha256": "c3bd1d17907969ae58f9466a186c26974984b95e24d3009a37f51d95b22eb067",
+    "action": "move"
+  },
+  {
+    "source": "output/rules/diagrams/diagram_buzzello_flanking.png",
+    "destination": "archive/legacy-documents/rules/diagrams/diagram_buzzello_flanking.png",
+    "sha256": "f5e80608c3f0092488da73d82aeb6214749c059f3246b04e5d87630b78b71e59",
+    "action": "move"
+  },
+  {
+    "source": "output/rules/diagrams/diagram_buzzello_setup.png",
+    "destination": "archive/legacy-documents/rules/diagrams/diagram_buzzello_setup.png",
+    "sha256": "0a078fec5ddd18b1f5b8b8d568b5e7f3ff1749cd9c0f9574e7a36292f112aea5",
+    "action": "move"
+  },
+  {
+    "source": "output/rules/diagrams/diagram_buzzle_axes.png",
+    "destination": "archive/legacy-documents/rules/diagrams/diagram_buzzle_axes.png",
+    "sha256": "d36bae3f2dd812c5af193dd4efddbfecd515ca4e5e4afb4516dc59614a06ac9a",
+    "action": "move"
+  },
+  {
+    "source": "output/rules/diagrams/diagram_hexabble_axes.png",
+    "destination": "archive/legacy-documents/rules/diagrams/diagram_hexabble_axes.png",
+    "sha256": "818799e41f77def779dfe275e8b9caae3511d3c63743dd8beb2742aaf6225279",
+    "action": "move"
+  },
+  {
+    "source": "output/rules/diagrams/diagram_hexello_flanking.png",
+    "destination": "archive/legacy-documents/rules/diagrams/diagram_hexello_flanking.png",
+    "sha256": "c2a068f26805cea389e2eba0e7eb68ce4bd2a29ac97d3ca2b88ac0f50fc6be08",
+    "action": "move"
+  },
+  {
+    "source": "output/rules/diagrams/diagram_hexello_setup.png",
+    "destination": "archive/legacy-documents/rules/diagrams/diagram_hexello_setup.png",
+    "sha256": "18bcc050a5c5f610e421230c30c39905e3c278b251d9aa1d437522989d246628",
+    "action": "move"
+  },
+  {
+    "source": "output/rules/diagrams/diagram_hivegrams_grid.png",
+    "destination": "archive/legacy-documents/rules/diagrams/diagram_hivegrams_grid.png",
+    "sha256": "f1ee36500dae96c23f80925659c7a8d6aff347150b8aeb6ec28ce2119d787726",
+    "action": "move"
+  },
+  {
+    "source": "output/tile_size_cleanup.json",
+    "destination": "docs/maintenance/tile_size_cleanup.json",
+    "sha256": "d1182866cc00fadbe982c20517d6c909ef3de250f1af2aef7a710d5b28d2cf11",
+    "action": "move"
+  },
+  {
+    "source": "output_biobuzz/3mf/tile_biobuzz_token.3mf",
+    "destination": "output/tiles/biobuzz/3mf/tile_biobuzz_token.3mf",
+    "sha256": "12dd566b07c9ce44094b3852371e77acda8f459f2fd77620ed52b61d5639553e",
+    "action": "move"
+  },
+  {
+    "source": "output_biobuzz/3mf/tile_doublesided_biobuzz_A_score1.3mf",
+    "destination": "output/tiles/biobuzz/3mf/tile_doublesided_biobuzz_A_score1.3mf",
+    "sha256": "9b35fcd57188c0764316c3a8676e1e48808f9e802a8ac5b365ec0864d42d4825",
+    "action": "move"
+  },
+  {
+    "source": "output_biobuzz/plates/plate_256_biobuzz_hiveswarm_144set_plate1_of_6_24tiles.3mf",
+    "destination": "output/tiles/biobuzz/plates/plate_256_biobuzz_hiveswarm_144set_plate1_of_6_24tiles.3mf",
+    "sha256": "97634b0c960759efc07549cd4948c38a30fd4ab27d996ca1d8079adaa774c6bd",
+    "action": "move"
+  },
+  {
+    "source": "output_biobuzz/plates/plate_256_biobuzz_hiveswarm_144set_plate2_of_6_24tiles.3mf",
+    "destination": "output/tiles/biobuzz/plates/plate_256_biobuzz_hiveswarm_144set_plate2_of_6_24tiles.3mf",
+    "sha256": "a787d674a719f07aa229ed773080a235950373d4ac6c4d747dd21e241e3235eb",
+    "action": "move"
+  },
+  {
+    "source": "output_biobuzz/plates/plate_256_biobuzz_hiveswarm_144set_plate3_of_6_24tiles.3mf",
+    "destination": "output/tiles/biobuzz/plates/plate_256_biobuzz_hiveswarm_144set_plate3_of_6_24tiles.3mf",
+    "sha256": "05eb170d5ac1f3e1e686fbbeb2521fcb9cafbbe7c45dc8e8c92c7376f0fbf9b3",
+    "action": "move"
+  },
+  {
+    "source": "output_biobuzz/plates/plate_256_biobuzz_hiveswarm_144set_plate4_of_6_24tiles.3mf",
+    "destination": "output/tiles/biobuzz/plates/plate_256_biobuzz_hiveswarm_144set_plate4_of_6_24tiles.3mf",
+    "sha256": "b5546f1818dbed5acc30a76267c78148e064c3264cf17e529156315c6b346160",
+    "action": "move"
+  },
+  {
+    "source": "output_biobuzz/plates/plate_256_biobuzz_hiveswarm_144set_plate5_of_6_24tiles.3mf",
+    "destination": "output/tiles/biobuzz/plates/plate_256_biobuzz_hiveswarm_144set_plate5_of_6_24tiles.3mf",
+    "sha256": "b2e25d52cfa10222726b87d15ba7c8297c206bc850aba67505ad155b671b0e23",
+    "action": "move"
+  },
+  {
+    "source": "output_biobuzz/plates/plate_256_biobuzz_hiveswarm_144set_plate6_of_6_24tiles.3mf",
+    "destination": "output/tiles/biobuzz/plates/plate_256_biobuzz_hiveswarm_144set_plate6_of_6_24tiles.3mf",
+    "sha256": "2b74e5b021b83200b98bf6dd990fe00a9f400c977bc5db4409d98c317d481122",
+    "action": "move"
+  },
+  {
+    "source": "output_biobuzz/plates/plate_256_biobuzz_scrabble_100set_plate1_of_4_25tiles.3mf",
+    "destination": "output/tiles/biobuzz/plates/plate_256_biobuzz_scrabble_100set_plate1_of_4_25tiles.3mf",
+    "sha256": "5366e0d680ccaee3543d8f48520ac923fd48e222e74e1343888da517eb10ad60",
+    "action": "move"
+  },
+  {
+    "source": "output_biobuzz/plates/plate_256_biobuzz_scrabble_100set_plate2_of_4_25tiles.3mf",
+    "destination": "output/tiles/biobuzz/plates/plate_256_biobuzz_scrabble_100set_plate2_of_4_25tiles.3mf",
+    "sha256": "82275ee0498ad6690f72a8c1233b5e8cda5d1334fd2491cacf352d560106575a",
+    "action": "move"
+  },
+  {
+    "source": "output_biobuzz/plates/plate_256_biobuzz_scrabble_100set_plate3_of_4_25tiles.3mf",
+    "destination": "output/tiles/biobuzz/plates/plate_256_biobuzz_scrabble_100set_plate3_of_4_25tiles.3mf",
+    "sha256": "ea9ec2439eb1452378ef4fc4eb52a091bec9028442d07e68707954f59f06d76e",
+    "action": "move"
+  },
+  {
+    "source": "output_biobuzz/plates/plate_256_biobuzz_scrabble_100set_plate4_of_4_25tiles.3mf",
+    "destination": "output/tiles/biobuzz/plates/plate_256_biobuzz_scrabble_100set_plate4_of_4_25tiles.3mf",
+    "sha256": "b22706572e2004415680d0a1cb3b1e9f17aeabdc3cc0fa1046bac85f745506ff",
+    "action": "move"
+  },
+  {
+    "source": "output_biobuzz/previews/plate_256_biobuzz_bold_bottom_view.png",
+    "destination": "output/tiles/biobuzz/images/plate_256_biobuzz_bold_bottom_view.png",
+    "sha256": "c924ab45537a8588958a32b2c39485a80e2bc3f3a7a6064ec9d37f41fc3aae4f",
+    "action": "move"
+  },
+  {
+    "source": "output_biobuzz/previews/plate_256_biobuzz_scrabble_plate1_bottom_view.png",
+    "destination": "output/tiles/biobuzz/images/plate_256_biobuzz_scrabble_plate1_bottom_view.png",
+    "sha256": "45f8ce2b8b3ea9245918b48f275007b584f738081817878e194c398f78644000",
+    "action": "move"
+  },
+  {
+    "source": "output_biobuzz/previews/tile_doublesided_biobuzz_A.png",
+    "destination": "output/tiles/biobuzz/images/tile_doublesided_biobuzz_A.png",
+    "sha256": "42a6c898d3548e7912dafd65030c4f8069c9685ca06755b8347eea71b3461629",
+    "action": "move"
+  },
+  {
+    "source": "output_hive/previews/plate_4color_2player_core_swarm.png",
+    "destination": "archive/legacy-outputs/output_hive/previews/plate_4color_2player_core_swarm.png",
+    "sha256": "2a5c590eb0608cc077d841d69ec03f6807fc14ccb190eb71f4c1a5f2467377be",
+    "action": "move"
+  },
+  {
+    "source": "output_hive/previews/plate_4color_2player_crawlers.png",
+    "destination": "archive/legacy-outputs/output_hive/previews/plate_4color_2player_crawlers.png",
+    "sha256": "3a73d76730a73ef00441575a7e909fa6ea3eff24c64279233b76fbac17b52c8f",
+    "action": "move"
+  },
+  {
+    "source": "output_hive/previews/plate_4color_2player_expansions.png",
+    "destination": "archive/legacy-outputs/output_hive/previews/plate_4color_2player_expansions.png",
+    "sha256": "fe2d1ae1be37919228c20da8f8fe85689851e571b105f2bafe98d9373c62171e",
+    "action": "move"
+  },
+  {
+    "source": "output_hive/previews/plate_4color_A_core_swarm.png",
+    "destination": "archive/legacy-outputs/output_hive/previews/plate_4color_A_core_swarm.png",
+    "sha256": "683f8d65685679a06b0638fb08d5a3a7914842b2d07dc9f94ba8dfe9c29acede",
+    "action": "move"
+  },
+  {
+    "source": "output_hive/previews/plate_4color_B_crawlers.png",
+    "destination": "archive/legacy-outputs/output_hive/previews/plate_4color_B_crawlers.png",
+    "sha256": "5ec5f8b06a27482d196d67de3cb2e9940739fa93a9609e6205436a64dc32ce7d",
+    "action": "move"
+  },
+  {
+    "source": "output_hive/previews/plate_4color_C_expansions.png",
+    "destination": "archive/legacy-outputs/output_hive/previews/plate_4color_C_expansions.png",
+    "sha256": "542ce42ca683b5595d9fe4d00543ac43daebf0731741719c85b2cbb3ee167199",
+    "action": "move"
+  },
+  {
+    "source": "output_hive/previews/plate_complete_2player_master_set.png",
+    "destination": "archive/legacy-outputs/output_hive/previews/plate_complete_2player_master_set.png",
+    "sha256": "64ef8332dac339b8d1fa75518aa3741779f5b9a2a1031866d70f6bbb958519f7",
+    "action": "move"
+  },
+  {
+    "source": "output_hive/previews/plate_expansions_pack.png",
+    "destination": "archive/legacy-outputs/output_hive/previews/plate_expansions_pack.png",
+    "sha256": "74f2a34c5fc8e546ae4f2aa48a6419d7223fbec7b19f02c87763d907d1e0faf1",
+    "action": "move"
+  },
+  {
+    "source": "output_hive/previews/plate_player_base_game.png",
+    "destination": "archive/legacy-outputs/output_hive/previews/plate_player_base_game.png",
+    "sha256": "3f2c0eedc0e5eaba17275e6e1a2285fb257ff068309382cdbe06c589d8caf952",
+    "action": "move"
+  },
+  {
+    "source": "output_hive/previews/plate_player_full_set.png",
+    "destination": "archive/legacy-outputs/output_hive/previews/plate_player_full_set.png",
+    "sha256": "289470400b3b40cac7ffecefeec34e7f40eeace5d26ff9998586c9316ae73434",
+    "action": "move"
+  },
+  {
+    "source": "output_hive/previews/tile_ant.png",
+    "destination": "archive/legacy-outputs/output_hive/previews/tile_ant.png",
+    "sha256": "396a81738b34f6bdb2f98537aedb760df1fbf0116efd2aff6b3845752c7a06a9",
+    "action": "move"
+  },
+  {
+    "source": "output_hive/previews/tile_beetle.png",
+    "destination": "archive/legacy-outputs/output_hive/previews/tile_beetle.png",
+    "sha256": "cc9270a922346513668316b9b8a3016feb682a83a78367cd6c3072449900ae80",
+    "action": "move"
+  },
+  {
+    "source": "output_hive/previews/tile_grasshopper.png",
+    "destination": "archive/legacy-outputs/output_hive/previews/tile_grasshopper.png",
+    "sha256": "72809de5e1a0b397604bffbb2894ee6d07b0d9a5f8cea1914c19f96a0c5ac048",
+    "action": "move"
+  },
+  {
+    "source": "output_hive/previews/tile_ladybug.png",
+    "destination": "archive/legacy-outputs/output_hive/previews/tile_ladybug.png",
+    "sha256": "d84f0bd50968388b2805e0921d2604c26fce7078fa13a10d17169937a6785e93",
+    "action": "move"
+  },
+  {
+    "source": "output_hive/previews/tile_mosquito.png",
+    "destination": "archive/legacy-outputs/output_hive/previews/tile_mosquito.png",
+    "sha256": "29e4ec8073b52ff50dbb1cb16ef9a38e5c10639114231af7b24dfe25a0a78a04",
+    "action": "move"
+  },
+  {
+    "source": "output_hive/previews/tile_pillbug.png",
+    "destination": "archive/legacy-outputs/output_hive/previews/tile_pillbug.png",
+    "sha256": "de1fd1e8fbb06a5d83a937c038091ecae30bbc3b2287cc8041d2a7e8e2417319",
+    "action": "move"
+  },
+  {
+    "source": "output_hive/previews/tile_queen_bee.png",
+    "destination": "archive/legacy-outputs/output_hive/previews/tile_queen_bee.png",
+    "sha256": "bfd6f3afa22cc7c537fc44cbe4be156a5ba794ac8ebb74f88fe4a239d3fc729d",
+    "action": "move"
+  },
+  {
+    "source": "output_hive/previews/tile_spider.png",
+    "destination": "archive/legacy-outputs/output_hive/previews/tile_spider.png",
+    "sha256": "c12b1c4665dcfd6a5b992885f23bb0fce93537897724f062f33b97cacaf1adf3",
+    "action": "move"
+  },
+  {
+    "source": "output_interlocking/3mf/tile_doublesided_interlocking_A_score1.3mf",
+    "destination": "output/tiles/interlocking/3mf/tile_doublesided_interlocking_A_score1.3mf",
+    "sha256": "6f2f056590cede9c52d73a51d69ef2575ed4afcacf8a32464f0eeb0eb76ce6d3",
+    "action": "move"
+  },
+  {
+    "source": "output_interlocking/3mf/tile_interlocking_token.3mf",
+    "destination": "output/tiles/interlocking/3mf/tile_interlocking_token.3mf",
+    "sha256": "488ae0601148ae029dff353c166291b69f9ebbc994625a7a6b4b0ebf70490a00",
+    "action": "move"
+  },
+  {
+    "source": "output_interlocking/plates/plate_256_interlocking_hiveswarm_144set_plate1_of_6_24tiles.3mf",
+    "destination": "output/tiles/interlocking/plates/plate_256_interlocking_hiveswarm_144set_plate1_of_6_24tiles.3mf",
+    "sha256": "23f66551e8f3bd5879259e48dbab72f88df37754790ccdb65f9d8a3f4c0fe779",
+    "action": "move"
+  },
+  {
+    "source": "output_interlocking/plates/plate_256_interlocking_hiveswarm_144set_plate2_of_6_24tiles.3mf",
+    "destination": "output/tiles/interlocking/plates/plate_256_interlocking_hiveswarm_144set_plate2_of_6_24tiles.3mf",
+    "sha256": "e8d2f9c645935f75feccfb6cea4e52ccade435e6cfe3eb9d531b12bc046be22d",
+    "action": "move"
+  },
+  {
+    "source": "output_interlocking/plates/plate_256_interlocking_hiveswarm_144set_plate3_of_6_24tiles.3mf",
+    "destination": "output/tiles/interlocking/plates/plate_256_interlocking_hiveswarm_144set_plate3_of_6_24tiles.3mf",
+    "sha256": "814d513b84a081eb441707632a2d82d10844df11b9e6b0f631bae3c193223c75",
+    "action": "move"
+  },
+  {
+    "source": "output_interlocking/plates/plate_256_interlocking_hiveswarm_144set_plate4_of_6_24tiles.3mf",
+    "destination": "output/tiles/interlocking/plates/plate_256_interlocking_hiveswarm_144set_plate4_of_6_24tiles.3mf",
+    "sha256": "5d60da566501f2178ae1975882e93d98e298b837e47bc8362eaa14ee46ef8b1a",
+    "action": "move"
+  },
+  {
+    "source": "output_interlocking/plates/plate_256_interlocking_hiveswarm_144set_plate5_of_6_24tiles.3mf",
+    "destination": "output/tiles/interlocking/plates/plate_256_interlocking_hiveswarm_144set_plate5_of_6_24tiles.3mf",
+    "sha256": "3c6e6630dede7774e0703ef157f666dd39105a3f336925d658af2ea29a1a6971",
+    "action": "move"
+  },
+  {
+    "source": "output_interlocking/plates/plate_256_interlocking_hiveswarm_144set_plate6_of_6_24tiles.3mf",
+    "destination": "output/tiles/interlocking/plates/plate_256_interlocking_hiveswarm_144set_plate6_of_6_24tiles.3mf",
+    "sha256": "53057b0862b9019fe4b95e61955fbbd9b04c8125ed52aea9b30dc7b5b4f42ba7",
+    "action": "move"
+  },
+  {
+    "source": "output_interlocking/plates/plate_256_interlocking_scrabble_100set_plate1_of_4_25tiles.3mf",
+    "destination": "output/tiles/interlocking/plates/plate_256_interlocking_scrabble_100set_plate1_of_4_25tiles.3mf",
+    "sha256": "cc549140491ce8981a6210f630d62b0c5b864d896e57b159130d72c4797d4838",
+    "action": "move"
+  },
+  {
+    "source": "output_interlocking/plates/plate_256_interlocking_scrabble_100set_plate2_of_4_25tiles.3mf",
+    "destination": "output/tiles/interlocking/plates/plate_256_interlocking_scrabble_100set_plate2_of_4_25tiles.3mf",
+    "sha256": "4875d1e542f96813bb279b96a95249616545871ef9a02e2ca59c28517d618d92",
+    "action": "move"
+  },
+  {
+    "source": "output_interlocking/plates/plate_256_interlocking_scrabble_100set_plate3_of_4_25tiles.3mf",
+    "destination": "output/tiles/interlocking/plates/plate_256_interlocking_scrabble_100set_plate3_of_4_25tiles.3mf",
+    "sha256": "a88ee5418999418fc1a9f23a4c338d10241fcd4b321452fada2b098b6772cbc6",
+    "action": "move"
+  },
+  {
+    "source": "output_interlocking/plates/plate_256_interlocking_scrabble_100set_plate4_of_4_25tiles.3mf",
+    "destination": "output/tiles/interlocking/plates/plate_256_interlocking_scrabble_100set_plate4_of_4_25tiles.3mf",
+    "sha256": "ac03ddd261e72c94e03ed13f37050d43cddc61fb984dfa48bf8926dd6f36e624",
+    "action": "move"
+  },
+  {
+    "source": "output_interlocking/previews/plate_256_interlocking_bold_bottom_view.png",
+    "destination": "output/tiles/interlocking/images/plate_256_interlocking_bold_bottom_view.png",
+    "sha256": "0381cb47b7431fe893a6cf593c8ceeaac3c01f8db553ddd020882954b071f331",
+    "action": "move"
+  },
+  {
+    "source": "output_interlocking/previews/plate_256_interlocking_scrabble_plate1_bottom_view.png",
+    "destination": "output/tiles/interlocking/images/plate_256_interlocking_scrabble_plate1_bottom_view.png",
+    "sha256": "d9a65f4beba426fb0ae57b2318bb91b98cf7cb42126cde05131e9f34d70693fe",
+    "action": "move"
+  },
+  {
+    "source": "output_interlocking/previews/tile_doublesided_interlocking_A.png",
+    "destination": "output/tiles/interlocking/images/tile_doublesided_interlocking_A.png",
+    "sha256": "f3536f075a1f786f8542ad390a52d97e8b8c2fe3ad6ac101cb986ddcce7ee170",
+    "action": "move"
+  },
+  {
+    "source": "output_team/3mf/tile_team_spartan_token.3mf",
+    "destination": "output/tiles/team/3mf/tile_team_spartan_token.3mf",
+    "sha256": "61b226d586a5ceb86389c7bda7697d4598d409e4973fc017b850286196895a81",
+    "action": "move"
+  },
+  {
+    "source": "output_team/plates/plate_256_team_hiveswarm_144set_plate1_of_6_24tiles.3mf",
+    "destination": "output/tiles/team/plates/plate_256_team_hiveswarm_144set_plate1_of_6_24tiles.3mf",
+    "sha256": "ee9dfb9b4dd7dd36dfb8659ed191c3fa9d8b7e66541b9a2f2c5feeb52f16cc23",
+    "action": "move"
+  },
+  {
+    "source": "output_team/plates/plate_256_team_hiveswarm_144set_plate2_of_6_24tiles.3mf",
+    "destination": "output/tiles/team/plates/plate_256_team_hiveswarm_144set_plate2_of_6_24tiles.3mf",
+    "sha256": "7aca27f36011aaceddfa3df4123cf29f1d3be92a3045fcb474a6d1754e49a825",
+    "action": "move"
+  },
+  {
+    "source": "output_team/plates/plate_256_team_hiveswarm_144set_plate3_of_6_24tiles.3mf",
+    "destination": "output/tiles/team/plates/plate_256_team_hiveswarm_144set_plate3_of_6_24tiles.3mf",
+    "sha256": "77a19f8556cc2fa452b25adff2ca05821f53c640c15399838a713e086b975979",
+    "action": "move"
+  },
+  {
+    "source": "output_team/plates/plate_256_team_hiveswarm_144set_plate4_of_6_24tiles.3mf",
+    "destination": "output/tiles/team/plates/plate_256_team_hiveswarm_144set_plate4_of_6_24tiles.3mf",
+    "sha256": "58653163c51cd7cbb12417d8562e56be4c23921908cda3b7445b952ddfb8c7f9",
+    "action": "move"
+  },
+  {
+    "source": "output_team/plates/plate_256_team_hiveswarm_144set_plate5_of_6_24tiles.3mf",
+    "destination": "output/tiles/team/plates/plate_256_team_hiveswarm_144set_plate5_of_6_24tiles.3mf",
+    "sha256": "c2e4b4665cb2b2b18e0bbe3b9d961f6afd781e3c22ab819b61478079094500c1",
+    "action": "move"
+  },
+  {
+    "source": "output_team/plates/plate_256_team_hiveswarm_144set_plate6_of_6_24tiles.3mf",
+    "destination": "output/tiles/team/plates/plate_256_team_hiveswarm_144set_plate6_of_6_24tiles.3mf",
+    "sha256": "a76762609795506a7a939e9b220fcce3596cbab17f67e3157d336b704e3734ee",
+    "action": "move"
+  },
+  {
+    "source": "output_team/plates/plate_256_team_scrabble_100set_plate1_of_4_25tiles.3mf",
+    "destination": "output/tiles/team/plates/plate_256_team_scrabble_100set_plate1_of_4_25tiles.3mf",
+    "sha256": "5dec50342d46c1cc8503f2209ef17d9ae3103387e7dc9e017b6b9f48164af4bf",
+    "action": "move"
+  },
+  {
+    "source": "output_team/plates/plate_256_team_scrabble_100set_plate2_of_4_25tiles.3mf",
+    "destination": "output/tiles/team/plates/plate_256_team_scrabble_100set_plate2_of_4_25tiles.3mf",
+    "sha256": "f77d6e958db6bfc04a0f964c570814c8fc409e58ec87a53c5384ecdd9dfb8779",
+    "action": "move"
+  },
+  {
+    "source": "output_team/plates/plate_256_team_scrabble_100set_plate3_of_4_25tiles.3mf",
+    "destination": "output/tiles/team/plates/plate_256_team_scrabble_100set_plate3_of_4_25tiles.3mf",
+    "sha256": "19559cbb2269d8a05ea7d16447619192b9fd2c47e126b80a70ae7d8edfc1deaf",
+    "action": "move"
+  },
+  {
+    "source": "output_team/plates/plate_256_team_scrabble_100set_plate4_of_4_25tiles.3mf",
+    "destination": "output/tiles/team/plates/plate_256_team_scrabble_100set_plate4_of_4_25tiles.3mf",
+    "sha256": "291bb93bad66ac636f3a481a2b191a58f7710fddb3bc5ad375776e7b32a393c4",
+    "action": "move"
+  },
+  {
+    "source": "printouts/hex_board_preview.png",
+    "destination": "archive/legacy-documents/printouts/hex_board_preview.png",
+    "sha256": "14d2e4bbf8c34e24ea71d4c7533862e3886d1d67f1424d7fa5ddad14cc67429a",
+    "action": "move"
+  },
+  {
+    "source": "printouts/hex_game_board_1.5in.pdf",
+    "destination": "archive/legacy-documents/printouts/hex_game_board_1.5in.pdf",
+    "sha256": "c59a40caa8adaad2cf6c2a627000395cf1bbedf0b9d20f27da2ef8fe6dfd9954",
+    "action": "move"
+  },
+  {
+    "source": "printouts/hex_games_rulebook.pdf",
+    "destination": "archive/legacy-documents/printouts/hex_games_rulebook.pdf",
+    "sha256": "4f1d79b7ecb95fb846bfc0f23c1f4aa2103e2cbb1fc7b919436401c4c6ec852f",
+    "action": "move"
+  },
+  {
+    "source": "printouts/number_hive_math_puzzles.pdf",
+    "destination": "archive/legacy-documents/printouts/number_hive_math_puzzles.pdf",
+    "sha256": "31aad89b943cd6793ed0fd20f580e7100ee38aa917b73ef5ee1f85fbc3b0ebb2",
+    "action": "move"
+  },
+  {
+    "source": "printouts/printouts_hub.html",
+    "destination": "archive/legacy-documents/printouts/printouts_hub.html",
+    "sha256": "8296d91fbb8e2cc76c776497824b69cca654b458547340a4239efa6ae5b24a47",
+    "action": "move"
+  },
+  {
+    "source": "printouts/score_sheets_and_tracker.pdf",
+    "destination": "archive/legacy-documents/printouts/score_sheets_and_tracker.pdf",
+    "sha256": "2ea3b10554fc999d99326e64016e9cdb44f4f05501c832b7388a118775efe7a9",
+    "action": "move"
+  },
+  {
+    "source": "test_othello_piece.3mf",
+    "destination": "archive/legacy-outputs/test_othello_piece.3mf",
+    "sha256": "c8818118aeb40e916b13214ff14bfaf5b5f0e4c046b606c78e76bfc93d8d1716",
+    "action": "move"
+  },
+  {
+    "source": "output/3mf/tile_biobuzz_token.3mf",
+    "destination": "output/tiles/biobuzz/3mf/tile_biobuzz_token.3mf",
+    "sha256": "12dd566b07c9ce44094b3852371e77acda8f459f2fd77620ed52b61d5639553e",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/3mf/tile_doublesided_biobuzz_A_score1.3mf",
+    "destination": "output/tiles/biobuzz/3mf/tile_doublesided_biobuzz_A_score1.3mf",
+    "sha256": "9b35fcd57188c0764316c3a8676e1e48808f9e802a8ac5b365ec0864d42d4825",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/3mf/tile_doublesided_interlocking_A_score1.3mf",
+    "destination": "output/tiles/interlocking/3mf/tile_doublesided_interlocking_A_score1.3mf",
+    "sha256": "6f2f056590cede9c52d73a51d69ef2575ed4afcacf8a32464f0eeb0eb76ce6d3",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/3mf/tile_interlocking_token.3mf",
+    "destination": "output/tiles/interlocking/3mf/tile_interlocking_token.3mf",
+    "sha256": "488ae0601148ae029dff353c166291b69f9ebbc994625a7a6b4b0ebf70490a00",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/3mf/tile_team_spartan_token.3mf",
+    "destination": "output/tiles/team/3mf/tile_team_spartan_token.3mf",
+    "sha256": "61b226d586a5ceb86389c7bda7697d4598d409e4973fc017b850286196895a81",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/board_full_127cells_master.3mf",
+    "destination": "archive/legacy-outputs/output/plates/board_full_127cells_master.3mf",
+    "sha256": "b62b2babf07ab4249b5013eb4839b5dc06ffa75d63f96646b8bfc0b6f95b2936",
+    "action": "move"
+  },
+  {
+    "source": "output/plates/board_hex_othello_61cells_master.3mf",
+    "destination": "archive/legacy-outputs/output/othello/3mf/board_hex_othello_61cells_master.3mf",
+    "sha256": "a1805b226222d8e5a9ec677ccbc0ba8926d859939a751b8c24503d12b065da11",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/hex_othello_piece_single.3mf",
+    "destination": "output/tiles/othello/3mf/hex_othello_piece_single.3mf",
+    "sha256": "78523a0da0fbcfcc2ebe7c09e292d7beaa315ec61c4e66ddf3b58dc1419645ba",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/plate_256_biobuzz_hiveswarm_144set_plate1_of_6_24tiles.3mf",
+    "destination": "output/tiles/biobuzz/plates/plate_256_biobuzz_hiveswarm_144set_plate1_of_6_24tiles.3mf",
+    "sha256": "97634b0c960759efc07549cd4948c38a30fd4ab27d996ca1d8079adaa774c6bd",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/plate_256_biobuzz_hiveswarm_144set_plate2_of_6_24tiles.3mf",
+    "destination": "output/tiles/biobuzz/plates/plate_256_biobuzz_hiveswarm_144set_plate2_of_6_24tiles.3mf",
+    "sha256": "a787d674a719f07aa229ed773080a235950373d4ac6c4d747dd21e241e3235eb",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/plate_256_biobuzz_hiveswarm_144set_plate3_of_6_24tiles.3mf",
+    "destination": "output/tiles/biobuzz/plates/plate_256_biobuzz_hiveswarm_144set_plate3_of_6_24tiles.3mf",
+    "sha256": "05eb170d5ac1f3e1e686fbbeb2521fcb9cafbbe7c45dc8e8c92c7376f0fbf9b3",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/plate_256_biobuzz_hiveswarm_144set_plate4_of_6_24tiles.3mf",
+    "destination": "output/tiles/biobuzz/plates/plate_256_biobuzz_hiveswarm_144set_plate4_of_6_24tiles.3mf",
+    "sha256": "b5546f1818dbed5acc30a76267c78148e064c3264cf17e529156315c6b346160",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/plate_256_biobuzz_hiveswarm_144set_plate5_of_6_24tiles.3mf",
+    "destination": "output/tiles/biobuzz/plates/plate_256_biobuzz_hiveswarm_144set_plate5_of_6_24tiles.3mf",
+    "sha256": "b2e25d52cfa10222726b87d15ba7c8297c206bc850aba67505ad155b671b0e23",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/plate_256_biobuzz_hiveswarm_144set_plate6_of_6_24tiles.3mf",
+    "destination": "output/tiles/biobuzz/plates/plate_256_biobuzz_hiveswarm_144set_plate6_of_6_24tiles.3mf",
+    "sha256": "2b74e5b021b83200b98bf6dd990fe00a9f400c977bc5db4409d98c317d481122",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/plate_256_biobuzz_numbers_and_math_26tiles.3mf",
+    "destination": "output/tiles/biobuzz/plates/plate_256_biobuzz_numbers_and_math_26tiles.3mf",
+    "sha256": "eac6c1b26c29e444ff167814af016df23335a9457e6bab9ff22f4da6d5a6f918",
+    "action": "move"
+  },
+  {
+    "source": "output/plates/plate_256_biobuzz_scrabble_100set_plate1_of_4_25tiles.3mf",
+    "destination": "output/tiles/biobuzz/plates/plate_256_biobuzz_scrabble_100set_plate1_of_4_25tiles.3mf",
+    "sha256": "5366e0d680ccaee3543d8f48520ac923fd48e222e74e1343888da517eb10ad60",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/plate_256_biobuzz_scrabble_100set_plate2_of_4_25tiles.3mf",
+    "destination": "output/tiles/biobuzz/plates/plate_256_biobuzz_scrabble_100set_plate2_of_4_25tiles.3mf",
+    "sha256": "82275ee0498ad6690f72a8c1233b5e8cda5d1334fd2491cacf352d560106575a",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/plate_256_biobuzz_scrabble_100set_plate3_of_4_25tiles.3mf",
+    "destination": "output/tiles/biobuzz/plates/plate_256_biobuzz_scrabble_100set_plate3_of_4_25tiles.3mf",
+    "sha256": "ea9ec2439eb1452378ef4fc4eb52a091bec9028442d07e68707954f59f06d76e",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/plate_256_biobuzz_scrabble_100set_plate4_of_4_25tiles.3mf",
+    "destination": "output/tiles/biobuzz/plates/plate_256_biobuzz_scrabble_100set_plate4_of_4_25tiles.3mf",
+    "sha256": "b22706572e2004415680d0a1cb3b1e9f17aeabdc3cc0fa1046bac85f745506ff",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/plate_256_board_interlocking_quadrant_q1_top_left.3mf",
+    "destination": "output/tiles/interlocking/plates/plate_256_board_interlocking_quadrant_q1_top_left.3mf",
+    "sha256": "87a89ac56f269dfdcc766e74919173e77bf2ebf101a9faecfc7ba718ce9fb455",
+    "action": "move"
+  },
+  {
+    "source": "output/plates/plate_256_board_interlocking_quadrant_q2_top_right.3mf",
+    "destination": "output/tiles/interlocking/plates/plate_256_board_interlocking_quadrant_q2_top_right.3mf",
+    "sha256": "7c5c15a1e0f7cf164af5cd06905d025df9276b7b1dac7d0050ba0f38c20ca878",
+    "action": "move"
+  },
+  {
+    "source": "output/plates/plate_256_board_interlocking_quadrant_q3_bottom_left.3mf",
+    "destination": "output/tiles/interlocking/plates/plate_256_board_interlocking_quadrant_q3_bottom_left.3mf",
+    "sha256": "aa45e1a4a21e8bdde7e5102fbad5c224eb1e1589dd2335d4c1fc69a38b09a0df",
+    "action": "move"
+  },
+  {
+    "source": "output/plates/plate_256_board_interlocking_quadrant_q4_bottom_right.3mf",
+    "destination": "output/tiles/interlocking/plates/plate_256_board_interlocking_quadrant_q4_bottom_right.3mf",
+    "sha256": "c815501b9ad14a1ed0cd67d07a7ad97b03bb00adb1e34a000718566ed8a82161",
+    "action": "move"
+  },
+  {
+    "source": "output/plates/plate_256_board_quadrant_q1_top_left.3mf",
+    "destination": "archive/legacy-outputs/output/board/3mf/plate_256_board_quadrant_q1_top_left.3mf",
+    "sha256": "866925b399522637cf6a31ca59747be733cbcb7326d71509432e012c604a90c3",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/plate_256_board_quadrant_q2_top_right.3mf",
+    "destination": "archive/legacy-outputs/output/board/3mf/plate_256_board_quadrant_q2_top_right.3mf",
+    "sha256": "9e65b27ca969f7a424ca1238939af3739a47a604bfc80cd345f475ef106b093a",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/plate_256_board_quadrant_q3_bottom_left.3mf",
+    "destination": "archive/legacy-outputs/output/board/3mf/plate_256_board_quadrant_q3_bottom_left.3mf",
+    "sha256": "01b7ad9a4d92935949b878518a78f9b303ca6d7efdecc870b85d7463bfa09943",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/plate_256_board_quadrant_q4_bottom_right.3mf",
+    "destination": "archive/legacy-outputs/output/board/3mf/plate_256_board_quadrant_q4_bottom_right.3mf",
+    "sha256": "f8014417e2b21553c7a1cc71c083d73af71de9f292767506984df6ec3bb9b2f9",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/plate_256_hex_othello_60set_plate1_of_2_30pieces.3mf",
+    "destination": "output/tiles/othello/plates/plate_30_pieces_print_twice.3mf",
+    "sha256": "d37ea44ef130220224b70f3b413b57b80a6444f9eaabdb73e414cc18bc9f9c5c",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/plate_256_hex_othello_60set_plate2_of_2_30pieces.3mf",
+    "destination": "output/tiles/othello/plates/plate_30_pieces_print_twice.3mf",
+    "sha256": "d37ea44ef130220224b70f3b413b57b80a6444f9eaabdb73e414cc18bc9f9c5c",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/plate_256_hex_othello_61cells_q1_top_left.3mf",
+    "destination": "archive/legacy-outputs/output/othello/3mf/plate_256_hex_othello_61cells_q1_top_left.3mf",
+    "sha256": "55919ba652df81e5e1ae1e368a0aac86d8fe5626c739f893ae6c81510b13da9b",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/plate_256_hex_othello_61cells_q2_top_right.3mf",
+    "destination": "archive/legacy-outputs/output/othello/3mf/plate_256_hex_othello_61cells_q2_top_right.3mf",
+    "sha256": "e414816059d0300117575e3a32b2fa6aaa2e224cd6d08bce76a72c7ac998dd54",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/plate_256_hex_othello_61cells_q3_bottom_left.3mf",
+    "destination": "archive/legacy-outputs/output/othello/3mf/plate_256_hex_othello_61cells_q3_bottom_left.3mf",
+    "sha256": "95d0f90dd48394800d22790f0ca9bd6ce76835f5c5107c59d5c9320dfe0b27c3",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/plate_256_hex_othello_61cells_q4_bottom_right.3mf",
+    "destination": "archive/legacy-outputs/output/othello/3mf/plate_256_hex_othello_61cells_q4_bottom_right.3mf",
+    "sha256": "87ee8bbdff22786a2b2099a4a5c203ec057d542e0440f8d919b2be26b7fe3529",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/plate_256_interlocking_hiveswarm_144set_plate1_of_6_24tiles.3mf",
+    "destination": "output/tiles/interlocking/plates/plate_256_interlocking_hiveswarm_144set_plate1_of_6_24tiles.3mf",
+    "sha256": "23f66551e8f3bd5879259e48dbab72f88df37754790ccdb65f9d8a3f4c0fe779",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/plate_256_interlocking_hiveswarm_144set_plate2_of_6_24tiles.3mf",
+    "destination": "output/tiles/interlocking/plates/plate_256_interlocking_hiveswarm_144set_plate2_of_6_24tiles.3mf",
+    "sha256": "e8d2f9c645935f75feccfb6cea4e52ccade435e6cfe3eb9d531b12bc046be22d",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/plate_256_interlocking_hiveswarm_144set_plate3_of_6_24tiles.3mf",
+    "destination": "output/tiles/interlocking/plates/plate_256_interlocking_hiveswarm_144set_plate3_of_6_24tiles.3mf",
+    "sha256": "814d513b84a081eb441707632a2d82d10844df11b9e6b0f631bae3c193223c75",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/plate_256_interlocking_hiveswarm_144set_plate4_of_6_24tiles.3mf",
+    "destination": "output/tiles/interlocking/plates/plate_256_interlocking_hiveswarm_144set_plate4_of_6_24tiles.3mf",
+    "sha256": "5d60da566501f2178ae1975882e93d98e298b837e47bc8362eaa14ee46ef8b1a",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/plate_256_interlocking_hiveswarm_144set_plate5_of_6_24tiles.3mf",
+    "destination": "output/tiles/interlocking/plates/plate_256_interlocking_hiveswarm_144set_plate5_of_6_24tiles.3mf",
+    "sha256": "3c6e6630dede7774e0703ef157f666dd39105a3f336925d658af2ea29a1a6971",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/plate_256_interlocking_hiveswarm_144set_plate6_of_6_24tiles.3mf",
+    "destination": "output/tiles/interlocking/plates/plate_256_interlocking_hiveswarm_144set_plate6_of_6_24tiles.3mf",
+    "sha256": "53057b0862b9019fe4b95e61955fbbd9b04c8125ed52aea9b30dc7b5b4f42ba7",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/plate_256_interlocking_numbers_and_math_26tiles.3mf",
+    "destination": "output/tiles/interlocking/plates/plate_256_interlocking_numbers_and_math_26tiles.3mf",
+    "sha256": "7b21661363d7812a1981b50c33dde672ccdf813701597099b17be3bd63e45087",
+    "action": "move"
+  },
+  {
+    "source": "output/plates/plate_256_interlocking_scrabble_100set_plate1_of_4_25tiles.3mf",
+    "destination": "output/tiles/interlocking/plates/plate_256_interlocking_scrabble_100set_plate1_of_4_25tiles.3mf",
+    "sha256": "cc549140491ce8981a6210f630d62b0c5b864d896e57b159130d72c4797d4838",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/plate_256_interlocking_scrabble_100set_plate2_of_4_25tiles.3mf",
+    "destination": "output/tiles/interlocking/plates/plate_256_interlocking_scrabble_100set_plate2_of_4_25tiles.3mf",
+    "sha256": "4875d1e542f96813bb279b96a95249616545871ef9a02e2ca59c28517d618d92",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/plate_256_interlocking_scrabble_100set_plate3_of_4_25tiles.3mf",
+    "destination": "output/tiles/interlocking/plates/plate_256_interlocking_scrabble_100set_plate3_of_4_25tiles.3mf",
+    "sha256": "a88ee5418999418fc1a9f23a4c338d10241fcd4b321452fada2b098b6772cbc6",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/plate_256_interlocking_scrabble_100set_plate4_of_4_25tiles.3mf",
+    "destination": "output/tiles/interlocking/plates/plate_256_interlocking_scrabble_100set_plate4_of_4_25tiles.3mf",
+    "sha256": "ac03ddd261e72c94e03ed13f37050d43cddc61fb984dfa48bf8926dd6f36e624",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/plate_256_team_hiveswarm_144set_plate1_of_6_24tiles.3mf",
+    "destination": "output/tiles/team/plates/plate_256_team_hiveswarm_144set_plate1_of_6_24tiles.3mf",
+    "sha256": "ee9dfb9b4dd7dd36dfb8659ed191c3fa9d8b7e66541b9a2f2c5feeb52f16cc23",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/plate_256_team_hiveswarm_144set_plate2_of_6_24tiles.3mf",
+    "destination": "output/tiles/team/plates/plate_256_team_hiveswarm_144set_plate2_of_6_24tiles.3mf",
+    "sha256": "7aca27f36011aaceddfa3df4123cf29f1d3be92a3045fcb474a6d1754e49a825",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/plate_256_team_hiveswarm_144set_plate3_of_6_24tiles.3mf",
+    "destination": "output/tiles/team/plates/plate_256_team_hiveswarm_144set_plate3_of_6_24tiles.3mf",
+    "sha256": "77a19f8556cc2fa452b25adff2ca05821f53c640c15399838a713e086b975979",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/plate_256_team_hiveswarm_144set_plate4_of_6_24tiles.3mf",
+    "destination": "output/tiles/team/plates/plate_256_team_hiveswarm_144set_plate4_of_6_24tiles.3mf",
+    "sha256": "58653163c51cd7cbb12417d8562e56be4c23921908cda3b7445b952ddfb8c7f9",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/plate_256_team_hiveswarm_144set_plate5_of_6_24tiles.3mf",
+    "destination": "output/tiles/team/plates/plate_256_team_hiveswarm_144set_plate5_of_6_24tiles.3mf",
+    "sha256": "c2e4b4665cb2b2b18e0bbe3b9d961f6afd781e3c22ab819b61478079094500c1",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/plate_256_team_hiveswarm_144set_plate6_of_6_24tiles.3mf",
+    "destination": "output/tiles/team/plates/plate_256_team_hiveswarm_144set_plate6_of_6_24tiles.3mf",
+    "sha256": "a76762609795506a7a939e9b220fcce3596cbab17f67e3157d336b704e3734ee",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/plate_256_team_numbers_and_math_26tiles.3mf",
+    "destination": "output/tiles/team/plates/plate_256_team_numbers_and_math_26tiles.3mf",
+    "sha256": "4e406ae1539bde1acf04ad4837bb8b491b785ee64063cd96ddadf5573e06c8de",
+    "action": "move"
+  },
+  {
+    "source": "output/plates/plate_256_team_scrabble_100set_plate1_of_4_25tiles.3mf",
+    "destination": "output/tiles/team/plates/plate_256_team_scrabble_100set_plate1_of_4_25tiles.3mf",
+    "sha256": "5dec50342d46c1cc8503f2209ef17d9ae3103387e7dc9e017b6b9f48164af4bf",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/plate_256_team_scrabble_100set_plate2_of_4_25tiles.3mf",
+    "destination": "output/tiles/team/plates/plate_256_team_scrabble_100set_plate2_of_4_25tiles.3mf",
+    "sha256": "f77d6e958db6bfc04a0f964c570814c8fc409e58ec87a53c5384ecdd9dfb8779",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/plate_256_team_scrabble_100set_plate3_of_4_25tiles.3mf",
+    "destination": "output/tiles/team/plates/plate_256_team_scrabble_100set_plate3_of_4_25tiles.3mf",
+    "sha256": "19559cbb2269d8a05ea7d16447619192b9fd2c47e126b80a70ae7d8edfc1deaf",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/plate_256_team_scrabble_100set_plate4_of_4_25tiles.3mf",
+    "destination": "output/tiles/team/plates/plate_256_team_scrabble_100set_plate4_of_4_25tiles.3mf",
+    "sha256": "291bb93bad66ac636f3a481a2b191a58f7710fddb3bc5ad375776e7b32a393c4",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/plate_256_tile_holders_4pack.3mf",
+    "destination": "output/accessories/tile-holders/3mf/plate_256_tile_holders_4pack.3mf",
+    "sha256": "a15ae990cef6b6b9bdcb43e2716286de9e67a41ed9ddb797bcf7599f248c7be3",
+    "action": "deduplicate"
+  },
+  {
+    "source": "output/plates/tile_holder_single_7tiles.3mf",
+    "destination": "output/accessories/tile-holders/3mf/tile_holder_single_7tiles.3mf",
+    "sha256": "974644137e1fc19e5de3fab1741e68a12ff605406e8bc6a80f127de09784024b",
+    "action": "deduplicate"
+  }
+]

@@ -582,7 +582,7 @@ def generate_html_print_hub(output_path):
 
 
 def main():
-    outdir = os.path.abspath("printouts")
+    outdir = os.path.abspath("archive/legacy-documents/printouts")
     os.makedirs(outdir, exist_ok=True)
     
     pdf_board = os.path.join(outdir, "hex_game_board_1.5in.pdf")

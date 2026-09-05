@@ -1,0 +1,942 @@
+{
+  "delete": {
+    "output/3mf/tile_A_score1.3mf": {
+      "path": "output/3mf/tile_A_score1.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_B_score3.3mf": {
+      "path": "output/3mf/tile_B_score3.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_BLANK_score0.3mf": {
+      "path": "output/3mf/tile_BLANK_score0.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_C_score3.3mf": {
+      "path": "output/3mf/tile_C_score3.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_D_score2.3mf": {
+      "path": "output/3mf/tile_D_score2.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_divide.3mf": {
+      "path": "output/3mf/tile_divide.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_doublesided_team_logo_A_score1.3mf": {
+      "path": "output/3mf/tile_doublesided_team_logo_A_score1.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_E_score1.3mf": {
+      "path": "output/3mf/tile_E_score1.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_equals.3mf": {
+      "path": "output/3mf/tile_equals.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_exclamation.3mf": {
+      "path": "output/3mf/tile_exclamation.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_F_score4.3mf": {
+      "path": "output/3mf/tile_F_score4.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_G_score2.3mf": {
+      "path": "output/3mf/tile_G_score2.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_H_score4.3mf": {
+      "path": "output/3mf/tile_H_score4.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_I_score1.3mf": {
+      "path": "output/3mf/tile_I_score1.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_J_score8.3mf": {
+      "path": "output/3mf/tile_J_score8.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_K_score5.3mf": {
+      "path": "output/3mf/tile_K_score5.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_L_score1.3mf": {
+      "path": "output/3mf/tile_L_score1.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_M_score3.3mf": {
+      "path": "output/3mf/tile_M_score3.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_minus.3mf": {
+      "path": "output/3mf/tile_minus.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_multiply.3mf": {
+      "path": "output/3mf/tile_multiply.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_N_score1.3mf": {
+      "path": "output/3mf/tile_N_score1.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_num_0.3mf": {
+      "path": "output/3mf/tile_num_0.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_num_1.3mf": {
+      "path": "output/3mf/tile_num_1.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_num_2.3mf": {
+      "path": "output/3mf/tile_num_2.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_num_3.3mf": {
+      "path": "output/3mf/tile_num_3.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_num_4.3mf": {
+      "path": "output/3mf/tile_num_4.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_num_5.3mf": {
+      "path": "output/3mf/tile_num_5.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_num_6.3mf": {
+      "path": "output/3mf/tile_num_6.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_num_7.3mf": {
+      "path": "output/3mf/tile_num_7.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_num_8.3mf": {
+      "path": "output/3mf/tile_num_8.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_num_9.3mf": {
+      "path": "output/3mf/tile_num_9.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_O_score1.3mf": {
+      "path": "output/3mf/tile_O_score1.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_P_score3.3mf": {
+      "path": "output/3mf/tile_P_score3.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_plus.3mf": {
+      "path": "output/3mf/tile_plus.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_Q_score10.3mf": {
+      "path": "output/3mf/tile_Q_score10.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_question.3mf": {
+      "path": "output/3mf/tile_question.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_R_score1.3mf": {
+      "path": "output/3mf/tile_R_score1.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_S_score1.3mf": {
+      "path": "output/3mf/tile_S_score1.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_T_score1.3mf": {
+      "path": "output/3mf/tile_T_score1.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_U_score1.3mf": {
+      "path": "output/3mf/tile_U_score1.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_V_score4.3mf": {
+      "path": "output/3mf/tile_V_score4.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_W_score4.3mf": {
+      "path": "output/3mf/tile_W_score4.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_X_score8.3mf": {
+      "path": "output/3mf/tile_X_score8.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_Y_score4.3mf": {
+      "path": "output/3mf/tile_Y_score4.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/3mf/tile_Z_score10.3mf": {
+      "path": "output/3mf/tile_Z_score10.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/plates/plate_256_hiveswarm_144set_plate1_of_6_24tiles.3mf": {
+      "path": "output/plates/plate_256_hiveswarm_144set_plate1_of_6_24tiles.3mf",
+      "large_components": 24,
+      "small_components": 0
+    },
+    "output/plates/plate_256_hiveswarm_144set_plate2_of_6_24tiles.3mf": {
+      "path": "output/plates/plate_256_hiveswarm_144set_plate2_of_6_24tiles.3mf",
+      "large_components": 24,
+      "small_components": 0
+    },
+    "output/plates/plate_256_hiveswarm_144set_plate3_of_6_24tiles.3mf": {
+      "path": "output/plates/plate_256_hiveswarm_144set_plate3_of_6_24tiles.3mf",
+      "large_components": 24,
+      "small_components": 0
+    },
+    "output/plates/plate_256_hiveswarm_144set_plate4_of_6_24tiles.3mf": {
+      "path": "output/plates/plate_256_hiveswarm_144set_plate4_of_6_24tiles.3mf",
+      "large_components": 24,
+      "small_components": 0
+    },
+    "output/plates/plate_256_hiveswarm_144set_plate5_of_6_24tiles.3mf": {
+      "path": "output/plates/plate_256_hiveswarm_144set_plate5_of_6_24tiles.3mf",
+      "large_components": 24,
+      "small_components": 0
+    },
+    "output/plates/plate_256_hiveswarm_144set_plate6_of_6_24tiles.3mf": {
+      "path": "output/plates/plate_256_hiveswarm_144set_plate6_of_6_24tiles.3mf",
+      "large_components": 24,
+      "small_components": 0
+    },
+    "output/plates/plate_256_scrabble_100set_plate1_of_4_25tiles.3mf": {
+      "path": "output/plates/plate_256_scrabble_100set_plate1_of_4_25tiles.3mf",
+      "large_components": 25,
+      "small_components": 0
+    },
+    "output/plates/plate_256_scrabble_100set_plate2_of_4_25tiles.3mf": {
+      "path": "output/plates/plate_256_scrabble_100set_plate2_of_4_25tiles.3mf",
+      "large_components": 25,
+      "small_components": 0
+    },
+    "output/plates/plate_256_scrabble_100set_plate3_of_4_25tiles.3mf": {
+      "path": "output/plates/plate_256_scrabble_100set_plate3_of_4_25tiles.3mf",
+      "large_components": 25,
+      "small_components": 0
+    },
+    "output/plates/plate_256_scrabble_100set_plate4_of_4_25tiles.3mf": {
+      "path": "output/plates/plate_256_scrabble_100set_plate4_of_4_25tiles.3mf",
+      "large_components": 25,
+      "small_components": 0
+    },
+    "output/plates/plate_full_256_alphabet_A_Z_26tiles.3mf": {
+      "path": "output/plates/plate_full_256_alphabet_A_Z_26tiles.3mf",
+      "large_components": 26,
+      "small_components": 0
+    },
+    "output/plates/plate_full_256_numbers_and_extras_26tiles.3mf": {
+      "path": "output/plates/plate_full_256_numbers_and_extras_26tiles.3mf",
+      "large_components": 26,
+      "small_components": 0
+    },
+    "output/plates/plate_letters_A_M.3mf": {
+      "path": "output/plates/plate_letters_A_M.3mf",
+      "large_components": 13,
+      "small_components": 0
+    },
+    "output/plates/plate_letters_N_Z_Blank.3mf": {
+      "path": "output/plates/plate_letters_N_Z_Blank.3mf",
+      "large_components": 14,
+      "small_components": 0
+    },
+    "output/plates/plate_numbers_and_symbols.3mf": {
+      "path": "output/plates/plate_numbers_and_symbols.3mf",
+      "large_components": 17,
+      "small_components": 0
+    },
+    "output/stl/tile_A_score1_base.stl": {
+      "path": "output/stl/tile_A_score1_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_B_score3_base.stl": {
+      "path": "output/stl/tile_B_score3_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_BLANK_score0_base.stl": {
+      "path": "output/stl/tile_BLANK_score0_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_C_score3_base.stl": {
+      "path": "output/stl/tile_C_score3_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_D_score2_base.stl": {
+      "path": "output/stl/tile_D_score2_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_divide_base.stl": {
+      "path": "output/stl/tile_divide_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_E_score1_base.stl": {
+      "path": "output/stl/tile_E_score1_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_equals_base.stl": {
+      "path": "output/stl/tile_equals_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_exclamation_base.stl": {
+      "path": "output/stl/tile_exclamation_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_F_score4_base.stl": {
+      "path": "output/stl/tile_F_score4_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_G_score2_base.stl": {
+      "path": "output/stl/tile_G_score2_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_H_score4_base.stl": {
+      "path": "output/stl/tile_H_score4_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_I_score1_base.stl": {
+      "path": "output/stl/tile_I_score1_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_J_score8_base.stl": {
+      "path": "output/stl/tile_J_score8_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_K_score5_base.stl": {
+      "path": "output/stl/tile_K_score5_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_L_score1_base.stl": {
+      "path": "output/stl/tile_L_score1_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_M_score3_base.stl": {
+      "path": "output/stl/tile_M_score3_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_minus_base.stl": {
+      "path": "output/stl/tile_minus_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_multiply_base.stl": {
+      "path": "output/stl/tile_multiply_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_N_score1_base.stl": {
+      "path": "output/stl/tile_N_score1_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_num_0_base.stl": {
+      "path": "output/stl/tile_num_0_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_num_1_base.stl": {
+      "path": "output/stl/tile_num_1_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_num_2_base.stl": {
+      "path": "output/stl/tile_num_2_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_num_3_base.stl": {
+      "path": "output/stl/tile_num_3_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_num_4_base.stl": {
+      "path": "output/stl/tile_num_4_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_num_5_base.stl": {
+      "path": "output/stl/tile_num_5_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_num_6_base.stl": {
+      "path": "output/stl/tile_num_6_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_num_7_base.stl": {
+      "path": "output/stl/tile_num_7_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_num_8_base.stl": {
+      "path": "output/stl/tile_num_8_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_num_9_base.stl": {
+      "path": "output/stl/tile_num_9_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_O_score1_base.stl": {
+      "path": "output/stl/tile_O_score1_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_P_score3_base.stl": {
+      "path": "output/stl/tile_P_score3_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_plus_base.stl": {
+      "path": "output/stl/tile_plus_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_Q_score10_base.stl": {
+      "path": "output/stl/tile_Q_score10_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_question_base.stl": {
+      "path": "output/stl/tile_question_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_R_score1_base.stl": {
+      "path": "output/stl/tile_R_score1_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_S_score1_base.stl": {
+      "path": "output/stl/tile_S_score1_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_T_score1_base.stl": {
+      "path": "output/stl/tile_T_score1_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_U_score1_base.stl": {
+      "path": "output/stl/tile_U_score1_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_V_score4_base.stl": {
+      "path": "output/stl/tile_V_score4_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_W_score4_base.stl": {
+      "path": "output/stl/tile_W_score4_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_X_score8_base.stl": {
+      "path": "output/stl/tile_X_score8_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_Y_score4_base.stl": {
+      "path": "output/stl/tile_Y_score4_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_Z_score10_base.stl": {
+      "path": "output/stl/tile_Z_score10_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output_hive/3mf/tile_ant.3mf": {
+      "path": "output_hive/3mf/tile_ant.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output_hive/3mf/tile_beetle.3mf": {
+      "path": "output_hive/3mf/tile_beetle.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output_hive/3mf/tile_grasshopper.3mf": {
+      "path": "output_hive/3mf/tile_grasshopper.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output_hive/3mf/tile_ladybug.3mf": {
+      "path": "output_hive/3mf/tile_ladybug.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output_hive/3mf/tile_mosquito.3mf": {
+      "path": "output_hive/3mf/tile_mosquito.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output_hive/3mf/tile_pillbug.3mf": {
+      "path": "output_hive/3mf/tile_pillbug.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output_hive/3mf/tile_queen_bee.3mf": {
+      "path": "output_hive/3mf/tile_queen_bee.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output_hive/3mf/tile_spider.3mf": {
+      "path": "output_hive/3mf/tile_spider.3mf",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output_hive/plates/plate_complete_2player_master_set_28tiles.3mf": {
+      "path": "output_hive/plates/plate_complete_2player_master_set_28tiles.3mf",
+      "large_components": 28,
+      "small_components": 0
+    },
+    "output_hive/plates/plate_expansions_pack_6tiles.3mf": {
+      "path": "output_hive/plates/plate_expansions_pack_6tiles.3mf",
+      "large_components": 6,
+      "small_components": 0
+    },
+    "output_hive/plates/plate_player_base_game_11tiles.3mf": {
+      "path": "output_hive/plates/plate_player_base_game_11tiles.3mf",
+      "large_components": 11,
+      "small_components": 0
+    },
+    "output_hive/plates/plate_player_full_set_14tiles.3mf": {
+      "path": "output_hive/plates/plate_player_full_set_14tiles.3mf",
+      "large_components": 14,
+      "small_components": 0
+    },
+    "output_hive/plates_4color_limited/plate_4color_2player_core_swarm_14tiles.3mf": {
+      "path": "output_hive/plates_4color_limited/plate_4color_2player_core_swarm_14tiles.3mf",
+      "large_components": 14,
+      "small_components": 0
+    },
+    "output_hive/plates_4color_limited/plate_4color_2player_crawlers_8tiles.3mf": {
+      "path": "output_hive/plates_4color_limited/plate_4color_2player_crawlers_8tiles.3mf",
+      "large_components": 8,
+      "small_components": 0
+    },
+    "output_hive/plates_4color_limited/plate_4color_2player_expansions_6tiles.3mf": {
+      "path": "output_hive/plates_4color_limited/plate_4color_2player_expansions_6tiles.3mf",
+      "large_components": 6,
+      "small_components": 0
+    },
+    "output_hive/plates_4color_limited/plate_4color_A_core_swarm_7tiles.3mf": {
+      "path": "output_hive/plates_4color_limited/plate_4color_A_core_swarm_7tiles.3mf",
+      "large_components": 7,
+      "small_components": 0
+    },
+    "output_hive/plates_4color_limited/plate_4color_B_crawlers_4tiles.3mf": {
+      "path": "output_hive/plates_4color_limited/plate_4color_B_crawlers_4tiles.3mf",
+      "large_components": 4,
+      "small_components": 0
+    },
+    "output_hive/plates_4color_limited/plate_4color_C_expansions_3tiles.3mf": {
+      "path": "output_hive/plates_4color_limited/plate_4color_C_expansions_3tiles.3mf",
+      "large_components": 3,
+      "small_components": 0
+    },
+    "output_hive/stl/tile_ant_base.stl": {
+      "path": "output_hive/stl/tile_ant_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output_hive/stl/tile_beetle_base.stl": {
+      "path": "output_hive/stl/tile_beetle_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output_hive/stl/tile_grasshopper_base.stl": {
+      "path": "output_hive/stl/tile_grasshopper_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output_hive/stl/tile_ladybug_base.stl": {
+      "path": "output_hive/stl/tile_ladybug_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output_hive/stl/tile_mosquito_base.stl": {
+      "path": "output_hive/stl/tile_mosquito_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output_hive/stl/tile_pillbug_base.stl": {
+      "path": "output_hive/stl/tile_pillbug_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output_hive/stl/tile_queen_bee_base.stl": {
+      "path": "output_hive/stl/tile_queen_bee_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output_hive/stl/tile_spider_base.stl": {
+      "path": "output_hive/stl/tile_spider_base.stl",
+      "large_components": 1,
+      "small_components": 0
+    },
+    "output/stl/tile_A_score1_text.stl": {
+      "path": "output/stl/tile_A_score1_text.stl",
+      "reason": "matching text inlay for 38.1 mm base"
+    },
+    "output/stl/tile_B_score3_text.stl": {
+      "path": "output/stl/tile_B_score3_text.stl",
+      "reason": "matching text inlay for 38.1 mm base"
+    },
+    "output/stl/tile_C_score3_text.stl": {
+      "path": "output/stl/tile_C_score3_text.stl",
+      "reason": "matching text inlay for 38.1 mm base"
+    },
+    "output/stl/tile_D_score2_text.stl": {
+      "path": "output/stl/tile_D_score2_text.stl",
+      "reason": "matching text inlay for 38.1 mm base"
+    },
+    "output/stl/tile_divide_text.stl": {
+      "path": "output/stl/tile_divide_text.stl",
+      "reason": "matching text inlay for 38.1 mm base"
+    },
+    "output/stl/tile_E_score1_text.stl": {
+      "path": "output/stl/tile_E_score1_text.stl",
+      "reason": "matching text inlay for 38.1 mm base"
+    },
+    "output/stl/tile_equals_text.stl": {
+      "path": "output/stl/tile_equals_text.stl",
+      "reason": "matching text inlay for 38.1 mm base"
+    },
+    "output/stl/tile_exclamation_text.stl": {
+      "path": "output/stl/tile_exclamation_text.stl",
+      "reason": "matching text inlay for 38.1 mm base"
+    },
+    "output/stl/tile_F_score4_text.stl": {
+      "path": "output/stl/tile_F_score4_text.stl",
+      "reason": "matching text inlay for 38.1 mm base"
+    },
+    "output/stl/tile_G_score2_text.stl": {
+      "path": "output/stl/tile_G_score2_text.stl",
+      "reason": "matching text inlay for 38.1 mm base"
+    },
+    "output/stl/tile_H_score4_text.stl": {
+      "path": "output/stl/tile_H_score4_text.stl",
+      "reason": "matching text inlay for 38.1 mm base"
+    },
+    "output/stl/tile_I_score1_text.stl": {
+      "path": "output/stl/tile_I_score1_text.stl",
+      "reason": "matching text inlay for 38.1 mm base"
+    },
+    "output/stl/tile_J_score8_text.stl": {
+      "path": "output/stl/tile_J_score8_text.stl",
+      "reason": "matching text inlay for 38.1 mm base"
+    },
+    "output/stl/tile_K_score5_text.stl": {
+      "path": "output/stl/tile_K_score5_text.stl",
+      "reason": "matching text inlay for 38.1 mm base"
+    },
+    "output/stl/tile_L_score1_text.stl": {
+      "path": "output/stl/tile_L_score1_text.stl",
+      "reason": "matching text inlay for 38.1 mm base"
+    },
+    "output/stl/tile_M_score3_text.stl": {
+      "path": "output/stl/tile_M_score3_text.stl",
+      "reason": "matching text inlay for 38.1 mm base"
+    },
+    "output/stl/tile_minus_text.stl": {
+      "path": "output/stl/tile_minus_text.stl",
+      "reason": "matching text inlay for 38.1 mm base"
+    },
+    "output/stl/tile_multiply_text.stl": {
+      "path": "output/stl/tile_multiply_text.stl",
+      "reason": "matching text inlay for 38.1 mm base"
+    },
+    "output/stl/tile_N_score1_text.stl": {
+      "path": "output/stl/tile_N_score1_text.stl",
+      "reason": "matching text inlay for 38.1 mm base"
+    },
+    "output/stl/tile_num_0_text.stl": {
+      "path": "output/stl/tile_num_0_text.stl",
+      "reason": "matching text inlay for 38.1 mm base"
+    },
+    "output/stl/tile_num_1_text.stl": {
+      "path": "output/stl/tile_num_1_text.stl",
+      "reason": "matching text inlay for 38.1 mm base"
+    },
+    "output/stl/tile_num_2_text.stl": {
+      "path": "output/stl/tile_num_2_text.stl",
+      "reason": "matching text inlay for 38.1 mm base"
+    },
+    "output/stl/tile_num_3_text.stl": {
+      "path": "output/stl/tile_num_3_text.stl",
+      "reason": "matching text inlay for 38.1 mm base"
+    },
+    "output/stl/tile_num_4_text.stl": {
+      "path": "output/stl/tile_num_4_text.stl",
+      "reason": "matching text inlay for 38.1 mm base"
+    },
+    "output/stl/tile_num_5_text.stl": {
+      "path": "output/stl/tile_num_5_text.stl",
+      "reason": "matching text inlay for 38.1 mm base"
+    },
+    "output/stl/tile_num_6_text.stl": {
+      "path": "output/stl/tile_num_6_text.stl",
+      "reason": "matching text inlay for 38.1 mm base"
+    },
+    "output/stl/tile_num_7_text.stl": {
+      "path": "output/stl/tile_num_7_text.stl",
+      "reason": "matching text inlay for 38.1 mm base"
+    },
+    "output/stl/tile_num_8_text.stl": {
+      "path": "output/stl/tile_num_8_text.stl",
+      "reason": "matching text inlay for 38.1 mm base"
+    },
+    "output/stl/tile_num_9_text.stl": {
+      "path": "output/stl/tile_num_9_text.stl",
+      "reason": "matching text inlay for 38.1 mm base"
+    },
+    "output/stl/tile_O_score1_text.stl": {
+      "path": "output/stl/tile_O_score1_text.stl",
+      "reason": "matching text inlay for 38.1 mm base"
+    },
+    "output/stl/tile_P_score3_text.stl": {
+      "path": "output/stl/tile_P_score3_text.stl",
+      "reason": "matching text inlay for 38.1 mm base"
+    },
+    "output/stl/tile_plus_text.stl": {
+      "path": "output/stl/tile_plus_text.stl",
+      "reason": "matching text inlay for 38.1 mm base"
+    },
+    "output/stl/tile_Q_score10_text.stl": {
+      "path": "output/stl/tile_Q_score10_text.stl",
+      "reason": "matching text inlay for 38.1 mm base"
+    },
+    "output/stl/tile_question_text.stl": {
+      "path": "output/stl/tile_question_text.stl",
+      "reason": "matching text inlay for 38.1 mm base"
+    },
+    "output/stl/tile_R_score1_text.stl": {
+      "path": "output/stl/tile_R_score1_text.stl",
+      "reason": "matching text inlay for 38.1 mm base"
+    },
+    "output/stl/tile_S_score1_text.stl": {
+      "path": "output/stl/tile_S_score1_text.stl",
+      "reason": "matching text inlay for 38.1 mm base"
+    },
+    "output/stl/tile_T_score1_text.stl": {
+      "path": "output/stl/tile_T_score1_text.stl",
+      "reason": "matching text inlay for 38.1 mm base"
+    },
+    "output/stl/tile_U_score1_text.stl": {
+      "path": "output/stl/tile_U_score1_text.stl",
+      "reason": "matching text inlay for 38.1 mm base"
+    },
+    "output/stl/tile_V_score4_text.stl": {
+      "path": "output/stl/tile_V_score4_text.stl",
+      "reason": "matching text inlay for 38.1 mm base"
+    },
+    "output/stl/tile_W_score4_text.stl": {
+      "path": "output/stl/tile_W_score4_text.stl",
+      "reason": "matching text inlay for 38.1 mm base"
+    },
+    "output/stl/tile_X_score8_text.stl": {
+      "path": "output/stl/tile_X_score8_text.stl",
+      "reason": "matching text inlay for 38.1 mm base"
+    },
+    "output/stl/tile_Y_score4_text.stl": {
+      "path": "output/stl/tile_Y_score4_text.stl",
+      "reason": "matching text inlay for 38.1 mm base"
+    },
+    "output/stl/tile_Z_score10_text.stl": {
+      "path": "output/stl/tile_Z_score10_text.stl",
+      "reason": "matching text inlay for 38.1 mm base"
+    },
+    "output_hive/stl/tile_ant_insect.stl": {
+      "path": "output_hive/stl/tile_ant_insect.stl",
+      "reason": "matching insect inlay for 38.1 mm base"
+    },
+    "output_hive/stl/tile_beetle_insect.stl": {
+      "path": "output_hive/stl/tile_beetle_insect.stl",
+      "reason": "matching insect inlay for 38.1 mm base"
+    },
+    "output_hive/stl/tile_grasshopper_insect.stl": {
+      "path": "output_hive/stl/tile_grasshopper_insect.stl",
+      "reason": "matching insect inlay for 38.1 mm base"
+    },
+    "output_hive/stl/tile_ladybug_insect.stl": {
+      "path": "output_hive/stl/tile_ladybug_insect.stl",
+      "reason": "matching insect inlay for 38.1 mm base"
+    },
+    "output_hive/stl/tile_mosquito_insect.stl": {
+      "path": "output_hive/stl/tile_mosquito_insect.stl",
+      "reason": "matching insect inlay for 38.1 mm base"
+    },
+    "output_hive/stl/tile_pillbug_insect.stl": {
+      "path": "output_hive/stl/tile_pillbug_insect.stl",
+      "reason": "matching insect inlay for 38.1 mm base"
+    },
+    "output_hive/stl/tile_queen_bee_insect.stl": {
+      "path": "output_hive/stl/tile_queen_bee_insect.stl",
+      "reason": "matching insect inlay for 38.1 mm base"
+    },
+    "output_hive/stl/tile_spider_insect.stl": {
+      "path": "output_hive/stl/tile_spider_insect.stl",
+      "reason": "matching insect inlay for 38.1 mm base"
+    }
+  },
+  "kept": [
+    "output/3mf/tile_biobuzz_token.3mf",
+    "output/3mf/tile_doublesided_biobuzz_A_score1.3mf",
+    "output/3mf/tile_doublesided_interlocking_A_score1.3mf",
+    "output/3mf/tile_interlocking_token.3mf",
+    "output/3mf/tile_team_spartan_token.3mf",
+    "output/plates/hex_othello_piece_single.3mf",
+    "output/plates/plate_256_biobuzz_hiveswarm_144set_plate1_of_6_24tiles.3mf",
+    "output/plates/plate_256_biobuzz_hiveswarm_144set_plate2_of_6_24tiles.3mf",
+    "output/plates/plate_256_biobuzz_hiveswarm_144set_plate3_of_6_24tiles.3mf",
+    "output/plates/plate_256_biobuzz_hiveswarm_144set_plate4_of_6_24tiles.3mf",
+    "output/plates/plate_256_biobuzz_hiveswarm_144set_plate5_of_6_24tiles.3mf",
+    "output/plates/plate_256_biobuzz_hiveswarm_144set_plate6_of_6_24tiles.3mf",
+    "output/plates/plate_256_biobuzz_numbers_and_math_26tiles.3mf",
+    "output/plates/plate_256_biobuzz_scrabble_100set_plate1_of_4_25tiles.3mf",
+    "output/plates/plate_256_biobuzz_scrabble_100set_plate2_of_4_25tiles.3mf",
+    "output/plates/plate_256_biobuzz_scrabble_100set_plate3_of_4_25tiles.3mf",
+    "output/plates/plate_256_biobuzz_scrabble_100set_plate4_of_4_25tiles.3mf",
+    "output/plates/plate_256_hex_othello_60set_plate1_of_2_30pieces.3mf",
+    "output/plates/plate_256_hex_othello_60set_plate2_of_2_30pieces.3mf",
+    "output/plates/plate_256_hex_othello_61cells_q1_top_left.3mf",
+    "output/plates/plate_256_hex_othello_61cells_q2_top_right.3mf",
+    "output/plates/plate_256_hex_othello_61cells_q3_bottom_left.3mf",
+    "output/plates/plate_256_hex_othello_61cells_q4_bottom_right.3mf",
+    "output/plates/plate_256_interlocking_hiveswarm_144set_plate1_of_6_24tiles.3mf",
+    "output/plates/plate_256_interlocking_hiveswarm_144set_plate2_of_6_24tiles.3mf",
+    "output/plates/plate_256_interlocking_hiveswarm_144set_plate3_of_6_24tiles.3mf",
+    "output/plates/plate_256_interlocking_hiveswarm_144set_plate4_of_6_24tiles.3mf",
+    "output/plates/plate_256_interlocking_hiveswarm_144set_plate5_of_6_24tiles.3mf",
+    "output/plates/plate_256_interlocking_hiveswarm_144set_plate6_of_6_24tiles.3mf",
+    "output/plates/plate_256_interlocking_numbers_and_math_26tiles.3mf",
+    "output/plates/plate_256_interlocking_scrabble_100set_plate1_of_4_25tiles.3mf",
+    "output/plates/plate_256_interlocking_scrabble_100set_plate2_of_4_25tiles.3mf",
+    "output/plates/plate_256_interlocking_scrabble_100set_plate3_of_4_25tiles.3mf",
+    "output/plates/plate_256_interlocking_scrabble_100set_plate4_of_4_25tiles.3mf",
+    "output/plates/plate_256_team_hiveswarm_144set_plate1_of_6_24tiles.3mf",
+    "output/plates/plate_256_team_hiveswarm_144set_plate2_of_6_24tiles.3mf",
+    "output/plates/plate_256_team_hiveswarm_144set_plate3_of_6_24tiles.3mf",
+    "output/plates/plate_256_team_hiveswarm_144set_plate4_of_6_24tiles.3mf",
+    "output/plates/plate_256_team_hiveswarm_144set_plate5_of_6_24tiles.3mf",
+    "output/plates/plate_256_team_hiveswarm_144set_plate6_of_6_24tiles.3mf",
+    "output/plates/plate_256_team_numbers_and_math_26tiles.3mf",
+    "output/plates/plate_256_team_scrabble_100set_plate1_of_4_25tiles.3mf",
+    "output/plates/plate_256_team_scrabble_100set_plate2_of_4_25tiles.3mf",
+    "output/plates/plate_256_team_scrabble_100set_plate3_of_4_25tiles.3mf",
+    "output/plates/plate_256_team_scrabble_100set_plate4_of_4_25tiles.3mf",
+    "output_biobuzz/3mf/tile_biobuzz_token.3mf",
+    "output_biobuzz/3mf/tile_doublesided_biobuzz_A_score1.3mf",
+    "output_biobuzz/plates/plate_256_biobuzz_hiveswarm_144set_plate1_of_6_24tiles.3mf",
+    "output_biobuzz/plates/plate_256_biobuzz_hiveswarm_144set_plate2_of_6_24tiles.3mf",
+    "output_biobuzz/plates/plate_256_biobuzz_hiveswarm_144set_plate3_of_6_24tiles.3mf",
+    "output_biobuzz/plates/plate_256_biobuzz_hiveswarm_144set_plate4_of_6_24tiles.3mf",
+    "output_biobuzz/plates/plate_256_biobuzz_hiveswarm_144set_plate5_of_6_24tiles.3mf",
+    "output_biobuzz/plates/plate_256_biobuzz_hiveswarm_144set_plate6_of_6_24tiles.3mf",
+    "output_biobuzz/plates/plate_256_biobuzz_scrabble_100set_plate1_of_4_25tiles.3mf",
+    "output_biobuzz/plates/plate_256_biobuzz_scrabble_100set_plate2_of_4_25tiles.3mf",
+    "output_biobuzz/plates/plate_256_biobuzz_scrabble_100set_plate3_of_4_25tiles.3mf",
+    "output_biobuzz/plates/plate_256_biobuzz_scrabble_100set_plate4_of_4_25tiles.3mf",
+    "output_interlocking/3mf/tile_doublesided_interlocking_A_score1.3mf",
+    "output_interlocking/3mf/tile_interlocking_token.3mf",
+    "output_interlocking/plates/plate_256_interlocking_hiveswarm_144set_plate1_of_6_24tiles.3mf",
+    "output_interlocking/plates/plate_256_interlocking_hiveswarm_144set_plate2_of_6_24tiles.3mf",
+    "output_interlocking/plates/plate_256_interlocking_hiveswarm_144set_plate3_of_6_24tiles.3mf",
+    "output_interlocking/plates/plate_256_interlocking_hiveswarm_144set_plate4_of_6_24tiles.3mf",
+    "output_interlocking/plates/plate_256_interlocking_hiveswarm_144set_plate5_of_6_24tiles.3mf",
+    "output_interlocking/plates/plate_256_interlocking_hiveswarm_144set_plate6_of_6_24tiles.3mf",
+    "output_interlocking/plates/plate_256_interlocking_scrabble_100set_plate1_of_4_25tiles.3mf",
+    "output_interlocking/plates/plate_256_interlocking_scrabble_100set_plate2_of_4_25tiles.3mf",
+    "output_interlocking/plates/plate_256_interlocking_scrabble_100set_plate3_of_4_25tiles.3mf",
+    "output_interlocking/plates/plate_256_interlocking_scrabble_100set_plate4_of_4_25tiles.3mf",
+    "output_team/3mf/tile_team_spartan_token.3mf",
+    "output_team/plates/plate_256_team_hiveswarm_144set_plate1_of_6_24tiles.3mf",
+    "output_team/plates/plate_256_team_hiveswarm_144set_plate2_of_6_24tiles.3mf",
+    "output_team/plates/plate_256_team_hiveswarm_144set_plate3_of_6_24tiles.3mf",
+    "output_team/plates/plate_256_team_hiveswarm_144set_plate4_of_6_24tiles.3mf",
+    "output_team/plates/plate_256_team_hiveswarm_144set_plate5_of_6_24tiles.3mf",
+    "output_team/plates/plate_256_team_hiveswarm_144set_plate6_of_6_24tiles.3mf",
+    "output_team/plates/plate_256_team_scrabble_100set_plate1_of_4_25tiles.3mf",
+    "output_team/plates/plate_256_team_scrabble_100set_plate2_of_4_25tiles.3mf",
+    "output_team/plates/plate_256_team_scrabble_100set_plate3_of_4_25tiles.3mf",
+    "output_team/plates/plate_256_team_scrabble_100set_plate4_of_4_25tiles.3mf",
+    "test_othello_piece.3mf"
+  ],
+  "target_tile_flat_mm": 33.02
+}

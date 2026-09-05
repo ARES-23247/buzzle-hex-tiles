@@ -1,6 +1,7 @@
 import os
 import math
 import zipfile
+from xml.sax.saxutils import quoteattr
 import numpy as np
 import trimesh
 from shapely.geometry import Polygon, MultiPolygon
@@ -16,7 +17,7 @@ from render_new_buzzle_board import (
     make_flat_hex_pts, get_buzzle_multiplier
 )
 
-OUTPUT_DIR = "output/board"
+OUTPUT_DIR = "archive/legacy-outputs/output/board"
 DIR_3MF = os.path.join(OUTPUT_DIR, "3mf")
 os.makedirs(DIR_3MF, exist_ok=True)
 
@@ -36,50 +37,34 @@ DOVETAIL_TOL = 0.20       # 0.20mm clearance on each mating surface
 def extrude_poly(poly, z_min, z_max):
     if poly is None or poly.is_empty:
         return None
-        
     polys = [poly] if isinstance(poly, Polygon) else list(poly.geoms)
-    sub_meshes = []
-    
-    for p in polys:
-        if p.is_empty or p.area < 1e-4:
+    meshes = []
+    for polygon in polys:
+        if not isinstance(polygon, Polygon) or polygon.area < 1e-7:
             continue
-        verts_2d, faces_2d = triangulate_shapely_poly(p)
-        if len(verts_2d) == 0:
-            continue
-            
-        n_v = len(verts_2d)
-        v_bot = np.column_stack([verts_2d, np.full(n_v, z_min)])
-        v_top = np.column_stack([verts_2d, np.full(n_v, z_max)])
-        vertices = np.vstack([v_bot, v_top])
-        
-        f_bot = faces_2d[:, ::-1]
-        f_top = faces_2d + n_v
-        wall_faces = []
-        
-        ext_coords = np.array(p.exterior.coords)[:-1]
-        ext_len = len(ext_coords)
-        for i in range(ext_len):
-            i_next = (i + 1) % ext_len
-            wall_faces.append([i, i_next + n_v, i_next])
-            wall_faces.append([i, i + n_v, i_next + n_v])
-            
-        curr = ext_len
-        for interior in p.interiors:
-            int_coords = np.array(interior.coords)[:-1]
-            int_len = len(int_coords)
-            for i in range(int_len):
-                i_next = (i + 1) % int_len
-                wall_faces.append([curr + i, curr + i_next, curr + i_next + n_v])
-                wall_faces.append([curr + i, curr + i_next + n_v, curr + i + n_v])
-            curr += int_len
-            
-        faces = np.vstack([f_bot, f_top, np.array(wall_faces, dtype=np.int64)])
-        m = trimesh.Trimesh(vertices=vertices, faces=faces, process=True)
-        sub_meshes.append(m)
-        
-    if not sub_meshes:
-        return None
-    return trimesh.util.concatenate(sub_meshes) if len(sub_meshes) > 1 else sub_meshes[0]
+        vertices, faces = triangulate_shapely_poly(polygon)
+        mesh = trimesh.creation.extrude_triangulation(vertices, faces, z_max - z_min)
+        mesh.apply_translation([0, 0, z_min])
+        if not mesh.is_volume:
+            # Earcut can leave coincident bridge edges along aligned hex holes.
+            # Constrained triangulation preserves every polygon boundary edge.
+            from shapely import constrained_delaunay_triangles
+            vertices, faces, indices = [], [], {}
+            for triangle in constrained_delaunay_triangles(polygon).geoms:
+                face = []
+                for xy in list(triangle.exterior.coords)[:3]:
+                    if xy not in indices:
+                        indices[xy] = len(vertices)
+                        vertices.append(xy)
+                    face.append(indices[xy])
+                faces.append(face)
+            mesh = trimesh.creation.extrude_triangulation(np.array(vertices), np.array(faces), z_max-z_min)
+            mesh.apply_translation([0, 0, z_min])
+        if not mesh.is_volume:
+            raise ValueError("Extrusion must be a closed, consistently oriented solid")
+        meshes.append(mesh)
+    return trimesh.util.concatenate(meshes) if meshes else None
+
 
 def make_dovetail_polygon(cx, cy, angle_deg, is_male=True):
     tol = 0.0 if is_male else DOVETAIL_TOL
@@ -97,7 +82,7 @@ def make_dovetail_polygon(cx, cy, angle_deg, is_male=True):
     p_rot = rotate(p, angle_deg, origin=(0, 0))
     return translate(p_rot, xoff=cx, yoff=cy)
 
-def export_multimaterial_3mf(filepath, parts_list, assembly_name="BUZZLE_Assembly"):
+def export_multimaterial_3mf(filepath, parts_list, assembly_name="BUZZLE_Assembly", palette=None):
     """
     Exports a 4-color multi-material 3MF package with embedded 3MF Material Extension (m:colorgroup)
     and Snapmaker Orca / OrcaSlicer optimized object labels.
@@ -134,13 +119,23 @@ def export_multimaterial_3mf(filepath, parts_list, assembly_name="BUZZLE_Assembl
         '    </m:colorgroup>'
     ]
     
+    if palette is not None:
+        if len(palette) != 4:
+            raise ValueError("Palette must contain exactly four colors")
+        for index, color in enumerate(palette):
+            if len(color) != 7 or color[0] != "#" or any(c not in "0123456789abcdefABCDEF" for c in color[1:]):
+                raise ValueError("Palette colors must be #RRGGBB values")
+            model_lines[6 + index] = f'      <m:color color="{color}FF"/>'
+
     obj_id = 1
     comp_ids = []
     
     for name, mesh, c_idx in parts_list:
         if mesh is None or len(mesh.vertices) == 0:
             continue
-        model_lines.append(f'    <object id="{obj_id}" name="{name}" type="model" pid="100" pindex="{c_idx}">')
+        if c_idx not in range(4):
+            raise ValueError("Only four material slots are supported")
+        model_lines.append(f'    <object id="{obj_id}" name={quoteattr(name)} type="model" pid="100" pindex="{c_idx}">')
         model_lines.append('      <mesh>')
         model_lines.append('        <vertices>')
         for v in mesh.vertices:
@@ -156,7 +151,7 @@ def export_multimaterial_3mf(filepath, parts_list, assembly_name="BUZZLE_Assembl
         obj_id += 1
         
     assembly_id = obj_id
-    model_lines.append(f'    <object id="{assembly_id}" name="{assembly_name}" type="model">')
+    model_lines.append(f'    <object id="{assembly_id}" name={quoteattr(assembly_name)} type="model">')
     model_lines.append('      <components>')
     for cid in comp_ids:
         model_lines.append(f'        <component objectid="{cid}"/>')

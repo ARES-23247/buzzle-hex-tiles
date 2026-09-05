@@ -25,9 +25,7 @@ from generate_tiles import (
     generate_honeycomb_positions
 )
 
-DEFAULT_LOGO_PATH = os.path.join(
-    r"C:\Users\david\.gemini\antigravity\brain\2297f84f-f061-496a-befc-cc4ec57124a9\.user_uploaded\media_1788225756221.png"
-)
+DEFAULT_LOGO_PATH = os.path.join(os.path.dirname(__file__), "assets", "artwork", "team_logo.png")
 
 
 def extract_team_logo(img_path, target_h=25.0):
@@ -333,7 +331,7 @@ def main():
     parser.add_argument("--letter", type=str, help="Generate single letter tile (e.g. 'A')")
     parser.add_argument("--score", type=str, default=None, help="Custom score")
     parser.add_argument("--plates", action="store_true", help="Generate complete 256mm double-sided build plates")
-    parser.add_argument("--outdir", type=str, default="output_team", help="Output directory")
+    parser.add_argument("--outdir", type=str, default="output/tiles/team", help="Output directory")
     
     args = parser.parse_args()
     

@@ -1,18 +1,20 @@
-# 🎲 Games & Activities for 1.5" Hexagonal Tiles
+# 🎲 Games & Activities for 1.3-inch Hexagonal Tiles
 
-This compendium outlines **5 complete games** and activities designed specifically to take advantage of the unique **3-axis geometry ($0^\circ, 60^\circ, 120^\circ$)** of your 1.5" hexagonal Letter and Number tiles.
+This compendium outlines **5 complete games** and activities designed specifically to take advantage of the unique **3-axis geometry ($0^\circ, 60^\circ, 120^\circ$)** of your 1.3-inch (33.02 mm) hexagonal Letter and Number tiles.
 
-All printable PDFs are calibrated for direct printing on standard US Letter / A4 home printers and are available in the [`printouts/`](file:///C:/Users/david/.gemini/antigravity/scratch/hex-scrabble-tiles/printouts) directory.
+For current 3D print files, use the [visual print library](output/README.md).
+The older PDFs below are preserved as historical rule/activity references.
+Their 1.5-inch paper board is not calibrated for the current 1.3-inch tiles.
 
 ---
 
-## 📥 Printable Files Quick Links
+## 📥 Archived printable references
 
-* 📄 **[1.5" Hexagonal Game Board (PDF)](file:///C:/Users/david/.gemini/antigravity/scratch/hex-scrabble-tiles/printouts/hex_game_board_1.5in.pdf)**: High-resolution board with Starting Star, 2x/3x Letter, and 2x/3x Word bonus tiles.
-* 📖 **[Official Games Rulebook Pamphlet (PDF)](file:///C:/Users/david/.gemini/antigravity/scratch/hex-scrabble-tiles/printouts/hex_games_rulebook.pdf)**: Complete 2-page illustrated quick-reference rules pamphlet.
-* 📊 **[Score Sheets & Tile Inventory Tracker (PDF)](file:///C:/Users/david/.gemini/antigravity/scratch/hex-scrabble-tiles/printouts/score_sheets_and_tracker.pdf)**: Multi-round score tally sheets + Scrabble & Hive piece counts.
-* 🧩 **[Number Hive Math Rosette Puzzles (PDF)](file:///C:/Users/david/.gemini/antigravity/scratch/hex-scrabble-tiles/printouts/number_hive_math_puzzles.pdf)**: Printable target-math challenge worksheets.
-* 🌐 **[Interactive Printouts Dashboard (HTML)](file:///C:/Users/david/.gemini/antigravity/scratch/hex-scrabble-tiles/printouts/printouts_hub.html)**: Browser-viewable print portal with one-click print styling.
+* 📄 **[Historical 1.5-inch paper board (PDF)](archive/legacy-documents/printouts/hex_game_board_1.5in.pdf)**: High-resolution board with Starting Star, 2x/3x Letter, and 2x/3x Word bonus tiles.
+* 📖 **[Official Games Rulebook Pamphlet (PDF)](archive/legacy-documents/printouts/hex_games_rulebook.pdf)**: Complete 2-page illustrated quick-reference rules pamphlet.
+* 📊 **[Score Sheets & Tile Inventory Tracker (PDF)](archive/legacy-documents/printouts/score_sheets_and_tracker.pdf)**: Multi-round score tally sheets + Scrabble & Hive piece counts.
+* 🧩 **[Number Hive Math Rosette Puzzles (PDF)](archive/legacy-documents/printouts/number_hive_math_puzzles.pdf)**: Printable target-math challenge worksheets.
+* 🌐 **[Interactive Printouts Dashboard (HTML)](archive/legacy-documents/printouts/printouts_hub.html)**: Browser-viewable print portal with one-click print styling.
 
 ---
 
@@ -73,7 +75,7 @@ All printable PDFs are calibrated for direct printing on standard US Letter / A4
 ## 🏆 Game 4: "HONEYCOMB CROSSWORD" (Board Game)
 
 * **Players**: 2–4 players
-* **Board**: Printable **[`hex_game_board_1.5in.pdf`](file:///C:/Users/david/.gemini/antigravity/scratch/hex-scrabble-tiles/printouts/hex_game_board_1.5in.pdf)**
+* **Board**: Printable **[`hex_game_board_1.5in.pdf`](archive/legacy-documents/printouts/hex_game_board_1.5in.pdf)**
 
 ### 📖 How to Play
 1. Players draw 7 tiles and start from the central **Starting Star (★)**.
@@ -89,7 +91,7 @@ All printable PDFs are calibrated for direct printing on standard US Letter / A4
 ## 🧠 Game 5: "TARGET 24 & ROSETTE MATH" (Solo / Co-op Puzzle)
 
 * **Players**: 1–2 players
-* **Components**: Number & Operator tiles + **[`number_hive_math_puzzles.pdf`](file:///C:/Users/david/.gemini/antigravity/scratch/hex-scrabble-tiles/printouts/number_hive_math_puzzles.pdf)**
+* **Components**: Number & Operator tiles + **[`number_hive_math_puzzles.pdf`](archive/legacy-documents/printouts/number_hive_math_puzzles.pdf)**
 
 ### 📖 How to Play
 1. Place a target number tile (e.g. `[2]` `[4]`) into the yellow center hex of a 7-hex Rosette.

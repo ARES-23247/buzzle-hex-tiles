@@ -1,7 +1,7 @@
 """
 Dual-Color & 4-Color Hexagonal "Hive" 3D Printable Tile Generator
 =================================================================
-Generates 1.5 inch (38.1 mm) diameter hexagonal game tiles for the board game "Hive".
+Generates 1.3 inch (33.02 mm) diameter hexagonal game tiles for the board game "Hive".
 Includes complete base game and official expansions:
   - Queen Bee
   - Spider
@@ -308,7 +308,7 @@ INSECT_BUILDERS = {
 # 3D Mesh Generation & Multi-Part Slicing
 # ========================================================================
 
-def build_tile_pair(insect_poly, flat_to_flat=38.1, height=4.8,
+def build_tile_pair(insect_poly, flat_to_flat=33.02, height=4.8,
                      chamfer=0.8, inlay_depth=0.8, emboss_height=0.0):
     if insect_poly is not None and not insect_poly.is_empty:
         glyph_polys = [insect_poly] if isinstance(insect_poly, Polygon) else list(insect_poly.geoms)
@@ -555,7 +555,7 @@ def generate_multi_color_preview(mesh_base, insect_meshes_dict, output_path, lab
     plt.close(fig)
 
 
-def build_grouped_4color_plate(insect_keys_list, flat_to_flat=38.1, height=4.8,
+def build_grouped_4color_plate(insect_keys_list, flat_to_flat=33.02, height=4.8,
                                chamfer=0.8, inlay_depth=0.8, cols=4, spacing=4.0):
     """
     Arranges a list of insects into an interlocking honeycomb grid.
@@ -616,12 +616,12 @@ def main():
     parser.add_argument("--insect", type=str, choices=list(INSECT_BUILDERS.keys()), help="Generate a single insect tile")
     parser.add_argument("--all", action="store_true", help="Generate all individual insect tiles (Base + Expansions)")
     parser.add_argument("--plates", action="store_true", help="Generate ready-to-slice batch build plates (including 4-color limited plates)")
-    parser.add_argument("--size", type=float, default=38.1, help="Tile flat-to-flat diameter in mm (default: 38.1 = 1.5 in)")
+    parser.add_argument("--size", type=float, default=33.02, help="Tile flat-to-flat diameter in mm (default: 33.02 = 1.3 in)")
     parser.add_argument("--height", type=float, default=4.8, help="Tile height in mm (default: 4.8)")
     parser.add_argument("--chamfer", type=float, default=0.8, help="Top perimeter chamfer in mm (default: 0.8)")
     parser.add_argument("--inlay-depth", type=float, default=0.8, help="Inlay depth in mm (default: 0.8)")
     parser.add_argument("--embossed", type=float, default=0.0, help="Raised text height above tile in mm (default: 0.0 = flush)")
-    parser.add_argument("--outdir", type=str, default="output_hive", help="Output directory path")
+    parser.add_argument("--outdir", type=str, default="output/tiles/hive", help="Output directory path")
     
     args = parser.parse_args()
     
@@ -630,7 +630,7 @@ def main():
     dir_stl = os.path.join(outdir, "stl")
     dir_plates = os.path.join(outdir, "plates")
     dir_4color = os.path.join(outdir, "plates_4color_limited")
-    dir_previews = os.path.join(outdir, "previews")
+    dir_previews = os.path.join(outdir, "images")
     
     os.makedirs(dir_3mf, exist_ok=True)
     os.makedirs(dir_stl, exist_ok=True)
@@ -638,7 +638,7 @@ def main():
     os.makedirs(dir_4color, exist_ok=True)
     os.makedirs(dir_previews, exist_ok=True)
     
-    print(f"[HIVE CAD] Tile dimensions: Diameter={args.size:.1f}mm (1.5in), Height={args.height:.1f}mm, Chamfer={args.chamfer:.1f}mm, Inlay={args.inlay_depth:.1f}mm")
+    print(f"[HIVE CAD] Tile dimensions: Diameter={args.size:.1f}mm ({args.size / 25.4:.2f}in), Height={args.height:.1f}mm, Chamfer={args.chamfer:.1f}mm, Inlay={args.inlay_depth:.1f}mm")
     
     # 1. Single Insect Tile
     if args.insect:
