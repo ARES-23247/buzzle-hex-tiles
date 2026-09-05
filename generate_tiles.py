@@ -393,6 +393,13 @@ def export_multimaterial_3mf(filepath, parts_dict):
         zf.writestr('_rels/.rels', rels_xml)
         zf.writestr('3D/3dmodel.model', model_xml)
 
+    from three_mf_colors import add_color_metadata, WORD_COLORS
+    meshes = [(name, mesh) for name, mesh in parts_dict.items()
+              if mesh is not None and len(mesh.vertices)]
+    assignments = {str(i+1): (0 if 'Base' in name else 1)
+                   for i, (name, mesh) in enumerate(meshes)}
+    add_color_metadata(filepath, WORD_COLORS, ['Yellow', 'Black'], assignments)
+
 
 def export_stl_pair(base_path, text_path, mesh_base, mesh_text):
     """Export co-located STL files sharing the exact same coordinate origin."""

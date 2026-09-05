@@ -2,7 +2,7 @@
 
 - All current game tiles, including Scrabble, are **1.3 inches / 33.02 mm across flats**.
 - Current board print bed: **270 × 270 mm**. At most four filaments.
-- Shared board palette: charcoal, ivory, teal, gold.
+- BUZZLE palette: black, white, blue, yellow. Othello board: black/yellow; pieces: black/white. Word tiles: yellow/black.
 - Entry point: `output/README.md`; current files live under `output/boards/`,
   `output/tiles/`, and `output/accessories/`.
 - BUZZLE generator: `generate_board_270.py` → `output/boards/buzzle/` (217 cells, seven sections).

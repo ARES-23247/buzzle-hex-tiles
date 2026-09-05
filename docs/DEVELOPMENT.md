@@ -42,7 +42,8 @@ $env:MPLCONFIGDIR = "$PWD/.mplconfig"
 ```powershell
 python generate_board_270.py
 python generate_othello_board_270.py
-python -m unittest test_board_270 test_othello_board_270 -v
+python three_mf_colors.py
+python -m unittest test_board_270 test_othello_board_270 test_three_mf_colors -v
 python build_output_catalog.py
 python verify_output_library.py
 ```
@@ -71,3 +72,8 @@ workflows; they are not the commands for current printable boards.
 
 Keep one canonical copy of each tile plate. The Othello 30-piece plate is
 intentionally printed twice rather than stored under two identical filenames.
+
+The shared `three_mf_colors.py` helper adds triangle colors, named base materials,
+and Snapmaker/Orca part settings without changing geometry. The board and word-tile
+exporters call it automatically. Run its standalone command to update retained
+tile files without regenerating their meshes. See [color import notes](3MF_COLOR_IMPORT.md).

@@ -1,6 +1,6 @@
 # BUZZLE hex-tile print library
 
-**1.3-inch / 33.02 mm tiles · 270 × 270 mm bed · four-color boards**
+**1.3-inch / 33.02 mm tiles · 270 × 270 mm bed · up to four colors**
 
 ## Start here
 
@@ -49,3 +49,5 @@ python verify_output_library.py
 
 The [217-cell coordinate specification](BUZZLE_217_BOARD_SPECIFICATION.md)
 and [existing game-rule notes](GAMES_AND_RULES.md) remain available for reference.
+
+[Snapmaker / Printables color import help](docs/3MF_COLOR_IMPORT.md) — updated surface colors, named parts, and filament slots.

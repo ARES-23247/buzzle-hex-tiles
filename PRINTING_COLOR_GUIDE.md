@@ -5,18 +5,19 @@
 **All current tiles use 1.3 inches / 33.02 mm across flats.** Keep models at
 100% scale. Use a 270 × 270 mm printer profile for the new board plates.
 
-## Shared four-filament palette
+## Current color slots
 
-| Slot | Filament | BUZZLE | Othello |
-|---|---|---|---|
-| 1 | Charcoal | Base, plain floors, labels, rib bodies | Base and walls |
-| 2 | Ivory | Grid caps, DW/KEY/start backgrounds | Starting markers, underside artwork |
-| 3 | Teal | DL/TL backgrounds | Pocket floors and joint tops |
-| 4 | Gold | TW backgrounds | Six corner rings |
+| Model | Slot 1 | Slot 2 | Slot 3 | Slot 4 |
+|---|---|---|---|---|
+| BUZZLE board | Black base, labels, ribs | White caps, DW/KEY/start | Blue DL/TL | Yellow TW |
+| Othello board | Black frame, markers, rings | Yellow floors, joint tops, underside logo | — | — |
+| Word tiles | Yellow bodies | Black lettering/logos | — | — |
+| Othello pieces | Black | White | — | — |
 
-Import a board 3MF as one assembly with aligned parts. Assign the filaments
-using `[Slot N - Color]` part names if the slicer does not apply its embedded
-colors. Several parts can share one filament slot.
+The updated 3MFs include visible surface colors and explicit filament assignments.
+Read the [Snapmaker and Printables color import guide](docs/3MF_COLOR_IMPORT.md).
+Import each file as one multipart assembly. Part names include their slot and
+color; the material preset dropdown (such as `Dave PETG`) remains your choice.
 
 ## What to print
 

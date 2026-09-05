@@ -35,8 +35,8 @@ TOWER_GAP = 5.0
 WIDTH = BED - 2*MARGIN - TOWER - TOWER_GAP
 HEIGHT = BED - 2*MARGIN
 JOINT_CLEARANCE = 0.20
-COLORS = ["#23272B", "#F2EADB", "#2C7A73", "#E3AF45"]
-NAMES = ["Charcoal", "Ivory", "Teal", "Gold"]
+COLORS = ["#000000", "#FFFFFF", "#0077CC", "#FFFF00"]
+NAMES = ["Black", "White", "Blue", "Yellow"]
 
 
 def clean(p):

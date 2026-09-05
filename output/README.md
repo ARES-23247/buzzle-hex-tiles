@@ -3,6 +3,11 @@
 **Start here. All current tiles are 1.3 inches / 33.02 mm across flats.**
 Boards are arranged for a **270 × 270 mm bed** and use at most **four colors**.
 
+**Colors:** yellow/black word tiles; black/yellow Othello board with black/white
+pieces; black/white/blue/yellow BUZZLE board. The corrected 3MFs include surface
+colors, named parts, and filament-slot assignments.
+[Snapmaker and Printables import help](../docs/3MF_COLOR_IMPORT.md).
+
 Both boards now use the **v2_sturdy** design: **2.2 mm dividers**, **2.8 mm floors**,
 and deeper pockets. BUZZLE is 5.8 mm tall with 3 mm pockets; Othello is 5.2 mm tall
 with 2.4 mm pockets. Tile sizes are unchanged. Print a complete new set because

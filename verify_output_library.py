@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parent
 def verify():
     documents = [ROOT/name for name in ['README.md', 'PRINTING_COLOR_GUIDE.md',
                  'GAMES_AND_RULES.md', 'BUZZLE_217_BOARD_SPECIFICATION.md',
-                 'GEMINI.md', 'docs/DEVELOPMENT.md', 'archive/README.md']]
+                 'GEMINI.md', 'docs/DEVELOPMENT.md', 'docs/3MF_COLOR_IMPORT.md', 'archive/README.md']]
     documents += list((ROOT/'output').rglob('*.md'))
     broken, checked = [], 0
     for document in documents:

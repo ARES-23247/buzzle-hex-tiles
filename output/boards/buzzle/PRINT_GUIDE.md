@@ -38,14 +38,17 @@ is **248.8 × 248.8 mm** in its supplied orientation; outer sections are
 at most **198.1 × 235.3 mm**, including their connectors. The exposed outer
 rim is strengthened by an extra 0.7 mm; shared seams and pocket sizes are unchanged.
 
+Read the [color import guide](../../../docs/3MF_COLOR_IMPORT.md) for the corrected
+part labels, filament assignments, and Printables preview information.
+
 ## Four-color setup
 
 | Slot | Color | Parts |
 |---|---|---|
-| 1 | Charcoal | Foundation, plain pocket floors, labels, rib bodies |
-| 2 | Ivory | Grid caps, DW, KEY, and start backgrounds |
-| 3 | Teal | DL and TL backgrounds |
-| 4 | Gold | TW backgrounds |
+| 1 | Black | Foundation, plain pocket floors, labels, rib bodies |
+| 2 | White | Grid caps, DW, KEY, and start backgrounds |
+| 3 | Blue | DL and TL backgrounds |
+| 4 | Yellow | TW backgrounds |
 
 Load each 3MF as one assembly with aligned parts. Assign filaments by the
 `[Slot N - Color]` part names if the slicer does not map embedded colors
@@ -54,7 +57,7 @@ The preview's white captions and gray section numbers are annotations.
 
 Print **flat, pockets upward**, with a 0.20 mm layer height and 0.20 mm first
 layer. Colored backgrounds occupy Z=2.0–2.8 mm and flush labels Z=2.4–2.8 mm.
-Rib bodies occupy Z=2.8–5.4 mm in charcoal; their ivory caps occupy
+Rib bodies occupy Z=2.8–5.4 mm in black; their white caps occupy
 Z=5.4–5.8 mm. The caps make every pocket easy to see and require only a
 single-color final phase. Most of the board height needs one color at a time.
 Do not flip this recessed board face-down using the tile instructions.

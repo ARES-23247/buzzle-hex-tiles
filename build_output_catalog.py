@@ -22,8 +22,10 @@ def render_tile(source, destination, title):
     for obj in model.findall('.//{*}object'):
         if obj.find('{*}mesh') is None:
             continue
-        name = obj.get('name', '')
-        color = IVORY if ('Ivory' in name or 'Base' in name) else CHARCOAL
+        resource = model.find(f'.//{{*}}basematerials[@id="{obj.get("pid")}"]')
+        if resource is None:
+            raise ValueError(f'Missing embedded display colors: {source}')
+        color = list(resource)[int(obj.get('pindex'))].get('displaycolor')[:7]
         vertices = np.array([[float(v.get(a)) for a in 'xyz'] for v in obj.findall('.//{*}vertex')])
         faces = np.array([[int(f.get(a)) for a in ['v1', 'v2', 'v3']] for f in obj.findall('.//{*}triangle')])
         for points in vertices[faces]:
@@ -59,10 +61,10 @@ def tile_guide(family, title, source):
 
 ![Front and back](images/tile_front_back.png)
 
-These are the retained tile exports; their geometry was not resized during
-the folder cleanup. Import each 3MF as a single assembly and assign its named
-parts to filaments. The board's four-filament palette includes ivory and
-charcoal, which can also be used for these two-color tiles.
+The retained geometry is unchanged. Colors and explicit filament-slot labels
+are now embedded in the 3MF files. Word tiles use yellow bodies with black
+lettering/logos; Othello pieces use black and white.
+Read the [color import guide](../../../docs/3MF_COLOR_IMPORT.md) before importing.
 
 ## Individual files
 
@@ -92,6 +94,11 @@ def build():
 
 **Start here. All current tiles are 1.3 inches / 33.02 mm across flats.**
 Boards are arranged for a **270 × 270 mm bed** and use at most **four colors**.
+
+**Colors:** yellow/black word tiles; black/yellow Othello board with black/white
+pieces; black/white/blue/yellow BUZZLE board. The corrected 3MFs include surface
+colors, named parts, and filament-slot assignments.
+[Snapmaker and Printables import help](../docs/3MF_COLOR_IMPORT.md).
 
 Both boards now use the **v2_sturdy** design: **2.2 mm dividers**, **2.8 mm floors**,
 and deeper pockets. BUZZLE is 5.8 mm tall with 3 mm pockets; Othello is 5.2 mm tall

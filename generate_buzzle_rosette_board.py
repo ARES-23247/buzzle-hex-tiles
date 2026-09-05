@@ -84,8 +84,9 @@ def make_dovetail_polygon(cx, cy, angle_deg, is_male=True):
 
 def export_multimaterial_3mf(filepath, parts_list, assembly_name="BUZZLE_Assembly", palette=None):
     """
-    Exports a 4-color multi-material 3MF package with embedded 3MF Material Extension (m:colorgroup)
-    and Snapmaker Orca / OrcaSlicer optimized object labels.
+    Exports up to four colors with surface colors and explicit Snapmaker/Orca
+    part names and filament assignments. The palette below is the legacy default;
+    current generators supply their own palettes.
     
     parts_list is a list of tuples: (part_name, mesh, color_index)
       color_index:
@@ -120,12 +121,12 @@ def export_multimaterial_3mf(filepath, parts_list, assembly_name="BUZZLE_Assembl
     ]
     
     if palette is not None:
-        if len(palette) != 4:
-            raise ValueError("Palette must contain exactly four colors")
+        if not 1 <= len(palette) <= 4:
+            raise ValueError("Palette must contain one to four colors")
         for index, color in enumerate(palette):
             if len(color) != 7 or color[0] != "#" or any(c not in "0123456789abcdefABCDEF" for c in color[1:]):
                 raise ValueError("Palette colors must be #RRGGBB values")
-            model_lines[6 + index] = f'      <m:color color="{color}FF"/>'
+        model_lines[6:10] = [f'      <m:color color="{color}FF"/>' for color in palette]
 
     obj_id = 1
     comp_ids = []
@@ -133,7 +134,7 @@ def export_multimaterial_3mf(filepath, parts_list, assembly_name="BUZZLE_Assembl
     for name, mesh, c_idx in parts_list:
         if mesh is None or len(mesh.vertices) == 0:
             continue
-        if c_idx not in range(4):
+        if c_idx not in range(len(palette) if palette else 4):
             raise ValueError("Only four material slots are supported")
         model_lines.append(f'    <object id="{obj_id}" name={quoteattr(name)} type="model" pid="100" pindex="{c_idx}">')
         model_lines.append('      <mesh>')
@@ -170,6 +171,17 @@ def export_multimaterial_3mf(filepath, parts_list, assembly_name="BUZZLE_Assembl
         zf.writestr('[Content_Types].xml', content_types_xml)
         zf.writestr('_rels/.rels', rels_xml)
         zf.writestr('3D/3dmodel.model', model_xml)
+
+    from three_mf_colors import add_color_metadata
+    import re
+    palette = palette or ['#1F212B', '#AEEA00', '#E91E63', '#00E5FF']
+    names = []
+    for slot in range(len(palette)):
+        label = next((re.search(r'\[Slot \d+ - ([^]]+)\]', name)
+                      for name, mesh, color in parts_list if color == slot), None)
+        fallback = {'#000000': 'Black', '#FFFFFF': 'White', '#0077CC': 'Blue', '#FFFF00': 'Yellow'}
+        names.append(label.group(1) if label else fallback.get(palette[slot].upper(), f'Color {slot+1}'))
+    add_color_metadata(filepath, palette, names)
 
 def generate_all_7_plates():
     font_path = find_default_font()

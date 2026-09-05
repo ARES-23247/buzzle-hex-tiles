@@ -42,31 +42,29 @@ for a **40 × 40 mm purge tower at X=225–265, Y=225–265**. The slicer create
 the tower. Retain the supplied placement, or recheck clearance after using
 automatic arrangement or adding a larger tower/brim.
 
-## Same four filaments as BUZZLE
+## Two-color setup: black and yellow
 
 | Slot | Color | Parts |
 |---|---|---|
-| 1 | Charcoal | Frame, walls, structural base |
-| 2 | Ivory | Starting markers and original underside ARES 23247 artwork |
-| 3 | Teal | Pocket floors and flush joint tops |
-| 4 | Gold | Six corner rings |
+| 1 | Black | Frame, walls, structural base, starting markers, six corner rings |
+| 2 | Yellow | Pocket floors, flush joint tops, original underside ARES 23247 artwork |
 
-Ivory **filled circles** indicate the three ivory-side starting pieces;
-ivory **hollow circles** indicate the three charcoal-side starting pieces.
-The center remains empty in the illustrated six-piece opening. These markers
-are flush and do not interfere with pieces. The six gold corner rings match
-the six corner locations shown in the original board preview; the old mesh
-had additional rings away from those corners.
+Black **filled circles** indicate the three white-side starting pieces;
+black **hollow circles** indicate the three black-side starting pieces.
+The center stays empty in the illustrated six-piece opening. The markers and
+corner rings are flush. Reversible playing pieces remain black and white.
 
 Color changes are confined to the 0.8 mm underside inlay region and the
-0.8 mm pocket-floor region (Z=2.0–2.8 mm). The middle layer and the final walls
-(Z=2.8–5.2 mm) are charcoal.
-The exposed perimeter has an extra 0.7 mm of material for a stronger rim.
+0.8 mm pocket-floor region (Z=2.0–2.8 mm). The middle layer and final walls
+(Z=2.8–5.2 mm) are black. The perimeter has an extra 0.7 mm of material.
+
+Read the [color import guide](../../../docs/3MF_COLOR_IMPORT.md) for the corrected
+part labels, filament assignments, and Printables preview information.
 
 ## Validation and source
 
 The four sections and fit test have been checked for closed, consistently
-oriented mesh solids, valid 3MF XML, four-color assignments, non-overlapping
+oriented mesh solids, valid 3MF XML, two-color assignments, non-overlapping
 material volumes, pocket fit, mating-joint clearance, and bed/tower clearance.
 They have **not been sliced or physically printed here**.
 

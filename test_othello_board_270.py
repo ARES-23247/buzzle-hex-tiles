@@ -84,7 +84,7 @@ class OthelloBoardTests(unittest.TestCase):
                     faces=np.array([[int(f.get(a)) for a in ['v1','v2','v3']] for f in obj.findall('.//{*}triangle')])
                     mesh=trimesh.Trimesh(vertices,faces,process=True)
                     self.assertTrue(mesh.is_volume,obj.get('name'))
-                    self.assertIn(int(obj.get('pindex')),range(4))
+                    self.assertIn(int(obj.get('pindex')),range(2))
                     self.assertTrue(np.all(mesh.bounds[0]>=[5,5,0]))
                     self.assertTrue(np.all(mesh.bounds[1]<=[265,265,board.TOTAL_HEIGHT]))
 

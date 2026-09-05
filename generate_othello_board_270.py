@@ -5,11 +5,13 @@ from pathlib import Path
 
 from shapely.geometry import Polygon, Point
 
-from generate_board_270 import clean, union, tongue_between, placement, placed, strengthen_outer_rim, thickness_preview, COLORS, NAMES
+from generate_board_270 import clean, union, tongue_between, placement, placed, strengthen_outer_rim, thickness_preview
 from generate_buzzle_rosette_board import extrude_poly, export_multimaterial_3mf
 from render_new_buzzle_board import make_flat_hex_pts
 
 OUTPUT = Path(__file__).resolve().parent / 'output/boards/othello'
+COLORS = ['#000000', '#FFFF00']
+NAMES = ['Black', 'Yellow']
 SOURCE = Path(__file__).resolve().parent / 'assets/artwork/ares_23247_underside.geojson'
 TILE_FLAT, POCKET_FLAT = 33.02, 33.50
 DIVIDER_WIDTH = 2.2
@@ -84,7 +86,7 @@ def layers(s,logo):
         if dist==4 and 0 in coord:
             anchors.append(center.buffer(9,quad_segs=24).difference(center.buffer(7.8,quad_segs=24)))
         if dist==1:
-            # Alternating filled/hollow ivory circles identify the two starting sides.
+            # Alternating filled/hollow black circles identify the two starting sides.
             angle=round(math.degrees(math.atan2(c['cy'],c['cx'])))%360
             disc=center.buffer(4.5,quad_segs=24)
             starts.append(disc if angle in (90,210,330) else disc.difference(center.buffer(3.3,quad_segs=24)))
@@ -95,10 +97,10 @@ def layers(s,logo):
         (1,'ARES 23247 underside inlay',logo,0,.8),
         (0,'Solid middle floor',footprint,.8,round(FLOOR_HEIGHT-INLAY_DEPTH,2)),
         (0,'Honeycomb walls',walls,round(FLOOR_HEIGHT-INLAY_DEPTH,2),TOTAL_HEIGHT),
-        (2,'Joint tops',footprint.difference(s['original']),round(FLOOR_HEIGHT-INLAY_DEPTH,2),FLOOR_HEIGHT),
-        (2,'Pocket floors',pockets.difference(union([anchors,starts])),round(FLOOR_HEIGHT-INLAY_DEPTH,2),FLOOR_HEIGHT),
-        (1,'Starting side markers',starts,round(FLOOR_HEIGHT-INLAY_DEPTH,2),FLOOR_HEIGHT),
-        (3,'Six corner anchors',anchors,round(FLOOR_HEIGHT-INLAY_DEPTH,2),FLOOR_HEIGHT)] if not p.is_empty]
+        (1,'Joint tops',footprint.difference(s['original']),round(FLOOR_HEIGHT-INLAY_DEPTH,2),FLOOR_HEIGHT),
+        (1,'Pocket floors',pockets.difference(union([anchors,starts])),round(FLOOR_HEIGHT-INLAY_DEPTH,2),FLOOR_HEIGHT),
+        (0,'Starting side markers',starts,round(FLOOR_HEIGHT-INLAY_DEPTH,2),FLOOR_HEIGHT),
+        (0,'Six corner anchors',anchors,round(FLOOR_HEIGHT-INLAY_DEPTH,2),FLOOR_HEIGHT)] if not p.is_empty]
 
 
 def parts(s,record,logo):
@@ -117,13 +119,13 @@ def preview(sections,records,logo):
         if p.is_empty:return
         for g in [p] if isinstance(p,Polygon) else p.geoms:
             ax.add_patch(Patch(g.exterior.coords,facecolor=color,edgecolor='none'))
-            for hole in g.interiors:ax.add_patch(Patch(hole.coords,facecolor=COLORS[2],edgecolor='none'))
+            for hole in g.interiors:ax.add_patch(Patch(hole.coords,facecolor=COLORS[1],edgecolor='none'))
     for s in sections:
         draw(axes[0],s['footprint'],COLORS[0])
         for color,name,p,z0,z1 in layers(s,logo):
             if z1==FLOOR_HEIGHT:draw(axes[0],p,COLORS[color])
         p=s['original'].representative_point()
-        axes[0].text(p.x,p.y,str(s['index']+1),color='#FFFFFF',fontsize=14,ha='center')
+        axes[0].text(p.x,p.y,str(s['index']+1),color='#777777',fontsize=14,ha='center')
     axes[0].set_xlim(-165,165);axes[0].set_ylim(-190,190)
     axes[0].set_title('HEX OTHELLO · 61 CELLS · FOUR SECTIONS',color='white',fontsize=13)
     axes[0].text(0,-178,'1.3-inch pieces unchanged · 33.5 mm pockets\nFilled / hollow markers: the two starting sides',color='white',ha='center',fontsize=10)

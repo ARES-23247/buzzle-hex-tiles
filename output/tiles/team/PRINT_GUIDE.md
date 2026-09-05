@@ -4,10 +4,10 @@
 
 ![Front and back](images/tile_front_back.png)
 
-These are the retained tile exports; their geometry was not resized during
-the folder cleanup. Import each 3MF as a single assembly and assign its named
-parts to filaments. The board's four-filament palette includes ivory and
-charcoal, which can also be used for these two-color tiles.
+The retained geometry is unchanged. Colors and explicit filament-slot labels
+are now embedded in the 3MF files. Word tiles use yellow bodies with black
+lettering/logos; Othello pieces use black and white.
+Read the [color import guide](../../../docs/3MF_COLOR_IMPORT.md) before importing.
 
 ## Individual files
 

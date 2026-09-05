@@ -1,0 +1,234 @@
+{
+  "baseline_commit": "39ad1dc8a51c50934424230aa5232c27f7e427c7",
+  "purpose": "Color and part-metadata update; all original vertices, triangle indices, assembly references and transforms unchanged",
+  "files": [
+    {
+      "file": "output/boards/othello/plates/Plate_01_Top_Left.3mf",
+      "geometry_sha256": "b39b98da772e2862012e863d0f61ea53644be6edf222df88fb926ceb444356bb"
+    },
+    {
+      "file": "output/boards/othello/plates/Plate_02_Top_Right.3mf",
+      "geometry_sha256": "147471c8906ce7bbfe13bed27c78c2f0cc20802dee081f45b7981f2187253562"
+    },
+    {
+      "file": "output/boards/othello/plates/Plate_03_Bottom_Left.3mf",
+      "geometry_sha256": "ec7000a813c6896922dde7fc25bd002798add47ac145b6dfe3e9f0de372c6bc7"
+    },
+    {
+      "file": "output/boards/othello/plates/Plate_04_Bottom_Right.3mf",
+      "geometry_sha256": "27593dc2d1651d6e936176ed29f1fd02eb05cc5e58f36fa4d16f84deda6678ae"
+    },
+    {
+      "file": "output/boards/othello/plates/PRINT_FIRST_Pocket_and_Joint_Test.3mf",
+      "geometry_sha256": "8359471e56f45c549293ff461a8bd8d6718a3278bacee1334e1081f050673ef9"
+    },
+    {
+      "file": "output/boards/buzzle/plates/Plate_01_Center_Hub.3mf",
+      "geometry_sha256": "d10bd51ed4faef218a24c847c8d2a990fd680a77148f357934daa103da08a880"
+    },
+    {
+      "file": "output/boards/buzzle/plates/Plate_02_Sector_000_060.3mf",
+      "geometry_sha256": "010adeae60c93734c8f2c2212bd5467d16b6df54b8d9eeaa2c22a59410eb0d1d"
+    },
+    {
+      "file": "output/boards/buzzle/plates/Plate_03_Sector_060_120.3mf",
+      "geometry_sha256": "9a1d5778de405f1422cae80b72ada11b5ffabc7c53fca3dfd3aba729309de63d"
+    },
+    {
+      "file": "output/boards/buzzle/plates/Plate_04_Sector_120_180.3mf",
+      "geometry_sha256": "ada437ce4acee5b8a765a6d2887729a6bb88f0ffc7fc8c0d9898bb2b88ab3bab"
+    },
+    {
+      "file": "output/boards/buzzle/plates/Plate_05_Sector_180_240.3mf",
+      "geometry_sha256": "3da9b3b6beac490211673b90134ec04f71f7289f6080b3fead2e4ea3117db0bb"
+    },
+    {
+      "file": "output/boards/buzzle/plates/Plate_06_Sector_240_300.3mf",
+      "geometry_sha256": "fade3c090055edf1d190871f8656444acf9711916f81b673e2ecd17d2a2553dd"
+    },
+    {
+      "file": "output/boards/buzzle/plates/Plate_07_Sector_300_360.3mf",
+      "geometry_sha256": "d5180385e97d9569e4479e978c5d2bf4418aecbff77c9dab2e8ba1dd06d04cca"
+    },
+    {
+      "file": "output/boards/buzzle/plates/PRINT_FIRST_Pocket_and_Joint_Test.3mf",
+      "geometry_sha256": "fae5608b10a1ee7c7cf6106acf532e871593523df20bac5199bef0fb93884f27"
+    },
+    {
+      "file": "output/tiles/team/3mf/tile_team_spartan_token.3mf",
+      "geometry_sha256": "5bfd45d1aeef15bb139ebf2ca2879a0db9c4a4beba85806f46a2c6c0224f667b"
+    },
+    {
+      "file": "output/tiles/team/plates/plate_256_team_hiveswarm_144set_plate1_of_6_24tiles.3mf",
+      "geometry_sha256": "f69c235b9e06ddb47ac6cfb6f6402e6e5f0dfa1eec84a457dd38919999de68c8"
+    },
+    {
+      "file": "output/tiles/team/plates/plate_256_team_hiveswarm_144set_plate2_of_6_24tiles.3mf",
+      "geometry_sha256": "823928f2974961ca724b21b54c39f81380f5a0f9bbd9448311599896879f5faf"
+    },
+    {
+      "file": "output/tiles/team/plates/plate_256_team_hiveswarm_144set_plate3_of_6_24tiles.3mf",
+      "geometry_sha256": "462c8a12dd69d7bb16485df29950f810aece28e0a8aa466ce8a618e67c5b6ddc"
+    },
+    {
+      "file": "output/tiles/team/plates/plate_256_team_hiveswarm_144set_plate4_of_6_24tiles.3mf",
+      "geometry_sha256": "1e9a52fbf2e141894205a789fcac58b8a97ab4b9fa600a9aae372f1a0383730a"
+    },
+    {
+      "file": "output/tiles/team/plates/plate_256_team_hiveswarm_144set_plate5_of_6_24tiles.3mf",
+      "geometry_sha256": "93a588bad5b433f0e7cef00068f4f95e9135e81cc70ceef7a05c847254696546"
+    },
+    {
+      "file": "output/tiles/team/plates/plate_256_team_hiveswarm_144set_plate6_of_6_24tiles.3mf",
+      "geometry_sha256": "39a6597ac568aa8eada78475f5a138671fb776784b37cd93de50855e28eef5a9"
+    },
+    {
+      "file": "output/tiles/team/plates/plate_256_team_numbers_and_math_26tiles.3mf",
+      "geometry_sha256": "9121c8b2d662eb583d12b8c51671d74c2bd2f3cdec5ff989fe725a257afe188d"
+    },
+    {
+      "file": "output/tiles/team/plates/plate_256_team_scrabble_100set_plate1_of_4_25tiles.3mf",
+      "geometry_sha256": "d222e4baf75d6b0ce503d653a05681d5ec883b8092acaad3f6a0318df2998aca"
+    },
+    {
+      "file": "output/tiles/team/plates/plate_256_team_scrabble_100set_plate2_of_4_25tiles.3mf",
+      "geometry_sha256": "78b8f47b82d95dc21a303d149e66577bb4c842a799ea321108de059f71b563bd"
+    },
+    {
+      "file": "output/tiles/team/plates/plate_256_team_scrabble_100set_plate3_of_4_25tiles.3mf",
+      "geometry_sha256": "71c7e9adea015f34e2d98c51174847df54e5e2899c23d3cdfddef49562d5d38c"
+    },
+    {
+      "file": "output/tiles/team/plates/plate_256_team_scrabble_100set_plate4_of_4_25tiles.3mf",
+      "geometry_sha256": "5892f2907c23bc8e0628458e0f6e99083b146d70e6249bfe3687faaf160d8301"
+    },
+    {
+      "file": "output/tiles/othello/3mf/hex_othello_piece_single.3mf",
+      "geometry_sha256": "6aa3890a679624cd805583f5874f315845dc3fe49ee53283d6a49ff6dd6b1f49"
+    },
+    {
+      "file": "output/tiles/othello/plates/plate_30_pieces_print_twice.3mf",
+      "geometry_sha256": "9bec3c5943d619a494bfa18f9216ba68b11fda410a91de7ffc8e694171630b5c"
+    },
+    {
+      "file": "output/tiles/interlocking/3mf/tile_doublesided_interlocking_A_score1.3mf",
+      "geometry_sha256": "f9078ffad1d5bb6c0e22b85ec4c89f369d00ddd6df7b88611a4ddb1904072ae2"
+    },
+    {
+      "file": "output/tiles/interlocking/3mf/tile_interlocking_token.3mf",
+      "geometry_sha256": "4b8a570ac828d3ca0b764b053b76a5ea7736bc98a42a5dbb2e4165e6b66dd44e"
+    },
+    {
+      "file": "output/tiles/interlocking/plates/plate_256_board_interlocking_quadrant_q1_top_left.3mf",
+      "geometry_sha256": "70a0d9b7a4255e6d998aa6a84ff8089aaf641b4ebee6ecb7ddedfcff04151fe6"
+    },
+    {
+      "file": "output/tiles/interlocking/plates/plate_256_board_interlocking_quadrant_q2_top_right.3mf",
+      "geometry_sha256": "0155341eb637d8e5b31fffd2bd985fff91bf45ec57e108a9f966871b26e72967"
+    },
+    {
+      "file": "output/tiles/interlocking/plates/plate_256_board_interlocking_quadrant_q3_bottom_left.3mf",
+      "geometry_sha256": "bc415b1903eadb7186375f943a6887651722f6668160adff5045ac671de114fb"
+    },
+    {
+      "file": "output/tiles/interlocking/plates/plate_256_board_interlocking_quadrant_q4_bottom_right.3mf",
+      "geometry_sha256": "2b62e4158acc0bc3f2403d42280bf833d1f3f5de410bfce6270a2ae61bad74d1"
+    },
+    {
+      "file": "output/tiles/interlocking/plates/plate_256_interlocking_hiveswarm_144set_plate1_of_6_24tiles.3mf",
+      "geometry_sha256": "aa251b8f22cb2d227b877f023248132dc9e303455c243e363d53f3e75b6a8dfc"
+    },
+    {
+      "file": "output/tiles/interlocking/plates/plate_256_interlocking_hiveswarm_144set_plate2_of_6_24tiles.3mf",
+      "geometry_sha256": "9dbed0897ea835c2a6aea581b16c3441b9bdf91b3fa0535a5cd4c0f7b5dfde68"
+    },
+    {
+      "file": "output/tiles/interlocking/plates/plate_256_interlocking_hiveswarm_144set_plate3_of_6_24tiles.3mf",
+      "geometry_sha256": "35a4b0cca1b6d5205c9f0fc5bd8d220b55ca64788c35541fba29dafe9f95a164"
+    },
+    {
+      "file": "output/tiles/interlocking/plates/plate_256_interlocking_hiveswarm_144set_plate4_of_6_24tiles.3mf",
+      "geometry_sha256": "77e15569550b9f59a4aa07f6b8f0acfa18f6f2ad2ca2444e805b671b97274e88"
+    },
+    {
+      "file": "output/tiles/interlocking/plates/plate_256_interlocking_hiveswarm_144set_plate5_of_6_24tiles.3mf",
+      "geometry_sha256": "b766331a80f9654fda2ae6d4378f55e7543984abf1b8ebf0f4dff7d71cb8359a"
+    },
+    {
+      "file": "output/tiles/interlocking/plates/plate_256_interlocking_hiveswarm_144set_plate6_of_6_24tiles.3mf",
+      "geometry_sha256": "119d0a1f97d051b0a503270991369f323078e7967beef64a445443d0c0d0d27b"
+    },
+    {
+      "file": "output/tiles/interlocking/plates/plate_256_interlocking_numbers_and_math_26tiles.3mf",
+      "geometry_sha256": "cdecb38bc6477ca50d4d0ae5fa36878a1d1ff315955e13c12b42d302614c1412"
+    },
+    {
+      "file": "output/tiles/interlocking/plates/plate_256_interlocking_scrabble_100set_plate1_of_4_25tiles.3mf",
+      "geometry_sha256": "5d14ae8e4c572c579f665f581c59f9a0c4c215aa4bebeefae75c02bbbfe3ab0f"
+    },
+    {
+      "file": "output/tiles/interlocking/plates/plate_256_interlocking_scrabble_100set_plate2_of_4_25tiles.3mf",
+      "geometry_sha256": "95edf71ffd3fff00cbba70183e10dd1b7968695af8dc1c0c8fcfb4f50643bebe"
+    },
+    {
+      "file": "output/tiles/interlocking/plates/plate_256_interlocking_scrabble_100set_plate3_of_4_25tiles.3mf",
+      "geometry_sha256": "96ed66abe906c9a4b3d10d54ff059a80e1912cb90905de0e93bc3366d7ea65db"
+    },
+    {
+      "file": "output/tiles/interlocking/plates/plate_256_interlocking_scrabble_100set_plate4_of_4_25tiles.3mf",
+      "geometry_sha256": "13e67b4c0185c0c986f530d5bb4067be72edf0334a464c29233065ee74d8ac56"
+    },
+    {
+      "file": "output/tiles/biobuzz/3mf/tile_biobuzz_token.3mf",
+      "geometry_sha256": "c7221c6a607efa42aeca31cb4b74dd274383dee9e934944c0b2dc873b4d6c480"
+    },
+    {
+      "file": "output/tiles/biobuzz/3mf/tile_doublesided_biobuzz_A_score1.3mf",
+      "geometry_sha256": "3681ad049da3d64ae769b66386854d010af7737c148154cf6cf07b1622eda159"
+    },
+    {
+      "file": "output/tiles/biobuzz/plates/plate_256_biobuzz_hiveswarm_144set_plate1_of_6_24tiles.3mf",
+      "geometry_sha256": "8d37ac1f1d985be826fdcda11869de9dfe908332312ef5355eb3772d7b46f6ee"
+    },
+    {
+      "file": "output/tiles/biobuzz/plates/plate_256_biobuzz_hiveswarm_144set_plate2_of_6_24tiles.3mf",
+      "geometry_sha256": "8eac145f26e4393551138c42e5d71d78642c9ada12908c4587ca58aacc0d30eb"
+    },
+    {
+      "file": "output/tiles/biobuzz/plates/plate_256_biobuzz_hiveswarm_144set_plate3_of_6_24tiles.3mf",
+      "geometry_sha256": "35a76bbdba07569f7ebb18458e0bde2a7885d146b614b1c42c1b6159c7a786c2"
+    },
+    {
+      "file": "output/tiles/biobuzz/plates/plate_256_biobuzz_hiveswarm_144set_plate4_of_6_24tiles.3mf",
+      "geometry_sha256": "6e3006120fcc5d1abce6d2ba5d55c71bc82c2b44b17d3fc7467882a73a910524"
+    },
+    {
+      "file": "output/tiles/biobuzz/plates/plate_256_biobuzz_hiveswarm_144set_plate5_of_6_24tiles.3mf",
+      "geometry_sha256": "d30c798ebcfa06f0c2a743fdef115f45942dfb9b94680d8a633c48607459c4f8"
+    },
+    {
+      "file": "output/tiles/biobuzz/plates/plate_256_biobuzz_hiveswarm_144set_plate6_of_6_24tiles.3mf",
+      "geometry_sha256": "b1471edcc25a4bec5e440ee66959f84e3615c3b59d6e22c2bb0354030629d938"
+    },
+    {
+      "file": "output/tiles/biobuzz/plates/plate_256_biobuzz_numbers_and_math_26tiles.3mf",
+      "geometry_sha256": "5a6609a1b8a1b317ec69f089fe1f5457ed6e86727c86fa6a8f8d300471491a4c"
+    },
+    {
+      "file": "output/tiles/biobuzz/plates/plate_256_biobuzz_scrabble_100set_plate1_of_4_25tiles.3mf",
+      "geometry_sha256": "b378e564c789d878162ddd11459817414c69e6a515533d8675f3e77dd2dd1f87"
+    },
+    {
+      "file": "output/tiles/biobuzz/plates/plate_256_biobuzz_scrabble_100set_plate2_of_4_25tiles.3mf",
+      "geometry_sha256": "e07fdd4adc575f8639a57b5c2da010d74ab1c87be171c9a45a4acf1d485fc733"
+    },
+    {
+      "file": "output/tiles/biobuzz/plates/plate_256_biobuzz_scrabble_100set_plate3_of_4_25tiles.3mf",
+      "geometry_sha256": "3fd3a914f4a11900835ebd9ba48864dbe564cb8ec7fa4a84a881bce3d2d1c2e5"
+    },
+    {
+      "file": "output/tiles/biobuzz/plates/plate_256_biobuzz_scrabble_100set_plate4_of_4_25tiles.3mf",
+      "geometry_sha256": "c763e1b73990f9c026e7ae42fc97294eed05a915957f818d1a1a34be9ec36dcf"
+    }
+  ]
+}
