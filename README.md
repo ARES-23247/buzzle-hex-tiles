@@ -8,8 +8,8 @@ Open the **[visual print library](output/README.md)** for the current boards,
 matching tile sets, pictures, file links, and quantities.
 
 - [BUZZLE board](output/boards/buzzle/PRINT_GUIDE.md): 217 cells, seven sections.
-- BUZZELLO: [Classic, 61 cells](output/boards/othello-classic/PRINT_GUIDE.md) or [Large, 91 cells](output/boards/othello/PRINT_GUIDE.md). Four sections each, STL and 3MF downloads, same 1.3-inch pieces.
-- Complete BUZZELLO download bundles: [Classic STL + 3MF ZIP](docs/publishing/packages/BUZZELLO_Classic_61_STL_and_3MF.zip) · [Large STL + 3MF ZIP](docs/publishing/packages/BUZZELLO_Large_91_STL_and_3MF.zip).
+- BUZZELLO: [Large, 91 cells (preferred default)](output/boards/othello/PRINT_GUIDE.md) or [Classic, 61 cells](output/boards/othello-classic/PRINT_GUIDE.md). We prefer the 91-cell board — it plays better. Four sections each, STL and 3MF downloads, same 1.3-inch pieces.
+- Complete BUZZELLO download bundles: [Large STL + 3MF ZIP (preferred)](docs/publishing/packages/BUZZELLO_Large_91_STL_and_3MF.zip) · [Classic STL + 3MF ZIP](docs/publishing/packages/BUZZELLO_Classic_61_STL_and_3MF.zip).
 - [BUZZHEX board](output/boards/buzzhex/PRINT_GUIDE.md): 11 × 11 Hex, 121 cells,
   six sections, reuses Buzzello tiles.
 - [BUZZHEX website-agent prompt](docs/BUZZHEX_WEBSITE_AGENT_PROMPT.md).

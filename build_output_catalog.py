@@ -119,18 +119,21 @@ physical fit verification is pending.
 
 [Print guide](boards/buzzle/PRINT_GUIDE.md) · [Fit-test 3MF](boards/buzzle/plates/PRINT_FIRST_Pocket_and_Joint_Test.3mf) · [Plates](boards/buzzle/plates/)
 
-## BUZZELLO · Classic and Large · 4 sections each
+## BUZZELLO · Preferred Large 91 and Classic 61 · 4 sections each
+
+We prefer the 91-cell board — it plays better. Large is the default edition;
+Classic remains available as the smaller alternative.
 
 | Edition | Cells | Assembled size | Files |
 |---|---:|---|---|
+| Large (preferred) | 91 | 351.8 × 394.1 mm | [Guide and 3MFs](boards/othello/PRINT_GUIDE.md) · [STLs](boards/othello/stl/README.md) |
 | Classic | 61 | 289.9 × 322.7 mm | [Guide and 3MFs](boards/othello-classic/PRINT_GUIDE.md) · [STLs](boards/othello-classic/stl/README.md) |
-| Large | 91 | 351.8 × 394.1 mm | [Guide and 3MFs](boards/othello/PRINT_GUIDE.md) · [STLs](boards/othello/stl/README.md) |
 
 ![Othello board and bed layout](boards/othello/images/board_and_bed_preview.png)
 
 [Print guide](boards/othello/PRINT_GUIDE.md) · [Fit-test 3MF](boards/othello/plates/PRINT_FIRST_Pocket_and_Joint_Test.3mf) · [Reversible pieces](tiles/othello/PRINT_GUIDE.md)
 
-The v4 board adds a 30-cell outer ring around the original 61 cells. It uses
+The Large board adds a 30-cell outer ring around the original 61 cells. It uses
 the same 1.3-inch pieces and four larger sections. Print all four as a matching
 set. For 91 pieces, print the 30-piece batch three times plus one single.
 

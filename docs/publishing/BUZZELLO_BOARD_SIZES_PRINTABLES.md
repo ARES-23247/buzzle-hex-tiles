@@ -1,9 +1,10 @@
-# BUZZELLO — Classic & Large Hex Strategy Boards
+# BUZZELLO — Preferred Large 91 & Classic 61 Hex Strategy Boards
 
 Surround, flip, and claim the hive. BUZZELLO brings black-and-yellow strategy to
 the table with chunky reversible pieces and a honeycomb board that keeps every
-move in place. Choose the familiar **Classic 61-cell board** or spread out onto
-the **Large 91-cell board**, which adds a complete outer ring.
+move in place. **We prefer the Large 91-cell board — it plays better.** It is
+our default edition, with a complete outer ring for more room to play. The
+**Classic 61-cell board** remains available if you prefer a smaller board.
 
 Both editions use the same **1.3-inch / 33.02 mm pieces**. Keep your existing
 pieces and print a matching set of four board sections in your chosen size.
@@ -13,14 +14,16 @@ invite someone to a private match, or challenge the computer.
 
 | Edition | Playable cells | Assembled size | Largest section | Full piece supply |
 | --- | --- | --- | --- | --- |
+| Large (preferred) | 91 | 351.8 × 394.1 mm | 197.0 × 214.8 mm | Three 30-piece batches + one single |
 | Classic | 61 | 289.9 × 322.7 mm | 179.4 × 168.6 mm | Two 30-piece batches + one single |
-| Large | 91 | 351.8 × 394.1 mm | 197.0 × 214.8 mm | Three 30-piece batches + one single |
 
 ## Included files
 
-Start with the **BUZZELLO Classic 61 STL and 3MF** or **BUZZELLO Large 91 STL and 3MF**
-ZIP in Other Files. Each ZIP is a complete edition. The separate unprefixed board
-3MF files are the Classic 61-cell edition.
+Start with the **BUZZELLO Large 91 STL and 3MF** ZIP in Other Files — our
+preferred edition. The **BUZZELLO Classic 61 STL and 3MF** ZIP remains available
+as the smaller alternative. Each ZIP is a complete edition. The separate
+unprefixed board 3MF files and BOARD_PRINT_GUIDE are now the **Large 91-cell edition**.
+Download all four sections from the same edition; do not mix Classic and Large sections.
 
 A one-page **BUZZELLO_Rules_Classic_and_Large.pdf** is included for tabletop play.
 Set six alternating pieces around the empty center; Yellow moves first.

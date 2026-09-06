@@ -44,7 +44,7 @@ Play online: https://aresfirst.org/buzzello
         print(f"Verified {target.name}: {target.stat().st_size:,} bytes")
     guides = PACKAGES / "othello"
     guides.mkdir(exist_ok=True)
-    shutil.copyfile(ROOT / "output/boards/othello-classic/PRINT_GUIDE.md", guides / "BOARD_PRINT_GUIDE.txt")
+    shutil.copyfile(ROOT / "output/boards/othello/PRINT_GUIDE.md", guides / "BOARD_PRINT_GUIDE.txt")
     shutil.copyfile(ROOT / "docs/3MF_COLOR_IMPORT.md", guides / "COLOR_IMPORT_GUIDE.txt")
 
 
