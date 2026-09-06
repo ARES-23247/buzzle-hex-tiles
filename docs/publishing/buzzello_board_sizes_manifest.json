@@ -1,5 +1,5 @@
 {
-  "status": "prepared locally; not yet uploaded to Printables",
+  "status": "published; public description and Files page verified September 6, 2026",
   "description": "docs/publishing/BUZZELLO_BOARD_SIZES_PRINTABLES.md",
   "same_piece_across_flats_mm": 33.02,
   "tab_clearance_mm": 0.4,
@@ -16,5 +16,8 @@
       "bytes": 1348140,
       "sha256": "3037a46739f3596d8ed5a2c5bc59fe09a56a51d547877c463b16df2a55926cf1"
     }
-  ]
+  ],
+  "published_url": "https://www.printables.com/model/1834053-buzzello-classic-61-large-91-black-yellow-hex-stra",
+  "published_file_count": 13,
+  "gallery_items": 7
 }

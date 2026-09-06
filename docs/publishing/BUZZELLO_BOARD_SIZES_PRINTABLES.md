@@ -18,6 +18,13 @@ invite someone to a private match, or challenge the computer.
 
 ## Included files
 
+Start with the **BUZZELLO Classic 61 STL and 3MF** or **BUZZELLO Large 91 STL and 3MF**
+ZIP in Other Files. Each ZIP is a complete edition. The separate unprefixed board
+3MF files are the Classic 61-cell edition.
+
+A one-page **BUZZELLO_Rules_Classic_and_Large.pdf** is included for tabletop play.
+Set six alternating pieces around the empty center; Yellow moves first.
+
 Each edition has four board sections, a small pocket-and-joint fit test, preview
 images, and a print guide. The ZIPs include both **3MF and STL** options, plus
 the shared single-piece and 30-piece batch 3MF files.
@@ -53,6 +60,10 @@ and **Yellow** for the pocket floors and joint tops. Pieces are black and yellow
 on opposite faces. Use your calibrated printer and filament profiles and verify
 the sliced color preview. Gallery images are geometry renders, not print photos.
 
+**Printables preview note:** the interactive 3D viewer may show generic orange and
+hide flush details. The gallery renders show the intended black/yellow colors;
+verify the sliced color preview before printing.
+
 ## ARES and BIOBUZZ
 
 Created by ARES FTC 23247 for outreach, inspired by the 2026–2027 *FIRST*® Tech
@@ -64,8 +75,3 @@ artwork is excluded from the models' Creative Commons license.
 [Meet ARES](https://aresfirst.org/) ·
 [Source and print guides](https://github.com/ARES-23247/buzzle-hex-tiles) ·
 [Official season resources](https://www.firstinspires.org/resources/library/season-brand-downloads)
-
----
-
-Publishing status: prepared locally; this revised description and the two edition
-bundles have not yet been uploaded to the existing Printables listing.

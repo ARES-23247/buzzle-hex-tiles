@@ -1,0 +1,50 @@
+{
+  "date": "2026-09-06",
+  "source_commit": "c69ded75e810f2ce860141ea86af28f7592e9beb",
+  "status": "published and verified",
+  "listings": {
+    "buzzle": {
+      "published_url": "https://www.printables.com/model/1834054-buzzle-hex-word-game-yellow-rim-board-individual-l",
+      "file_count": 52,
+      "verification": "Published public description and Files page show added filenames and Download buttons.",
+      "added_files": [
+        {
+          "path": "output/pdf/BUZZLE_Rules.pdf",
+          "bytes": 4511,
+          "sha256": "ef3bdf38e07bec87b7268238f5e073e0a5918eeef5585f1a1deefa4b00016b20"
+        },
+        {
+          "path": "output/pdf/BUZZLE_Two_Letter_Words.pdf",
+          "bytes": 3721,
+          "sha256": "ea75f3d8acfa2bae001e861b51687f2c9a8f27b1d5c7dd9bb12e76c5b1bda039"
+        }
+      ]
+    },
+    "buzzello": {
+      "published_url": "https://www.printables.com/model/1834053-buzzello-classic-61-large-91-black-yellow-hex-stra",
+      "file_count": 13,
+      "verification": "Published public description and Files page show added filenames and Download buttons.",
+      "added_files": [
+        {
+          "path": "docs/publishing/packages/BUZZELLO_Classic_61_STL_and_3MF.zip",
+          "bytes": 1263325,
+          "sha256": "1a4302c61968ae014397e9f2f8e2888425eaa19a9a6a32f692e80c449f382ef1"
+        },
+        {
+          "path": "docs/publishing/packages/BUZZELLO_Large_91_STL_and_3MF.zip",
+          "bytes": 1348140,
+          "sha256": "3037a46739f3596d8ed5a2c5bc59fe09a56a51d547877c463b16df2a55926cf1"
+        },
+        {
+          "path": "output/pdf/BUZZELLO_Rules_Classic_and_Large.pdf",
+          "bytes": 4154,
+          "sha256": "9cfeb74e1b858acc5cec58e36e83527de5abdc5023785f3792bd7878477807bc"
+        }
+      ],
+      "added_gallery_image": "output/boards/othello/images/board_and_bed_preview.png",
+      "gallery_items": 7
+    }
+  },
+  "viewer_status": "Native interactive viewer colors remain unresolved; correct colors retained in supplied 3MFs and gallery renders.",
+  "buzzhex": "Not verified: team model list timed out."
+}

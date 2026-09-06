@@ -8,6 +8,15 @@ Give your word games a new shape. BUZZLE brings letter tiles to a 217-cell honey
 
 [BUZZLE Word Tools](https://aresfirst.org/buzzle/word-tools) — word checker, dictionary and two-letter list for tabletop play. No game or sign-in required. Checker/list work offline after setup; new definitions need internet.
 
+## Printable rules and word reference
+
+Keep the essentials beside your board: download **BUZZLE_Rules.pdf** for the
+tabletop rules and **BUZZLE_Two_Letter_Words.pdf** for a one-page reference
+containing 128 two-letter entries from BUZZLE's own word list.
+
+For the current word checker, dictionary and two-letter list, visit
+[BUZZLE Word Tools](https://aresfirst.org/buzzle/word-tools).
+
 Build a large honeycomb word-game board with matching BioBuzz tiles. The
 217-cell layout has letter and word multipliers, a central starting star,
 and a seven-section board that assembles with dovetail joints.

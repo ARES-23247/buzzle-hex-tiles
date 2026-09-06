@@ -1,12 +1,12 @@
-# Pending Printables updates
+# Printables update status
 
-Status: prepared locally; not uploaded. The current session has no control tool
-for the signed-in Codex in-app browser. Do not mark these as published until the
-live listings and downloadable files have been checked.
+Status: BUZZLE and BUZZELLO updates published September 6, 2026. Both public
+descriptions and Files pages were checked after saving. BUZZELLO has 13 downloads
+and BUZZLE has 52 downloads. Native interactive viewer colors remain unresolved.
 
 ## BUZZLE - model 1834054
 
-Add these downloadable PDFs:
+Published downloadable PDFs:
 
 - [Tabletop rules](../../output/pdf/BUZZLE_Rules.pdf)
 - [Two-letter word reference](../../output/pdf/BUZZLE_Two_Letter_Words.pdf)
@@ -19,7 +19,8 @@ snapshot and source details are in
 [buzzle-two-letter-words.json](../../assets/reference/buzzle-two-letter-words.json).
 The PDF was text-checked for missing/duplicate words and visually reviewed.
 
-Add to the listing description when the files are uploaded:
+The published description now mentions the rules and 128-word reference and links
+to the current word tools:
 
 > Printable tabletop rules and a one-page two-letter word reference are included.
 > The reference uses BUZZLE's own word list. For the current word checker,
@@ -27,18 +28,24 @@ Add to the listing description when the files are uploaded:
 
 ## BUZZELLO - model 1834053
 
-Add both edition bundles and their shared gameplay rules:
+Published both edition bundles and their shared gameplay rules:
 
 - [Classic 61-cell STL and 3MF bundle](packages/BUZZELLO_Classic_61_STL_and_3MF.zip)
 - [Large 91-cell STL and 3MF bundle](packages/BUZZELLO_Large_91_STL_and_3MF.zip)
 - [Classic and Large rulesheet](../../output/pdf/BUZZELLO_Rules_Classic_and_Large.pdf)
 
-Use [the prepared two-size description](BUZZELLO_BOARD_SIZES_PRINTABLES.md),
-mention the new rulesheet, and add the matching Classic/Large gallery images.
-Verify that both board editions and their color information are clear after saving.
+Published [the two-size description](BUZZELLO_BOARD_SIZES_PRINTABLES.md), including
+the rulesheet and black/yellow color guidance. The existing Classic gallery remains;
+the Large 91-cell board preview was added. Both ZIPs remain intact under Other Files.
+The separate unprefixed board 3MF downloads are Classic, as explained in the description.
+
+[BUZZELLO files](https://www.printables.com/model/1834053-buzzello-classic-61-large-91-black-yellow-hex-stra/files)
+and [BUZZLE files](https://www.printables.com/model/1834054-buzzle-hex-word-game-yellow-rim-board-individual-l/files)
+were verified to show the expected new filenames and Download buttons.
 
 ## BUZZHEX
 
-No published BUZZHEX model appears in the local publication record. The account's
-live model list has not yet been checked in this session. Do not infer publication
-from local CAD files or from the game's presence on the ARES website.
+No published BUZZHEX model appears in the local publication record. Attempting to
+inspect the team's live model list timed out after the two existing listings were
+updated. BUZZHEX publication remains unverified; do not infer publication from local
+CAD files or from the game's presence on the ARES website.

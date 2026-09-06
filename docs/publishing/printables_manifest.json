@@ -325,5 +325,6 @@
     "guide": "https://ansonliu.com/2023/12/adding-blender-color-groups-support-for-printables/",
     "reference_model": "https://www.printables.com/model/228038-ninja-pot-01",
     "result": "Both low and high reference 3MF previews were orange. Current viewer issue suspected, not officially confirmed. Three local export variants also failed. Experimental uploads removed and standard A tile restored."
-  }
+  },
+  "latest_update_manifest": "docs/publishing/printables_update_2026-09-06.json"
 }
