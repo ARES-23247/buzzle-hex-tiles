@@ -62,26 +62,3 @@ Meshes, material partitions, pocket dimensions, seams, and bed placement pass
 automated checks. Physical fit has not yet been tested on a printer; print
 the small test before committing to the six board plates.
 
-## Play and website handoff
-
-- [Complete BUZZHEX rules](../../../docs/BUZZHEX_RULES.md)
-- [Printable one-page rules](../../pdf/BUZZHEX_Rules.pdf)
-- [Printables downloads](https://www.printables.com/model/1834842-buzzhex-11-x-11-hex-strategy-game-reuse-your-buzze/files)
-- [Prompt for the website agent](../../../docs/BUZZHEX_WEBSITE_AGENT_PROMPT.md)
-- [Website handoff ZIP with prompt and artwork](../../../docs/BUZZHEX_WEB_HANDOFF.zip)
-- [Machine-readable board coordinates and rules](game_spec.json)
-- [Exact tile SVG artwork](../../../assets/artwork/buzzhex/README.md)
-
-Regenerate using `python generate_buzzhex_board_270.py` and validate with
-`python -m unittest test_buzzhex_board_270 -v` from the repository root.
-
-## Plate checklist
-
-| File | Cells | Width × depth |
-|---|---:|---:|
-| [Plate_01_Section.3mf](plates/Plate_01_Section.3mf) | 24 | 214.8 × 228.0 mm |
-| [Plate_02_Section.3mf](plates/Plate_02_Section.3mf) | 24 | 214.8 × 227.7 mm |
-| [Plate_03_Section.3mf](plates/Plate_03_Section.3mf) | 18 | 205.9 × 204.3 mm |
-| [Plate_04_Section.3mf](plates/Plate_04_Section.3mf) | 20 | 202.5 × 201.2 mm |
-| [Plate_05_Section.3mf](plates/Plate_05_Section.3mf) | 20 | 202.0 × 201.2 mm |
-| [Plate_06_Section.3mf](plates/Plate_06_Section.3mf) | 15 | 184.4 × 182.6 mm |

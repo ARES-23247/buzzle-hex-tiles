@@ -45,7 +45,8 @@ were verified to show the expected new filenames and Download buttons.
 
 ## BUZZHEX
 
-No published BUZZHEX model appears in the local publication record. Attempting to
-inspect the team's live model list timed out after the two existing listings were
-updated. BUZZHEX publication remains unverified; do not infer publication from local
-CAD files or from the game's presence on the ARES website.
+Published September 6, 2026 as [model 1834842](https://www.printables.com/model/1834842-buzzhex-11-x-11-hex-strategy-game-reuse-your-buzze).
+The public Files page was checked: nine 3MF downloads (six sections, fit test,
+single piece and 30-piece batch), the rules PDF, and two TXT guides. Three gallery
+images show the board, shared black/yellow pieces and unchanged official season
+artwork. The description links to the verified digital game at aresfirst.org/buzzhex.
