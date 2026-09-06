@@ -3,10 +3,10 @@
   "published_url": "https://www.printables.com/model/1834053-buzzello-preferred-large-91-classic-61-black-yello",
   "default_edition": 91,
   "classic_61_retained": "Complete STL and 3MF ZIP, preview and shared rules",
-  "preference": "We prefer the Large 91-cell board \u2014 it plays better.",
+  "preference": "We prefer the Large 91-cell board — it plays better.",
   "cover": "BUZZELLO_Large_91_v5.png",
   "website_pr": "https://github.com/ARES-23247/ARESWEB/pull/261",
-  "website_release_status": "Merged; protected production deployment running",
+  "website_release_status": "Deployed; production workflow and browser security smoke passed",
   "geometry_changed": false,
   "uploaded_replacements": [
     {
@@ -49,5 +49,12 @@
     "rules_tests": 33,
     "browser_suite": "287 passed initially; single unrelated Academy mobile test passed on focused recheck; full protected CI including all browser tests passed",
     "lint_typecheck_build_bundle_audit": "passed"
+  },
+  "website_live_verification": {
+    "url": "https://aresfirst.org/buzzello",
+    "selected_radio": "Large — 91 cells (preferred)",
+    "preference_text": "We prefer the 91-cell board — it plays better. Classic 61 is still available.",
+    "pass_and_play_cell_count": 91,
+    "verified_date": "2026-09-06"
   }
 }
