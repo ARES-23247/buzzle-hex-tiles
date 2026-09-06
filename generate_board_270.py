@@ -26,7 +26,7 @@ TOTAL_HEIGHT = round(FLOOR_HEIGHT + POCKET_DEPTH, 2)
 INLAY_DEPTH = 0.8
 LABEL_DEPTH = 0.4
 GRID_CAP_HEIGHT = 0.4
-REVISION = "v2_sturdy"
+REVISION = "v3_looser_joints"
 PITCH = POCKET_FLAT + DIVIDER_WIDTH
 BED = 270.0
 MARGIN = 5.0
@@ -34,7 +34,8 @@ TOWER = 40.0
 TOWER_GAP = 5.0
 WIDTH = BED - 2*MARGIN - TOWER - TOWER_GAP
 HEIGHT = BED - 2*MARGIN
-JOINT_CLEARANCE = 0.20
+JOINT_CLEARANCE = 0.40
+SEAM_GAP = 0.30
 COLORS = ["#000000", "#FFFFFF", "#0077CC", "#FFFF00"]
 NAMES = ["Black", "White", "Blue", "Yellow"]
 
@@ -106,11 +107,25 @@ def make_sections(cells):
         sections[0]["sockets"].append(socket)
         wedge["tongues"].append(tongue)
         wedge["connection"] = (inner, outer)
+    originals = [s['original'] for s in sections]
     for section in sections:
+        neighbors = union([p for i,p in enumerate(originals) if i != section['index']])
+        section['original'] = clean(section['original'].difference(neighbors.buffer(SEAM_GAP/2, join_style=2)))
         section["footprint"] = union([section["original"]]+section["tongues"]).difference(union(section["sockets"]))
         if not isinstance(section["footprint"], Polygon) or not section["footprint"].is_valid:
             raise ValueError("Disconnected or invalid section")
     return sections
+
+
+def fit_samples(sections):
+    inner, outer = sections[1]['connection']
+    socket, tongue = sections[0]['sockets'][0], sections[1]['tongues'][0]
+    samples = []
+    for i, cell in enumerate([inner, outer]):
+        original = clean(cell['outer'].intersection(sections[cell['section']]['original']))
+        samples.append(dict(cells=[cell], original=original, sockets=[socket] if i == 0 else [],
+                            footprint=original.difference(socket) if i == 0 else union([original, tongue])))
+    return samples
 
 
 def label(text, cx, cy, size):
@@ -155,7 +170,7 @@ def make_layers(section):
     layers = [(0, "Foundation", footprint, 0, inlay_bottom),
               (0, "Pocket floors", footprint.difference(union(list(inks.values()))), inlay_bottom, FLOOR_HEIGHT),
               (0, "Divider ribs", ribs, FLOOR_HEIGHT, cap_bottom),
-              (1, "Ivory grid caps", ribs, cap_bottom, TOTAL_HEIGHT),
+              (3, "Yellow grid caps", ribs, cap_bottom, TOTAL_HEIGHT),
               (0, "Flush labels", text, label_bottom, FLOOR_HEIGHT)]
     for color, ink in inks.items():
         layers += [(color, "Inlay backing", ink, inlay_bottom, label_bottom),
@@ -278,16 +293,14 @@ def generate():
     manifest = dict(revision=REVISION, tile_flat_mm=TILE_FLAT, pocket_flat_mm=POCKET_FLAT, pitch_mm=PITCH,
                     divider_width_mm=DIVIDER_WIDTH, floor_height_mm=FLOOR_HEIGHT,
                     pocket_depth_mm=POCKET_DEPTH, total_height_mm=TOTAL_HEIGHT,
+                    joint_clearance_mm=JOINT_CLEARANCE, seam_gap_mm=SEAM_GAP,
                     board_size_mm=[round(x1-x0, 3), round(y1-y0, 3)], bed_size_mm=BED,
                     margin_mm=MARGIN, tower_region_mm=[225, 225, 265, 265], colors=COLORS, plates=records)
     (OUTPUT/"print_manifest.json").write_text(json.dumps(manifest, indent=2)+"\n", encoding="utf-8")
     # Print-first test: two separated, full-size pockets with the actual joint.
-    inner, outer = sections[1]["connection"]
-    socket, tongue = sections[0]["sockets"][0], sections[1]["tongues"][0]
     parts = []
-    for i, cell in enumerate([inner, outer]):
-        sample = dict(cells=[cell], original=cell["outer"], sockets=[socket] if i == 0 else [],
-                      footprint=cell["outer"].difference(socket) if i == 0 else union([cell["outer"], tongue]))
+    for i, sample in enumerate(fit_samples(sections)):
+        cell = sample['cells'][0]
         record = dict(rotation_deg=0, translation_mm=[30+i*65-cell["cx"], 35-cell["cy"]])
         parts.extend(parts_for(sample, record))
     export_multimaterial_3mf(OUTPUT/"plates/PRINT_FIRST_Pocket_and_Joint_Test.3mf", parts, "Pocket & joint test", palette=COLORS)

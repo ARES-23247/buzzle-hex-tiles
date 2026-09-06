@@ -1,5 +1,5 @@
 {
-  "revision": "v2_sturdy",
+  "revision": "v3_looser_joints",
   "tile_flat_mm": 33.02,
   "pocket_flat_mm": 33.800000000000004,
   "pitch_mm": 36.00000000000001,
@@ -7,6 +7,8 @@
   "floor_height_mm": 2.8,
   "pocket_depth_mm": 3.0,
   "total_height_mm": 5.8,
+  "joint_clearance_mm": 0.4,
+  "seam_gap_mm": 0.3,
   "board_size_mm": [
     541.779,
     613.4
@@ -216,13 +218,13 @@
           -3
         ]
       ],
-      "rotation_deg": 165,
+      "rotation_deg": 15,
       "translation_mm": [
-        129.40637734181016,
-        129.40637927484153
+        129.23906932943862,
+        129.23907667159227
       ],
-      "width_mm": 248.793,
-      "height_mm": 248.793
+      "width_mm": 248.458,
+      "height_mm": 248.458
     },
     {
       "file": "plates/Plate_02_Sector_000_060.3mf",
@@ -381,11 +383,11 @@
       ],
       "rotation_deg": 0,
       "translation_mm": [
-        -59.31771499999999,
-        35.9485
+        -59.40432,
+        35.83740000000001
       ],
-      "width_mm": 198.143,
-      "height_mm": 235.297
+      "width_mm": 197.97,
+      "height_mm": 235.075
     },
     {
       "file": "plates/Plate_03_Sector_060_120.3mf",
@@ -544,11 +546,11 @@
       ],
       "rotation_deg": 120,
       "translation_mm": [
-        284.31771208233465,
-        234.3499986089192
+        284.4043139876185,
+        234.4249975089031
       ],
-      "width_mm": 198.143,
-      "height_mm": 234.7
+      "width_mm": 197.97,
+      "height_mm": 234.55
     },
     {
       "file": "plates/Plate_04_Sector_120_180.3mf",
@@ -707,11 +709,11 @@
       ],
       "rotation_deg": 60,
       "translation_mm": [
-        284.3177118757951,
-        234.35000087015618
+        284.40431378107894,
+        234.42499977014006
       ],
-      "width_mm": 198.143,
-      "height_mm": 234.7
+      "width_mm": 197.97,
+      "height_mm": 234.55
     },
     {
       "file": "plates/Plate_05_Sector_180_240.3mf",
@@ -870,11 +872,11 @@
       ],
       "rotation_deg": 0,
       "translation_mm": [
-        284.317715,
-        234.35
+        284.40432,
+        234.425
       ],
-      "width_mm": 198.143,
-      "height_mm": 234.7
+      "width_mm": 197.97,
+      "height_mm": 234.55
     },
     {
       "file": "plates/Plate_06_Sector_240_300.3mf",
@@ -1033,11 +1035,11 @@
       ],
       "rotation_deg": 120,
       "translation_mm": [
-        -59.31771208233462,
-        35.65000139108078
+        -59.404313987618465,
+        35.57500236587764
       ],
-      "width_mm": 198.143,
-      "height_mm": 234.7
+      "width_mm": 197.97,
+      "height_mm": 234.55
     },
     {
       "file": "plates/Plate_07_Sector_300_360.3mf",
@@ -1196,11 +1198,11 @@
       ],
       "rotation_deg": 60,
       "translation_mm": [
-        -59.3177118757951,
-        35.6499991298438
+        -59.404313781078926,
+        35.57500022985993
       ],
-      "width_mm": 198.143,
-      "height_mm": 234.7
+      "width_mm": 197.97,
+      "height_mm": 234.55
     }
   ]
 }

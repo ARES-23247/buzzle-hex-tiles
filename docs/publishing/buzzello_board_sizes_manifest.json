@@ -1,0 +1,20 @@
+{
+  "status": "prepared locally; not yet uploaded to Printables",
+  "description": "docs/publishing/BUZZELLO_BOARD_SIZES_PRINTABLES.md",
+  "same_piece_across_flats_mm": 33.02,
+  "tab_clearance_mm": 0.4,
+  "seam_gap_mm": 0.3,
+  "validation": "30 solid STLs; both board editions fit 270 mm bed; physical fit test pending",
+  "bundles": [
+    {
+      "name": "BUZZELLO_Classic_61_STL_and_3MF.zip",
+      "bytes": 1263325,
+      "sha256": "1a4302c61968ae014397e9f2f8e2888425eaa19a9a6a32f692e80c449f382ef1"
+    },
+    {
+      "name": "BUZZELLO_Large_91_STL_and_3MF.zip",
+      "bytes": 1348140,
+      "sha256": "3037a46739f3596d8ed5a2c5bc59fe09a56a51d547877c463b16df2a55926cf1"
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 {
-  "revision": "v2_sturdy",
+  "revision": "v4_91_cells",
+  "board_radius": 5,
+  "cell_count": 91,
   "tile_flat_mm": 33.02,
   "pocket_flat_mm": 33.5,
   "pitch_mm": 35.7,
@@ -8,9 +10,11 @@
   "floor_height_mm": 2.8,
   "pocket_depth_mm": 2.4,
   "total_height_mm": 5.2,
+  "joint_clearance_mm": 0.4,
+  "seam_gap_mm": 0.3,
   "board_size_mm": [
-    289.938,
-    322.7
+    351.773,
+    394.1
   ],
   "colors": [
     "#000000",
@@ -19,47 +23,47 @@
   "plates": [
     {
       "file": "plates/Plate_01_Top_Left.3mf",
-      "cells": 19,
-      "rotation_deg": 89,
+      "cells": 27,
+      "rotation_deg": 0,
       "translation_mm": [
-        184.23907212747108,
-        195.5786955299327
+        189.87776000000002,
+        45.325
       ],
-      "width_mm": 179.532,
-      "height_mm": 168.741
+      "width_mm": 197.017,
+      "height_mm": 214.75
     },
     {
       "file": "plates/Plate_02_Top_Right.3mf",
-      "cells": 14,
-      "rotation_deg": 99,
+      "cells": 21,
+      "rotation_deg": 10,
       "translation_mm": [
-        181.80627156087718,
-        70.29054334401658
+        38.55964755043123,
+        47.416206131070076
       ],
-      "width_mm": 157.751,
-      "height_mm": 156.988
+      "width_mm": 192.391,
+      "height_mm": 192.104
     },
     {
       "file": "plates/Plate_03_Bottom_Left.3mf",
-      "cells": 16,
-      "rotation_deg": 0,
+      "cells": 24,
+      "rotation_deg": 1,
       "translation_mm": [
-        174.334215,
-        212.675
+        188.15233672990252,
+        231.8882420392356
       ],
-      "width_mm": 166.27,
-      "height_mm": 167.35
+      "width_mm": 199.796,
+      "height_mm": 200.623
     },
     {
       "file": "plates/Plate_04_Bottom_Right.3mf",
-      "cells": 12,
-      "rotation_deg": 0,
+      "cells": 19,
+      "rotation_deg": 87,
       "translation_mm": [
-        36.63420000000001,
-        206.68141
+        21.327554069539783,
+        48.62202337702068
       ],
-      "width_mm": 138.207,
-      "height_mm": 143.637
+      "width_mm": 179.879,
+      "height_mm": 176.679
     }
   ]
 }

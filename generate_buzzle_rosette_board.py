@@ -140,7 +140,9 @@ def export_multimaterial_3mf(filepath, parts_list, assembly_name="BUZZLE_Assembl
         model_lines.append('      <mesh>')
         model_lines.append('        <vertices>')
         for v in mesh.vertices:
-            model_lines.append(f'          <vertex x="{v[0]:.4f}" y="{v[1]:.4f}" z="{v[2]:.4f}"/>')
+            # Keep the 0.00001 mm CAD grid distinct after plate rotation.
+            # Coarser rounding can collapse short seam-relief edges on export.
+            model_lines.append(f'          <vertex x="{v[0]:.6f}" y="{v[1]:.6f}" z="{v[2]:.6f}"/>')
         model_lines.append('        </vertices>')
         model_lines.append('        <triangles>')
         for f in mesh.faces:

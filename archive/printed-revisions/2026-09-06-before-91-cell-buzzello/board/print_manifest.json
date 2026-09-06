@@ -1,0 +1,67 @@
+{
+  "revision": "v3_looser_joints",
+  "tile_flat_mm": 33.02,
+  "pocket_flat_mm": 33.5,
+  "pitch_mm": 35.7,
+  "bed_mm": 270,
+  "divider_width_mm": 2.2,
+  "floor_height_mm": 2.8,
+  "pocket_depth_mm": 2.4,
+  "total_height_mm": 5.2,
+  "joint_clearance_mm": 0.4,
+  "seam_gap_mm": 0.3,
+  "board_size_mm": [
+    289.938,
+    322.7
+  ],
+  "colors": [
+    "#000000",
+    "#FFFF00"
+  ],
+  "plates": [
+    {
+      "file": "plates/Plate_01_Top_Left.3mf",
+      "cells": 19,
+      "rotation_deg": 89,
+      "translation_mm": [
+        184.31481639380655,
+        195.6634243250625
+      ],
+      "width_mm": 179.381,
+      "height_mm": 168.572
+    },
+    {
+      "file": "plates/Plate_02_Top_Right.3mf",
+      "cells": 14,
+      "rotation_deg": 99,
+      "translation_mm": [
+        181.88712179875805,
+        70.29054334401658
+      ],
+      "width_mm": 157.59,
+      "height_mm": 156.988
+    },
+    {
+      "file": "plates/Plate_03_Bottom_Left.3mf",
+      "cells": 16,
+      "rotation_deg": 0,
+      "translation_mm": [
+        174.419205,
+        212.675
+      ],
+      "width_mm": 166.1,
+      "height_mm": 167.35
+    },
+    {
+      "file": "plates/Plate_04_Bottom_Right.3mf",
+      "cells": 12,
+      "rotation_deg": 0,
+      "translation_mm": [
+        36.63420000000001,
+        206.68141
+      ],
+      "width_mm": 138.207,
+      "height_mm": 143.637
+    }
+  ]
+}

@@ -11,8 +11,9 @@
 |---|---|---|---|---|
 | BUZZLE board | Black base, labels, ribs | White caps, DW/KEY/start | Blue DL/TL | Yellow TW |
 | Othello board | Black frame, markers, rings | Yellow floors, joint tops, underside logo | — | — |
+| BUZZHEX board | Black base, grid, A/K goal rails | Yellow 1/11 goal rails | White pocket floors and joint tops | — |
 | Word tiles | Yellow bodies | Black lettering/logos | — | — |
-| Othello pieces | Black | White | — | — |
+| Othello pieces | Black | Yellow | — | — |
 
 The updated 3MFs include visible surface colors and explicit filament assignments.
 Read the [Snapmaker and Printables color import guide](docs/3MF_COLOR_IMPORT.md).
@@ -25,6 +26,7 @@ color; the material preset dropdown (such as `Dave PETG`) remains your choice.
 |---|---|---|
 | BUZZLE board | Seven numbered plates, once each | [Board guide](output/boards/buzzle/PRINT_GUIDE.md) |
 | Othello board | Four numbered plates, once each | [Board guide](output/boards/othello/PRINT_GUIDE.md) |
+| BUZZHEX board | Six numbered plates, once each; 121 reversible tiles | [Board guide](output/boards/buzzhex/PRINT_GUIDE.md) |
 | BioBuzz word tiles | Four Scrabble plates for 100, or six Hive-Swarm plates for 144 | [Tile guide](output/tiles/biobuzz/PRINT_GUIDE.md) |
 | Interlocking word tiles | Same set quantities | [Tile guide](output/tiles/interlocking/PRINT_GUIDE.md) |
 | Team word tiles | Same set quantities | [Tile guide](output/tiles/team/PRINT_GUIDE.md) |

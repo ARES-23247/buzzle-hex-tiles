@@ -10,9 +10,10 @@ names, but omitted the part settings that Snapmaker uses for its object list.
 | Model | Slot 1 | Slot 2 | Slot 3 | Slot 4 |
 |---|---|---|---|---|
 | Word tiles | Yellow body | Black lettering/logo | — | — |
-| BUZZLE/Scrabble board | Black base, labels, rib bodies | White grid caps, DW/KEY/start | Blue DL/TL | Yellow TW |
+| BUZZLE/Scrabble board | Black base, labels, rib bodies | White DW/KEY/start | Blue DL/TL | Yellow grid caps, TW |
 | Othello board | Black frame, starting markers, corner rings | Yellow floors, joint tops, underside logo | — | — |
-| Reversible Othello pieces | Black side/inlays | White side/inlays | — | — |
+| Reversible Othello pieces | Black side/inlays | Yellow side/inlays | — | — |
+| BUZZHEX board | Black base, grid, A/K goals | Yellow 1/11 goals | White pocket floors and joint tops | — |
 
 Tile dimensions, deeper pockets, thicker dividers, and board joints are unchanged
 by this color fix. [Choose files from the current print library](../output/README.md).
@@ -40,6 +41,11 @@ expect yellow bodies with black text and logos. Both need only two slots.
 
 ## On Printables
 
+The live Printables interactive viewer was checked and currently shows a generic
+orange material, which also hides flush inlay artwork. Use the supplied color
+gallery renders and the filament table above as the color reference. The 3MF
+downloads still contain surface colors and explicit filament assignments.
+
 Replace the earlier uploaded file with the **updated 3MF**. The corrected file
 includes a color on every triangle, plus named base materials with display colors,
 so a viewer does not have to infer colors from the slicer's filament settings.
@@ -47,8 +53,16 @@ The separate PNG previews in each model's `images/` folder can also be uploaded
 as listing images. An existing uploaded file or cached preview will not change
 just because the local source file was replaced.
 
-Printables' live upload/preview has not been tested in this workspace. Its preview
-is not a check of the printer's tool assignments; check the sliced preview too.
+Live uploads were tested on September 5, 2026. Changing object defaults to the
+color group, removing slicer metadata, and flattening a colored preview into
+one mesh each still produced an orange interactive preview. The experimental
+files were removed; the standard multipart print files remain the downloads.
+A published positive control, Ninja Pot 01 (model 228038), also rendered orange
+in both its low and high 3MF variants despite being cited as a working colored
+preview in Anson Liu's December 2023 guide. This suggests a current viewer issue,
+but is not an official confirmation or proof that every colored model fails.
+The website viewer is not a check of printer tool assignments; check your
+sliced preview too.
 
 ## Verification and implementation references
 
@@ -71,3 +85,6 @@ round trip is claimed.
 Regenerate with the board generators and `python three_mf_colors.py` for the
 retained tile files, then run `python build_output_catalog.py` and
 `python -m unittest test_board_270 test_othello_board_270 test_three_mf_colors -v`.
+
+Research: https://ansonliu.com/2023/12/adding-blender-color-groups-support-for-printables/
+Reference model: https://www.printables.com/model/228038-ninja-pot-01

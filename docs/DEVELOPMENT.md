@@ -9,7 +9,12 @@ four filaments. Keep those dimensions unless the user explicitly changes them.
 | Command | Output |
 |---|---|
 | `python generate_board_270.py` | `output/boards/buzzle/` |
-| `python generate_othello_board_270.py` | `output/boards/othello/` |
+| `python generate_othello_board_270.py --size both` | Classic in `output/boards/othello-classic/`; Large in `output/boards/othello/` |
+| `python export_buzzello_stls.py` | Verified single-color and aligned Black/Yellow STLs for both BUZZELLO sizes |
+| `python build_game_rulesheets.py` | BUZZLE and BUZZELLO rules in `output/pdf/` |
+| `python build_buzzle_word_reference.py` | Two-letter reference PDF from the recorded dictionary snapshot |
+| `python generate_buzzhex_board_270.py` | `output/boards/buzzhex/` (11 × 11, six sections) |
+| `python export_buzzhex_web_tiles.py` | `assets/artwork/buzzhex/` (exact tile-face SVGs) |
 | `python generate_biobuzz_tiles.py --plates` | `output/tiles/biobuzz/` |
 | `python generate_interlocking_logo_tiles.py --plates` | `output/tiles/interlocking/` |
 | `python generate_team_tiles.py --plates` | `output/tiles/team/` |
@@ -41,9 +46,12 @@ $env:MPLCONFIGDIR = "$PWD/.mplconfig"
 
 ```powershell
 python generate_board_270.py
-python generate_othello_board_270.py
+python generate_othello_board_270.py --size both
+python export_buzzello_stls.py
+python generate_buzzhex_board_270.py
+python export_buzzhex_web_tiles.py
 python three_mf_colors.py
-python -m unittest test_board_270 test_othello_board_270 test_three_mf_colors -v
+python -m unittest test_board_270 test_othello_board_270 test_buzzhex_board_270 test_three_mf_colors -v
 python build_output_catalog.py
 python verify_output_library.py
 ```

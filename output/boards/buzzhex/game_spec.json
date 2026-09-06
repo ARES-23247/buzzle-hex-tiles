@@ -1,0 +1,1029 @@
+{
+  "name": "BUZZHEX",
+  "size": 11,
+  "cell_count": 121,
+  "board_background": "#FFFFFF",
+  "tile_colors": {
+    "black": "#000000",
+    "yellow": "#FFFF00"
+  },
+  "coordinates": "axial q,r; 0 through 10 inclusive",
+  "neighbors": [
+    [
+      1,
+      0
+    ],
+    [
+      -1,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      -1
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      -1,
+      1
+    ]
+  ],
+  "black_goal": {
+    "axis": "q",
+    "edges": [
+      0,
+      10
+    ]
+  },
+  "yellow_goal": {
+    "axis": "r",
+    "edges": [
+      0,
+      10
+    ]
+  },
+  "first_color": "black",
+  "swap_rule": true,
+  "swap_semantics": "Exchange player color assignments only. Keep the opening tile black and in place. Original opener plays yellow next.",
+  "world_position_mm": {
+    "x": "(q+r-10)*35.7*sqrt(3)/2",
+    "y": "(r-q)*35.7/2"
+  },
+  "screen_position": "Use world x and NEGATIVE world y; flat-top hexagons.",
+  "cells": [
+    {
+      "q": 0,
+      "r": 0,
+      "label": "A1",
+      "cx_mm": -309.171069,
+      "cy_mm": 0.0,
+      "section": 1
+    },
+    {
+      "q": 0,
+      "r": 1,
+      "label": "A2",
+      "cx_mm": -278.253962,
+      "cy_mm": 17.85,
+      "section": 1
+    },
+    {
+      "q": 0,
+      "r": 2,
+      "label": "A3",
+      "cx_mm": -247.336855,
+      "cy_mm": 35.7,
+      "section": 1
+    },
+    {
+      "q": 0,
+      "r": 3,
+      "label": "A4",
+      "cx_mm": -216.419748,
+      "cy_mm": 53.55,
+      "section": 1
+    },
+    {
+      "q": 0,
+      "r": 4,
+      "label": "A5",
+      "cx_mm": -185.502641,
+      "cy_mm": 71.4,
+      "section": 1
+    },
+    {
+      "q": 0,
+      "r": 5,
+      "label": "A6",
+      "cx_mm": -154.585535,
+      "cy_mm": 89.25,
+      "section": 1
+    },
+    {
+      "q": 0,
+      "r": 6,
+      "label": "A7",
+      "cx_mm": -123.668428,
+      "cy_mm": 107.1,
+      "section": 4
+    },
+    {
+      "q": 0,
+      "r": 7,
+      "label": "A8",
+      "cx_mm": -92.751321,
+      "cy_mm": 124.95,
+      "section": 4
+    },
+    {
+      "q": 0,
+      "r": 8,
+      "label": "A9",
+      "cx_mm": -61.834214,
+      "cy_mm": 142.8,
+      "section": 4
+    },
+    {
+      "q": 0,
+      "r": 9,
+      "label": "A10",
+      "cx_mm": -30.917107,
+      "cy_mm": 160.65,
+      "section": 4
+    },
+    {
+      "q": 0,
+      "r": 10,
+      "label": "A11",
+      "cx_mm": 0.0,
+      "cy_mm": 178.5,
+      "section": 4
+    },
+    {
+      "q": 1,
+      "r": 0,
+      "label": "B1",
+      "cx_mm": -278.253962,
+      "cy_mm": -17.85,
+      "section": 1
+    },
+    {
+      "q": 1,
+      "r": 1,
+      "label": "B2",
+      "cx_mm": -247.336855,
+      "cy_mm": 0.0,
+      "section": 1
+    },
+    {
+      "q": 1,
+      "r": 2,
+      "label": "B3",
+      "cx_mm": -216.419748,
+      "cy_mm": 17.85,
+      "section": 1
+    },
+    {
+      "q": 1,
+      "r": 3,
+      "label": "B4",
+      "cx_mm": -185.502641,
+      "cy_mm": 35.7,
+      "section": 1
+    },
+    {
+      "q": 1,
+      "r": 4,
+      "label": "B5",
+      "cx_mm": -154.585535,
+      "cy_mm": 53.55,
+      "section": 1
+    },
+    {
+      "q": 1,
+      "r": 5,
+      "label": "B6",
+      "cx_mm": -123.668428,
+      "cy_mm": 71.4,
+      "section": 1
+    },
+    {
+      "q": 1,
+      "r": 6,
+      "label": "B7",
+      "cx_mm": -92.751321,
+      "cy_mm": 89.25,
+      "section": 4
+    },
+    {
+      "q": 1,
+      "r": 7,
+      "label": "B8",
+      "cx_mm": -61.834214,
+      "cy_mm": 107.1,
+      "section": 4
+    },
+    {
+      "q": 1,
+      "r": 8,
+      "label": "B9",
+      "cx_mm": -30.917107,
+      "cy_mm": 124.95,
+      "section": 4
+    },
+    {
+      "q": 1,
+      "r": 9,
+      "label": "B10",
+      "cx_mm": 0.0,
+      "cy_mm": 142.8,
+      "section": 4
+    },
+    {
+      "q": 1,
+      "r": 10,
+      "label": "B11",
+      "cx_mm": 30.917107,
+      "cy_mm": 160.65,
+      "section": 4
+    },
+    {
+      "q": 2,
+      "r": 0,
+      "label": "C1",
+      "cx_mm": -247.336855,
+      "cy_mm": -35.7,
+      "section": 1
+    },
+    {
+      "q": 2,
+      "r": 1,
+      "label": "C2",
+      "cx_mm": -216.419748,
+      "cy_mm": -17.85,
+      "section": 1
+    },
+    {
+      "q": 2,
+      "r": 2,
+      "label": "C3",
+      "cx_mm": -185.502641,
+      "cy_mm": 0.0,
+      "section": 1
+    },
+    {
+      "q": 2,
+      "r": 3,
+      "label": "C4",
+      "cx_mm": -154.585535,
+      "cy_mm": 17.85,
+      "section": 1
+    },
+    {
+      "q": 2,
+      "r": 4,
+      "label": "C5",
+      "cx_mm": -123.668428,
+      "cy_mm": 35.7,
+      "section": 1
+    },
+    {
+      "q": 2,
+      "r": 5,
+      "label": "C6",
+      "cx_mm": -92.751321,
+      "cy_mm": 53.55,
+      "section": 1
+    },
+    {
+      "q": 2,
+      "r": 6,
+      "label": "C7",
+      "cx_mm": -61.834214,
+      "cy_mm": 71.4,
+      "section": 4
+    },
+    {
+      "q": 2,
+      "r": 7,
+      "label": "C8",
+      "cx_mm": -30.917107,
+      "cy_mm": 89.25,
+      "section": 4
+    },
+    {
+      "q": 2,
+      "r": 8,
+      "label": "C9",
+      "cx_mm": 0.0,
+      "cy_mm": 107.1,
+      "section": 4
+    },
+    {
+      "q": 2,
+      "r": 9,
+      "label": "C10",
+      "cx_mm": 30.917107,
+      "cy_mm": 124.95,
+      "section": 4
+    },
+    {
+      "q": 2,
+      "r": 10,
+      "label": "C11",
+      "cx_mm": 61.834214,
+      "cy_mm": 142.8,
+      "section": 4
+    },
+    {
+      "q": 3,
+      "r": 0,
+      "label": "D1",
+      "cx_mm": -216.419748,
+      "cy_mm": -53.55,
+      "section": 1
+    },
+    {
+      "q": 3,
+      "r": 1,
+      "label": "D2",
+      "cx_mm": -185.502641,
+      "cy_mm": -35.7,
+      "section": 1
+    },
+    {
+      "q": 3,
+      "r": 2,
+      "label": "D3",
+      "cx_mm": -154.585535,
+      "cy_mm": -17.85,
+      "section": 1
+    },
+    {
+      "q": 3,
+      "r": 3,
+      "label": "D4",
+      "cx_mm": -123.668428,
+      "cy_mm": 0.0,
+      "section": 1
+    },
+    {
+      "q": 3,
+      "r": 4,
+      "label": "D5",
+      "cx_mm": -92.751321,
+      "cy_mm": 17.85,
+      "section": 1
+    },
+    {
+      "q": 3,
+      "r": 5,
+      "label": "D6",
+      "cx_mm": -61.834214,
+      "cy_mm": 35.7,
+      "section": 1
+    },
+    {
+      "q": 3,
+      "r": 6,
+      "label": "D7",
+      "cx_mm": -30.917107,
+      "cy_mm": 53.55,
+      "section": 4
+    },
+    {
+      "q": 3,
+      "r": 7,
+      "label": "D8",
+      "cx_mm": 0.0,
+      "cy_mm": 71.4,
+      "section": 4
+    },
+    {
+      "q": 3,
+      "r": 8,
+      "label": "D9",
+      "cx_mm": 30.917107,
+      "cy_mm": 89.25,
+      "section": 4
+    },
+    {
+      "q": 3,
+      "r": 9,
+      "label": "D10",
+      "cx_mm": 61.834214,
+      "cy_mm": 107.1,
+      "section": 4
+    },
+    {
+      "q": 3,
+      "r": 10,
+      "label": "D11",
+      "cx_mm": 92.751321,
+      "cy_mm": 124.95,
+      "section": 4
+    },
+    {
+      "q": 4,
+      "r": 0,
+      "label": "E1",
+      "cx_mm": -185.502641,
+      "cy_mm": -71.4,
+      "section": 2
+    },
+    {
+      "q": 4,
+      "r": 1,
+      "label": "E2",
+      "cx_mm": -154.585535,
+      "cy_mm": -53.55,
+      "section": 2
+    },
+    {
+      "q": 4,
+      "r": 2,
+      "label": "E3",
+      "cx_mm": -123.668428,
+      "cy_mm": -35.7,
+      "section": 2
+    },
+    {
+      "q": 4,
+      "r": 3,
+      "label": "E4",
+      "cx_mm": -92.751321,
+      "cy_mm": -17.85,
+      "section": 2
+    },
+    {
+      "q": 4,
+      "r": 4,
+      "label": "E5",
+      "cx_mm": -61.834214,
+      "cy_mm": 0.0,
+      "section": 2
+    },
+    {
+      "q": 4,
+      "r": 5,
+      "label": "E6",
+      "cx_mm": -30.917107,
+      "cy_mm": 17.85,
+      "section": 2
+    },
+    {
+      "q": 4,
+      "r": 6,
+      "label": "E7",
+      "cx_mm": 0.0,
+      "cy_mm": 35.7,
+      "section": 5
+    },
+    {
+      "q": 4,
+      "r": 7,
+      "label": "E8",
+      "cx_mm": 30.917107,
+      "cy_mm": 53.55,
+      "section": 5
+    },
+    {
+      "q": 4,
+      "r": 8,
+      "label": "E9",
+      "cx_mm": 61.834214,
+      "cy_mm": 71.4,
+      "section": 5
+    },
+    {
+      "q": 4,
+      "r": 9,
+      "label": "E10",
+      "cx_mm": 92.751321,
+      "cy_mm": 89.25,
+      "section": 5
+    },
+    {
+      "q": 4,
+      "r": 10,
+      "label": "E11",
+      "cx_mm": 123.668428,
+      "cy_mm": 107.1,
+      "section": 5
+    },
+    {
+      "q": 5,
+      "r": 0,
+      "label": "F1",
+      "cx_mm": -154.585535,
+      "cy_mm": -89.25,
+      "section": 2
+    },
+    {
+      "q": 5,
+      "r": 1,
+      "label": "F2",
+      "cx_mm": -123.668428,
+      "cy_mm": -71.4,
+      "section": 2
+    },
+    {
+      "q": 5,
+      "r": 2,
+      "label": "F3",
+      "cx_mm": -92.751321,
+      "cy_mm": -53.55,
+      "section": 2
+    },
+    {
+      "q": 5,
+      "r": 3,
+      "label": "F4",
+      "cx_mm": -61.834214,
+      "cy_mm": -35.7,
+      "section": 2
+    },
+    {
+      "q": 5,
+      "r": 4,
+      "label": "F5",
+      "cx_mm": -30.917107,
+      "cy_mm": -17.85,
+      "section": 2
+    },
+    {
+      "q": 5,
+      "r": 5,
+      "label": "F6",
+      "cx_mm": 0.0,
+      "cy_mm": 0.0,
+      "section": 2
+    },
+    {
+      "q": 5,
+      "r": 6,
+      "label": "F7",
+      "cx_mm": 30.917107,
+      "cy_mm": 17.85,
+      "section": 5
+    },
+    {
+      "q": 5,
+      "r": 7,
+      "label": "F8",
+      "cx_mm": 61.834214,
+      "cy_mm": 35.7,
+      "section": 5
+    },
+    {
+      "q": 5,
+      "r": 8,
+      "label": "F9",
+      "cx_mm": 92.751321,
+      "cy_mm": 53.55,
+      "section": 5
+    },
+    {
+      "q": 5,
+      "r": 9,
+      "label": "F10",
+      "cx_mm": 123.668428,
+      "cy_mm": 71.4,
+      "section": 5
+    },
+    {
+      "q": 5,
+      "r": 10,
+      "label": "F11",
+      "cx_mm": 154.585535,
+      "cy_mm": 89.25,
+      "section": 5
+    },
+    {
+      "q": 6,
+      "r": 0,
+      "label": "G1",
+      "cx_mm": -123.668428,
+      "cy_mm": -107.1,
+      "section": 2
+    },
+    {
+      "q": 6,
+      "r": 1,
+      "label": "G2",
+      "cx_mm": -92.751321,
+      "cy_mm": -89.25,
+      "section": 2
+    },
+    {
+      "q": 6,
+      "r": 2,
+      "label": "G3",
+      "cx_mm": -61.834214,
+      "cy_mm": -71.4,
+      "section": 2
+    },
+    {
+      "q": 6,
+      "r": 3,
+      "label": "G4",
+      "cx_mm": -30.917107,
+      "cy_mm": -53.55,
+      "section": 2
+    },
+    {
+      "q": 6,
+      "r": 4,
+      "label": "G5",
+      "cx_mm": 0.0,
+      "cy_mm": -35.7,
+      "section": 2
+    },
+    {
+      "q": 6,
+      "r": 5,
+      "label": "G6",
+      "cx_mm": 30.917107,
+      "cy_mm": -17.85,
+      "section": 2
+    },
+    {
+      "q": 6,
+      "r": 6,
+      "label": "G7",
+      "cx_mm": 61.834214,
+      "cy_mm": 0.0,
+      "section": 5
+    },
+    {
+      "q": 6,
+      "r": 7,
+      "label": "G8",
+      "cx_mm": 92.751321,
+      "cy_mm": 17.85,
+      "section": 5
+    },
+    {
+      "q": 6,
+      "r": 8,
+      "label": "G9",
+      "cx_mm": 123.668428,
+      "cy_mm": 35.7,
+      "section": 5
+    },
+    {
+      "q": 6,
+      "r": 9,
+      "label": "G10",
+      "cx_mm": 154.585535,
+      "cy_mm": 53.55,
+      "section": 5
+    },
+    {
+      "q": 6,
+      "r": 10,
+      "label": "G11",
+      "cx_mm": 185.502641,
+      "cy_mm": 71.4,
+      "section": 5
+    },
+    {
+      "q": 7,
+      "r": 0,
+      "label": "H1",
+      "cx_mm": -92.751321,
+      "cy_mm": -124.95,
+      "section": 2
+    },
+    {
+      "q": 7,
+      "r": 1,
+      "label": "H2",
+      "cx_mm": -61.834214,
+      "cy_mm": -107.1,
+      "section": 2
+    },
+    {
+      "q": 7,
+      "r": 2,
+      "label": "H3",
+      "cx_mm": -30.917107,
+      "cy_mm": -89.25,
+      "section": 2
+    },
+    {
+      "q": 7,
+      "r": 3,
+      "label": "H4",
+      "cx_mm": 0.0,
+      "cy_mm": -71.4,
+      "section": 2
+    },
+    {
+      "q": 7,
+      "r": 4,
+      "label": "H5",
+      "cx_mm": 30.917107,
+      "cy_mm": -53.55,
+      "section": 2
+    },
+    {
+      "q": 7,
+      "r": 5,
+      "label": "H6",
+      "cx_mm": 61.834214,
+      "cy_mm": -35.7,
+      "section": 2
+    },
+    {
+      "q": 7,
+      "r": 6,
+      "label": "H7",
+      "cx_mm": 92.751321,
+      "cy_mm": -17.85,
+      "section": 5
+    },
+    {
+      "q": 7,
+      "r": 7,
+      "label": "H8",
+      "cx_mm": 123.668428,
+      "cy_mm": 0.0,
+      "section": 5
+    },
+    {
+      "q": 7,
+      "r": 8,
+      "label": "H9",
+      "cx_mm": 154.585535,
+      "cy_mm": 17.85,
+      "section": 5
+    },
+    {
+      "q": 7,
+      "r": 9,
+      "label": "H10",
+      "cx_mm": 185.502641,
+      "cy_mm": 35.7,
+      "section": 5
+    },
+    {
+      "q": 7,
+      "r": 10,
+      "label": "H11",
+      "cx_mm": 216.419748,
+      "cy_mm": 53.55,
+      "section": 5
+    },
+    {
+      "q": 8,
+      "r": 0,
+      "label": "I1",
+      "cx_mm": -61.834214,
+      "cy_mm": -142.8,
+      "section": 3
+    },
+    {
+      "q": 8,
+      "r": 1,
+      "label": "I2",
+      "cx_mm": -30.917107,
+      "cy_mm": -124.95,
+      "section": 3
+    },
+    {
+      "q": 8,
+      "r": 2,
+      "label": "I3",
+      "cx_mm": 0.0,
+      "cy_mm": -107.1,
+      "section": 3
+    },
+    {
+      "q": 8,
+      "r": 3,
+      "label": "I4",
+      "cx_mm": 30.917107,
+      "cy_mm": -89.25,
+      "section": 3
+    },
+    {
+      "q": 8,
+      "r": 4,
+      "label": "I5",
+      "cx_mm": 61.834214,
+      "cy_mm": -71.4,
+      "section": 3
+    },
+    {
+      "q": 8,
+      "r": 5,
+      "label": "I6",
+      "cx_mm": 92.751321,
+      "cy_mm": -53.55,
+      "section": 3
+    },
+    {
+      "q": 8,
+      "r": 6,
+      "label": "I7",
+      "cx_mm": 123.668428,
+      "cy_mm": -35.7,
+      "section": 6
+    },
+    {
+      "q": 8,
+      "r": 7,
+      "label": "I8",
+      "cx_mm": 154.585535,
+      "cy_mm": -17.85,
+      "section": 6
+    },
+    {
+      "q": 8,
+      "r": 8,
+      "label": "I9",
+      "cx_mm": 185.502641,
+      "cy_mm": 0.0,
+      "section": 6
+    },
+    {
+      "q": 8,
+      "r": 9,
+      "label": "I10",
+      "cx_mm": 216.419748,
+      "cy_mm": 17.85,
+      "section": 6
+    },
+    {
+      "q": 8,
+      "r": 10,
+      "label": "I11",
+      "cx_mm": 247.336855,
+      "cy_mm": 35.7,
+      "section": 6
+    },
+    {
+      "q": 9,
+      "r": 0,
+      "label": "J1",
+      "cx_mm": -30.917107,
+      "cy_mm": -160.65,
+      "section": 3
+    },
+    {
+      "q": 9,
+      "r": 1,
+      "label": "J2",
+      "cx_mm": 0.0,
+      "cy_mm": -142.8,
+      "section": 3
+    },
+    {
+      "q": 9,
+      "r": 2,
+      "label": "J3",
+      "cx_mm": 30.917107,
+      "cy_mm": -124.95,
+      "section": 3
+    },
+    {
+      "q": 9,
+      "r": 3,
+      "label": "J4",
+      "cx_mm": 61.834214,
+      "cy_mm": -107.1,
+      "section": 3
+    },
+    {
+      "q": 9,
+      "r": 4,
+      "label": "J5",
+      "cx_mm": 92.751321,
+      "cy_mm": -89.25,
+      "section": 3
+    },
+    {
+      "q": 9,
+      "r": 5,
+      "label": "J6",
+      "cx_mm": 123.668428,
+      "cy_mm": -71.4,
+      "section": 3
+    },
+    {
+      "q": 9,
+      "r": 6,
+      "label": "J7",
+      "cx_mm": 154.585535,
+      "cy_mm": -53.55,
+      "section": 6
+    },
+    {
+      "q": 9,
+      "r": 7,
+      "label": "J8",
+      "cx_mm": 185.502641,
+      "cy_mm": -35.7,
+      "section": 6
+    },
+    {
+      "q": 9,
+      "r": 8,
+      "label": "J9",
+      "cx_mm": 216.419748,
+      "cy_mm": -17.85,
+      "section": 6
+    },
+    {
+      "q": 9,
+      "r": 9,
+      "label": "J10",
+      "cx_mm": 247.336855,
+      "cy_mm": 0.0,
+      "section": 6
+    },
+    {
+      "q": 9,
+      "r": 10,
+      "label": "J11",
+      "cx_mm": 278.253962,
+      "cy_mm": 17.85,
+      "section": 6
+    },
+    {
+      "q": 10,
+      "r": 0,
+      "label": "K1",
+      "cx_mm": 0.0,
+      "cy_mm": -178.5,
+      "section": 3
+    },
+    {
+      "q": 10,
+      "r": 1,
+      "label": "K2",
+      "cx_mm": 30.917107,
+      "cy_mm": -160.65,
+      "section": 3
+    },
+    {
+      "q": 10,
+      "r": 2,
+      "label": "K3",
+      "cx_mm": 61.834214,
+      "cy_mm": -142.8,
+      "section": 3
+    },
+    {
+      "q": 10,
+      "r": 3,
+      "label": "K4",
+      "cx_mm": 92.751321,
+      "cy_mm": -124.95,
+      "section": 3
+    },
+    {
+      "q": 10,
+      "r": 4,
+      "label": "K5",
+      "cx_mm": 123.668428,
+      "cy_mm": -107.1,
+      "section": 3
+    },
+    {
+      "q": 10,
+      "r": 5,
+      "label": "K6",
+      "cx_mm": 154.585535,
+      "cy_mm": -89.25,
+      "section": 3
+    },
+    {
+      "q": 10,
+      "r": 6,
+      "label": "K7",
+      "cx_mm": 185.502641,
+      "cy_mm": -71.4,
+      "section": 6
+    },
+    {
+      "q": 10,
+      "r": 7,
+      "label": "K8",
+      "cx_mm": 216.419748,
+      "cy_mm": -53.55,
+      "section": 6
+    },
+    {
+      "q": 10,
+      "r": 8,
+      "label": "K9",
+      "cx_mm": 247.336855,
+      "cy_mm": -35.7,
+      "section": 6
+    },
+    {
+      "q": 10,
+      "r": 9,
+      "label": "K10",
+      "cx_mm": 278.253962,
+      "cy_mm": -17.85,
+      "section": 6
+    },
+    {
+      "q": 10,
+      "r": 10,
+      "label": "K11",
+      "cx_mm": 309.171069,
+      "cy_mm": 0.0,
+      "section": 6
+    }
+  ]
+}

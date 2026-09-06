@@ -6,7 +6,7 @@
 
 The retained geometry is unchanged. Colors and explicit filament-slot labels
 are now embedded in the 3MF files. Word tiles use yellow bodies with black
-lettering/logos; Othello pieces use black and white.
+lettering/logos; Othello pieces use black and yellow.
 Read the [color import guide](../../../docs/3MF_COLOR_IMPORT.md) before importing.
 
 ## Individual files

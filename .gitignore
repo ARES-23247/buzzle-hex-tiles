@@ -3,3 +3,12 @@ __pycache__/
 *.pyc
 .board-deps/
 .mplconfig/
+scratch/
+tmp/
+docs/publishing/diagnostics/
+docs/publishing/branding/first-biobuzz-logos.zip
+docs/publishing/branding/addColorGroup.reference.ts
+docs/publishing/branding/official/*
+!docs/publishing/branding/official/Digital RGB/
+docs/publishing/branding/official/Digital RGB/*
+!docs/publishing/branding/official/Digital RGB/first_biobuzz_logo_ftc_lockup_rgb.png

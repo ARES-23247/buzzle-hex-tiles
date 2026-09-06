@@ -1,0 +1,329 @@
+{
+  "status": "published; native viewer color issue reproduced on reference model",
+  "source_commit": "cd467e2e52f0aec4585d2ada80728f43c58f2590",
+  "listings": {
+    "buzzle": {
+      "description": "docs/publishing/BUZZLE_PRINTABLES.md",
+      "model_files": [
+        {
+          "path": "output/boards/buzzle/plates/Plate_01_Center_Hub.3mf",
+          "bytes": 54329,
+          "sha256": "1b106e44b0a81d234f1739461331751f7b18f7f4e34cf495ee369dd87324504a"
+        },
+        {
+          "path": "output/boards/buzzle/plates/Plate_02_Sector_000_060.3mf",
+          "bytes": 52589,
+          "sha256": "379474da6b0f1dc29f54035c1b5991530f11501c8fc0c003297dc3fc5593deff"
+        },
+        {
+          "path": "output/boards/buzzle/plates/Plate_03_Sector_060_120.3mf",
+          "bytes": 56872,
+          "sha256": "97f3d8f5cde8dfbf539835a3d73e9a62bd0304d2b4a2c52e65249502d69fc70d"
+        },
+        {
+          "path": "output/boards/buzzle/plates/Plate_04_Sector_120_180.3mf",
+          "bytes": 56700,
+          "sha256": "a1ac0d66784ded5241b6dd0154ea5a65d1942bfab5dbc44a1a7f2a91a6010e1e"
+        },
+        {
+          "path": "output/boards/buzzle/plates/Plate_05_Sector_180_240.3mf",
+          "bytes": 52504,
+          "sha256": "1a973cfbc29277f748e9c271e6b71c734515ec9c0bf889396b2ef4ccd2e30d89"
+        },
+        {
+          "path": "output/boards/buzzle/plates/Plate_06_Sector_240_300.3mf",
+          "bytes": 56806,
+          "sha256": "406f575e53ddbb1b728c6dce057bcea0b885ca49c92ffee825b4dd971e99ec67"
+        },
+        {
+          "path": "output/boards/buzzle/plates/Plate_07_Sector_300_360.3mf",
+          "bytes": 56860,
+          "sha256": "a1293f81d2f5c82072ebc2770939f92647c872f15983df08e8a41f14384ca213"
+        },
+        {
+          "path": "output/boards/buzzle/plates/PRINT_FIRST_Pocket_and_Joint_Test.3mf",
+          "bytes": 4620,
+          "sha256": "79afcfe47f14b0bfae159fbb00a0fab29fe76b45ef9bf8308f3e842562f1a828"
+        },
+        {
+          "path": "output/tiles/biobuzz/3mf/tile_biobuzz_token.3mf",
+          "bytes": 9236,
+          "sha256": "edda10bf0f9024884528bcf6c56cb3cda08a5fab7e178404a600a54964fbc35f"
+        },
+        {
+          "path": "output/tiles/biobuzz/3mf/tile_doublesided_biobuzz_A_score1.3mf",
+          "bytes": 10610,
+          "sha256": "f81c631c50ae57d35495d90d26a9b830862d6a22f57afef8d06ff0f1bca893c4"
+        },
+        {
+          "path": "output/tiles/biobuzz/3mf/tile_doublesided_biobuzz_B_score3.3mf",
+          "bytes": 15924,
+          "sha256": "5fb329ac6918a78b2bee5bf740c276722e9041bf7a1da2520cd8be47d8cc7a26"
+        },
+        {
+          "path": "output/tiles/biobuzz/3mf/tile_doublesided_biobuzz_BLANK_score0.3mf",
+          "bytes": 9236,
+          "sha256": "e6972bf65543b2fe96789a1fa70855938e5557721610729f6cf851b15bfd8f0b"
+        },
+        {
+          "path": "output/tiles/biobuzz/3mf/tile_doublesided_biobuzz_C_score3.3mf",
+          "bytes": 15250,
+          "sha256": "66d5d0b8d71d9b5aece89bdd1b1859cf100d57b5b8128c116c4fd0251f17bed8"
+        },
+        {
+          "path": "output/tiles/biobuzz/3mf/tile_doublesided_biobuzz_D_score2.3mf",
+          "bytes": 13501,
+          "sha256": "b5c3a51406ec1d284e4a6899a92cfe2d208ef3dacf0395095ea3c017221390af"
+        },
+        {
+          "path": "output/tiles/biobuzz/3mf/tile_doublesided_biobuzz_E_score1.3mf",
+          "bytes": 10627,
+          "sha256": "4da3cf61b6caddd3a23e567df9454be0d958627ec03cf6f54de73d8eae3dfe4f"
+        },
+        {
+          "path": "output/tiles/biobuzz/3mf/tile_doublesided_biobuzz_F_score4.3mf",
+          "bytes": 10912,
+          "sha256": "81fa68b7ee237e04ef555df6f2dcb3b448f1037e44f835393f4d6bceb66c3be0"
+        },
+        {
+          "path": "output/tiles/biobuzz/3mf/tile_doublesided_biobuzz_G_score2.3mf",
+          "bytes": 14410,
+          "sha256": "264d58abb05bd783662d59232e5fe460276e56e249ad97522e733cae9e4b3eac"
+        },
+        {
+          "path": "output/tiles/biobuzz/3mf/tile_doublesided_biobuzz_H_score4.3mf",
+          "bytes": 11064,
+          "sha256": "68046a6f05abe0343b22ab2809b97597ad79d78a353a0f8ea70c25d7e0622761"
+        },
+        {
+          "path": "output/tiles/biobuzz/3mf/tile_doublesided_biobuzz_I_score1.3mf",
+          "bytes": 10103,
+          "sha256": "b4848725a81c6ee759c6d776d44437b21c5b7d90516a6db7fe7d2917c280f089"
+        },
+        {
+          "path": "output/tiles/biobuzz/3mf/tile_doublesided_biobuzz_J_score8.3mf",
+          "bytes": 15655,
+          "sha256": "a7253d7214566081ebebf44dadca2954ca9d41603547f758d9c3b74ce347e98b"
+        },
+        {
+          "path": "output/tiles/biobuzz/3mf/tile_doublesided_biobuzz_K_score5.3mf",
+          "bytes": 12383,
+          "sha256": "f86a4c45b863dfe1ffe9807384f73ef6856e5ba8974ae592047390aae207db12"
+        },
+        {
+          "path": "output/tiles/biobuzz/3mf/tile_doublesided_biobuzz_L_score1.3mf",
+          "bytes": 10219,
+          "sha256": "ce565cb61d4c34fa42d9508b76530a29ab4b162e3dc7a8a3e9d2878adf45490f"
+        },
+        {
+          "path": "output/tiles/biobuzz/3mf/tile_doublesided_biobuzz_M_score3.3mf",
+          "bytes": 13202,
+          "sha256": "ea78524cbb3054343e5052863fd79ac4ce2445873e351b77be600b930fdd982b"
+        },
+        {
+          "path": "output/tiles/biobuzz/3mf/tile_doublesided_biobuzz_N_score1.3mf",
+          "bytes": 10506,
+          "sha256": "4a991d9e0d1a90daf4b16ff20abee75fe7aec5cbb9035f980f0c63b9f75099b9"
+        },
+        {
+          "path": "output/tiles/biobuzz/3mf/tile_doublesided_biobuzz_O_score1.3mf",
+          "bytes": 13506,
+          "sha256": "6f4c988d309499324531b75831ae7a61dc08ea5ea23bf7c9740d205a72d5cbe1"
+        },
+        {
+          "path": "output/tiles/biobuzz/3mf/tile_doublesided_biobuzz_P_score3.3mf",
+          "bytes": 14577,
+          "sha256": "760d3c1e5965d68a149d7616f310f41ed5679c4881857804c34f26d9d96d585b"
+        },
+        {
+          "path": "output/tiles/biobuzz/3mf/tile_doublesided_biobuzz_Q_score10.3mf",
+          "bytes": 16780,
+          "sha256": "69ce4c87862260c3a2315ab3dc284564c16a69771afa621e3cf07e764dd41782"
+        },
+        {
+          "path": "output/tiles/biobuzz/3mf/tile_doublesided_biobuzz_R_score1.3mf",
+          "bytes": 12492,
+          "sha256": "ea474a823ae924725677540f4ff732e113a3528fa32095b730bcfec9655cb926"
+        },
+        {
+          "path": "output/tiles/biobuzz/3mf/tile_doublesided_biobuzz_S_score1.3mf",
+          "bytes": 13752,
+          "sha256": "f24b8143c87b457d383dbfc50a0506c26a018787d5c8fc56ee9ce2e9b0fc17bb"
+        },
+        {
+          "path": "output/tiles/biobuzz/3mf/tile_doublesided_biobuzz_T_score1.3mf",
+          "bytes": 10360,
+          "sha256": "d1fae7b0890b8ec1835f9af773afb48d16e81758b8edb1c45b72fb69a0489ac8"
+        },
+        {
+          "path": "output/tiles/biobuzz/3mf/tile_doublesided_biobuzz_U_score1.3mf",
+          "bytes": 11818,
+          "sha256": "06f92bfbfbbb0bfb8262be61bb0ec4e8613a44bfa530e3abd48ae892b4b89d5a"
+        },
+        {
+          "path": "output/tiles/biobuzz/3mf/tile_doublesided_biobuzz_V_score4.3mf",
+          "bytes": 10736,
+          "sha256": "318fad3144e71ed26cabea611fce319d97373f0ec212ab3db93365a43c6c156f"
+        },
+        {
+          "path": "output/tiles/biobuzz/3mf/tile_doublesided_biobuzz_W_score4.3mf",
+          "bytes": 11167,
+          "sha256": "f97cb29f2365127d8b69a96cc5fa4e109dc60f2841388e1ee9988b4dbbe8fa8a"
+        },
+        {
+          "path": "output/tiles/biobuzz/3mf/tile_doublesided_biobuzz_X_score8.3mf",
+          "bytes": 14778,
+          "sha256": "fb56821135349eba8cb9bfd96c50c85d20f0f039d709786bb61a0d7685028661"
+        },
+        {
+          "path": "output/tiles/biobuzz/3mf/tile_doublesided_biobuzz_Y_score4.3mf",
+          "bytes": 10894,
+          "sha256": "4c101cb93b36172696fbfa760d80777754920ac236a7405deab996667b95c02a"
+        },
+        {
+          "path": "output/tiles/biobuzz/3mf/tile_doublesided_biobuzz_Z_score10.3mf",
+          "bytes": 12943,
+          "sha256": "4ce6c26344437140fda8034abc8d70e3186f270dc3b3e248a9d14ef42961ed97"
+        },
+        {
+          "path": "output/tiles/biobuzz/plates/plate_256_biobuzz_hiveswarm_144set_plate1_of_6_24tiles.3mf",
+          "bytes": 236241,
+          "sha256": "07d3e6d978fee1ba0cd81096e74148c70ca2e24858048a08367524db128d0eaf"
+        },
+        {
+          "path": "output/tiles/biobuzz/plates/plate_256_biobuzz_hiveswarm_144set_plate2_of_6_24tiles.3mf",
+          "bytes": 206659,
+          "sha256": "f51dca61858a5db2afca6216767e55aab100ba9ab2b0afada5ba764e4d9e4150"
+        },
+        {
+          "path": "output/tiles/biobuzz/plates/plate_256_biobuzz_hiveswarm_144set_plate3_of_6_24tiles.3mf",
+          "bytes": 209492,
+          "sha256": "02bcfbcae8699b72603e2334d6b51adeef9acfc651e4b37d52d4a6d7c8756518"
+        },
+        {
+          "path": "output/tiles/biobuzz/plates/plate_256_biobuzz_hiveswarm_144set_plate4_of_6_24tiles.3mf",
+          "bytes": 230405,
+          "sha256": "b8b0a8c04e6dfefa93da1e343cfcda5288acebb8b13c18ad30bdf36e9312797d"
+        },
+        {
+          "path": "output/tiles/biobuzz/plates/plate_256_biobuzz_hiveswarm_144set_plate5_of_6_24tiles.3mf",
+          "bytes": 251172,
+          "sha256": "15a687c1831b41e486c5a05be97237dbd5b22ac15b879229444255f8e358abb6"
+        },
+        {
+          "path": "output/tiles/biobuzz/plates/plate_256_biobuzz_hiveswarm_144set_plate6_of_6_24tiles.3mf",
+          "bytes": 216072,
+          "sha256": "fddeaca63d8a170cd60f9fab8d32f340a244dde8cb119f17e713e9d492e250b9"
+        },
+        {
+          "path": "output/tiles/biobuzz/plates/plate_256_biobuzz_numbers_and_math_26tiles.3mf",
+          "bytes": 235434,
+          "sha256": "dfa0402ecabaf7110915f83bb16a389fe7104d4619997f4020dcb181083539e9"
+        },
+        {
+          "path": "output/tiles/biobuzz/plates/plate_256_biobuzz_scrabble_100set_plate1_of_4_25tiles.3mf",
+          "bytes": 230342,
+          "sha256": "25dd6136edf2c59ab2e2c344f39b20f530ccfa627667895ea528a7b81fc79753"
+        },
+        {
+          "path": "output/tiles/biobuzz/plates/plate_256_biobuzz_scrabble_100set_plate2_of_4_25tiles.3mf",
+          "bytes": 217881,
+          "sha256": "904602aa1cb9d1eb042e1c0a393795b3f81d102faccb6a6e53c3d04e78d0bc2b"
+        },
+        {
+          "path": "output/tiles/biobuzz/plates/plate_256_biobuzz_scrabble_100set_plate3_of_4_25tiles.3mf",
+          "bytes": 246712,
+          "sha256": "aef38ebc3494642b1a75dfaff542c6b3d486589576559dfd4764e3aa5dd4e4be"
+        },
+        {
+          "path": "output/tiles/biobuzz/plates/plate_256_biobuzz_scrabble_100set_plate4_of_4_25tiles.3mf",
+          "bytes": 230783,
+          "sha256": "2bd53e41bfe1264163aefd0fcb5831265bfa01e16dc050ad24bda020bffdb932"
+        }
+      ],
+      "images": [
+        "output/boards/buzzle/images/board_and_bed_preview.png",
+        "output/tiles/biobuzz/images/tile_front_back.png",
+        "output/boards/buzzle/images/thickness_comparison.png",
+        "docs/publishing/branding/official/Digital RGB/first_biobuzz_logo_ftc_lockup_rgb.png"
+      ],
+      "license": "CC BY-NC 4.0, matching the account existing model",
+      "upload_bundle": "docs/publishing/packages/BUZZLE_BioBuzz_v3_Printables.zip",
+      "draft_url": "https://www.printables.com/model/1834054/edit",
+      "published_url": "https://www.printables.com/model/1834054-buzzle-hex-word-game-yellow-rim-board-individual-l",
+      "digital_game": "https://aresfirst.org/buzzle",
+      "viewer_status": "Interactive color unresolved; accurate gallery images and standard multipart print files retained"
+    },
+    "buzzello": {
+      "description": "docs/publishing/BUZZELLO_PRINTABLES.md",
+      "model_files": [
+        {
+          "path": "output/boards/othello/plates/Plate_01_Top_Left.3mf",
+          "bytes": 93999,
+          "sha256": "f89ae7245e3540d3ea75e651925b5ba305b4d20347dd4624949655b37a3077f2"
+        },
+        {
+          "path": "output/boards/othello/plates/Plate_02_Top_Right.3mf",
+          "bytes": 52675,
+          "sha256": "299b9d520ccf0ea077a0a8a60f160a8282d16287aff1b8c3ad8e63fcf217b24a"
+        },
+        {
+          "path": "output/boards/othello/plates/Plate_03_Bottom_Left.3mf",
+          "bytes": 72497,
+          "sha256": "a5684f71b4c3ceaceff88af26f2ab77197b55efd36be8d6489e8b23455ea0410"
+        },
+        {
+          "path": "output/boards/othello/plates/Plate_04_Bottom_Right.3mf",
+          "bytes": 42720,
+          "sha256": "5dcf2b2b572f3b92655916d85a2c668dcf18d485f7eb6f0e4854859bf0958850"
+        },
+        {
+          "path": "output/boards/othello/plates/PRINT_FIRST_Pocket_and_Joint_Test.3mf",
+          "bytes": 19279,
+          "sha256": "06d4b091ffa96fd33ef1787e3215dc03d6ed5f0efc5e072bb61498bb61475bb7"
+        },
+        {
+          "path": "output/tiles/othello/3mf/hex_othello_piece_single.3mf",
+          "bytes": 16127,
+          "sha256": "9b4a861c4dfb32615d838c60bd7eb082c95abc2ea949fe937f63231c3dce7589"
+        },
+        {
+          "path": "output/tiles/othello/plates/plate_30_pieces_print_twice.3mf",
+          "bytes": 397774,
+          "sha256": "2877f879e7676c449b062696b17c8767b670676aba2f0d790295af7d63d55ad9"
+        }
+      ],
+      "images": [
+        "output/boards/othello/images/board_and_bed_preview.png",
+        "output/tiles/othello/images/tile_front_back.png",
+        "output/boards/othello/images/thickness_comparison.png",
+        "output/boards/othello/images/joint_clearance_comparison.png",
+        "docs/publishing/branding/official/Digital RGB/first_biobuzz_logo_ftc_lockup_rgb.png"
+      ],
+      "license": "CC BY-NC 4.0, matching the account existing model",
+      "upload_bundle": "docs/publishing/packages/BUZZELLO_BioBuzz_v3_Printables.zip",
+      "draft_url": "https://www.printables.com/model/1834053/edit",
+      "published_url": "https://www.printables.com/model/1834053-buzzello-hex-strategy-game-black-yellow-board-reve",
+      "digital_game": "https://aresfirst.org/buzzello",
+      "viewer_status": "Interactive color unresolved; accurate gallery images and standard multipart print files retained"
+    }
+  },
+  "working_tree_revisions": {
+    "buzzle": "v3_looser_joints",
+    "othello": "v3_looser_joints"
+  },
+  "ai_assisted_label": "explicitly approved by user",
+  "website": "https://aresfirst.org/",
+  "word_tools": "https://aresfirst.org/buzzle/word-tools",
+  "branding_scope": "Official unchanged digital logo in gallery and season attribution in descriptions; printed artwork unchanged",
+  "branding_asset": {
+    "path": "docs/publishing/branding/official/Digital RGB/first_biobuzz_logo_ftc_lockup_rgb.png",
+    "sha256": "d9d442ea2b595d8b54b3ea97c9e116c7e6054d7fc89409859cf0503e91ab3ed3"
+  },
+  "viewer_research": {
+    "checked": "2026-09-05",
+    "guide": "https://ansonliu.com/2023/12/adding-blender-color-groups-support-for-printables/",
+    "reference_model": "https://www.printables.com/model/228038-ninja-pot-01",
+    "result": "Both low and high reference 3MF previews were orange. Current viewer issue suspected, not officially confirmed. Three local export variants also failed. Experimental uploads removed and standard A tile restored."
+  }
+}

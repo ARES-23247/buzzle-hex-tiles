@@ -5,11 +5,13 @@ fonttools==4.64.0
 kiwisolver==1.5.1
 lxml==6.1.2
 mapbox_earcut==2.0.0
+manifold3d==3.5.2
 matplotlib==3.11.1
 networkx==3.6.1
 numpy==2.5.2
 packaging==26.3
 pillow==12.3.0
+pypdf==6.10.0
 pyparsing==3.3.2
 python-dateutil==2.9.0.post0
 reportlab==5.0.1

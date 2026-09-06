@@ -63,7 +63,7 @@ def tile_guide(family, title, source):
 
 The retained geometry is unchanged. Colors and explicit filament-slot labels
 are now embedded in the 3MF files. Word tiles use yellow bodies with black
-lettering/logos; Othello pieces use black and white.
+lettering/logos; Othello pieces use black and yellow.
 Read the [color import guide](../../../docs/3MF_COLOR_IMPORT.md) before importing.
 
 ## Individual files
@@ -73,7 +73,7 @@ Read the [color import guide](../../../docs/3MF_COLOR_IMPORT.md) before importin
         text += f'- [{p.name}](3mf/{p.name})\n'
     text += '\n## Batch plates\n\n'
     if family == 'othello':
-        text += 'The two old 30-piece plates were byte-for-byte identical. Use the single\nplate below twice for 60 reversible pieces. Use the single-piece file for extras.\n\n'
+        text += 'Both BUZZELLO sizes use these same pieces. For **Classic (61 cells)**,\nprint the 30-piece batch twice plus one single. For **Large (91 cells)**, print\nit three times plus one single. If you already have 60 pieces, add one single\nfor Classic, or one batch plus one single for Large. The legacy filename\n`plate_30_pieces_print_twice.3mf` contains 30 pieces; use the quantities above.\n\n'
     else:
         text += 'Choose one set: print each of the four **Scrabble** plates once for 100\ntiles, or each of the six **Hive-Swarm** plates once for 144 tiles. The numbers\nand math plate is a separate 26-tile collection. Do not print both word sets\nunless you want both quantities. Files named `plate_256` retain their existing\nlayout; check placement and purge-tower space in your 270 mm slicer profile.\n\n'
     for p in plates:
@@ -95,15 +95,19 @@ def build():
 **Start here. All current tiles are 1.3 inches / 33.02 mm across flats.**
 Boards are arranged for a **270 × 270 mm bed** and use at most **four colors**.
 
-**Colors:** yellow/black word tiles; black/yellow Othello board with black/white
+**Colors:** yellow/black word tiles; black/yellow Othello board with black/yellow
 pieces; black/white/blue/yellow BUZZLE board. The corrected 3MFs include surface
 colors, named parts, and filament-slot assignments.
 [Snapmaker and Printables import help](../docs/3MF_COLOR_IMPORT.md).
 
-Both boards now use the **v2_sturdy** design: **2.2 mm dividers**, **2.8 mm floors**,
+Both boards use sturdy dimensions: **2.2 mm dividers**, **2.8 mm floors**,
 and deeper pockets. BUZZLE is 5.8 mm tall with 3 mm pockets; Othello is 5.2 mm tall
 with 2.4 mm pockets. Tile sizes are unchanged. Print a complete new set because
 the wider cell spacing will not align with earlier board sections.
+
+Both boards retain **0.40 mm tab/socket clearance** and a
+**0.30 mm seam gap** to reduce binding. Print its revised fit test first;
+physical fit verification is pending.
 
 1. Choose a board below and read its print guide.
 2. Print its small pocket-and-joint test first.
@@ -115,11 +119,32 @@ the wider cell spacing will not align with earlier board sections.
 
 [Print guide](boards/buzzle/PRINT_GUIDE.md) · [Fit-test 3MF](boards/buzzle/plates/PRINT_FIRST_Pocket_and_Joint_Test.3mf) · [Plates](boards/buzzle/plates/)
 
-## Othello · 61 cells · 4 sections
+## BUZZELLO · Classic and Large · 4 sections each
+
+| Edition | Cells | Assembled size | Files |
+|---|---:|---|---|
+| Classic | 61 | 289.9 × 322.7 mm | [Guide and 3MFs](boards/othello-classic/PRINT_GUIDE.md) · [STLs](boards/othello-classic/stl/README.md) |
+| Large | 91 | 351.8 × 394.1 mm | [Guide and 3MFs](boards/othello/PRINT_GUIDE.md) · [STLs](boards/othello/stl/README.md) |
 
 ![Othello board and bed layout](boards/othello/images/board_and_bed_preview.png)
 
 [Print guide](boards/othello/PRINT_GUIDE.md) · [Fit-test 3MF](boards/othello/plates/PRINT_FIRST_Pocket_and_Joint_Test.3mf) · [Reversible pieces](tiles/othello/PRINT_GUIDE.md)
+
+The v4 board adds a 30-cell outer ring around the original 61 cells. It uses
+the same 1.3-inch pieces and four larger sections. Print all four as a matching
+set. For 91 pieces, print the 30-piece batch three times plus one single.
+
+## BUZZHEX · 11 × 11 Hex · 121 cells · 6 sections
+
+![BUZZHEX board and bed layout](boards/buzzhex/images/board_and_bed_preview.png)
+
+[Print guide](boards/buzzhex/PRINT_GUIDE.md) · [Fit-test 3MF](boards/buzzhex/plates/PRINT_FIRST_Pocket_and_Joint_Test.3mf) · [Game rules](../docs/BUZZHEX_RULES.md) · [Website-agent prompt](../docs/BUZZHEX_WEBSITE_AGENT_PROMPT.md)
+
+Uses the same 33.02 mm black/yellow reversible tiles as Buzzello. For a full
+121-tile supply, print the existing 30-piece plate four times plus one single;
+if you already have 60, add two 30-piece plates and one single. Board colors:
+black/yellow goal rails and white pocket floors. Six sections retain 2.8 mm floors, 2.4 mm pockets,
+0.40 mm socket clearance, and a 0.30 mm seam gap.
 
 ## Matching tile sets
 
@@ -145,7 +170,7 @@ Every board folder contains `plates/`, `images/`, `PRINT_GUIDE.md`, and
 Board geometry/export checks pass; physical fit still needs the test print.
 '''
     (OUTPUT/'README.md').write_text(text, encoding='utf-8')
-    for family in ['buzzle','othello']:
+    for family in ['buzzle','othello','othello-classic','buzzhex']:
         folder = OUTPUT/'boards'/family
         manifest = json.loads((folder/'print_manifest.json').read_text())
         table = '\n## Plate checklist\n\n| File | Cells | Width × depth |\n|---|---:|---:|\n'
@@ -153,7 +178,7 @@ Board geometry/export checks pass; physical fit still needs the test print.
             table += f"| [{Path(p['file']).name}]({p['file']}) | {p['cells']} | {p['width_mm']:.1f} × {p['height_mm']:.1f} mm |\n"
         guide = (folder/'PRINT_GUIDE.md').read_text(encoding='utf-8').split('\n## Plate checklist')[0]
         (folder/'PRINT_GUIDE.md').write_text(guide.rstrip()+'\n'+table, encoding='utf-8')
-    print('Updated output/README.md, four tile guides/previews, and both board checklists.')
+    print('Updated output/README.md, four tile guides/previews, and four board checklists.')
 
 
 if __name__ == '__main__':
