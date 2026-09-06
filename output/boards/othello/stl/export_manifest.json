@@ -6,12 +6,12 @@
   },
   {
     "file": "stl/color-parts/Plate_01_Top_Left_Black.stl",
-    "volume_mm3": 70972.556,
+    "volume_mm3": 79519.164,
     "watertight": true
   },
   {
     "file": "stl/color-parts/Plate_01_Top_Left_Yellow.stl",
-    "volume_mm3": 20997.621,
+    "volume_mm3": 12451.013,
     "watertight": true
   },
   {
@@ -21,12 +21,12 @@
   },
   {
     "file": "stl/color-parts/Plate_02_Top_Right_Black.stl",
-    "volume_mm3": 55914.368,
+    "volume_mm3": 62803.699,
     "watertight": true
   },
   {
     "file": "stl/color-parts/Plate_02_Top_Right_Yellow.stl",
-    "volume_mm3": 16352.645,
+    "volume_mm3": 9463.314,
     "watertight": true
   },
   {
@@ -36,12 +36,12 @@
   },
   {
     "file": "stl/color-parts/Plate_03_Bottom_Left_Black.stl",
-    "volume_mm3": 64079.265,
+    "volume_mm3": 71703.197,
     "watertight": true
   },
   {
     "file": "stl/color-parts/Plate_03_Bottom_Left_Yellow.stl",
-    "volume_mm3": 18618.516,
+    "volume_mm3": 10994.584,
     "watertight": true
   },
   {
@@ -51,12 +51,12 @@
   },
   {
     "file": "stl/color-parts/Plate_04_Bottom_Right_Black.stl",
-    "volume_mm3": 51367.516,
+    "volume_mm3": 57654.89,
     "watertight": true
   },
   {
     "file": "stl/color-parts/Plate_04_Bottom_Right_Yellow.stl",
-    "volume_mm3": 15001.836,
+    "volume_mm3": 8714.461,
     "watertight": true
   },
   {
@@ -66,12 +66,12 @@
   },
   {
     "file": "stl/color-parts/PRINT_FIRST_Pocket_and_Joint_Test_Black.stl",
-    "volume_mm3": 5210.478,
+    "volume_mm3": 5886.969,
     "watertight": true
   },
   {
     "file": "stl/color-parts/PRINT_FIRST_Pocket_and_Joint_Test_Yellow.stl",
-    "volume_mm3": 1506.628,
+    "volume_mm3": 830.137,
     "watertight": true
   }
 ]

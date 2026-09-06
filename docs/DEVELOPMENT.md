@@ -11,6 +11,7 @@ four filaments. Keep those dimensions unless the user explicitly changes them.
 | `python generate_board_270.py` | `output/boards/buzzle/` |
 | `python generate_othello_board_270.py --size both` | Classic in `output/boards/othello-classic/`; Large in `output/boards/othello/` |
 | `python export_buzzello_stls.py` | Verified single-color and aligned Black/Yellow STLs for both BUZZELLO sizes |
+| `python build_buzzello_packages.py` | Both complete BUZZELLO ZIPs, upload guides and board gallery images |
 | `python build_game_rulesheets.py` | BUZZLE and BUZZELLO rules in `output/pdf/` |
 | `python build_buzzle_word_reference.py` | Two-letter reference PDF from the recorded dictionary snapshot |
 | `python generate_buzzhex_board_270.py` | `output/boards/buzzhex/` (11 × 11, six sections) |

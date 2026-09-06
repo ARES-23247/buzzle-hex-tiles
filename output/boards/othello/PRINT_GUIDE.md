@@ -8,7 +8,7 @@ Print **Plate_01 through Plate_04 once each at 100% scale**. This enlarged set
 adds a 30-cell outer ring for **91 cells**, retaining **33.5 mm pockets**
 for **33.02 mm (1.3-inch) reversible pieces**. No piece files were resized.
 
-**Revision v4_91_cells — September 6, 2026.** The board adds one outer ring
+**Revision v5_black_floors_yellow_dividers — September 6, 2026.** The board adds one outer ring
 without changing cell pitch or the six-piece opening. It retains the v3 sockets with
 **0.40 mm clearance around each tab** (previously 0.20 mm), and neighboring
 sections have a **0.30 mm total seam gap** (previously their edges touched).
@@ -81,17 +81,20 @@ automatic arrangement or adding a larger tower/brim.
 
 | Slot | Color | Parts |
 |---|---|---|
-| 1 | Black | Frame, walls, structural base, starting markers, six corner rings |
-| 2 | Yellow | Pocket floors, flush joint tops, original underside ARES 23247 artwork |
+| 1 | Black | Structural base, pocket floors and flush joint tops |
+| 2 | Yellow | Raised hex dividers, starting markers, corner rings and underside artwork |
 
-Black **filled circles** indicate the three yellow-side starting pieces;
-black **hollow circles** indicate the three black-side starting pieces.
+Yellow **filled circles** indicate the three yellow-side starting pieces;
+yellow **hollow circles** indicate the three black-side starting pieces.
 The center stays empty in the illustrated six-piece opening. The markers and
 corner rings are flush. Reversible playing pieces are black and yellow.
 
-Color changes are confined to the 0.8 mm underside inlay region and the
-0.8 mm pocket-floor region (Z=2.0–2.8 mm). The middle layer and final walls
-(Z=2.8–5.2 mm) are black. The perimeter has an extra 0.7 mm of material.
+Revision **v5_black_floors_yellow_dividers** keeps the foundation, pocket floors
+and joint tops black. Yellow dividers extend from Z=2.0 to 5.2 mm: 3.2 mm of
+yellow material, including the full 2.4 mm raised wall, rather than a thin yellow
+pocket-floor overlay. Starting markers and corner rings remain flush yellow
+inlays, and underside artwork remains yellow. Dimensions and joint fit are
+unchanged from the preceding edition. The perimeter retains its extra 0.7 mm.
 
 Read the [color import guide](../../../docs/3MF_COLOR_IMPORT.md) for the corrected
 part labels, filament assignments, and Printables preview information.

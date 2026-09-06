@@ -21,7 +21,7 @@ TOTAL_HEIGHT = round(FLOOR_HEIGHT + POCKET_DEPTH, 2)
 INLAY_DEPTH = 0.8
 JOINT_CLEARANCE = 0.40  # Offset around the full male profile, in mm.
 SEAM_GAP = 0.30  # Total assembled gap; each section gives up half.
-REVISION = 'v4_91_cells'
+REVISION = 'v5_black_floors_yellow_dividers'
 BOARD_RADIUS = 5
 CELL_COUNT = 1 + 3 * BOARD_RADIUS * (BOARD_RADIUS + 1)
 PITCH = POCKET_FLAT + DIVIDER_WIDTH
@@ -106,7 +106,7 @@ def layers(s,logo):
         if dist==BOARD_RADIUS and 0 in coord:
             anchors.append(center.buffer(9,quad_segs=24).difference(center.buffer(7.8,quad_segs=24)))
         if dist==1:
-            # Alternating filled/hollow black circles identify the two starting sides.
+            # Alternating filled/hollow yellow circles identify the starting sides.
             angle=round(math.degrees(math.atan2(c['cy'],c['cx'])))%360
             disc=center.buffer(4.5,quad_segs=24)
             starts.append(disc if angle in (90,210,330) else disc.difference(center.buffer(3.3,quad_segs=24)))
@@ -116,11 +116,11 @@ def layers(s,logo):
         (0,'Foundation',footprint.difference(logo),0,.8),
         (1,'ARES 23247 underside inlay',logo,0,.8),
         (0,'Solid middle floor',footprint,.8,round(FLOOR_HEIGHT-INLAY_DEPTH,2)),
-        (0,'Honeycomb walls',walls,round(FLOOR_HEIGHT-INLAY_DEPTH,2),TOTAL_HEIGHT),
-        (1,'Joint tops',footprint.difference(s['original']),round(FLOOR_HEIGHT-INLAY_DEPTH,2),FLOOR_HEIGHT),
-        (1,'Pocket floors',pockets.difference(union([anchors,starts])),round(FLOOR_HEIGHT-INLAY_DEPTH,2),FLOOR_HEIGHT),
-        (0,'Starting side markers',starts,round(FLOOR_HEIGHT-INLAY_DEPTH,2),FLOOR_HEIGHT),
-        (0,'Six corner anchors',anchors,round(FLOOR_HEIGHT-INLAY_DEPTH,2),FLOOR_HEIGHT)] if not p.is_empty]
+        (1,'Honeycomb walls',walls,round(FLOOR_HEIGHT-INLAY_DEPTH,2),TOTAL_HEIGHT),
+        (0,'Joint tops',footprint.difference(s['original']),round(FLOOR_HEIGHT-INLAY_DEPTH,2),FLOOR_HEIGHT),
+        (0,'Pocket floors',pockets.difference(union([anchors,starts])),round(FLOOR_HEIGHT-INLAY_DEPTH,2),FLOOR_HEIGHT),
+        (1,'Starting side markers',starts,round(FLOOR_HEIGHT-INLAY_DEPTH,2),FLOOR_HEIGHT),
+        (1,'Six corner anchors',anchors,round(FLOOR_HEIGHT-INLAY_DEPTH,2),FLOOR_HEIGHT)] if not p.is_empty]
 
 
 def parts(s,record,logo):
@@ -139,11 +139,11 @@ def preview(sections,records,logo):
         if p.is_empty:return
         for g in [p] if isinstance(p,Polygon) else p.geoms:
             ax.add_patch(Patch(g.exterior.coords,facecolor=color,edgecolor='none'))
-            for hole in g.interiors:ax.add_patch(Patch(hole.coords,facecolor=COLORS[1],edgecolor='none'))
+            for hole in g.interiors:ax.add_patch(Patch(hole.coords,facecolor=COLORS[0],edgecolor='none'))
     for s in sections:
         draw(axes[0],s['footprint'],COLORS[0])
         for color,name,p,z0,z1 in layers(s,logo):
-            if z1==FLOOR_HEIGHT:draw(axes[0],p,COLORS[color])
+            if z1>=FLOOR_HEIGHT:draw(axes[0],p,COLORS[color])
         p=s['original'].representative_point()
         axes[0].text(p.x,p.y,str(s['index']+1),color='#777777',fontsize=14,ha='center')
     x0,y0,x1,y1=union([s['footprint'] for s in sections]).bounds
@@ -154,7 +154,7 @@ def preview(sections,records,logo):
     axes[1].add_patch(Rectangle((0,0),270,270,facecolor='#292D32',edgecolor='white'))
     draw(axes[1],placed(sections[i]['footprint'],r),COLORS[0])
     for color,name,p,z0,z1 in layers(sections[i],logo):
-        if z1==FLOOR_HEIGHT:draw(axes[1],placed(p,r),COLORS[color])
+        if z1>=FLOOR_HEIGHT:draw(axes[1],placed(p,r),COLORS[color])
     axes[1].add_patch(Rectangle((225,225),40,40,fill=False,edgecolor='white',linestyle='--'))
     axes[1].text(245,245,'Purge\ntower',color='white',ha='center',va='center',fontsize=8)
     axes[1].set_xlim(-5,275);axes[1].set_ylim(-35,290)
@@ -204,7 +204,10 @@ def generate():
                   divider_width_mm=DIVIDER_WIDTH,floor_height_mm=FLOOR_HEIGHT,
                   pocket_depth_mm=POCKET_DEPTH,total_height_mm=TOTAL_HEIGHT,
                   joint_clearance_mm=JOINT_CLEARANCE,seam_gap_mm=SEAM_GAP,
-                  board_size_mm=[round(x1-x0,3),round(y1-y0,3)],colors=COLORS,plates=records)
+                  board_size_mm=[round(x1-x0,3),round(y1-y0,3)],colors=COLORS,
+                  color_roles={'Black':'Foundation, pocket floors and joint tops',
+                               'Yellow':'Raised dividers, starting markers, corner rings and underside artwork'},
+                  plates=records)
     (OUTPUT/'print_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     coupon=[]
     for i,sample in enumerate(fit_samples(sections)):
@@ -226,6 +229,6 @@ if __name__=='__main__':
     for edition in (['classic','large'] if args.size=='both' else [args.size]):
         BOARD_RADIUS=4 if edition=='classic' else 5
         CELL_COUNT=1+3*BOARD_RADIUS*(BOARD_RADIUS+1)
-        REVISION='v3_looser_joints' if edition=='classic' else 'v4_91_cells'
+        REVISION='v5_black_floors_yellow_dividers'
         OUTPUT=Path(__file__).resolve().parent/('output/boards/othello-classic' if edition=='classic' else 'output/boards/othello')
         generate()

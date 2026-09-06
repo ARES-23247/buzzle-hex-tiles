@@ -11,7 +11,7 @@ names, but omitted the part settings that Snapmaker uses for its object list.
 |---|---|---|---|---|
 | Word tiles | Yellow body | Black lettering/logo | — | — |
 | BUZZLE/Scrabble board | Black base, labels, rib bodies | White DW/KEY/start | Blue DL/TL | Yellow grid caps, TW |
-| Othello board | Black frame, starting markers, corner rings | Yellow floors, joint tops, underside logo | — | — |
+| BUZZELLO boards | Black base, pocket floors, joint tops | Yellow raised dividers, markers, rings, underside logo | — | — |
 | Reversible Othello pieces | Black side/inlays | Yellow side/inlays | — | — |
 | BUZZHEX board | Black base, grid, A/K goals | Yellow 1/11 goals | White pocket floors and joint tops | — |
 

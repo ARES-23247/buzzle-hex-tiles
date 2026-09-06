@@ -35,8 +35,12 @@ Published both edition bundles and their shared gameplay rules:
 - [Classic and Large rulesheet](../../output/pdf/BUZZELLO_Rules_Classic_and_Large.pdf)
 
 Published [the two-size description](BUZZELLO_BOARD_SIZES_PRINTABLES.md), including
-the rulesheet and black/yellow color guidance. The existing Classic gallery remains;
-the Large 91-cell board preview was added. Both ZIPs remain intact under Other Files.
+the rulesheet and black/yellow color guidance. Revision v5 replaces both board
+previews and all board downloads with black floors and yellow raised dividers.
+The Classic preview is the cover and Large is the next gallery image. Both ZIPs
+remain intact under Other Files; each also includes the rules PDF. Updated board
+and color-import TXT guides are published. See [the v5 record](buzzello_v5_manifest.json)
+for uploaded file hashes. Geometry and fit tolerances are unchanged.
 The separate unprefixed board 3MF downloads are Classic, as explained in the description.
 
 [BUZZELLO files](https://www.printables.com/model/1834053-buzzello-classic-61-large-91-black-yellow-hex-stra/files)

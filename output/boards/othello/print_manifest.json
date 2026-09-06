@@ -1,5 +1,5 @@
 {
-  "revision": "v4_91_cells",
+  "revision": "v5_black_floors_yellow_dividers",
   "board_radius": 5,
   "cell_count": 91,
   "tile_flat_mm": 33.02,
@@ -20,6 +20,10 @@
     "#000000",
     "#FFFF00"
   ],
+  "color_roles": {
+    "Black": "Foundation, pocket floors and joint tops",
+    "Yellow": "Raised dividers, starting markers, corner rings and underside artwork"
+  },
   "plates": [
     {
       "file": "plates/Plate_01_Top_Left.3mf",

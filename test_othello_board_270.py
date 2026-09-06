@@ -92,6 +92,19 @@ class OthelloBoardTests(unittest.TestCase):
             for z in layer[3:]:
                 self.assertAlmostEqual(z/.2,round(z/.2))
 
+    def test_black_floors_and_full_depth_yellow_dividers(self):
+        for section in self.sections:
+            layers=board.layers(section,self.logo)
+            by_name={name:(color,z0,z1) for color,name,_,z0,z1 in layers}
+            self.assertEqual(by_name['Foundation'][0],0)
+            self.assertEqual(by_name['Pocket floors'][0],0)
+            color,z0,z1=by_name['Honeycomb walls']
+            self.assertEqual(color,1)
+            self.assertAlmostEqual(z1-z0,3.2)
+            for name in ['Starting side markers','Six corner anchors']:
+                if name in by_name:
+                    self.assertEqual(by_name[name][0],1)
+
     def test_generated_files(self):
         paths=list((board.OUTPUT/'plates').glob('*.3mf'))
         self.assertEqual(len(paths),5)

@@ -1,5 +1,5 @@
 {
-  "status": "published; public description and Files page verified September 6, 2026",
+  "status": "Historical two-size publication; superseded by v5 black floors/yellow dividers",
   "description": "docs/publishing/BUZZELLO_BOARD_SIZES_PRINTABLES.md",
   "same_piece_across_flats_mm": 33.02,
   "tab_clearance_mm": 0.4,
@@ -19,5 +19,6 @@
   ],
   "published_url": "https://www.printables.com/model/1834053-buzzello-classic-61-large-91-black-yellow-hex-stra",
   "published_file_count": 13,
-  "gallery_items": 7
+  "gallery_items": 7,
+  "latest_update_manifest": "docs/publishing/buzzello_v5_manifest.json"
 }

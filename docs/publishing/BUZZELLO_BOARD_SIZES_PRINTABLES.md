@@ -55,8 +55,11 @@ clearance and room for a 40 × 40 mm purge tower at X=225–265, Y=225–265. Re
 the sliced layout if you rearrange parts or add a brim. Check the piece batch
 separately in your slicer.
 
-Board colors are **Black** for the structural frame, walls, and starting markers,
-and **Yellow** for the pocket floors and joint tops. Pieces are black and yellow
+Board colors are **Black** for the foundation, pocket floors and joint tops,
+and **Yellow** for the raised hex dividers, starting markers and corner rings.
+Revision v5 uses 3.2 mm of yellow material through each divider (Z=2.0–5.2 mm),
+replacing the previous broad yellow pocket-floor overlays. Dimensions and joint
+tolerances are unchanged. The underside artwork remains yellow. Pieces are black and yellow
 on opposite faces. Use your calibrated printer and filament profiles and verify
 the sliced color preview. Gallery images are geometry renders, not print photos.
 
