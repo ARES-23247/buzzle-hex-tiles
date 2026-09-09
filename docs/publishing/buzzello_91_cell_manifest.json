@@ -1,0 +1,38 @@
+{
+  "status": "prepared locally; not yet published",
+  "revision": "v4_91_cells",
+  "cell_count": 91,
+  "bundle": "docs/publishing/packages/BUZZELLO_91_Cells_v4.zip",
+  "files": [
+    {
+      "path": "output/boards/othello/plates/Plate_01_Top_Left.3mf",
+      "sha256": "0b723e6c60e932b1bd1f3538e6b995751fc45e53c2a7b8c49139c9a6bdfbc9de"
+    },
+    {
+      "path": "output/boards/othello/plates/Plate_02_Top_Right.3mf",
+      "sha256": "8cb2e13848a2fb9256d1f5ef42e718fd3a104c5d847dbd9c0d732d8d152ce05a"
+    },
+    {
+      "path": "output/boards/othello/plates/Plate_03_Bottom_Left.3mf",
+      "sha256": "870d11b673530ba912609249d98b6b4f4ee45c796b6269899b655fac737d1fa2"
+    },
+    {
+      "path": "output/boards/othello/plates/Plate_04_Bottom_Right.3mf",
+      "sha256": "273a47fa20759cf50d66e79d20d645a9cd53ebcc5b18f0f70602e8d88805ab4c"
+    },
+    {
+      "path": "output/boards/othello/plates/PRINT_FIRST_Pocket_and_Joint_Test.3mf",
+      "sha256": "328bc695f62dc3e324475ebcd2c409143132be91ffd9a6f0c8feae4c7f6f51bb"
+    },
+    {
+      "path": "output/tiles/othello/3mf/hex_othello_piece_single.3mf",
+      "sha256": "9b4a861c4dfb32615d838c60bd7eb082c95abc2ea949fe937f63231c3dce7589"
+    },
+    {
+      "path": "output/tiles/othello/plates/plate_30_pieces_print_twice.3mf",
+      "sha256": "2877f879e7676c449b062696b17c8767b670676aba2f0d790295af7d63d55ad9"
+    }
+  ],
+  "description": "docs/publishing/BUZZELLO_91_CELL_PRINTABLES.md",
+  "validation": "6 board geometry/export tests and 3 color-metadata tests passed; physical print pending"
+}

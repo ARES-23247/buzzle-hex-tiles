@@ -404,6 +404,7 @@ def main():
     parser.add_argument("--letter", type=str, help="Generate single letter tile (e.g. 'A')")
     parser.add_argument("--score", type=str, default=None, help="Custom score")
     parser.add_argument("--plates", action="store_true", help="Generate complete 256mm double-sided build plates")
+    parser.add_argument("--individuals", action="store_true", help="Export A-Z and blank as individual color 3MF files only")
     parser.add_argument("--outdir", type=str, default="output/tiles/biobuzz", help="Output directory")
     
     args = parser.parse_args()
@@ -420,6 +421,16 @@ def main():
     print("[BIOBUZZ] Generating CAD-precision BioBuzz honeycomb rosette vector...")
     logo_polys = create_biobuzz_logo_vector(28.5)
     print(f" -> Generated {len(logo_polys)} vector components")
+
+    if args.individuals:
+        for letter in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ ':
+            score = str(SCRABBLE_POINTS.get(letter, 0))
+            name = letter.strip() or 'BLANK'
+            base, graphics = build_doublesided_biobuzz_tile(letter.strip(), score, logo_polys=logo_polys)
+            path = os.path.join(dir_3mf, f'tile_doublesided_biobuzz_{name}_score{score}.3mf')
+            export_multimaterial_3mf(path, {'Tile_Base': base, 'Tile_Graphics': graphics})
+            print(f'Saved {name}', flush=True)
+        return
     
     # 1. Standalone BioBuzz Medallion / Coaster Token
     print("\n--- Generating BioBuzz Emblem Medallion Tile ---")

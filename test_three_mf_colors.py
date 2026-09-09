@@ -71,14 +71,15 @@ class ColorExportTests(unittest.TestCase):
 
     def test_requested_palettes(self):
         for game, palette in [('buzzle',['#000000','#FFFFFF','#0077CC','#FFFF00']),
-                              ('othello',['#000000','#FFFF00'])]:
+                              ('othello',['#000000','#FFFF00']),
+                              ('buzzhex',['#000000','#FFFF00','#FFFFFF'])]:
             manifest = json.loads((ROOT/'output/boards'/game/'print_manifest.json').read_text())
             self.assertEqual(manifest['colors'], palette)
         for path in (ROOT/'output/tiles').rglob('*.3mf'):
             with zipfile.ZipFile(path) as archive:
                 colors = json.loads(archive.read('Metadata/project_settings.config'))['filament_colour']
             if 'othello' in path.parts:
-                self.assertEqual(colors, ['#000000','#FFFFFF'])
+                self.assertEqual(colors, ['#000000','#FFFF00'])
             elif not path.name.startswith('plate_256_board_'):
                 self.assertEqual(colors, ['#FFFF00','#000000'])
 

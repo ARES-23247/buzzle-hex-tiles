@@ -8,11 +8,18 @@ Open the **[visual print library](output/README.md)** for the current boards,
 matching tile sets, pictures, file links, and quantities.
 
 - [BUZZLE board](output/boards/buzzle/PRINT_GUIDE.md): 217 cells, seven sections.
-- [Othello board](output/boards/othello/PRINT_GUIDE.md): 61 cells, four sections.
+- BUZZELLO: [Large, 91 cells (preferred default)](output/boards/othello/PRINT_GUIDE.md) or [Classic, 61 cells](output/boards/othello-classic/PRINT_GUIDE.md). We prefer the 91-cell board — it plays better. Four sections each, STL and 3MF downloads, same 1.3-inch pieces.
+- Complete BUZZELLO download bundles: [Large STL + 3MF ZIP (preferred)](docs/publishing/packages/BUZZELLO_Large_91_STL_and_3MF.zip) · [Classic STL + 3MF ZIP](docs/publishing/packages/BUZZELLO_Classic_61_STL_and_3MF.zip).
+- [BUZZHEX board](output/boards/buzzhex/PRINT_GUIDE.md): 11 × 11 Hex, 121 cells,
+  six sections, reuses Buzzello tiles.
+- [BUZZHEX website-agent prompt](docs/BUZZHEX_WEBSITE_AGENT_PROMPT.md).
+- [BUZZHEX web handoff ZIP](docs/BUZZHEX_WEB_HANDOFF.zip): prompt, rules,
+  coordinates, and exact yellow/black tile artwork.
 - [Shared printing guide](PRINTING_COLOR_GUIDE.md): filament slots and fit checks.
+- Printable play references: [BUZZLE rules](output/pdf/BUZZLE_Rules.pdf), [two-letter words](output/pdf/BUZZLE_Two_Letter_Words.pdf), and [BUZZELLO rules for both sizes](output/pdf/BUZZELLO_Rules_Classic_and_Large.pdf).
 - [Development guide](docs/DEVELOPMENT.md): generation commands and validation.
 
-Both boards include a small pocket-and-joint test. Print that first at 100%
+All three boards include a small pocket-and-joint test. Print that first at 100%
 scale; geometry checks pass, but physical fit still depends on your printer.
 
 ## Folder layout
@@ -21,7 +28,9 @@ scale; geometry checks pass, but physical fit still depends on your printer.
 output/
   README.md                  Visual index of current print files
   boards/buzzle/             Plates, images, guide, measured manifest
-  boards/othello/            Plates, images, guide, measured manifest
+  boards/othello/            Large 91-cell board: 3MFs, STLs, images, guide
+  boards/othello-classic/    Classic 61-cell board: 3MFs, STLs, images, guide
+  boards/buzzhex/            11 × 11 Hex board, rules contract, six plates
   tiles/                    BioBuzz, interlocking, team, Othello
   accessories/tile-holders/  Single holder and four-pack
 assets/

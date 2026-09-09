@@ -4,6 +4,8 @@ Use the [current print library](../output/README.md) to choose files to print.
 
 This folder keeps earlier designs and references out of the active outputs:
 
+- [61-cell BUZZELLO board](printed-revisions/2026-09-06-before-91-cell-buzzello/README.md):
+  the v3 print set saved before adding a 30-cell outer ring.
 - [Previous printed board versions](printed-revisions/2026-09-05-before-thicker-boards/README.md):
   the complete print sets saved before the thicker September 5 revision.
 - `legacy-outputs/`: previous boards, prototypes, old previews, reference

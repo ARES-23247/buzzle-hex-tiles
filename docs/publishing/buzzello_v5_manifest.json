@@ -1,0 +1,87 @@
+{
+  "revision": "v5_black_floors_yellow_dividers",
+  "status": "published; public description, gallery and 13 downloads verified September 6, 2026",
+  "published_url": "https://www.printables.com/model/1834053-buzzello-classic-61-large-91-black-yellow-hex-stra",
+  "published_file_count": 13,
+  "gallery_items": 7,
+  "editions": [
+    61,
+    91
+  ],
+  "color_roles": {
+    "Black": "Foundation, pocket floors and joint tops",
+    "Yellow": "Raised dividers, starting markers, corner rings and underside artwork"
+  },
+  "yellow_divider_depth_mm": 3.2,
+  "validation": [
+    "17 unit tests passed across board, Othello and color modules",
+    "All 10 new 3MF files have exactly the previous mesh vertices and triangle connectivity",
+    "30 STL exports verified solid with matching bounds and volume",
+    "Library verification passed: 224 links, 14 images, four manifests, 97 unique active 3MF files",
+    "Both ZIPs verified intact with 15 STLs, seven 3MFs, guides and PDF rules each"
+  ],
+  "physical_print_test": "pending; print fit coupon first",
+  "unchanged": {
+    "piece_across_flats_mm": 33.02,
+    "joint_clearance_mm": 0.4,
+    "seam_gap_mm": 0.3
+  },
+  "previous_files_archive": "archive/printed-revisions/2026-09-06-before-buzzello-yellow-dividers",
+  "uploaded_replacements": [
+    {
+      "path": "output/boards/othello-classic/plates/Plate_01_Top_Left.3mf",
+      "bytes": 94025,
+      "sha256": "843c2b55b7be730388224d20d8a49cc571e58dd5dea915ed8ca02e3b4f2bb898"
+    },
+    {
+      "path": "output/boards/othello-classic/plates/Plate_02_Top_Right.3mf",
+      "bytes": 52736,
+      "sha256": "28fceec571dc33113dfaf7a2d3942748328b7daea42a6781ca778a9304be624a"
+    },
+    {
+      "path": "output/boards/othello-classic/plates/Plate_03_Bottom_Left.3mf",
+      "bytes": 72556,
+      "sha256": "14243fb7919abe76565d999f61b36635c56450e26d616124563d560acffff67b"
+    },
+    {
+      "path": "output/boards/othello-classic/plates/Plate_04_Bottom_Right.3mf",
+      "bytes": 42783,
+      "sha256": "928abcf34bd0c648e91600e9061a9d5a6e6495a56c32ad10237c8ead1ac6a7d7"
+    },
+    {
+      "path": "output/boards/othello-classic/plates/PRINT_FIRST_Pocket_and_Joint_Test.3mf",
+      "bytes": 19435,
+      "sha256": "292168e4b718a3c736186a1499bb44f6b08237cf1c88e97a89bce1595beeea9f"
+    },
+    {
+      "path": "docs/publishing/packages/BUZZELLO_Classic_61_STL_and_3MF.zip",
+      "bytes": 1275455,
+      "sha256": "c202f1b839ea6e7155ecad4504fc4a28df9a1faf2448586f23ad3ab8440e1006"
+    },
+    {
+      "path": "docs/publishing/packages/BUZZELLO_Large_91_STL_and_3MF.zip",
+      "bytes": 1356724,
+      "sha256": "b36fc78ecc8a322db7dda07c1323a732578c06b21fb96774985251f2428de99a"
+    },
+    {
+      "path": "docs/publishing/packages/othello/BOARD_PRINT_GUIDE.txt",
+      "bytes": 6652,
+      "sha256": "f8852554a5f65f86e7e720535f828fdae7b5cee809c7e5b54dbad6bd9d137dae"
+    },
+    {
+      "path": "docs/publishing/packages/othello/COLOR_IMPORT_GUIDE.txt",
+      "bytes": 5483,
+      "sha256": "2353a22b170c3a82013b47d3a9efa65b98036cb447a6cd8a159913a62e51b8ce"
+    },
+    {
+      "path": "docs/publishing/packages/BUZZELLO_Classic_61_v5.png",
+      "bytes": 239587,
+      "sha256": "0b7ee9f3535a24d1debf1b2c26da170325cbd19571df20d0e9720f0e92560565"
+    },
+    {
+      "path": "docs/publishing/packages/BUZZELLO_Large_91_v5.png",
+      "bytes": 266018,
+      "sha256": "1ca8fe7f496cb7ef12c5000f0224a5f61204a1a8d2c70fff7f8ce480e5505af6"
+    }
+  ]
+}

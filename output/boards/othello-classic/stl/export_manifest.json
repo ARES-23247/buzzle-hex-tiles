@@ -1,0 +1,77 @@
+[
+  {
+    "file": "stl/single-color/Plate_01_Top_Left.stl",
+    "volume_mm3": 64626.675,
+    "watertight": true
+  },
+  {
+    "file": "stl/color-parts/Plate_01_Top_Left_Black.stl",
+    "volume_mm3": 55606.255,
+    "watertight": true
+  },
+  {
+    "file": "stl/color-parts/Plate_01_Top_Left_Yellow.stl",
+    "volume_mm3": 9023.157,
+    "watertight": true
+  },
+  {
+    "file": "stl/single-color/Plate_02_Top_Right.stl",
+    "volume_mm3": 48333.14,
+    "watertight": true
+  },
+  {
+    "file": "stl/color-parts/Plate_02_Top_Right_Black.stl",
+    "volume_mm3": 41875.791,
+    "watertight": true
+  },
+  {
+    "file": "stl/color-parts/Plate_02_Top_Right_Yellow.stl",
+    "volume_mm3": 6457.349,
+    "watertight": true
+  },
+  {
+    "file": "stl/single-color/Plate_03_Bottom_Left.stl",
+    "volume_mm3": 55207.12,
+    "watertight": true
+  },
+  {
+    "file": "stl/color-parts/Plate_03_Bottom_Left_Black.stl",
+    "volume_mm3": 47732.641,
+    "watertight": true
+  },
+  {
+    "file": "stl/color-parts/Plate_03_Bottom_Left_Yellow.stl",
+    "volume_mm3": 7474.478,
+    "watertight": true
+  },
+  {
+    "file": "stl/single-color/Plate_04_Bottom_Right.stl",
+    "volume_mm3": 42285.594,
+    "watertight": true
+  },
+  {
+    "file": "stl/color-parts/Plate_04_Bottom_Right_Black.stl",
+    "volume_mm3": 36669.331,
+    "watertight": true
+  },
+  {
+    "file": "stl/color-parts/Plate_04_Bottom_Right_Yellow.stl",
+    "volume_mm3": 5616.262,
+    "watertight": true
+  },
+  {
+    "file": "stl/single-color/PRINT_FIRST_Pocket_and_Joint_Test.stl",
+    "volume_mm3": 6717.106,
+    "watertight": true
+  },
+  {
+    "file": "stl/color-parts/PRINT_FIRST_Pocket_and_Joint_Test_Black.stl",
+    "volume_mm3": 5886.969,
+    "watertight": true
+  },
+  {
+    "file": "stl/color-parts/PRINT_FIRST_Pocket_and_Joint_Test_Yellow.stl",
+    "volume_mm3": 830.137,
+    "watertight": true
+  }
+]

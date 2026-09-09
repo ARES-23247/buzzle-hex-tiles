@@ -1,0 +1,6 @@
+# Preserve printable assets byte-for-byte, including PDF cross-reference offsets.
+*.pdf binary
+*.3mf binary
+*.stl binary
+*.png binary
+*.zip binary

@@ -14,7 +14,7 @@ CORE = 'http://schemas.microsoft.com/3dmanufacturing/core/2015/02'
 MATERIAL = 'http://schemas.microsoft.com/3dmanufacturing/material/2015/02'
 ET.register_namespace('', CORE)
 ET.register_namespace('m', MATERIAL)
-BLACK_WHITE = ['#000000', '#FFFFFF']
+REVERSIBLE_COLORS = ['#000000', '#FFFF00']
 WORD_COLORS = ['#FFFF00', '#000000']
 
 
@@ -141,8 +141,8 @@ def color_existing_tiles(root=Path(__file__).resolve().parent/'output/tiles'):
             else:
                 raise ValueError(f'Unrecognized tile part: {path}: {name}')
             assignments[obj.get('id')] = slot
-        palette = ['#000000','#FFFFFF','#0077CC','#FFFF00'] if retained_board else BLACK_WHITE if othello else WORD_COLORS
-        names = ['Black','White','Blue','Yellow'] if retained_board else ['Black','White'] if othello else ['Yellow','Black']
+        palette = ['#000000','#FFFFFF','#0077CC','#FFFF00'] if retained_board else REVERSIBLE_COLORS if othello else WORD_COLORS
+        names = ['Black','White','Blue','Yellow'] if retained_board else ['Black','Yellow'] if othello else ['Yellow','Black']
         add_color_metadata(path, palette, names, assignments)
         print(path.relative_to(root))
 

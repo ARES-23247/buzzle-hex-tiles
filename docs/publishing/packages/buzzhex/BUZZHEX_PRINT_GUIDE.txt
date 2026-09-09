@@ -1,0 +1,64 @@
+# BUZZHEX — 11 × 11 Hex with Buzzello tiles
+
+**121 cells · six sections · existing 33.02 mm / 1.3-inch reversible tiles.**
+
+![Board and print-bed preview](images/board_and_bed_preview.png)
+
+## Print order
+
+1. Print [the pocket-and-joint test](plates/PRINT_FIRST_Pocket_and_Joint_Test.3mf)
+   at **100% scale**. Check one existing Buzzello tile in both pockets and slide
+   the two test pieces together on a flat surface.
+2. Print each of the six numbered plates below once, flat side down, at 100%.
+   Each fits a 270 × 270 mm bed with a 5 mm margin and space for a 40 × 40 mm
+   purge tower at X=225–265, Y=225–265. Preserve the supplied bed orientation.
+3. Assemble on a flat table using the section positions in the image. The
+   seams follow cell borders. Slide the tabs into their matching sockets;
+   the tabs sit below the pocket floors. Do not mix with Buzzello board sections.
+4. Use **121 reversible Buzzello tiles in a common supply**. Turn each tile to
+   your color before placing it. A tile's large background identifies its color.
+
+## Tiles to reuse or print
+
+The existing tiles are unchanged: **33.02 mm across flats, 4.8 mm thick**,
+black on one side and yellow on the other, with the original BioBuzz rosette.
+
+- [Existing single tile](../../tiles/othello/3mf/hex_othello_piece_single.3mf)
+- [Existing 30-tile plate](../../tiles/othello/plates/plate_30_pieces_print_twice.3mf)
+- [Tile preview and print guide](../../tiles/othello/PRINT_GUIDE.md)
+
+From scratch, print the 30-tile plate **four times**, plus **one single** (121).
+If you already have 60 tiles, print **two more 30-tile plates and one single**
+(61 additional). The retained filename says “print twice” because that was the
+Buzzello quantity; the quantities above apply to BUZZHEX. Games often finish
+before all 121 spaces fill, but this inventory covers any legal game.
+
+## Filaments and dimensions
+
+| Slot | Color | Purpose |
+|---|---|---|
+| 1 | Black | Foundation, walls, grid caps, and the A/K goal rails |
+| 2 | Yellow | The 1/11 goal rails |
+| 3 | White | Pocket floors and joint tops |
+
+Use three filaments for the board; the shared pieces use black and yellow.
+The white pocket floors help both tile colors stand out. These are geometry
+previews, not photographs. Cell coordinates and section labels appear only
+in the assembly diagram, not on the printed board.
+
+- Pockets: **33.50 mm**, giving 0.24 mm clearance per flat face.
+- Revision **v2_buzzhex_white_board** changes colors only; board geometry and fit are unchanged.
+- Cell-center pitch: **35.70 mm**; dividers: **2.20 mm**.
+- Solid floor: **2.80 mm**; pocket depth: **2.40 mm**; total: **5.20 mm**.
+- Tile projection above the walls: **2.40 mm**.
+- Socket clearance: **0.40 mm**; assembled seam gap: **0.30 mm**.
+- Goal rails extend the outer cell boundary by **6 mm**.
+- Use 0.20 mm layers; colored rail caps occupy the top two layers.
+- Assembled board: approximately **671.4 × 404.7 mm** (26.4 × 15.9 inches).
+- See [the measured manifest](print_manifest.json) for the assembled size and
+  each plate's exact placement, and [color import help](../../../docs/3MF_COLOR_IMPORT.md).
+
+Meshes, material partitions, pocket dimensions, seams, and bed placement pass
+automated checks. Physical fit has not yet been tested on a printer; print
+the small test before committing to the six board plates.
+

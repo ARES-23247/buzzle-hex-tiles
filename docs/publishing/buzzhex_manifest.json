@@ -1,0 +1,85 @@
+{
+  "status": "published; public description and all 12 download names verified",
+  "date": "2026-09-06",
+  "published_url": "https://www.printables.com/model/1834842-buzzhex-11-x-11-hex-strategy-game-reuse-your-buzze",
+  "model_id": 1834842,
+  "file_count": 12,
+  "gallery_images": 3,
+  "board_revision": "v2_buzzhex_white_board",
+  "board_colors": [
+    "Black",
+    "Yellow",
+    "White"
+  ],
+  "piece_colors": [
+    "Black",
+    "Yellow"
+  ],
+  "description": "docs/publishing/BUZZHEX_PRINTABLES.md",
+  "website": "https://aresfirst.org/buzzhex",
+  "website_verified": "Live page shows BUZZHEX, 11 x 11 / 121 cells, two players on one device",
+  "validation": "5 board tests pass; 9 3MF archives pass CRC; one-page rules PDF text checked and rendered visually",
+  "physical_fit": "not yet print tested; print fit coupon first",
+  "files": [
+    {
+      "path": "output/boards/buzzhex/plates/Plate_01_Section.3mf",
+      "bytes": 38167,
+      "sha256": "68d41ab4fddfab7a0ecf37c47c08b91ec8db922694f4170cf21ab0826fc631ab"
+    },
+    {
+      "path": "output/boards/buzzhex/plates/Plate_02_Section.3mf",
+      "bytes": 35327,
+      "sha256": "0f28a6711f80ab0d1b35fb165668607d9029fff173d56690cd01a9acf1160dcc"
+    },
+    {
+      "path": "output/boards/buzzhex/plates/Plate_03_Section.3mf",
+      "bytes": 31120,
+      "sha256": "afb04c56e1e1dbd8cd494cbefbae91a1bfd6b947a73404690663b76a36562a6b"
+    },
+    {
+      "path": "output/boards/buzzhex/plates/Plate_04_Section.3mf",
+      "bytes": 32862,
+      "sha256": "5195bfd9481b620dfafa12099eb5649e2e6f10741eab04a102ec6208a74e4346"
+    },
+    {
+      "path": "output/boards/buzzhex/plates/Plate_05_Section.3mf",
+      "bytes": 31111,
+      "sha256": "144f12f95acf142fee9f792d3b9a93f84f148730961301ab07ea56c97acb5dc4"
+    },
+    {
+      "path": "output/boards/buzzhex/plates/Plate_06_Section.3mf",
+      "bytes": 27456,
+      "sha256": "b9f597b1b614fc3a236089449d4b239b08cf31388e90e814daa5d9eda3b3d509"
+    },
+    {
+      "path": "output/boards/buzzhex/plates/PRINT_FIRST_Pocket_and_Joint_Test.3mf",
+      "bytes": 4842,
+      "sha256": "53db287b7066850ae7c9ca7684e3be5444b5f2e8fbaf9af2997439f6db72ab4e"
+    },
+    {
+      "path": "output/tiles/othello/3mf/hex_othello_piece_single.3mf",
+      "bytes": 16127,
+      "sha256": "9b4a861c4dfb32615d838c60bd7eb082c95abc2ea949fe937f63231c3dce7589"
+    },
+    {
+      "path": "output/tiles/othello/plates/plate_30_pieces_print_twice.3mf",
+      "bytes": 397774,
+      "sha256": "2877f879e7676c449b062696b17c8767b670676aba2f0d790295af7d63d55ad9"
+    },
+    {
+      "path": "output/pdf/BUZZHEX_Rules.pdf",
+      "bytes": 3871,
+      "sha256": "de98b8872f021631cc6f566140996016d40ce3c8229919e91ae2ad1573158a08"
+    },
+    {
+      "path": "docs/publishing/packages/buzzhex/BUZZHEX_PRINT_GUIDE.txt",
+      "bytes": 3425,
+      "sha256": "904bdd27009e9b1e8a4a3026c79465cf453ce0f1ab0f2a70f814ebccd512fae7"
+    },
+    {
+      "path": "docs/publishing/packages/buzzhex/COLOR_IMPORT_GUIDE.txt",
+      "bytes": 5474,
+      "sha256": "385ebd985d0964bdb3e53ccbce9f7a3c9739d72010c6512a1d77d34e043073b9"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "status": "published; public cover, preference text and 13 downloads verified September 6, 2026",
+  "published_url": "https://www.printables.com/model/1834053-buzzello-preferred-large-91-classic-61-black-yello",
+  "default_edition": 91,
+  "classic_61_retained": "Complete STL and 3MF ZIP, preview and shared rules",
+  "preference": "We prefer the Large 91-cell board — it plays better.",
+  "cover": "BUZZELLO_Large_91_v5.png",
+  "website_pr": "https://github.com/ARES-23247/ARESWEB/pull/261",
+  "website_release_status": "Deployed; production workflow and browser security smoke passed",
+  "geometry_changed": false,
+  "uploaded_replacements": [
+    {
+      "path": "output/boards/othello/plates/Plate_01_Top_Left.3mf",
+      "bytes": 90109,
+      "sha256": "f6296e716d4078b991c04f31b63db735d811a22a764beeaa21724848f43a0dc2"
+    },
+    {
+      "path": "output/boards/othello/plates/Plate_02_Top_Right.3mf",
+      "bytes": 57634,
+      "sha256": "b276870fd3a6553261292dd4b995e83d0bf2257c5ea559c54aa57a268bfd3440"
+    },
+    {
+      "path": "output/boards/othello/plates/Plate_03_Bottom_Left.3mf",
+      "bytes": 88270,
+      "sha256": "81deee7b45deb44d5dc82348f778254940fc59e1b6976033a26bc94f951491cc"
+    },
+    {
+      "path": "output/boards/othello/plates/Plate_04_Bottom_Right.3mf",
+      "bytes": 53082,
+      "sha256": "faa0ceb119f67fc64307c3873c2ed213d93de3aa4d47ccb26b3d5de704b709b0"
+    },
+    {
+      "path": "output/boards/othello/plates/PRINT_FIRST_Pocket_and_Joint_Test.3mf",
+      "bytes": 19435,
+      "sha256": "7f600639d56a634936412bd3da57a8684132f485fa450fe9be00feec6983f084"
+    },
+    {
+      "path": "docs/publishing/packages/othello/BOARD_PRINT_GUIDE.txt",
+      "bytes": 7191,
+      "sha256": "4dd2a23ceb2768505bf1ebe8af31fa8e8a86d7c449275127c6350d618a256034"
+    }
+  ],
+  "website_commit": "697e7b1530871387b8219e8554c770e25fc00526",
+  "website_production_run": "https://github.com/ARES-23247/ARESWEB/actions/runs/34067361969",
+  "website_validation": {
+    "focused_tests": 19,
+    "frontend_tests": 1313,
+    "backend_tests": 896,
+    "rules_tests": 33,
+    "browser_suite": "287 passed initially; single unrelated Academy mobile test passed on focused recheck; full protected CI including all browser tests passed",
+    "lint_typecheck_build_bundle_audit": "passed"
+  },
+  "website_live_verification": {
+    "url": "https://aresfirst.org/buzzello",
+    "selected_radio": "Large — 91 cells (preferred)",
+    "preference_text": "We prefer the 91-cell board — it plays better. Classic 61 is still available.",
+    "pass_and_play_cell_count": 91,
+    "verified_date": "2026-09-06"
+  }
+}

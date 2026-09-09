@@ -6,7 +6,7 @@
 
 The retained geometry is unchanged. Colors and explicit filament-slot labels
 are now embedded in the 3MF files. Word tiles use yellow bodies with black
-lettering/logos; Othello pieces use black and white.
+lettering/logos; Othello pieces use black and yellow.
 Read the [color import guide](../../../docs/3MF_COLOR_IMPORT.md) before importing.
 
 ## Individual files
@@ -15,8 +15,11 @@ Read the [color import guide](../../../docs/3MF_COLOR_IMPORT.md) before importin
 
 ## Batch plates
 
-The two old 30-piece plates were byte-for-byte identical. Use the single
-plate below twice for 60 reversible pieces. Use the single-piece file for extras.
+Both BUZZELLO sizes use these same pieces. For **Classic (61 cells)**,
+print the 30-piece batch twice plus one single. For **Large (91 cells)**, print
+it three times plus one single. If you already have 60 pieces, add one single
+for Classic, or one batch plus one single for Large. The legacy filename
+`plate_30_pieces_print_twice.3mf` contains 30 pieces; use the quantities above.
 
 - [plate_30_pieces_print_twice.3mf](plates/plate_30_pieces_print_twice.3mf)
 

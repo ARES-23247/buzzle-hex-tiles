@@ -37,13 +37,28 @@ class BoardTests(unittest.TestCase):
         for a, b in itertools.combinations(self.sections, 2):
             # Boolean precision grid is 0.00001 mm; tolerate sub-grid edge slivers.
             self.assertLess(a['footprint'].intersection(b['footprint']).area, 1e-4)
+            self.assertGreaterEqual(a['footprint'].distance(b['footprint']), board.SEAM_GAP-1e-4)
         for socket, wedge in zip(hub['sockets'], self.sections[1:]):
             tongue = wedge['tongues'][0]
             self.assertTrue(socket.covers(tongue))
             self.assertGreater(tongue.intersection(wedge['original']).area, 5)
             self.assertGreater(tongue.intersection(hub['original']).area, 50)
             # Female cutout has clearance around the actual male profile.
-            self.assertGreater(tongue.boundary.distance(socket.boundary), 0.19)
+            self.assertAlmostEqual(tongue.boundary.distance(socket.boundary), 0.40, places=4)
+
+    def test_seam_relief_and_matching_buzzello_tolerances(self):
+        import generate_othello_board_270 as buzzello
+        self.assertEqual(board.JOINT_CLEARANCE, buzzello.JOINT_CLEARANCE)
+        self.assertEqual(board.SEAM_GAP, buzzello.SEAM_GAP)
+        for s in self.sections:
+            for c in s['cells']:
+                self.assertTrue(s['original'].covers(c['pocket']))
+        samples = board.fit_samples(self.sections)
+        for sample in samples:
+            c = sample['cells'][0]
+            actual = self.sections[c['section']]['footprint'].intersection(c['outer'])
+            self.assertLess(actual.symmetric_difference(sample['footprint'].intersection(c['outer'])).area, 1e-4)
+        self.assertAlmostEqual(samples[0]['footprint'].distance(samples[1]['footprint']), .30, places=4)
 
     def test_materials_partition_floor_without_overlap(self):
         for s in self.sections:
@@ -57,7 +72,9 @@ class BoardTests(unittest.TestCase):
                 self.assertLess(coverage.symmetric_difference(s['footprint']).area, 1e-5)
             lower = board.union([p for _, _, p, _, z1 in layers if z1 == board.FLOOR_HEIGHT])
             ribs = board.union([p for _, _, p, _, z1 in layers if z1 == board.TOTAL_HEIGHT])
-            self.assertLess(ribs.difference(lower).area, 1e-5)
+            # Re-union snaps angled edges to the 0.00001 mm grid; allow
+            # accumulated sub-grid slivers along the full section perimeter.
+            self.assertLess(ribs.difference(lower).area, 1e-4)
 
     def test_sturdier_dimensions(self):
         center = next(c for c in self.cells if c['coord'] == (0,0,0))
